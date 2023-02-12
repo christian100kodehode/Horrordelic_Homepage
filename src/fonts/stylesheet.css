@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "megalomaniac_headlinersRg";
+  src: url("./megalomaniac-webfont.woff2") format("woff2"), url("./megalomaniac-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
