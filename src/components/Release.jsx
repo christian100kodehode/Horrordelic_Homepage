@@ -6,7 +6,7 @@ import youtubeLogo from "../images/youtubeLogo.png";
 // Importing CSS
 import styles from "./Release.module.css";
 
-// importing packages/hooks
+// importing packages/hooks/components
 import { useState, useEffect, useRef } from "react";
 import { HashLink } from "react-router-hash-link";
 import axios from "axios";
@@ -16,12 +16,9 @@ const Release = () => {
   const [isLoading, setIsLoading] = useState(false);
   // State for Release data
   const [album, setAlbum] = useState([]);
-  // State for read more buttons
-  const [readMore, setReadMore] = useState(false);
 
   // useRef for window.location.hash URL
   const selectedRef = useRef(null);
-  // text for the read more button
 
   const fetchData = () => {
     setIsLoading(true);
@@ -48,7 +45,6 @@ const Release = () => {
   }, [selectedRef.current]);
 
   // Show text only on selected id
-
   const [showText, setShowText] = useState({});
 
   const toggleText = (id) => {
@@ -58,15 +54,55 @@ const Release = () => {
     }));
   };
 
+  // TESTING
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleOpen = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  // TESTING
+
   return (
     <main className={styles.container}>
       <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}
       </span>
+
+      {/* TESTING */}
+      <div>
+        <button onClick={handleOpen}>Drop down</button>
+        {openMenu ? <div>Open</div> : <div>Closed</div>}
+        {album.map(({ release_date, artist }) =>
+          release_date.slice(-4) === "2022" ? (
+            <span>
+              <p>{artist}</p>
+            </span>
+          ) : null
+        )}
+      </div>
+      {/* TESTING */}
+
       {/* Map through releases array and destructure the array items wanted */}
-      {album.map(({ artist, album_name, youtube_playlist_embed, land, id, tracklist, release_text, bandcamp, spotify, mp3, wav, path, credits }) => {
-        return (
-          <article className={styles.releaseContainer} key={id} id={path} ref={path === window.location.hash.slice(1) ? selectedRef : null}>
+      {album.map(
+        ({
+          artist,
+          album_name,
+          youtube_playlist_embed,
+          land,
+          id,
+          tracklist,
+          release_text,
+          bandcamp,
+          spotify,
+          mp3,
+          wav,
+          path,
+          credits,
+          release_date,
+        }) => (
+          <article key={path} className={styles.releaseContainer} id={path} ref={path === window.location.hash.slice(1) ? selectedRef : null}>
             <div className={styles.releaseName}>
               <HashLink smooth to={"/release#" + path}>
                 <p className={styles.heading}>
@@ -89,14 +125,15 @@ const Release = () => {
             <div className={styles.tracksContainer}>
               <div className={styles.musicPlayer}>
                 <div className={styles.youtubePlayer}>
-                  <iframe width="400" height="380" src={youtube_playlist_embed} title="Horrordelic music player" allowFullScreen></iframe>
+                  <iframe src={youtube_playlist_embed} title="Horrordelic music player" allowFullScreen></iframe>
                 </div>
 
                 {/* Download Links - Stream Links */}
+
                 <div className={styles.downloadHeader}>
                   <p>Stream / Download</p>
                 </div>
-                <div className={styles.streamLinks} key={path}>
+                <div className={styles.streamLinks}>
                   <a href={bandcamp} target="_blank" rel="noreferrer">
                     <img src={bandCampLogo} alt="Bandcamp Link" />
                   </a>
@@ -120,45 +157,51 @@ const Release = () => {
                 <div className={styles.break}></div>
 
                 <div className={styles.cssFix}>
-                  {release_text.length > 350
-                    ? [
-                        <div>
-                          {/* Show and hide the text if more text is selected, also show and hide the
+                  {release_text.length ? (
+                    // > 350
+                    <div>
+                      {/* Show and hide the text if more text is selected, also show and hide the
                           show more button to make it appear under the showing text */}
-                          <p style={!showText[id] ? { display: "" } : { display: "none" }} className={styles.releaseTextShort}>
-                            {release_text.substring(0, 350) + "...."}
-                          </p>
-                          <a style={!showText[id] ? { display: "" } : { display: "none" }}>
-                            <button onClick={() => toggleText(id)}>Read More</button>
-                          </a>
-                          {showText[id] && [
-                            <>
-                              <div className={styles.readMoreText}>
-                                <p>{release_text}</p>
-                                <p>Credits:</p>
-                                <p> {credits}</p>
-                              </div>
-
-                              <button onClick={() => toggleText(id)}>Read less</button>
-                            </>,
-                          ]}
+                      <p style={!showText[id] ? { display: "" } : { display: "none" }} className={styles.releaseTextShort}>
+                        {release_text.substring(0, 350) + "...."}
+                      </p>
+                      <div style={!showText[id] ? { display: "" } : { display: "none" }}>
+                        <HashLink smooth to={"/release#" + album_name}>
+                          <button onClick={() => toggleText(id)}>Read More</button>
+                        </HashLink>
+                      </div>
+                      {showText[id] && [
+                        <div key={{ id } + { album_name }}>
+                          <div className={styles.readMoreText} id={album_name}>
+                            <p>{release_text}</p>
+                            <p>Credits:</p>
+                            <p> {credits}</p>
+                            <p>Release date:</p>
+                            <p>{release_date}</p>
+                          </div>
+                          <HashLink smooth to={"/release#" + path}>
+                            <button onClick={() => toggleText(id)}>Read less</button>
+                          </HashLink>
                         </div>,
-                      ]
-                    : release_text}
+                      ]}
+                    </div>
+                  ) : (
+                    release_text
+                  )}
                 </div>
               </div>
             </div>
             <div className={styles.trackList}>
               <p>Track list:</p>
               {/* Map through the tracklist and show all tracks */}
-              {tracklist.map((e) => {
-                return <p>{e}</p>;
-              })}
+              {tracklist.map((e, i) => (
+                <p key={`${album_name}${i}`}>{e}</p>
+              ))}
             </div>
           </article>
-        );
-      })}
-      <h2>
+        )
+      )}
+      <h2 style={isLoading ? { display: "none" } : { display: "" }}>
         <HashLink smooth to={"/release#top"}>
           Go to top of Page
         </HashLink>

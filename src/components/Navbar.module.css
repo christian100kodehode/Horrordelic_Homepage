@@ -7,6 +7,22 @@
 .navbarlinks > a {
   padding-left: 1rem;
   font-family: Megalomaniac, fantasy, serif;
-  font-weight: 600;
   font-size: 2rem;
+}
+
+@media (max-width: 300px) {
+  .navbarlinks a {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+
+  .navbarlinks {
+    padding: 0;
+  }
+}
+
+@media (max-width: 200px) {
+  .navbarlinks a {
+    font-size: 1rem;
+  }
 }

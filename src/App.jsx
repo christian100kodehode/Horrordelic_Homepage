@@ -5,7 +5,6 @@ import Release from "./components/Release";
 import Navbar from "./components/Navbar";
 import Artists from "./components/Artists";
 import Main from "./components/Main";
-import LinkList from "./components/LinkList";
 // Importing hooks/packages
 import { Routes, Route, Link } from "react-router-dom";
 
