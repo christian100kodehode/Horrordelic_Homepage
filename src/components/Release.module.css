@@ -47,6 +47,11 @@ iframe {
   height: 380px;
 }
 
+.youtubeEmbedBlocked img {
+  width: 400px;
+  height: 380px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -98,8 +103,9 @@ iframe {
 }
 
 .header {
+  padding-top: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .heading {
@@ -189,7 +195,6 @@ iframe {
 
 @media (max-width: 900px) {
   .trackList p {
-    line-height: normal;
     font-size: 16px;
   }
 
@@ -200,7 +205,8 @@ iframe {
 
 @media (max-width: 450px) {
   .trackList p {
-    line-height: 1.5rem;
+    line-height: normal;
+    font-size: 1rem;
   }
 
   .releaseContainer {
@@ -220,9 +226,17 @@ iframe {
     width: 250px;
     height: 280px;
   }
+  .youtubeEmbedBlocked {
+    width: 250px;
+    height: 280px;
+  }
 }
 
 @media (max-width: 300px) {
+  .trackList p {
+    font-size: 12px;
+  }
+
   .readMoreText {
     padding: 0.1rem;
   }
@@ -239,6 +253,11 @@ iframe {
   }
 
   iframe {
+    width: 150px;
+    height: 180px;
+  }
+
+  .youtubeEmbedBlocked {
     width: 150px;
     height: 180px;
   }
