@@ -47,9 +47,11 @@ iframe {
   height: 380px;
 }
 
-.youtubeEmbedBlocked img {
+.youtubeEmbedBlocked {
   width: 400px;
-  height: 380px;
+  /* height: 380px; */
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -180,8 +182,19 @@ iframe {
   font-family: "megalomaniac";
   font-size: 4rem;
   animation: load8 1s;
-  top: calc(50% - 4em);
-  left: calc(50% - 4em);
+  position: absolute;
+  padding-top: 5rem;
+}
+
+.yearSelector {
+  border: solid green 2px;
+  width: 100%;
+  text-align: end;
+  padding-top: 5rem;
+}
+
+select {
+  font-size: 1rem;
 }
 
 @keyframes load8 {
@@ -227,8 +240,7 @@ iframe {
     height: 280px;
   }
   .youtubeEmbedBlocked {
-    width: 250px;
-    height: 280px;
+    all: unset;
   }
 }
 
@@ -257,10 +269,10 @@ iframe {
     height: 180px;
   }
 
-  .youtubeEmbedBlocked {
+  /* .youtubeEmbedBlocked {
     width: 150px;
     height: 180px;
-  }
+  } */
 
   .streamLinks img {
     padding: 0;

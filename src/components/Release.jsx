@@ -101,7 +101,7 @@ const Release = () => {
         {isLoading ? "Loading Releases" : null}
       </span>
       {/* TESTING */}
-      <div>
+      <div className={styles.yearSelector}>
         <label>
           Select year
           <select value={value} onChange={handleChange}>
@@ -166,9 +166,11 @@ const Release = () => {
                     {youtube_playlist_embed ? (
                       <iframe src={youtube_playlist_embed} title="Horrordelic music player" allowFullScreen></iframe>
                     ) : (
-                      <a href={youtube_full_album} target="_blank" rel="noreferrer">
-                        <img className={styles.youtubeEmbedBlocked} src={youtubeLogo}></img>
-                      </a>
+                      <span className={styles.youtubeEmbedBlocked}>
+                        <a href={youtube_full_album} target="_blank" rel="noreferrer">
+                          <img src={youtubeLogo}></img>
+                        </a>
+                      </span>
                     )}
                   </div>
 

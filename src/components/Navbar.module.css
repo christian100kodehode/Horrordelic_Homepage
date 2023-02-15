@@ -2,6 +2,9 @@
   color: black;
   border-bottom: solid 1px;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  background-color: blueviolet;
 }
 
 .navbarlinks > a {
