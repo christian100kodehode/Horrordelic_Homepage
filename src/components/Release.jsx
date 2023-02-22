@@ -25,17 +25,20 @@ const Release = () => {
 
   const fetchData = () => {
     setIsLoading(true);
-    setTimeout(async () => {
-      const API_URL = `./release-list.json`;
-      const response = await axios.get(API_URL);
-      setAlbum(response.data);
-      setIsLoading(false);
-      // Old version:
-      // Get the URL and add the hash then scrollintoView on load
-      // let a = new URL(window.location.href);
-      // document.querySelector(a.hash).scrollIntoView();
-      // console.log(a.hash);
-    }, 2000);
+    setTimeout(
+      async () => {
+        const API_URL = `./release-list.json`;
+        const response = await axios.get(API_URL);
+        setAlbum(response.data);
+        setIsLoading(false);
+        // Old version:
+        // Get the URL and add the hash then scrollintoView on load
+        // let a = new URL(window.location.href);
+        // document.querySelector(a.hash).scrollIntoView();
+        // console.log(a.hash);
+      }
+      // 2000 - if wanting timeout
+    );
   };
 
   useEffect(() => {
@@ -52,8 +55,6 @@ const Release = () => {
 
   const toggleText = (id) => {
     setShowText((prevText) => {
-      console.log(prevText);
-
       return {
         ...prevText,
         [id]: !prevText[id],
@@ -143,9 +144,9 @@ const Release = () => {
 
   return (
     <main className={styles.container}>
-      <span className={styles.loadingScreen} id="Loading">
+      {/* <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}
-      </span>
+      </span> */}
 
       <div onClick={toggleMenu} className={styles.yearSelector} style={isLoading ? { display: "none" } : { display: "" }}>
         <p>{!openMenu ? "Select Year of Release" : ""}</p>
@@ -219,7 +220,7 @@ const Release = () => {
                             <div className={styles.videoInner}>
                               <LazyLoadImage
                                 className={styles.thumbNailImage}
-                                src={"https://i.ytimg.com/vi/" + youtube_full_album.slice(-11) + "/hq720.jpg"}
+                                src={"https://img.youtube.com/vi/" + youtube_full_album.slice(-11) + "/hqdefault.jpg"}
                                 effect="blur"
                                 alt={album_name}
                               />
