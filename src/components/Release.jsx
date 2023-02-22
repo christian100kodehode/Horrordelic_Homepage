@@ -5,12 +5,15 @@ import youtubeLogo from "../images/youtubeLogo.png";
 
 // Importing CSS
 import styles from "./Release.module.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 // importing packages/hooks/components
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useTransition, lazy, startTransition } from "react";
 import { HashLink } from "react-router-hash-link";
 import axios from "axios";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import YoutubePlayer from "./YoutubePlayer";
+// const YoutubePlayer = lazy(() => import("./YoutubePlayer"));
 const Release = () => {
   // State for loading
   const [isLoading, setIsLoading] = useState(false);
@@ -48,15 +51,35 @@ const Release = () => {
   const [showText, setShowText] = useState({});
 
   const toggleText = (id) => {
-    setShowText((prevText) => ({
-      ...prevText,
-      [id]: !prevText[id],
-    }));
+    setShowText((prevText) => {
+      console.log(prevText);
+
+      return {
+        ...prevText,
+        [id]: !prevText[id],
+      };
+    });
   };
 
   // TESTING
 
+  // Menu
+
+  const today = new Date();
+  const yearNow = today.getFullYear();
+
   const [openMenu, setOpenMenu] = useState(false);
+  const [isSelected, setIsSelected] = useState(yearNow.toString());
+
+  const menuSelected = (value) => () => {
+    setIsSelected(value);
+    setOpenMenu(false);
+    console.log(isSelected);
+  };
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
 
   // Drop down menu - All years
 
@@ -74,24 +97,47 @@ const Release = () => {
     { label: "2012", value: "2012" },
   ];
 
-  const today = new Date();
-  const yearNow = today.getFullYear();
+  // Youtube states for preloading the videos
+  const [, startTransistion] = useTransition();
 
-  const GenerateArrayOfYears = () => {
-    let years = [];
-    for (let i = yearNow; i >= 2012; i--) {
-      years.push(i);
-    }
-    return years;
+  const [showVideo, setShowVideo] = useState({ id: false });
+  const [hasLoaded, setHasLoaded] = useState({ id: false });
+
+  const handleVideos = (id) => {
+    setShowVideo((prevVideo) => {
+      console.log(prevVideo);
+      return {
+        ...prevVideo,
+        [id]: !prevVideo[id],
+      };
+    });
   };
 
-  const [value, setValue] = useState(yearNow.toString());
-
-  console.log(value);
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
+  const handleHasLoaded = (id) => {
+    setHasLoaded((prevVideo) => {
+      console.log(prevVideo);
+      return {
+        ...prevVideo,
+        [id]: !prevVideo[id],
+      };
+    });
   };
+
+  // const GenerateArrayOfYears = () => {
+  //   let years = [];
+  //   for (let i = yearNow; i >= 2012; i--) {
+  //     years.push(i);
+  //   }
+  //   return years;
+  // };
+
+  // const [value, setValue] = useState(yearNow.toString());
+
+  // console.log(value);
+
+  // const handleChange = (event) => {
+  //   setValue(event.target.value);
+  // };
 
   // TESTING
 
@@ -100,24 +146,22 @@ const Release = () => {
       <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}
       </span>
-      {/* TESTING */}
-      <div className={styles.yearSelector}>
-        <label>
-          Select year
-          <select value={value} onChange={handleChange}>
-            {options.map((option) => (
-              <option value={option.value} key={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </label>
-        <p>{value}</p>
+
+      <div onClick={toggleMenu} className={styles.yearSelector} style={isLoading ? { display: "none" } : { display: "" }}>
+        <p>{!openMenu ? "Select Year of Release" : ""}</p>
+
+        {openMenu &&
+          options.map((option) => (
+            <li key={option.value} onClick={menuSelected(option.value)}>
+              {option.label}
+            </li>
+          ))}
+        <p>{!openMenu ? "Selected : " + isSelected : ""}</p>
       </div>
       {/* {console.log(value)} */}
 
       {album
-        .filter((e) => e.release_date.slice(-4) === value)
+        .filter((e) => e.release_date.slice(-4) === isSelected)
         .map(
           (
             {
@@ -153,18 +197,53 @@ const Release = () => {
               {/* TESTING */}
 
               {/* <div>
-              <button onClick={() => toggleText(id)}>Toggle</button>
-              {showText[id] ? <p>{artist}</p> : null}
-            </div> */}
-
-              {/* TESTING */}
-
-              {/* Youtube Playlist */}
+                <button onClick={() => handleHasLoaded(id)}>Toggle</button>
+                {hasLoaded[id] ? <p>{artist}</p> : null}
+              </div> */}
               <div className={styles.tracksContainer}>
                 <div className={styles.musicPlayer}>
-                  <div className={styles.youtubePlayer}>
+                  <div className={styles.youtubeContainer}>
+                    <div className={styles.videoRatio}>
+                      {!showVideo ||
+                        (!hasLoaded[id] && (
+                          <button
+                            className={styles.thumbNailButton}
+                            onClick={() => {
+                              handleVideos(id);
+                              handleHasLoaded(id);
+                              startTransition(() => {
+                                setShowVideo[id];
+                              });
+                            }}
+                          >
+                            <div className={styles.videoInner}>
+                              <LazyLoadImage
+                                className={styles.thumbNailImage}
+                                src={"https://i.ytimg.com/vi/" + youtube_full_album.slice(-11) + "/hq720.jpg"}
+                                effect="blur"
+                                alt={album_name}
+                              />
+                              <LazyLoadImage
+                                alt="Play Video"
+                                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
+                                loading="lazy"
+                                className={styles.playIcon}
+                                effect="blur"
+                              />
+                            </div>
+                          </button>
+                        ))}
+
+                      {showVideo[id] && <YoutubePlayer autoplay="0" videoId={youtube_full_album.slice(-11)} />}
+                    </div>
+                  </div>
+                  {/* TESTING */}
+
+                  {/* Youtube Playlist */}
+
+                  {/* <div className={styles.youtubePlayer}>
                     {youtube_playlist_embed ? (
-                      <iframe src={youtube_playlist_embed} title="Horrordelic music player" allowFullScreen></iframe>
+                      <iframe loading="lazy" src={youtube_playlist_embed} title="Horrordelic music player" allowFullScreen></iframe>
                     ) : (
                       <span className={styles.youtubeEmbedBlocked}>
                         <a href={youtube_full_album} target="_blank" rel="noreferrer">
@@ -172,7 +251,7 @@ const Release = () => {
                         </a>
                       </span>
                     )}
-                  </div>
+                  </div> */}
 
                   {/* Download Links - Stream Links */}
 
@@ -216,9 +295,10 @@ const Release = () => {
                             <button onClick={() => toggleText(id)}>Read More</button>
                           </HashLink>
                         </div>
+                        {/* Show the readmore contents */}
                         {showText[id] && [
-                          <div key={{ id } + { album_name }}>
-                            <div className={styles.readMoreText} id={album_name}>
+                          <div key={{ id } + { album_name }} id={album_name} className={styles.readMoreContainer}>
+                            <div className={styles.readMoreText}>
                               <p>{release_text}</p>
                               <p>Credits:</p>
                               <p> {credits}</p>

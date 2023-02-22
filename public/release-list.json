@@ -1,19 +1,25 @@
 [
   {
     "id": "HORD079",
-    "path": "VA_NN__",
-    "artist": "VA",
-    "album_name": "",
+    "path": "Ponomi_Wake_The_Fuck_Up",
+    "artist": "Ponomi",
+    "album_name": "Wake The Fuck Up",
     "land": "\uD83C\uDF10",
-    "release_text": "",
-    "release_date": "28/June/2021",
-    "credits": "\n\n ",
-    "tracklist": ["1. Track", "2. Track 2"],
-    "youtube_playlist_embed": "",
+    "release_text": "Horrordelic Proudly presents the debut EP from Ponomi (Switzerland). Here is the sampler for the upcoming EP.\n\n The idea of the project comes from a big fan of Black Metal who fell under the spell of Psycore. To combine the two musical styles to create a vision close to his dark heart. \n\nThe tracks featured here are all stories that got a story to tell, you will experience life, death and nature as we are part of the never ending cycle.",
+    "release_date": "17/February/2023",
+    "credits": "\n\n All sounds by Ponomi \n\n Layout: Antikriz ",
+    "tracklist": [
+      "1. Dernier Voyage (180 Bpm) 06:42",
+      "2. Forêt Déchainée (240bpm) 03:30",
+      "3. Le massacre Des Sirènes (250 Bpm) 04:14",
+      "4. WAKE THE FUCK UP (268 Bpm) 06:00"
+    ],
+    "youtube_full_album": "https://www.youtube.com/watch?v=i0sRUayuR8E",
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-HZhDvUhDeqr-R8XTl8a-i",
     "spotify": "",
-    "bandcamp": "",
-    "mp3": "",
-    "wav": ""
+    "bandcamp": "https://horrordelic.bandcamp.com/album/wake-the-fuck-up",
+    "mp3": "https://drive.google.com/file/d/1L8TB8JLBq_2ioiOUpTUPr4663JdGtKSk/view?usp=share_link",
+    "wav": "https://drive.google.com/file/d/1MGnQyJw3hOxHZwNjvaVFQkGJ5dRw3A_n/view?usp=share_link"
   },
   {
     "id": "HORD078",
@@ -36,6 +42,7 @@
       "9.Arkitekkt - Fukurokuju (216Bpm) 06:13",
       "10.Yetzirah - Horrordelic (250Bpm) 05:20"
     ],
+    "youtube_full_album": "https://youtu.be/ddCQuMXBYZc",
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp298L5_DW-r6E0NdE7xroLW38",
     "spotify": "https://open.spotify.com/album/4DyTVos0cxyLcWwUVdUOYu",
     "bandcamp": "https://horrordelic.bandcamp.com/album/accession-of-the-dark-age-volume-2",
@@ -64,6 +71,7 @@
     "release_date": "29/December/2022",
     "credits": "\n\n Compiled by Fakhiru. Artwork by Psycholouis. Mastering by Darkside Generation Mastering. Released by Horrordelic",
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp299cMGyDW5R0x_SJnR4B8M7L",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/3wrsIrBQvezcI6myR3sX88",
     "bandcamp": "https://horrordelic.bandcamp.com/album/accession-of-the-dark-age-volume-1",
     "mp3": "https://drive.google.com/file/d/1zGO_EIDZh3eaT3dI-nVZXV-ACYBPrtpj/view?usp=share_link",
@@ -113,6 +121,7 @@
       "5. Ancient Space Wizard (150 Bpm) 06:21"
     ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp298JF8g_fAc9s8vWOrap7X8I",
+    "youtube_full_album": "",
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/spaceyard",
     "mp3": "https://drive.google.com/file/d/1aFPhgoW9GOi6-515_V2uVUSyDNl6VnE0/view?usp=share_link",
@@ -142,6 +151,7 @@
       "12. Insights (200Bpm) 09:43"
     ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp299sAS9HueMRbEjN6q48VK9h",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/4n8S0ZSKPalyHB8zc9ttyp",
     "bandcamp": "https://horrordelic.bandcamp.com/album/force-fields",
     "mp3": "https://drive.google.com/file/d/1k6zSmZFHRYY6WNmIdWT_5-SLO1nAp3yd/view?usp=share_link",
@@ -169,6 +179,7 @@
       "10.ApeTech - Magical Dimension (186Bpm) 08:36 "
     ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp29-Q6LYvmW9iyBWTjW8OOATJ",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/0BWphoUJjF5ql1cPiyWbGk",
     "bandcamp": "https://horrordelic.bandcamp.com/album/the-realm-of-death",
     "mp3": "https://drive.google.com/file/d/1mDmc7a09y7YTeZl6FGUQm8nWMJ4S2kVS/view?usp=share_link",
@@ -180,7 +191,7 @@
     "artist": "VA",
     "album_name": "Art is an Explosion Volume 2 ",
     "land": "\uD83C\uDF10",
-    "release_text": "Art is again becoming an explosion when releasing the boundaries of what's commercially accepted & mainstream\n\nYata-Garasu went out again searching the scene for upcoming & established talents. In this 2. edition he is going all in for you to get you the latest and greatest talents in this movement of sound. This is the middle part of the trilogy that is “Art is an Explosion” … Be sure to get them all..\n\nWe are really digging these sounds, hoping you will too! So Enjoy & Blast hard! Much respect to all artists involved. Go check out all their individual Sounds & experience a true artistic world. They all deserve to be heard and supported..\n\nSo as always Yata will leave you with these words: Open your mind, close your eyes, press play and fly away. Yours truly Yata-Garasu",
+    "release_text": "`Art is again becoming an explosion when releasing the boundaries of what's commercially accepted & mainstream`\n\nYata-Garasu went out again searching the scene for upcoming & established talents. In this 2. edition he is going all in for you to get you the latest and greatest talents in this movement of sound. This is the middle part of the trilogy that is “Art is an Explosion” … Be sure to get them all..\n\nWe are really digging these sounds, hoping you will too! So Enjoy & Blast hard! Much respect to all artists involved. Go check out all their individual Sounds & experience a true artistic world. They all deserve to be heard and supported..\n\nSo as always Yata will leave you with these words: Open your mind, close your eyes, press play and fly away. Yours truly Yata-Garasu",
     "release_date": "10/September/2020",
     "credits": "\n\n ",
     "tracklist": [
@@ -195,6 +206,7 @@
       "9. Parxon and Yata-Garasu - Eye of heaven, Gateway of Earth 215 Bpm 07:42 "
     ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp29-LDnuVAGdXZwnkyKr3BXuN",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/6DXiazNd5zYpKLFil7TLxU",
     "bandcamp": "https://horrordelic.bandcamp.com/album/art-is-an-explosion-vol-2",
     "mp3": "https://drive.google.com/file/d/19dKQ3KnG2ZZ2B234qpjFkTFIJ7pQ5Wzt/view?usp=share_link",
@@ -211,6 +223,7 @@
     "credits": "\n\n ",
     "tracklist": ["1. Chair of Forgetfulness 09:45", "2. Transiest 11:34", "3. Firebreath 08:58", "4. Hidden Sidual 14:41 "],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp299_POAAh9HMdtXNPk-yKEsO",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/5XySofDsSSksWRLV8rra4U",
     "bandcamp": "https://horrordelic.bandcamp.com/album/chants-of-chimera",
     "mp3": "https://drive.google.com/file/d/1tniByQDi3HxDeJWSJHpeNqfJXMOTw1RP/view?usp=share_link",
@@ -238,6 +251,7 @@
       "10. Ziqada x Tryptophant - Malfunction 155Bpm 09:42 "
     ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp29_vSNg-LR0egMZMObBU5Syz",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/4FnEyxnfaBjKV4ZaGhyCsL",
     "bandcamp": "https://horrordelic.bandcamp.com/album/horror-tales-chapter-3",
     "mp3": "https://drive.google.com/file/d/1cpAJuoguWYzZHpvzdSNOaRPFh__AjMRD/view?usp=share_link",
@@ -289,6 +303,7 @@
       "5. Undívago 148Bpm 06:51 "
     ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp299ZLkCyKNOtTnh16SE950sr",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/70Gl1f1yd2ZJGCyu9SYwr7",
     "bandcamp": "https://horrordelic.bandcamp.com/album/ganduna-calucus",
     "mp3": "https://drive.google.com/file/d/1JSNxbIqY8b26TEgDGBt3mj82YQE3AOZb/view?usp=share_link",
@@ -311,6 +326,7 @@
       "5. Fofo e Bravo 216 Bpm 08:51 "
     ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp2991Hv8CfNEUC9-htjbtH49M",
+    "youtube_full_album": "",
     "spotify": "https://open.spotify.com/album/59xVmBpNrT5AVrkshRUXnr",
     "bandcamp": "https://horrordelic.bandcamp.com/album/fofo-e-bravo",
     "mp3": "https://drive.google.com/file/d/1QWueB3jjrbHFh9TC61wtRZG7Uivi71j_/view?usp=share_link",
@@ -327,6 +343,7 @@
     "credits": "\n\n ",
     "tracklist": ["1. Track", "2. Track 2"],
     "youtube_playlist_embed": "",
+    "youtube_full_album": "",
     "spotify": "",
     "bandcamp": "",
     "mp3": "",
@@ -343,6 +360,7 @@
     "credits": "\n\n ",
     "tracklist": ["1. Track", "2. Track 2"],
     "youtube_playlist_embed": "",
+    "youtube_full_album": "",
     "spotify": "",
     "bandcamp": "",
     "mp3": "",

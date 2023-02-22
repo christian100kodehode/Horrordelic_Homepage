@@ -1,10 +1,12 @@
 .navbarlinks {
   border-bottom: solid 1px;
-  padding: 1rem;
+  padding: 1rem 0;
   position: fixed;
   width: 100%;
   background: blueviolet;
   box-shadow: 0.5px 0.5px 0.9px rgba(126, 126, 126, 0.46), 1.8px 1.6px 3.1px rgba(224, 224, 224, 0.161), 8px 7px 14px rgba(0, 0, 0, 0.27);
+  left: 0;
+  z-index: 1;
 }
 
 .navbarlinks > a {

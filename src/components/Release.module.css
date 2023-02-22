@@ -63,11 +63,11 @@ iframe {
 .releaseContainer {
   border: solid blueviolet 2px;
   border-radius: 20px;
-  background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(33, 14, 39) 119.9%);
+  background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
   color: white;
   min-width: 90%;
-  margin: 5rem 2rem 0;
-  padding: 1rem;
+  margin: 0 2rem 5rem;
+  padding: 3rem 1rem 1rem;
 }
 
 .tracksContainer {
@@ -105,7 +105,7 @@ iframe {
 }
 
 .header {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   display: flex;
   flex-wrap: wrap-reverse;
 }
@@ -132,11 +132,16 @@ iframe {
   white-space: pre-wrap;
 }
 
+.readMoreContainer {
+  margin: 0 1rem 1rem;
+  padding: 2px;
+}
+
 .readMoreText {
   background-color: blueviolet;
   padding: 1rem;
   border-radius: 20px;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .downloadHeader {
@@ -187,14 +192,88 @@ iframe {
 }
 
 .yearSelector {
-  border: solid green 2px;
-  width: 100%;
-  text-align: end;
-  padding-top: 5rem;
+  width: calc(100% - 3rem);
+  text-align: start;
+  font-family: "megalomaniac";
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 5rem 2rem 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(124, 54, 190);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
 }
 
-select {
-  font-size: 1rem;
+.yearSelector p,
+li {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.yearSelector p:nth-child(1):hover {
+  /* color: blueviolet; */
+  text-decoration: underline;
+}
+
+.yearSelector li:hover {
+  /* color: blueviolet; */
+  text-decoration: underline solid white 2px;
+}
+
+.youtubeContainer {
+  width: 380px;
+  padding: 0.5rem;
+}
+
+.videoRatio {
+  overflow: hidden;
+  /* padding: 56.25% 0 0 0; */
+  position: relative;
+  height: 20rem;
+  width: 100%;
+}
+
+.videoInner {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  /* position: absolute; */
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.thumbnailButton {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  /* position: absolute; */
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.thumbNailImage {
+  width: 100%;
+}
+
+.playIcon {
+  height: 42px;
+  left: calc(50% - 30px);
+  /* position: absolute; */
+  /* top: calc(50% - 10px); */
+  top: 50%;
+  transition: all 0.3s ease-in-out;
+  width: 60px;
 }
 
 @keyframes load8 {
@@ -217,18 +296,24 @@ select {
 }
 
 @media (max-width: 450px) {
+  .yearSelector {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .trackList p {
     line-height: normal;
     font-size: 1rem;
   }
 
   .releaseContainer {
-    padding: 0.2rem;
+    padding: 2.5rem 0;
     margin: 2rem 1rem 0;
   }
 
   .musicPlayer {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
 
   .tracksContainer {
@@ -241,6 +326,11 @@ select {
   }
   .youtubeEmbedBlocked {
     all: unset;
+  }
+
+  .yearSelector p,
+  li {
+    font-size: 1.7rem;
   }
 }
 
@@ -261,7 +351,7 @@ select {
   }
 
   .releaseContainer {
-    width: 100%;
+    /* width: 100%; */
   }
 
   iframe {
@@ -294,5 +384,9 @@ select {
   h2 a {
     font-family: "megalomaniac";
     font-size: 1.3rem;
+  }
+
+  .loadingScreen {
+    font-size: 1.5rem;
   }
 }
