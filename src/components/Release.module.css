@@ -277,10 +277,16 @@ li {
 }
 
 .mobileMenu {
+  width: 100%;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 10% 60% 10%;
   grid-template-rows: 1fr;
   gap: 0px 0px;
+  justify-content: center;
+}
+
+.mobileMenu p {
+  font-size: 3rem;
 }
 
 @keyframes load8 {

@@ -191,6 +191,16 @@ const Release = () => {
           ))}
         <p>{!openMenu ? "Selected : " + isSelected : ""}</p>
       </div>
+      <div className={styles.mobileMenu}>
+        <button style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenuPositive}>
+          Next year
+        </button>
+        <p>{mobileOptions[indexMenu]}</p>
+        <button style={indexMenu === 11 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
+          Previous year
+        </button>
+      </div>
+
       {/* SWIPER */}
       {/* <div className={styles.swiperContainer}>
         <SwiperMenu />
@@ -233,16 +243,6 @@ const Release = () => {
               </div>
 
               {/* TESTING */}
-
-              <div className={styles.mobileMenu}>
-                <button style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenuPositive}>
-                  Next year
-                </button>
-                <p>{mobileOptions[indexMenu]}</p>
-                <button style={indexMenu === 11 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
-                  Previous year
-                </button>
-              </div>
 
               {/* TESTING */}
               <div className={styles.tracksContainer}>
