@@ -13,7 +13,9 @@ import { HashLink } from "react-router-hash-link";
 import axios from "axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import YoutubePlayer from "./YoutubePlayer";
+
 // const YoutubePlayer = lazy(() => import("./YoutubePlayer"));
+
 const Release = () => {
   // State for loading
   const [isLoading, setIsLoading] = useState(false);
@@ -54,10 +56,10 @@ const Release = () => {
   const [showText, setShowText] = useState({});
 
   const toggleText = (id) => {
-    setShowText((prevText) => {
+    setShowText((previousText) => {
       return {
-        ...prevText,
-        [id]: !prevText[id],
+        ...previousText,
+        [id]: !previousText[id],
       };
     });
   };
@@ -75,7 +77,6 @@ const Release = () => {
   const menuSelected = (value) => () => {
     setIsSelected(value);
     setOpenMenu(false);
-    console.log(isSelected);
   };
 
   const toggleMenu = () => {
@@ -83,6 +84,39 @@ const Release = () => {
   };
 
   // Drop down menu - All years
+
+  const mobileOptions = ["2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"];
+
+  const [indexMenu, setindexMenu] = useState(0);
+
+  // Go through the array, if at the end (length - 1 = end of array), stop. else + 1
+  const handleindexMenu = () => {
+    setindexMenu((value) => {
+      console.log(indexMenu);
+      if (value === mobileOptions.length - 1) {
+        return value;
+      } else {
+        return value + 1;
+      }
+    });
+  };
+
+  // go through the array, if at start (loaction 0) stop, if larger than 0 go back one step at a time
+  const handleindexMenuPositive = () => {
+    setindexMenu((value) => {
+      if (value === 0) {
+        return value;
+      } else {
+        return value - 1;
+      }
+    });
+  };
+
+  // const testMobileMenu = () => {
+  //   handleindexMenu();
+  //   setIsSelected(mobileOptions[indexMenu]);
+  //   console.log(isSelected);
+  // };
 
   const options = [
     { label: "2023", value: "2023" },
@@ -105,21 +139,19 @@ const Release = () => {
   const [hasLoaded, setHasLoaded] = useState({ id: false });
 
   const handleVideos = (id) => {
-    setShowVideo((prevVideo) => {
-      console.log(prevVideo);
+    setShowVideo((previousVideo) => {
       return {
-        ...prevVideo,
-        [id]: !prevVideo[id],
+        ...previousVideo,
+        [id]: !previousVideo[id],
       };
     });
   };
 
   const handleHasLoaded = (id) => {
-    setHasLoaded((prevVideo) => {
-      console.log(prevVideo);
+    setHasLoaded((previousVideo) => {
       return {
-        ...prevVideo,
-        [id]: !prevVideo[id],
+        ...previousVideo,
+        [id]: !previousVideo[id],
       };
     });
   };
@@ -159,6 +191,11 @@ const Release = () => {
           ))}
         <p>{!openMenu ? "Selected : " + isSelected : ""}</p>
       </div>
+      {/* SWIPER */}
+      {/* <div className={styles.swiperContainer}>
+        <SwiperMenu />
+      </div> */}
+      {/* SWIPER */}
       {/* {console.log(value)} */}
 
       {album
@@ -197,10 +234,17 @@ const Release = () => {
 
               {/* TESTING */}
 
-              {/* <div>
-                <button onClick={() => handleHasLoaded(id)}>Toggle</button>
-                {hasLoaded[id] ? <p>{artist}</p> : null}
-              </div> */}
+              <div className={styles.mobileMenu}>
+                <button style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenuPositive}>
+                  Next year
+                </button>
+                <p>{mobileOptions[indexMenu]}</p>
+                <button style={indexMenu === 11 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
+                  Previous year
+                </button>
+              </div>
+
+              {/* TESTING */}
               <div className={styles.tracksContainer}>
                 <div className={styles.musicPlayer}>
                   <div className={styles.youtubeContainer}>

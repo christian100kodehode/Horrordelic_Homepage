@@ -276,6 +276,13 @@ li {
   width: 60px;
 }
 
+.mobileMenu {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+}
+
 @keyframes load8 {
   0% {
     transform: rotate(0deg);
