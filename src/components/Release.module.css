@@ -68,6 +68,7 @@ iframe {
   min-width: 90%;
   margin: 0 2rem 5rem;
   padding: 3rem 1rem 1rem;
+  user-select: none;
 }
 
 .tracksContainer {
@@ -191,6 +192,10 @@ iframe {
   padding-top: 5rem;
 }
 
+.mobileMenu {
+  display: none;
+}
+
 .yearSelector {
   width: calc(100% - 3rem);
   text-align: start;
@@ -276,19 +281,6 @@ li {
   width: 60px;
 }
 
-.mobileMenu {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 10% 60% 10%;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  justify-content: center;
-}
-
-.mobileMenu p {
-  font-size: 3rem;
-}
-
 @keyframes load8 {
   0% {
     transform: rotate(0deg);
@@ -299,12 +291,40 @@ li {
 }
 
 @media (max-width: 900px) {
+  .yearSelector {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: contents;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 60% 10%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .mobileMenu p {
+    font-size: 3.5rem;
+    user-select: none;
+    text-align: center;
+    text-decoration: underline solid blueviolet;
+  }
+
+  .mobileMenu button {
+    user-select: none;
+    padding: 0;
+  }
+
   .trackList p {
     font-size: 16px;
   }
 
   .tracksContainer {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -323,6 +343,7 @@ li {
   .releaseContainer {
     padding: 2.5rem 0;
     margin: 2rem 1rem 0;
+    min-width: none;
   }
 
   .musicPlayer {

@@ -92,7 +92,7 @@ const Release = () => {
   // Go through the array, if at the end (length - 1 = end of array), stop. else + 1
   const handleindexMenu = () => {
     setindexMenu((value) => {
-      console.log(indexMenu);
+      setIsSelected(mobileOptions[value + 1]);
       if (value === mobileOptions.length - 1) {
         return value;
       } else {
@@ -101,9 +101,10 @@ const Release = () => {
     });
   };
 
-  // go through the array, if at start (loaction 0) stop, if larger than 0 go back one step at a time
+  // go through the array, if at start (location 0) stop, if larger than 0 go back one step at a time
   const handleindexMenuPositive = () => {
     setindexMenu((value) => {
+      setIsSelected(mobileOptions[value - 1]);
       if (value === 0) {
         return value;
       } else {
@@ -112,11 +113,9 @@ const Release = () => {
     });
   };
 
-  // const testMobileMenu = () => {
-  //   handleindexMenu();
-  //   setIsSelected(mobileOptions[indexMenu]);
-  //   console.log(isSelected);
-  // };
+  const mobileYear = mobileOptions[indexMenu];
+  console.log(mobileYear);
+  console.log(isSelected);
 
   const options = [
     { label: "2023", value: "2023" },
@@ -156,26 +155,9 @@ const Release = () => {
     });
   };
 
-  // const GenerateArrayOfYears = () => {
-  //   let years = [];
-  //   for (let i = yearNow; i >= 2012; i--) {
-  //     years.push(i);
-  //   }
-  //   return years;
-  // };
-
-  // const [value, setValue] = useState(yearNow.toString());
-
-  // console.log(value);
-
-  // const handleChange = (event) => {
-  //   setValue(event.target.value);
-  // };
-
-  // TESTING
-
   return (
     <main className={styles.container}>
+      {/* Optional Loading message */}
       {/* <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}
       </span> */}
@@ -193,11 +175,11 @@ const Release = () => {
       </div>
       <div className={styles.mobileMenu}>
         <button style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenuPositive}>
-          Next year
+          NEXT
         </button>
         <p>{mobileOptions[indexMenu]}</p>
         <button style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
-          Previous year
+          PREV
         </button>
       </div>
 

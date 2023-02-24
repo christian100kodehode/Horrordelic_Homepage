@@ -4,8 +4,6 @@ import styles from "./Release.module.css";
 
 const YoutubePlayer = ({ setHasLoaded, videoId, id }) => {
   const _onReady = (event) => {
-    // setHasLoaded(true);
-
     event.target.playVideo();
   };
 
