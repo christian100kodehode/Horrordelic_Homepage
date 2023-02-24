@@ -85,7 +85,7 @@ const Release = () => {
 
   // Drop down menu - All years
 
-  const mobileOptions = ["2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"];
+  const mobileOptions = ["2023", "2022", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"];
 
   const [indexMenu, setindexMenu] = useState(0);
 
@@ -196,7 +196,7 @@ const Release = () => {
           Next year
         </button>
         <p>{mobileOptions[indexMenu]}</p>
-        <button style={indexMenu === 11 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
+        <button style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
           Previous year
         </button>
       </div>
