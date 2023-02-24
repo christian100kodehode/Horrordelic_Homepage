@@ -155,6 +155,7 @@ iframe {
 
 .downloadHeader > p {
   margin: 0;
+  padding: 0.5em 0;
 }
 
 .streamLinks {
@@ -329,10 +330,18 @@ li {
 }
 
 @media (max-width: 450px) {
+  .heading {
+    justify-content: space-between;
+  }
   .yearSelector {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .downloadHeader {
+    padding: 0.5em 0;
+    font-size: 1.5rem;
   }
 
   .trackList p {
@@ -361,6 +370,10 @@ li {
   .youtubeEmbedBlocked {
     all: unset;
   }
+  .youtubeContainer {
+    padding: 0;
+    width: 300px;
+  }
 
   .yearSelector p,
   li {
@@ -380,7 +393,7 @@ li {
   .heading {
     padding: 0;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 1.8rem;
     letter-spacing: 0.1px;
   }
 
@@ -391,6 +404,11 @@ li {
   iframe {
     width: 150px;
     height: 180px;
+  }
+
+  .youtubeContainer {
+    padding: 0;
+    width: 200px;
   }
 
   /* .youtubeEmbedBlocked {
@@ -407,7 +425,7 @@ li {
   }
 
   .header p {
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 
   .header {
