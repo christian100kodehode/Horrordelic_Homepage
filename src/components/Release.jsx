@@ -114,8 +114,8 @@ const Release = () => {
   };
 
   const mobileYear = mobileOptions[indexMenu];
-  console.log(mobileYear);
-  console.log(isSelected);
+  // console.log(mobileYear);
+  // console.log(isSelected);
 
   const options = [
     { label: "2023", value: "2023" },
@@ -289,9 +289,14 @@ const Release = () => {
                     <a href={bandcamp} target="_blank" rel="noreferrer">
                       <img src={bandCampLogo} alt="Bandcamp Link" />
                     </a>
-                    <a href={spotify} target="_blank" rel="noreferrer">
-                      <img src={spotifyLogo} alt="Spotify Link" />
-                    </a>
+                    {spotify ? (
+                      <a href={spotify} target="_blank" rel="noreferrer">
+                        <img src={spotifyLogo} alt="Spotify Link" />
+                      </a>
+                    ) : (
+                      ""
+                    )}
+
                     <a href={youtube_playlist_embed} target="_blank" rel="noreferrer">
                       <img src={youtubeLogo} alt="Youtube Link" />
                     </a>
@@ -346,9 +351,11 @@ const Release = () => {
               </div>
               <div className={styles.trackList}>
                 <p>Track list:</p>
-                {/* Map through the tracklist and show all tracks */}
+                {/* Map through the tracklist and show all tracks , also check if names are longer than 50, then set extra line height. if longer line than 100, cut @ 100 else just write it normally. */}
                 {tracklist.map((e, i) => (
-                  <p key={`${album_name}${i}`}>{e}</p>
+                  <p key={`${album_name}${i}`} style={e.length > 50 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
+                    {e.length > 100 ? e.substring(0, 100) + "..." : e}
+                  </p>
                 ))}
               </div>
             </article>

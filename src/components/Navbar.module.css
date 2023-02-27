@@ -9,6 +9,13 @@
   z-index: 1;
 }
 
+.goToTopButton {
+  position: absolute;
+  top: calc(100vh);
+  left: calc(100vw - 10%);
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .navbarlinks > a {
   color: #ffffff;
   text-shadow: 0 0 10px #ffffff;
@@ -17,10 +24,28 @@
   font-size: 2rem;
 }
 
+@media (max-width: 900px) {
+  .goToTopButton {
+    position: absolute;
+    top: calc(100vh);
+    left: calc(80vw);
+  }
+}
+
+@media (max-width: 450px) {
+  .goToTopButton {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 300px) {
   .navbarlinks a {
     font-size: 1.5rem;
     padding: 0.2rem;
+  }
+
+  .goToTopButton {
+    left: calc(70vw);
   }
 
   .navbarlinks {

@@ -1,3 +1,9 @@
 .container {
-  border: solid 2px red;
+  margin-top: 5em;
+}
+
+.container ul {
+  /* padding: 2em; */
+  display: flex;
+  justify-content: space-evenly;
 }

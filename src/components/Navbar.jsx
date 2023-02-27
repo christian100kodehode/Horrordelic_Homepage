@@ -38,6 +38,11 @@ const Navbar = () => {
       ) : (
         <Link to="/release">Releases</Link>
       )}
+      <div>
+        <HashLink smooth to={"#"}>
+          <button className={styles.goToTopButton}>🡹</button>
+        </HashLink>
+      </div>
     </nav>
   );
 };

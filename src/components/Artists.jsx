@@ -3,8 +3,8 @@ import styles from "./Artists.module.css";
 
 const Artists = () => {
   return (
-    <div classname={styles.container}>
-      <h1>test</h1>
+    <div className={styles.container}>
+      <h1>Coming Soon</h1>
       <ul>
         <li>1</li>
         <li>2</li>
