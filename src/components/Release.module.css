@@ -309,7 +309,7 @@ li {
     display: contents;
     width: 100%;
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     justify-content: center;
@@ -349,6 +349,9 @@ li {
 }
 
 @media (max-width: 450px) {
+  .mobileMenu {
+    grid-template-columns: 20% 60% 20%;
+  }
   .heading {
     justify-content: space-between;
   }
