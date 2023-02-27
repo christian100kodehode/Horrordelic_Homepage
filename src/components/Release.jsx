@@ -175,11 +175,11 @@ const Release = () => {
       </div>
       <div className={styles.mobileMenu}>
         <button style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenuPositive}>
-          NEXT
+          🡸
         </button>
         <p>{mobileOptions[indexMenu]}</p>
         <button style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
-          PREV
+          🡺
         </button>
       </div>
 

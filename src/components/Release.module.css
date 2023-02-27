@@ -292,6 +292,15 @@ li {
 }
 
 @media (max-width: 900px) {
+  @keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   .yearSelector {
     display: none;
   }
@@ -300,11 +309,15 @@ li {
     display: contents;
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 60% 10%;
+    grid-template-columns: 15% 70% 15%;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     justify-content: center;
     margin-top: 5rem;
+  }
+
+  .mobileMenu button {
+    padding: 0;
   }
 
   .mobileMenu p {
@@ -312,11 +325,13 @@ li {
     user-select: none;
     text-align: center;
     text-decoration: underline solid blueviolet;
+    animation: roll 10s infinite;
+    transform: rotate(360deg);
   }
 
   .mobileMenu button {
     user-select: none;
-    padding: 0;
+    margin: 1em 0.3em;
   }
 
   .trackList p {
@@ -416,10 +431,15 @@ li {
     height: 180px;
   } */
 
-  .streamLinks img {
+  .streamLinks p {
     padding: 0;
     max-height: 1.5rem;
   }
+
+  .streamLinks p:active {
+    transition: none;
+  }
+
   .youtubePlayer {
     padding: 0;
   }
