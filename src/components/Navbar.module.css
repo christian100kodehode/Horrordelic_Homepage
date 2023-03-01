@@ -4,7 +4,7 @@
   position: fixed;
   width: 100%;
   background: blueviolet;
-  box-shadow: 0.5px 0.5px 0.9px rgba(126, 126, 126, 0.46), 1.8px 1.6px 3.1px rgba(224, 224, 224, 0.161), 8px 7px 14px rgba(0, 0, 0, 0.27);
+  box-shadow: 0.5px 0.5px 0.9px rgba(126, 126, 126, 0.46), 1.8px 1.6px 3.1px rgba(224, 224, 224, 0.161), 8px 7px 14px rgba(0, 0, 0, 0.556);
   left: 0;
   z-index: 1;
 }
@@ -13,7 +13,8 @@
   position: absolute;
   top: calc(100vh);
   left: calc(100vw - 10%);
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
+  color: white;
 }
 
 .navbarlinks > a {
@@ -22,6 +23,10 @@
   padding-left: 1rem;
   font-family: Megalomaniac, fantasy, serif;
   font-size: 2rem;
+}
+
+.navbarlinks a:hover {
+  color: black;
 }
 
 @media (max-width: 900px) {
@@ -49,12 +54,13 @@
   }
 
   .navbarlinks {
-    padding: 0;
+    padding: 0.5em 0;
   }
 }
 
 @media (max-width: 200px) {
   .navbarlinks a {
+    
     font-size: 1rem;
   }
 }

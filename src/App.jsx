@@ -1,5 +1,6 @@
 // imported css
 import "./App.css";
+// import "./index.css";
 // Importing components
 import Release from "./components/Release";
 import Release2022 from "./components/2022/Release2022";

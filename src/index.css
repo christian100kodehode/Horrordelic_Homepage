@@ -1,24 +1,4 @@
-@font-face {
-  font-family: "megalomaniac";
-  src: url("../src/fonts/megalomaniac-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "helveticaNeue";
-  src: url("../src/fonts/HelveticaNeue-Black.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "helveticaNeue-Medium";
-  src: url("../src/fonts/HelveticaNeue-MediumCond.woff ") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-:root {
+/* :root {
   font-family: "megalomaniac";
   font-size: 16px;
   color-scheme: light dark;
@@ -28,7 +8,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 a {
   font-weight: 500;
@@ -43,6 +23,7 @@ a:hover {
 body {
   box-sizing: border-box;
   margin: 0;
+  background-color: purple;
 }
 
 h1 {
@@ -60,23 +41,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: blueviolet;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

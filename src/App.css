@@ -7,6 +7,33 @@
   margin: auto;
 }
 
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: purple;
+}
+
+@font-face {
+  font-family: "megalomaniac";
+  src: url("../src/fonts/megalomaniac-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "helveticaNeue";
+  src: url("../src/fonts/HelveticaNeue-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "helveticaNeue";
+  src: url("../src/fonts/HelveticaNeue-MediumCond.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -27,7 +54,35 @@
   background-color: blueviolet;
 }
 
-@keyframes logo-spin {
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: blueviolet;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: black;
+  text-shadow: #213547;
+}
+
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -36,11 +91,7 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+
 
 .card {
   padding: 2em;
@@ -48,4 +99,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { debounce } from "../utilities/helpers.js";
 import { HashLink } from "react-router-hash-link";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 const Navbar = () => {
   // Make the previous scroll state, start at 0.
@@ -40,7 +41,9 @@ const Navbar = () => {
       )}
       <div>
         <HashLink smooth to={"#"}>
-          <button className={styles.goToTopButton}>🡹</button>
+          <button className={styles.goToTopButton}>
+            <AiOutlineArrowUp />
+          </button>
         </HashLink>
       </div>
     </nav>

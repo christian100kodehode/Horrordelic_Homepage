@@ -25,9 +25,8 @@ h2 a {
 
 .tracksContainer {
   display: flex;
-  font-family: "helveticaNeue-Medium";
+  font-family: "helveticaNeue";
   font-size: 16px;
-  font-style: italic;
   letter-spacing: 0.08rem;
 }
 
@@ -75,8 +74,12 @@ iframe {
   display: flex;
 }
 
+.tracklist {
+  padding: 0;
+}
+
 .trackList p {
-  font-family: "helveticaNeue-Medium";
+  font-family: "helveticaNeue";
   line-height: 0.5em;
   font-size: 1rem;
 }
@@ -95,6 +98,7 @@ iframe {
   margin: -0.5rem 0 -1.5rem;
   text-decoration: underline;
 }
+
 .readMoreText p:nth-child(3) {
   margin: 0;
 }
@@ -131,6 +135,7 @@ iframe {
 
 .cssFix {
   white-space: pre-wrap;
+  padding: 0 0.5em;
 }
 
 .readMoreContainer {
@@ -197,6 +202,28 @@ iframe {
   display: none;
 }
 
+.inProgress {
+  top: 4em;
+  position: absolute;
+  min-height: 80vh;
+  min-width: calc(100vw - 2%);
+  z-index: 100;
+  overflow-x: hidden;
+  overflow: hidden;
+  left: 0%;
+  background-color: purple;
+  padding: 4em 0;
+} 
+
+.inProgress a {
+  margin: 5em 0;
+  font-family: "megalomaniac";
+  font-size: 3rem;
+}
+
+
+
+
 .yearSelector {
   width: calc(100% - 3rem);
   text-align: start;
@@ -210,6 +237,7 @@ iframe {
   background-color: rgb(124, 54, 190);
   border-radius: 20px;
   padding: 0.5rem 1rem;
+  color: white;
 }
 
 .yearSelector p,
@@ -268,6 +296,11 @@ li {
   width: 100%;
 }
 
+.cssFix button {
+  color: white;
+  background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
+}
+
 .thumbNailImage {
   width: 100%;
 }
@@ -301,6 +334,16 @@ li {
     }
   }
 
+  .inProgress {
+    top: 7.2em;
+    padding: 0 0 10em 0;
+  }
+
+  .inProgress a{
+    
+    padding: 5em 0;
+  }
+
   .yearSelector {
     display: none;
   }
@@ -309,7 +352,7 @@ li {
     display: contents;
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 8% 82% 8%;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     justify-content: center;
@@ -317,7 +360,9 @@ li {
   }
 
   .mobileMenu button {
+    color: white;
     padding: 0;
+    background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
   }
 
   .mobileMenu p {
@@ -327,6 +372,7 @@ li {
     text-decoration: underline solid blueviolet;
     animation: roll 10s infinite;
     transform: rotate(360deg);
+    font-family: "megalomaniac";
   }
 
   .mobileMenu button {
@@ -346,6 +392,10 @@ li {
   .tracksContainer p {
     overflow: hidden;
   }
+}
+
+.videoRatio button {
+  background-color: black;
 }
 
 @media (max-width: 450px) {
@@ -403,6 +453,14 @@ li {
 }
 
 @media (max-width: 300px) {
+.inProgress {
+   height: 105vh;
+}
+
+.inProgress h1{
+  padding-top: 10em;
+}
+
   .trackList p {
     font-size: 12px;
   }
@@ -416,10 +474,6 @@ li {
     flex-direction: column;
     font-size: 1.8rem;
     letter-spacing: 0.1px;
-  }
-
-  .releaseContainer {
-    /* width: 100%; */
   }
 
   iframe {

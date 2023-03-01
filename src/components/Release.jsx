@@ -13,6 +13,8 @@ import { HashLink } from "react-router-hash-link";
 import axios from "axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import YoutubePlayer from "./YoutubePlayer";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 // const YoutubePlayer = lazy(() => import("./YoutubePlayer"));
 
@@ -161,7 +163,7 @@ const Release = () => {
       {/* <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}
       </span> */}
-
+      {/* Menues Desktop + Nobile */}
       <div onClick={toggleMenu} className={styles.yearSelector} style={isLoading ? { display: "none" } : { display: "" }}>
         <p>{!openMenu ? "Select Year of Release" : ""}</p>
 
@@ -175,21 +177,32 @@ const Release = () => {
       </div>
       <div className={styles.mobileMenu}>
         <button style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenuPositive}>
-          🡸
+          <AiOutlineArrowLeft />{" "}
         </button>
         <p>{mobileOptions[indexMenu]}</p>
         <button style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
-          🡺
+          <AiOutlineArrowRight />
         </button>
       </div>
+      <div>
+      {/* <p>{styles.releaseContainer ? "Text": "No"}</p> */}
+      {album
+      .filter((e) => e.release_date.slice(-4) === isSelected)
+            .map(({release_date},i) => (
+        
+                  <h1 style={release_date.length === 10  ? {display: ""}: {display: "none"}} className={styles.inProgress}>
+                    {console.log(release_date.length)}
+                    {/* {console.log(i)} */}
+                    {console.log(release_date)}
+                    {release_date.length === 10  ? (<a href="https://horrordelic.bandcamp.com"  target="_blank" rel="noreferrer">Updates in Progress, check Bandcamp for now!</a>)
+                     : ("")}
+                  </h1>
+                  )
+                 
+                  )}
+      </div>
 
-      {/* SWIPER */}
-      {/* <div className={styles.swiperContainer}>
-        <SwiperMenu />
-      </div> */}
-      {/* SWIPER */}
-      {/* {console.log(value)} */}
-
+      {/* Map release data abd filter each year selected by user */}
       {album
         .filter((e) => e.release_date.slice(-4) === isSelected)
         .map(
@@ -213,8 +226,8 @@ const Release = () => {
             },
             filteredAlbum
           ) => (
-            // console.log(filteredAlbum))
             <article key={path} className={styles.releaseContainer} id={path} ref={path === window.location.hash.slice(1) ? selectedRef : null}>
+                {/* {console.log(filteredAlbum)} */}
               <div className={styles.releaseName}>
                 <HashLink smooth to={"/release#" + path}>
                   <p className={styles.heading}>
@@ -225,7 +238,7 @@ const Release = () => {
               </div>
 
               {/* TESTING */}
-
+             
               {/* TESTING */}
               <div className={styles.tracksContainer}>
                 <div className={styles.musicPlayer}>
@@ -353,12 +366,16 @@ const Release = () => {
                 <p>Track list:</p>
                 {/* Map through the tracklist and show all tracks , also check if names are longer than 50, then set extra line height. if longer line than 100, cut @ 100 else just write it normally. */}
                 {tracklist.map((e, i) => (
-                  <p key={`${album_name}${i}`} style={e.length > 50 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
+                  <p key={`${album_name}${i}`} style={e.length > 40 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
                     {e.length > 100 ? e.substring(0, 100) + "..." : e}
                   </p>
-                ))}
-              </div>
-            </article>
+                  ))}
+           </div>
+
+           
+     </article>
+     
+            
           )
         )}
 
