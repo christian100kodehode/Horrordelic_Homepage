@@ -213,16 +213,13 @@ iframe {
   left: 0%;
   background-color: purple;
   padding: 4em 0;
-} 
+}
 
 .inProgress a {
   margin: 5em 0;
   font-family: "megalomaniac";
   font-size: 3rem;
 }
-
-
-
 
 .yearSelector {
   width: calc(100% - 3rem);
@@ -339,8 +336,7 @@ li {
     padding: 0 0 10em 0;
   }
 
-  .inProgress a{
-    
+  .inProgress a {
     padding: 5em 0;
   }
 
@@ -453,13 +449,13 @@ li {
 }
 
 @media (max-width: 300px) {
-.inProgress {
-   height: 105vh;
-}
+  .inProgress {
+    height: 105vh;
+  }
 
-.inProgress h1{
-  padding-top: 10em;
-}
+  .inProgress h1 {
+    padding-top: 10em;
+  }
 
   .trackList p {
     font-size: 12px;
