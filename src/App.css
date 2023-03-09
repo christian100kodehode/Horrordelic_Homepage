@@ -1,16 +1,61 @@
-#root {
+:root {
   width: 100%;
   max-width: 1280px;
   text-align: center;
-  background-color: purple;
   display: block;
   margin: auto;
+}
+
+[data-theme="light"] {
+  --background: white;
+  --backgroundImage: url("./images/triangles1.svg");
+  --backgroundImageTop: url("./images/trianglesTop.svg");
+  --logoFilter: hue-rotate(10deg) drop-shadow(4px 4px 6px white);
+  --yearSelectorBg: rgb(124, 54, 190);
+  --releaseContainerStreamLinksBg: blueviolet;
+  --releaseBorder: blueviolet;
+  --releaseContainerBg: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
+  --releaseContainerReadMoreBg: blueviolet;
+  --text-primary: black;
+  --text-primary-hover: white;
+  --text-secondary: royalblue;
+  --accent: purple;
+  --line: purple;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --backgroundImage: url("./images/triangles2.svg");
+  --backgroundImageTop: url("./images/trianglesTop2.svg");
+  --logoFilter: hue-rotate(70deg) drop-shadow(4px 4px 6px red);
+  --yearSelectorBg: darkred;
+  --releaseBorder: black;
+  --releaseContainerBg: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(197, 25, 25) 119.9%);
+  --releaseContainerReadMoreBg: rgb(92, 6, 6);
+  --releaseContainerStreamLinksBg: rgb(161, 52, 52);
+  --text-primary: white;
+  --text-primary-hover: black;
+  --text-secondary: grey;
+  --accent: darkred;
+  --line: red;
+}
+
+.themeChangerButton {
+  /* padding-top: 5em; */
+  /* position: absolute; */
+  top: 1em;
+  left: 1em;
+  z-index: 101;
+  position: fixed;
+  padding: 0.5em 0.7em;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: purple;
+  /* background-color: purple; */
+  background-color: black;
+  transition: all 0.5s;
 }
 
 @font-face {
@@ -34,51 +79,40 @@ body {
   font-style: normal;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 .line {
   display: block;
   width: 70px;
   height: 3px;
   margin: 5px auto;
-  background-color: blueviolet;
+  background-color: var(--line);
 }
 
 button {
+  color: var(--text-primary);
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-family: inherit;
-  background-color: #fff;
+  background-color: var(--background);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: blueviolet;
+  border-color: var(--accent);
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  outline: 2px auto var(--accent);
+} */
 
 a {
   font-weight: 500;
-  color: white;
+  color: var(--text-primary);
   text-decoration: inherit;
 }
 a:hover {
-  color: black;
+  color: var(--text-secondary);
   text-shadow: #213547;
 }
 

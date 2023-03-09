@@ -176,30 +176,42 @@ const Release = () => {
         <p>{!openMenu ? "Selected : " + isSelected : ""}</p>
       </div>
       <div className={styles.mobileMenu}>
-        <button style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenuPositive}>
+        <button
+          type="button"
+          style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }}
+          onClick={handleindexMenuPositive}
+          title="Go to previous releases.."
+        >
           <AiOutlineArrowLeft />{" "}
         </button>
         <p>{mobileOptions[indexMenu]}</p>
-        <button style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }} onClick={handleindexMenu}>
+        <button
+          type="button"
+          style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }}
+          onClick={handleindexMenu}
+          title="Go to next release.."
+        >
           <AiOutlineArrowRight />
         </button>
       </div>
       <div>
-      {/* <p>{styles.releaseContainer ? "Text": "No"}</p> */}
-      {album
-      .filter((e) => e.release_date.slice(-4) === isSelected)
-            .map(({release_date},i) => (
-        
-                  <h1 style={release_date.length === 10  ? {display: ""}: {display: "none"}} className={styles.inProgress}>
-                    {console.log(release_date.length)}
-                    {/* {console.log(i)} */}
-                    {console.log(release_date)}
-                    {release_date.length === 10  ? (<a href="https://horrordelic.bandcamp.com"  target="_blank" rel="noreferrer">Updates in Progress, check Bandcamp for now!</a>)
-                     : ("")}
-                  </h1>
-                  )
-                 
-                  )}
+        {/* <p>{styles.releaseContainer ? "Text": "No"}</p> */}
+        {album
+          .filter((e) => e.release_date.slice(-4) === isSelected)
+          .map(({ release_date }, i) => (
+            <h1 style={release_date.length === 10 ? { display: "" } : { display: "none" }} className={styles.inProgress}>
+              {console.log(release_date.length)}
+              {/* {console.log(i)} */}
+              {console.log(release_date)}
+              {release_date.length === 10 ? (
+                <a href="https://horrordelic.bandcamp.com" target="_blank" rel="noreferrer">
+                  Updates in Progress, check Bandcamp for now!
+                </a>
+              ) : (
+                ""
+              )}
+            </h1>
+          ))}
       </div>
 
       {/* Map release data abd filter each year selected by user */}
@@ -227,7 +239,7 @@ const Release = () => {
             filteredAlbum
           ) => (
             <article key={path} className={styles.releaseContainer} id={path} ref={path === window.location.hash.slice(1) ? selectedRef : null}>
-                {/* {console.log(filteredAlbum)} */}
+              {/* {console.log(filteredAlbum)} */}
               <div className={styles.releaseName}>
                 <HashLink smooth to={"/release#" + path}>
                   <p className={styles.heading}>
@@ -238,7 +250,7 @@ const Release = () => {
               </div>
 
               {/* TESTING */}
-             
+
               {/* TESTING */}
               <div className={styles.tracksContainer}>
                 <div className={styles.musicPlayer}>
@@ -247,6 +259,8 @@ const Release = () => {
                       {!showVideo ||
                         (!hasLoaded[id] && (
                           <button
+                            title="Youtube Video"
+                            type="button"
                             className={styles.thumbNailButton}
                             onClick={() => {
                               handleVideos(id);
@@ -337,7 +351,9 @@ const Release = () => {
                         </p>
                         <div style={!showText[id] ? { display: "" } : { display: "none" }}>
                           <HashLink smooth to={"/release#" + album_name}>
-                            <button onClick={() => toggleText(id)}>Read More</button>
+                            <button type="button" onClick={() => toggleText(id)} title="Read more about this release..">
+                              Read More
+                            </button>
                           </HashLink>
                         </div>
                         {/* Show the readmore contents */}
@@ -369,13 +385,9 @@ const Release = () => {
                   <p key={`${album_name}${i}`} style={e.length > 40 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
                     {e.length > 100 ? e.substring(0, 100) + "..." : e}
                   </p>
-                  ))}
-           </div>
-
-           
-     </article>
-     
-            
+                ))}
+              </div>
+            </article>
           )
         )}
 

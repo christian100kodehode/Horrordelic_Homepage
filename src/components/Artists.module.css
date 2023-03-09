@@ -2,6 +2,11 @@
   margin-top: 5em;
 }
 
+.container h1 {
+  margin: 5em 0;
+  font-family: "megalomaniac";
+}
+
 .container ul {
   /* padding: 2em; */
   display: flex;

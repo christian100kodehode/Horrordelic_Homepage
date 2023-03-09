@@ -1,9 +1,9 @@
-h4 {
+/* h4 {
   color: blueviolet;
   padding: 0;
   margin-top: 1.5rem;
   cursor: pointer;
-}
+} */
 
 h2 a {
   font-family: "megalomaniac";
@@ -20,7 +20,7 @@ h2 a {
   font-size: 2rem;
   padding-left: 0.5rem;
   letter-spacing: 0.1rem;
-  text-decoration: underline solid purple;
+  text-decoration: underline solid var(--accent);
 }
 
 .tracksContainer {
@@ -57,12 +57,14 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: var(--backgroundImage);
+  transition: all 0.2s;
 }
 
 .releaseContainer {
-  border: solid blueviolet 2px;
+  border: solid var(--releaseBorder) 2px;
   border-radius: 20px;
-  background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
+  background: var(--releaseContainerBg);
   color: white;
   min-width: 90%;
   margin: 0 2rem 5rem;
@@ -144,7 +146,7 @@ iframe {
 }
 
 .readMoreText {
-  background-color: blueviolet;
+  background-color: var(--releaseContainerReadMoreBg);
   padding: 1rem;
   border-radius: 20px;
   margin: 0.5rem 0;
@@ -168,7 +170,7 @@ iframe {
   justify-content: space-evenly;
   align-items: center;
   transition: all 0.5s ease;
-  background-color: blueviolet;
+  background-color: var(--releaseContainerStreamLinksBg);
   border-radius: 20px;
   cursor: pointer;
 }
@@ -231,7 +233,8 @@ iframe {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(124, 54, 190);
+  /* background-color: rgb(124, 54, 190); */
+  background-color: var(--yearSelectorBg);
   border-radius: 20px;
   padding: 0.5rem 1rem;
   color: white;
@@ -295,7 +298,7 @@ li {
 
 .cssFix button {
   color: white;
-  background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
+  background: var(--releaseContainerBg);
 }
 
 .thumbNailImage {

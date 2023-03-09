@@ -41,7 +41,7 @@ const Navbar = () => {
       )}
       <div>
         <HashLink smooth to={"#"}>
-          <button className={styles.goToTopButton}>
+          <button className={styles.goToTopButton} title="Go to top of page..">
             <AiOutlineArrowUp />
           </button>
         </HashLink>
