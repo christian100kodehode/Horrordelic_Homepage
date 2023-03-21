@@ -46,6 +46,12 @@
   }
 }
 
+@media (max-width: 380px) {
+  .upcomingLink {
+    display: none;
+  }
+}
+
 @media (max-width: 300px) {
   .navbarlinks a {
     font-size: 1.5rem;

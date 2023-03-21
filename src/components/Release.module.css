@@ -213,7 +213,7 @@ iframe {
   overflow-x: hidden;
   overflow: hidden;
   left: 0%;
-  background-color: purple;
+  background-color: var(--accent);
   padding: 4em 0;
 }
 
@@ -336,7 +336,7 @@ li {
 
   .inProgress {
     top: 7.2em;
-    padding: 0 0 10em 0;
+    /* padding: 0 0 10em 0; */
   }
 
   .inProgress a {
@@ -359,16 +359,16 @@ li {
   }
 
   .mobileMenu button {
-    color: white;
+    color: var(--text-primary);
     padding: 0;
-    background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
+    background: var(--releaseContainerBg);
   }
 
   .mobileMenu p {
     font-size: 3.5rem;
     user-select: none;
     text-align: center;
-    text-decoration: underline solid blueviolet;
+    text-decoration: underline solid var(--accent);
     animation: roll 10s infinite;
     transform: rotate(360deg);
     font-family: "megalomaniac";

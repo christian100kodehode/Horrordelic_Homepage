@@ -1,0 +1,29 @@
+[
+  {
+    "id": "0",
+    "name": "Antikriz",
+    "picture": "image",
+    "location": "Norway",
+    "artists_text": "Bla bla bla",
+    "soundcloud": "linktosoundcloud",
+    "videos": "videossss"
+  },
+  {
+    "id": "1",
+    "name": "Artist 1",
+    "picture": "images",
+    "location": "Hell",
+    "artists_text": "Bla bla bla bla",
+    "soundcloud": "linktosoundclouds",
+    "videos": "videos"
+  },
+  {
+    "id": "2",
+    "name": "Artist 2",
+    "picture": "images",
+    "location": "Hell",
+    "artists_text": "Bla bla bla bla",
+    "soundcloud": "linktosoundclouds",
+    "videos": "videos"
+  }
+]

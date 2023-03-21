@@ -16,10 +16,12 @@
   --releaseBorder: blueviolet;
   --releaseContainerBg: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
   --releaseContainerReadMoreBg: blueviolet;
+  --text-shadowBg: 0 0 10px #50505085;
   --text-primary: black;
   --text-primary-hover: white;
-  --text-secondary: royalblue;
+  --text-secondary: rgb(255, 255, 255);
   --accent: purple;
+  --accentTransp: rgba(128, 0, 128, 0.75);
   --line: purple;
 }
 
@@ -33,21 +35,26 @@
   --releaseContainerBg: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(197, 25, 25) 119.9%);
   --releaseContainerReadMoreBg: rgb(92, 6, 6);
   --releaseContainerStreamLinksBg: rgb(161, 52, 52);
+  --text-shadowBg: 0 0 10px #fff;
   --text-primary: white;
   --text-primary-hover: black;
   --text-secondary: grey;
   --accent: darkred;
+  --accentTransp: rgba(139, 0, 0, 0.75);
   --line: red;
 }
 
 .themeChangerButton {
-  /* padding-top: 5em; */
-  /* position: absolute; */
   top: 1em;
   left: 1em;
   z-index: 101;
   position: fixed;
-  padding: 0.5em 0.7em;
+  padding: 0.5em 0.5em;
+  background-color: var(--accentTransp);
+}
+
+.themeChangerButton svg {
+  padding-top: 0.3em;
 }
 
 body {
@@ -134,3 +141,10 @@ a:hover {
 .read-the-docs {
   color: #888;
 } */
+
+@media (max-width: 320px) {
+  .themeChangerButton {
+    margin-top: 0.5em;
+    padding: 0;
+  }
+}

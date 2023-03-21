@@ -6,6 +6,10 @@
   transition: all 0.8s;
 }
 
+.calenderMobileLink {
+  display: none;
+}
+
 .Container h1 {
   font-family: "megalomaniac";
   font-size: 3.5rem;
@@ -14,11 +18,13 @@
   margin: 0 0 0 0;
   text-decoration: underline var(--accent);
   letter-spacing: 0.15rem;
+  text-shadow: 0 0 10px #50505085;
 }
 
 .Container a {
   font-family: "helveticaNeue";
   font-size: 1.5em;
+  text-shadow: none;
 }
 
 .Container h2 {
@@ -27,6 +33,7 @@
   padding: 0 1em 0.5em 1em;
   font-family: "helveticaNeue";
   max-width: 15em;
+  text-shadow: var(--text-shadowBg);
 }
 
 .Container {
@@ -59,7 +66,9 @@
   margin: 4.5em 0 0 0;
   border: solid black 2px;
   border-radius: 10px;
-  background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%);
+  /* background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%);
+   */
+  background: var(--accentTransp);
 }
 
 .latestAlbumDetails {
@@ -122,7 +131,7 @@
 
 .mainLinks {
   border-radius: 10px;
-  background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%);
+  background: var(--accentTransp);
   position: absolute;
   bottom: 0;
   margin-bottom: 1em;
@@ -137,15 +146,15 @@
 }
 
 .mainLinksChild:nth-child(1):hover {
-  color: turquoise;
-  box-shadow: 3px 3px turquoise;
+  color: rgb(74, 251, 233);
+  box-shadow: 3px 3px rgb(74, 251, 233);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
 }
 
 .mainLinksChild:nth-child(2):hover {
-  color: red;
-  box-shadow: 3px 3px red;
+  color: rgb(248, 37, 37);
+  box-shadow: 3px 3px rgb(248, 37, 37);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
 }
@@ -165,8 +174,8 @@
 .mainLinksChild:nth-child(5):hover {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
-  color: rgb(50, 50, 255);
-  box-shadow: 3px 3px rgb(50, 50, 255);
+  color: rgb(83, 83, 250);
+  box-shadow: 3px 3px rgb(83, 83, 250);
 }
 
 /* add delay at the end of animation so you dont start while another div is going */
@@ -198,7 +207,6 @@
 @media screen and (max-width: 960px) {
   .Container h1 {
     font-size: 1.6em;
-    color: black;
   }
 
   .Container h2 {
@@ -207,9 +215,6 @@
 
   .Logo {
     height: 38vh;
-  }
-  .mainLinks {
-    padding: 0;
   }
 }
 
@@ -237,9 +242,9 @@
 }
 
 @media (max-width: 46em) {
-  .mainLinks {
+  /* .mainLinks {
     background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
-  }
+  } */
 
   .mainLinks a {
     padding: 0.2em 1em;
@@ -253,7 +258,7 @@
   }
 
   .Logo {
-    margin-top: 2em;
+    padding-top: 1.5em;
     height: 22vh;
     overflow: hidden;
     box-shadow: 2px 3px rgba(78, 78, 78, 0.624);
@@ -337,9 +342,14 @@
   animation: marquee 30s linear 15s infinite;
 }
 
-@media (max-width: 360px) {
-  .mainLinks a {
-    padding: 0.2em 0.3em;
+@media (max-width: 382px) {
+  .calenderMobileLink {
+    display: contents;
+    padding: 1em 0;
+  }
+
+  .calenderContainer {
+    padding: 0.8em 0;
   }
 
   @keyframes marquee {
@@ -354,11 +364,7 @@
     }
   }
 
-  @media (max-width: 280px) {
-    .mainLinks a {
-      padding: 0.2em 0.1em;
-    }
-
+  @media (max-width: 320px) {
     .Logo {
       height: 20vh;
     }
@@ -373,6 +379,12 @@
       100% {
         left: -590%;
       }
+    }
+  }
+
+  @media (max-width: 330px) {
+    .mainLinks a {
+      padding: 0;
     }
   }
 

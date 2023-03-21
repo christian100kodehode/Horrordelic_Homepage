@@ -1,0 +1,20 @@
+.container {
+  height: 95vh;
+  /* margin-top: 5em; */
+  background: var(--backgroundImage);
+}
+
+.container h1 {
+  padding: 2em 0;
+  font-family: "megalomaniac";
+  font-size: 2em;
+  text-shadow: 0 0 10px #dadadaaa;
+  color: var(--accent);
+  /* letter-spacing: 0.3em; */
+}
+
+.container ul {
+  /* padding: 2em; */
+  display: flex;
+  justify-content: space-evenly;
+}

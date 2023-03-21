@@ -29,16 +29,25 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbarlinks} style={{ top: visible ? "0" : "-65px" }}>
-      <Link to="/">Main</Link>
-      <Link to="/Artists">Artists</Link>
+      <Link to="/" title="Go back to main page">
+        Main
+      </Link>
+      <Link to="/Artists" title="Artist and Djs">
+        Artists
+      </Link>
       {/* Scroll to top when release page is not at top, else go to release page */}
       {prevScrollPos > 0 ? (
         <HashLink smooth to={"#"}>
           Releases
         </HashLink>
       ) : (
-        <Link to="/release">Releases</Link>
+        <Link to="/release" title="All our Releases">
+          Releases
+        </Link>
       )}
+      <Link to="/ReleaseAndEvents" title="Upcoming releases and Events" className={styles.upcomingLink}>
+        Upcoming
+      </Link>
       <div>
         <HashLink smooth to={"#"}>
           <button className={styles.goToTopButton} title="Go to top of page..">

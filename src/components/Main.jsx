@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { AiOutlineTwitter, AiOutlineFacebook, AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { FaBandcamp } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Main = () => {
   // State for loading
@@ -67,6 +68,13 @@ const Main = () => {
 
   return (
     <main className={styles.Main}>
+      {/* <Helmet>
+        <meta property="og:url" content="https://horrordelic.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Horrordelic - Darkpsy Life." />
+        <meta property="og:description" content="Worldwide Psychedelic Movement - Darkpsy Life." />
+        <meta property="og:image" content="https://horrordelic.com/FBwebmediaFront1080x600.png" />
+      </Helmet> */}
       {/* {lastReleasedAlbum.map(({ artist, id }) => {
         <p>{artist}</p>;
       })} */}
@@ -97,35 +105,66 @@ const Main = () => {
         <div>
           <h1>Welcome! </h1>
           <h2>
-            New site in the <span style={{ color: "white" }}>making...</span>
+            New site in the <span style={{ color: "var(--accent)" }}>making...</span>
           </h2>
           <h2>
             Stay tuned and get some{" "}
-            <span style={{ color: "white" }} href="/release">
-              <a href="/release">releases</a>
-            </span>{" "}
+            <span style={{ color: "var(--accent)" }} href="/release">
+              <a href="/release" title="Go to our releases..">
+                Releases.
+              </a>
+            </span>
+            <div className={styles.calenderContainer}>
+              <div className={styles.calenderMobileLink}>
+                Get up to date here:&nbsp;
+                <a href="/ReleaseAndEvents" title="Check our scheduele..">
+                  Calender.
+                </a>
+              </div>
+            </div>
             <div>
-              Horrordelic: <span style={{ color: "white" }}> Darkpsy Life</span>
+              Horrordelic: <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>
             </div>
           </h2>
         </div>
         <LazyLoadImage src={HorrordelicLogo} alt="Horrordelic Logo" className={styles.Logo} effect="blur" />
 
         <div className={styles.mainLinks}>
-          <a href="https://horrordelic.bandcamp.com" target="_blank" rel="noreferrer" alt="BandCamp" className={styles.mainLinksChild}>
+          <a
+            href="https://horrordelic.bandcamp.com"
+            target="_blank"
+            rel="noreferrer"
+            alt="BandCamp"
+            className={styles.mainLinksChild}
+            title="Bandcamp"
+          >
             <FaBandcamp size={40} />
           </a>
-          <a href="https://youtube.com/horrordelic" target="_blank" rel="noreferrer" alt="Facebook" className={styles.mainLinksChild}>
+          <a href="https://youtube.com/horrordelic" title="Youtube" target="_blank" rel="noreferrer" alt="Facebook" className={styles.mainLinksChild}>
             <AiOutlineYoutube size={40} />
           </a>
 
-          <a href="https://instagram.com/horrordelic" target="_blank" rel="noreferrer" alt="Instagram" className={styles.mainLinksChild}>
+          <a
+            href="https://instagram.com/horrordelic"
+            title="Instagram"
+            target="_blank"
+            rel="noreferrer"
+            alt="Instagram"
+            className={styles.mainLinksChild}
+          >
             <AiOutlineInstagram size={40} />
           </a>
-          <a href="https://twitter.com/horrordelic" target="_blank" rel="noreferrer" alt="Twitter" className={styles.mainLinksChild}>
+          <a href="https://twitter.com/horrordelic" title="Twitter" target="_blank" rel="noreferrer" alt="Twitter" className={styles.mainLinksChild}>
             <AiOutlineTwitter size={40} />
           </a>
-          <a href="https://facebook.com/horrordelic" target="_blank" rel="noreferrer" alt="Facebook" className={styles.mainLinksChild}>
+          <a
+            href="https://facebook.com/horrordelic"
+            title="Facebook"
+            target="_blank"
+            rel="noreferrer"
+            alt="Facebook"
+            className={styles.mainLinksChild}
+          >
             <AiOutlineFacebook size={40} />
           </a>
         </div>

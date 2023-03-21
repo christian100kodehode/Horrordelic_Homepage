@@ -15,6 +15,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import YoutubePlayer from "./YoutubePlayer";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Helmet } from "react-helmet-async";
 
 // const YoutubePlayer = lazy(() => import("./YoutubePlayer"));
 
@@ -164,6 +165,11 @@ const Release = () => {
         {isLoading ? "Loading Releases" : null}
       </span> */}
       {/* Menues Desktop + Nobile */}
+      <Helmet>
+        <meta property="og:title" content="Horrordelic - Releases" />
+        <meta property="og:description" content="Get some killer Darkpsy/Psycore here.." />
+        <meta property="og:image" content="https://horrordelic.com/FBwebmediaReleases1080x600.png" />
+      </Helmet>
       <div onClick={toggleMenu} className={styles.yearSelector} style={isLoading ? { display: "none" } : { display: "" }}>
         <p>{!openMenu ? "Select Year of Release" : ""}</p>
 
