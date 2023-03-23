@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./ArtistDetail.module.css";
 import { useParams } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+// Importing images
+import youtubeLogo from "../images/youtubeLogo.png";
 
 const ArtistDetail = () => {
   const { id } = useParams();
@@ -39,19 +42,38 @@ const ArtistDetail = () => {
   }
 
   return (
-    <div className={styles.container}>
-      <h1>{list.name}</h1>
-
+    <main className={styles.container}>
       {list
         .filter((e) => e.name === params.id)
-        .map(({ name }) => {
+        .map(({ name, category, id, headerInfo, artists_text, soundcloud, facebook }) => {
           return (
             <div key={id + name} className={styles.artistsContainer}>
-              <h1>{id}</h1>
+              <div className={styles.imageContainer}>
+                <LazyLoadImage
+                  className={styles.headerImage}
+                  src={"../artists/" + name.replace(/ /g, "") + "Banner" + ".jpg"}
+                  alt={name}
+                  title={name}
+                  effect="blur"
+                  placeholderSrc={"../artists/ArtistPlaceholder.jpg"}
+                />
+              </div>
+              <div className={styles.artistHeader}>
+                <h1>{name}</h1>
+                <h2>
+                  {headerInfo ? headerInfo.toLowerCase() + "," : ""} {category.toLowerCase()}
+                </h2>
+              </div>
+              <div className={styles.artistText}>
+                <h2>{artists_text}</h2>
+              </div>
+              <a href={"https://www.youtube.com/results?search_query=" + category + "+" + name + "&sp=CAI%253D"} target="_blank" rel="noreferrer">
+                <img src={youtubeLogo} alt="Youtube Link" title={name + " latest Youtube videos..."} />
+              </a>
             </div>
           );
         })}
-    </div>
+    </main>
   );
 };
 
