@@ -188,7 +188,7 @@ const Release = () => {
           onClick={handleindexMenuPositive}
           title="Go to previous releases.."
         >
-          <AiOutlineArrowLeft />{" "}
+          <AiOutlineArrowLeft />
         </button>
         <p>{mobileOptions[indexMenu]}</p>
         <button

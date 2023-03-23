@@ -1,12 +1,36 @@
-.artistsContainer {
-  background-color: red;
-}
-
 .container {
-  margin-top: 5em;
-  background-color: red;
+  padding-top: 5em;
+  background: var(--backgroundImage);
+  height: 90vh;
 }
 
-.container h1 {
-  background-color: blue;
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.headerImage {
+  height: 25vh;
+  /* object-fit: contain; */
+}
+.artistHeader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.artistText h2,
+.artistHeader h2,
+.artistHeader h1 {
+  font-family: "01digitall";
+  color: var(--text-primary);
+  font-weight: lighter;
+}
+
+.artistText {
+  background-color: var(--releaseContainerReadMoreBg);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 20%;
 }

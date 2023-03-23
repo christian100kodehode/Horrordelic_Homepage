@@ -366,7 +366,7 @@
 
   @media (max-width: 320px) {
     .Logo {
-      height: 20vh;
+      height: 18vh;
     }
 
     @keyframes marquee {

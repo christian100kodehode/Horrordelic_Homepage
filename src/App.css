@@ -18,6 +18,8 @@
   --releaseContainerReadMoreBg: blueviolet;
   --text-shadowBg: 0 0 10px #50505085;
   --text-primary: black;
+  --text-primary-transparent: rgba(0, 0, 0, 0.5);
+  --text-primary-more-transparent: rgba(0, 0, 0, 0.35);
   --text-primary-hover: white;
   --text-secondary: rgb(255, 255, 255);
   --accent: purple;
@@ -37,6 +39,8 @@
   --releaseContainerStreamLinksBg: rgb(161, 52, 52);
   --text-shadowBg: 0 0 10px #fff;
   --text-primary: white;
+  --text-primary-transparent: rgba(255, 255, 255, 0.5);
+  --text-primary-more-transparent: rgba(0, 0, 0, 0.5);
   --text-primary-hover: black;
   --text-secondary: grey;
   --accent: darkred;
@@ -72,12 +76,12 @@ body {
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "helveticaNeue";
-  src: url("../src/fonts/HelveticaNeue-Black.woff") format("woff");
+@font-face {
+  font-family: "01digitall";
+  src: url("../src/fonts/01Digitall.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 @font-face {
   font-family: "helveticaNeue";

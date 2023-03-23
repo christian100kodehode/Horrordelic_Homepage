@@ -58,6 +58,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   background-image: var(--backgroundImage);
+  background-attachment: fixed;
   transition: all 0.2s;
 }
 
@@ -359,7 +360,7 @@ li {
   }
 
   .mobileMenu button {
-    color: var(--text-primary);
+    color: white;
     padding: 0;
     background: var(--releaseContainerBg);
   }
