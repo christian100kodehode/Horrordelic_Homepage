@@ -36,7 +36,7 @@
   .goToTopButton {
     position: absolute;
     top: calc(100vh);
-    left: calc(80vw);
+    left: calc(85vw);
   }
 }
 
@@ -50,16 +50,17 @@
   .upcomingLink {
     display: none;
   }
+
+  .goToTopButton {
+    padding: 0 0.5em 0 0.5em;
+    left: calc(85vw);
+  }
 }
 
 @media (max-width: 300px) {
   .navbarlinks a {
     font-size: 1.5rem;
     padding: 0.2rem;
-  }
-
-  .goToTopButton {
-    left: calc(70vw);
   }
 
   .navbarlinks {

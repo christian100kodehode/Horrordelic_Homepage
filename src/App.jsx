@@ -40,7 +40,6 @@ function App() {
           <Route exact path="Artists" element={<Artists />} />
           <Route exact path="Release" element={<Release />} />
           <Route exact path="ReleaseAndEvents" element={<ReleaseAndEvents />} />
-          {/* <Route path="Release2022" element={<Release2022 />} /> */}
           <Route path="/artist/:id" element={<ArtistDetail />} />
           <Route exact path="*" element={<Main />} />
         </Routes>

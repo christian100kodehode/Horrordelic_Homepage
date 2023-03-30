@@ -1,12 +1,12 @@
 .container {
-  height: 100%;
-  margin-top: 5em;
+  height: calc(100%);
+  margin-top: 2em;
   background: var(--backgroundImage);
   background-attachment: fixed;
+  padding-top: 5em;
 }
 
 .container h2 {
-  /* padding: -1em; */
   font-family: "megalomaniac";
   font-size: 2em;
   letter-spacing: 0.1em;
@@ -14,11 +14,11 @@
 }
 
 .container a {
-  color: var(--text-primary-hover);
+  color: var(--text-primary);
 }
 
 .artistsContainer a:hover {
-  color: var(--text-primary);
+  color: var(--text-primary-hover);
 }
 
 .categoryHeader {
@@ -39,21 +39,22 @@
   height: 42vh;
   border-radius: 5%;
   background: var(--releaseContainerBg);
+  box-shadow: 10px 5px 5px black;
 }
 
 .artistHeader {
-  background-color: var(--text-primary-more-transparent);
+  background-color: var(--releaseContainerBg);
   border-radius: 20px;
   padding: 0 0.3em;
 }
 
 .artistList {
+  padding-top: 5em 2em;
   flex-direction: row;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 10em;
-  padding-bottom: 3em;
 }
 
 .artistsContainer h2 {
@@ -68,11 +69,11 @@
 
 .artistsContainer img {
   width: 40vh;
-  height: 40vh;
+  height: 36vh;
   overflow: hidden;
   z-index: 1;
   object-fit: contain;
-  padding: 0.3em;
+  padding-top: 0.3em;
 }
 
 .thumbNailImage {
@@ -84,4 +85,18 @@
   top: 10px;
   right: 10px;
   z-index: 0;
+}
+
+@media (max-width: 800px) {
+  .artistsContainer img {
+    width: 11em;
+    height: 13em;
+    object-fit: cover;
+  }
+
+  .artistsContainer {
+    width: 12em;
+    display: flex;
+    justify-content: center;
+  }
 }

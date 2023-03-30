@@ -1,5 +1,5 @@
 .Main {
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   /* background-image: url("../images/triangles1.svg"); */
   background-image: var(--backgroundImage);
@@ -241,7 +241,7 @@
   }
 }
 
-@media (max-width: 46em) {
+@media (max-width: 736px) {
   /* .mainLinks {
     background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
   } */
@@ -259,7 +259,7 @@
 
   .Logo {
     padding-top: 1.5em;
-    height: 22vh;
+    height: 15vh;
     overflow: hidden;
     box-shadow: 2px 3px rgba(78, 78, 78, 0.624);
   }
@@ -284,18 +284,9 @@
   }
 }
 
-@media (max-width: 34em) {
+@media (max-width: 544px) {
   .mainLinks a {
-    padding: 0.2em 0.5em;
-  }
-
-  .Logo {
-    max-height: 50vh;
-    max-width: 50vw;
-    object-fit: contain;
-    /* margin: 1em; */
-    /* padding: 1em 1.5em; */
-    border-radius: 20px;
+    padding: 0.2em 0.3em;
   }
 
   .marquee a {
@@ -349,8 +340,17 @@
   }
 
   .calenderContainer {
-    padding: 0.8em 0;
+    padding: 0.2em 0;
   }
+
+  /* .Logo {
+    max-height: 50vh;
+    max-width: 50vw;
+    object-fit: contain;
+    margin: 1em;
+    padding: 1em 1.5em; 
+    border-radius: 20px;
+  }  */
 
   @keyframes marquee {
     0% {
@@ -366,7 +366,7 @@
 
   @media (max-width: 320px) {
     .Logo {
-      height: 18vh;
+      height: 14vh;
     }
 
     @keyframes marquee {
@@ -388,6 +388,12 @@
     }
   }
 
+  @media (max-width: 232px) {
+    .Logo {
+      display: none;
+    }
+  }
+
   @media (max-width: 220px) {
     .Container h1,
     .Container h2 {
@@ -405,10 +411,6 @@
     }
     .mainLinks a {
       padding: 0;
-    }
-
-    .Logo {
-      display: none;
     }
   }
 }

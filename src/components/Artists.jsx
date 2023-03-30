@@ -29,32 +29,35 @@ const Artists = () => {
     fetchData();
   }, []);
 
-  // console.log(artist);
+  // Sort the list alphabetically
+  let sortedList = artist.sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <main className={styles.container}>
       <div className={styles.artistList}>
         <div className={styles.categoryHeader}>
           <h2>Artists</h2>
         </div>
-        {artist
-          .filter((e) => e.category === "artist")
-          .map(({ name, id, land }) => {
+        {sortedList
+          .filter((e) => e.category.toLowerCase() === "artist")
+          .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
-                <Link to={`/artist/${name}`}>
+                <Link to={`/artist/${nameNoSpace}`}>
                   <LazyLoadImage
                     className={styles.thumbNailImage}
-                    src={"./artists/" + name.replace(/ /g, "") + ".jpg"}
-                    height={"40vh"}
-                    width={"40vh"}
-                    alt={name}
+                    src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
+                    // height={"20vh"}
+                    // width={"20vh"}
+                    // alt={name}
                     title={name}
                     effect="blur"
-                    placeholderSrc={"./artists/ArtistPlaceholder.jpg"}
+                    placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
                   />
-                  <h2 className={styles.artistHeader} style={name.length > 13 ? { fontSize: "1.2em" } : { fontSize: "1.5em" }}>
-                    {name}
+                  <h2 className={styles.artistHeader} style={name.length > 13 ? { fontSize: "1em" } : { fontSize: "1.5em" }}>
+                    {name.replace(/_+/g, " ")}
                   </h2>
+                  <span className={styles.land}>{flag}</span>
                 </Link>
               </div>
             );
@@ -64,28 +67,29 @@ const Artists = () => {
         <div className={styles.categoryHeader}>
           <h2>Djs</h2>
         </div>
+
         {artist
-          .filter((e) => e.category === "dj")
-          .map(({ name, id, land }) => {
+          .filter((e) => e.category.toLowerCase() === "dj")
+          .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
-                <Link to={`/artist/${name}`}>
+                <Link to={`/artist/${nameNoSpace}`}>
                   <LazyLoadImage
                     className={styles.thumbNailImage}
                     // Remove space in name, picture have to have to have no spaces
-                    src={"./artists/" + name.replace(/ /g, "") + ".jpg"}
-                    height={"40vh"}
-                    width={"40vh"}
+                    src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
+                    // height={"40vh"}
+                    // width={"40vh"}
                     alt={name}
                     title={name}
                     effect="blur"
-                    placeholderSrc={"./artists/ArtistPlaceholder.jpg"}
+                    placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
                   />
 
                   <h2 className={styles.artistHeader} style={name.length > 13 ? { fontSize: "1.2em" } : { fontSize: "1.5em" }}>
-                    {name}
+                    {name.replace(/_+/g, " ")}
                   </h2>
-                  <span className={styles.land}>{land}</span>
+                  <span className={styles.land}>{flag}</span>
                 </Link>
               </div>
             );
