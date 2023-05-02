@@ -205,13 +205,13 @@ const Release = () => {
         {album
           .filter((e) => e.release_date.slice(-4) === isSelected)
           .map(({ release_date }, i) => (
-            <h1 style={release_date.length === 10 ? { display: "" } : { display: "none" }} className={styles.inProgress}>
+            <h1 style={release_date.length <= 4 ? { display: "" } : { display: "none" }} className={styles.inProgress}>
               {console.log(release_date.length)}
               {/* {console.log(i)} */}
               {console.log(release_date)}
-              {release_date.length === 10 ? (
+              {!release_date.length <= 4 ? (
                 <a href="https://horrordelic.bandcamp.com" target="_blank" rel="noreferrer">
-                  Updates in Progress, check Bandcamp for now!
+                  <h3>Updates in Progress, check Bandcamp for now!</h3>
                 </a>
               ) : (
                 ""

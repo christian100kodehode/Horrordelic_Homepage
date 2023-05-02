@@ -93,24 +93,24 @@ const ArtistDetail = () => {
   console.log(mix);
 
   const params = useParams();
-
+  // Test for search through tracklist!!
+  // let artistAppears = album.filter(function (e) {
+  //   return e.tracklist.indexOf(name.split(" ")[0]) >= 0;
+  // });
+  // {
+  //   console.log(artistAppears);
+  // }
+  // TEST
   return (
     <main className={styles.container}>
       <div className={styles.cssFix}>
         {list
           .filter((e) => e.nameNoSpace === params.id)
-          .map(({ name, category, id, headerInfo, artists_text, soundcloud, facebook, nameNoSpace }) => {
+          .map(({ name, category, id, headerInfo, artists_text, soundcloud, facebook, nameNoSpace, location, land, tracklist }) => {
             return (
               <div key={id + name} className={styles.artistsContainer}>
-                <div className={styles.imageContainer}>
-                  <LazyLoadImage
-                    className={styles.headerImage}
-                    src={"/artists/" + nameNoSpace + "Banner" + ".jpg"}
-                    alt={name.replace(/ /g, " ")}
-                    title={name.replace(/ /g, " ")}
-                    effect="blur"
-                    placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
-                  />
+                <div className={styles.imageContainer} style={{ backgroundImage: `url('${"/artists/" + nameNoSpace + "Banner" + ".jpg"}')` }}>
+                  <div className={styles.box}></div>
                   <div className={styles.headerTopContainer}>
                     <LazyLoadImage
                       className={styles.headerImageTop}
@@ -150,22 +150,40 @@ const ArtistDetail = () => {
                     {headerInfo ? headerInfo.toLowerCase() + "," : ""} {category.toUpperCase()}
                   </h2>
                 </div>
+                <div className={styles.locationContainer}>
+                  <h3>Location: </h3>
+                  <h2>
+                    {location}, {land}
+                  </h2>
+                </div>
                 <div className={styles.artistText}>
                   <p>{artists_text}</p>
+                  {console.log(album.tracklist)}
+                  {/* {tracklist.map((e, i) => (
+                    <p key={`${album_name}${i}`} style={e.length > 40 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
+                      {e.length > 100 ? e.substring(0, 100) + "..." : e}
+                    </p> */}
+                  {/* ))} */}
+                  {console.log(album.filter((e) => e.release_text.includes(name.split(" ")[0]) || e.credits.includes(name.split(" ")[0])))}
+                  {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))}
+                </div>
+                <div className={styles.appearsOnSection}>
+                  {album.filter((e) => e.release_text.includes(name.split(" ")[0]) || !e.credits.includes(name.split(" ")[0])) ? (
+                    <h1>Appears on:</h1>
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <div>
-                  {/* Filter on first name before whitespace + second name, show these */}
+                  {/* Filter on first name before whitespace + show these compiled albums*/}
+                  <div className={styles.appearsOnSection}></div>
                   {album
-                    .filter(
-                      (e) =>
-                        e.release_text.includes(name.split(" ")[0] + " " + name.split(" ")[1]) +
-                        e.credits.includes(name.split(" ")[0] + " " + name.split(" ")[1])
-                    )
-                    .map(({ album_name, youtube_full_album, youtube_playlist_embed, spotify, bandcamp, mp3, wav }) => {
+                    .filter((e) => e.release_text.includes(name.split(" ")[0]) || e.tracklist.includes(name.split(" ")[0]))
+                    .map(({ album_name, youtube_full_album, youtube_playlist_embed, spotify, bandcamp, mp3, wav, tracklist }) => {
                       return (
                         <div className={styles.appearsOnSection}>
                           {/* Check if artists or dj, change text accordingly */}
-                          {category === "artist" ? <h1>Appears on: </h1> : <h1>Compiled:</h1>}
+                          {/* {album.release_text.includes(name.split(" ")[0]) + album.credits.includes(name.split(" ")[0]) ? <h1>Albums:</h1> : ""} */}
                           <a href={bandcamp} target="_blank" rel="noreferrer">
                             <p className={styles.albumReleaseNameStream}>{album_name}</p>
                             <LazyLoadImage

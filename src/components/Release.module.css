@@ -60,6 +60,8 @@ iframe {
   background-image: var(--backgroundImage);
   background-attachment: fixed;
   transition: all 0.2s;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .releaseContainer {
@@ -209,7 +211,7 @@ iframe {
   top: 4em;
   position: absolute;
   min-height: 80vh;
-  min-width: calc(100vw - 2%);
+  min-width: calc(100%);
   z-index: 100;
   overflow-x: hidden;
   overflow: hidden;
@@ -218,10 +220,11 @@ iframe {
   padding: 4em 0;
 }
 
-.inProgress a {
+.inProgress h3 {
   margin: 5em 0;
   font-family: "megalomaniac";
   font-size: 3rem;
+  margin: 0 2rem;
 }
 
 .yearSelector {
@@ -398,7 +401,7 @@ li {
   background-color: black;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 468px) {
   .mobileMenu {
     grid-template-columns: 20% 60% 20%;
   }
@@ -452,7 +455,13 @@ li {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
+  .inProgress h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 323px) {
   .inProgress {
     height: 105vh;
   }

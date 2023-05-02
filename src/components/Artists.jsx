@@ -54,7 +54,7 @@ const Artists = () => {
                     effect="blur"
                     placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
                   />
-                  <h2 className={styles.artistHeader} style={name.length > 13 ? { fontSize: "1em" } : { fontSize: "1.5em" }}>
+                  <h2 className={styles.artistHeader} style={name.length >= 9 ? { fontSize: "1.2em" } : { fontSize: "1.5em" }}>
                     {name.replace(/_+/g, " ")}
                   </h2>
                   <span className={styles.land}>{flag}</span>
@@ -86,7 +86,8 @@ const Artists = () => {
                     placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
                   />
 
-                  <h2 className={styles.artistHeader} style={name.length > 13 ? { fontSize: "1.2em" } : { fontSize: "1.5em" }}>
+                  <h2 className={styles.artistHeader} style={name.length >= 9 ? { fontSize: "1em" } : { fontSize: "1.5em" }}>
+                    {console.log(name.length)}
                     {name.replace(/_+/g, " ")}
                   </h2>
                   <span className={styles.land}>{flag}</span>

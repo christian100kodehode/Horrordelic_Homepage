@@ -4,6 +4,9 @@
   background: var(--backgroundImage);
   background-attachment: fixed;
   padding-top: 5em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container h2 {
@@ -36,7 +39,7 @@
   position: relative;
   margin: 1em;
   width: 42vh;
-  height: 42vh;
+  /* height: 42vh; */
   border-radius: 5%;
   background: var(--releaseContainerBg);
   box-shadow: 10px 5px 5px black;
@@ -58,13 +61,14 @@
 }
 
 .artistsContainer h2 {
-  position: absolute;
+  /* position: absolute;
   bottom: 10px;
-  left: 16px;
+  left: 16px; */
   z-index: 10;
   text-shadow: var(--text-shadowBg);
   font-family: "01digitall";
   font-size: 1.5em;
+  padding: 0.2em 0.2em 0.5em;
 }
 
 .artistsContainer img {
