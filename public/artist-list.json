@@ -90,7 +90,7 @@
   },
   {
     "id": "7",
-    "name": "Dr Cassidy Green",
+    "name": "Dr. Cassidy Green",
     "nameNoSpace": "DrCassidyGreen",
     "category": "dj",
     "headerInfo": "",
@@ -174,7 +174,7 @@
     "headerInfo": "",
     "location": "Berlin",
     "land": "Germany",
-    "flag": "",
+    "flag": "\uD83C\uDDE9\uD83C\uDDEA",
     "artists_text": "Abgrund B started as hardware based project around 2016. \n\nAfter a few years of experimenting with various electronic genres I got completely stuck on dark psychedelic music and the goal was clear now: \n To provide the world with more audible experiences that offer a sense of security through a reliable foundation.\n\n While at the same time leading the listener again and again into new spaces as they plunge deeper and deeper \n\nInto the colorful darkness of the Psychedelic abyss. ",
     "soundcloud": "https://soundcloud.com/abgrundb"
   },

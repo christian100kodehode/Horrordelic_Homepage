@@ -164,21 +164,23 @@ const ArtistDetail = () => {
                       {e.length > 100 ? e.substring(0, 100) + "..." : e}
                     </p> */}
                   {/* ))} */}
-                  {console.log(album.filter((e) => e.release_text.includes(name.split(" ")[0]) || e.credits.includes(name.split(" ")[0])))}
+                  {/* {console.log(album.filter((e) => e.release_text.includes(name.split(" ")[0]) || e.credits.includes(name.split(" ")[0])))}
                   {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))}
+                  {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))} */}
                 </div>
                 <div className={styles.appearsOnSection}>
-                  {album.filter((e) => e.release_text.includes(name.split(" ")[0]) || !e.credits.includes(name.split(" ")[0])) ? (
-                    <h1>Appears on:</h1>
-                  ) : (
-                    ""
-                  )}
+                  <h1>Appears on:</h1>
                 </div>
                 <div>
                   {/* Filter on first name before whitespace + show these compiled albums*/}
                   <div className={styles.appearsOnSection}></div>
                   {album
-                    .filter((e) => e.release_text.includes(name.split(" ")[0]) || e.tracklist.includes(name.split(" ")[0]))
+                    .filter(
+                      (e) =>
+                        e.release_text.includes(name.split(" ")[0]) ||
+                        e.credits.includes(name.split(" ")[0]) ||
+                        e.tracklist.toString().replace(/\s/g, "").includes(nameNoSpace)
+                    )
                     .map(({ album_name, youtube_full_album, youtube_playlist_embed, spotify, bandcamp, mp3, wav, tracklist }) => {
                       return (
                         <div className={styles.appearsOnSection}>
@@ -222,11 +224,18 @@ const ArtistDetail = () => {
 
                   <div className={styles.djMixes}>
                     {mix
+
                       .filter((e) => e.name.toLowerCase() === name.toLowerCase())
+                      .sort((a, b) => b.year - a.year)
                       .map(({ name, mix, id }) => {
                         return (
                           <div key={id}>
-                            <a href={"https://www.youtube.com/watch?v=" + mix.slice(-11)} title={name + "dj mix"} target="_blank" rel="noreferrer">
+                            <a
+                              href={"https://www.youtube.com/watch?v=" + mix.slice(-11)}
+                              title={name + " Dj Mix // Stream"}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <LazyLoadImage
                                 className={styles.thumbNailImageMix}
                                 src={"https://img.youtube.com/vi/" + mix.slice(-11) + "/hqdefault.jpg"}
