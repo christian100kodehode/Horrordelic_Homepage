@@ -80,17 +80,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transition: all 1s ease-in-out;
+
   }
 
   .djMixElements {
-    margin-right: 5em;
+    margin: 0.7em;
+    transition: all 1s ease-in-out;
   }
 
 .thumbNailImageMix {
   border-radius: 20px;
   box-shadow: 4px 2px 2px var(--accentTransp);
-  width: 22em;
+  width: 15em;
   margin: 1em;
 }
 
@@ -237,7 +238,7 @@
 .yearInfo p:nth-child(2){
    padding: 0.3rem;
     font-family: "megalomaniac";
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: black;
   background-color: var(--releaseContainerStreamLinksBg);
   border: var(--text-primary) 1px solid;
@@ -250,8 +251,8 @@
 .yearInfo p:nth-child(1){
   padding: 0.3em 0.5em;
    font-family: "megalomaniac";
-  font-size: 1.6rem;
-  margin-bottom: 7em;
+  font-size: 1.3rem;
+  margin-bottom: 6em;
   margin-right: 85%;
   color: black;
   background-color: var(--releaseContainerStreamLinksBg);
@@ -265,8 +266,7 @@
 
 }
 
-.djMixElements img:hover,
-.djMixElements p:hover {
+.djMixElements:hover {
   transform: scale(1.2);
 
 }
@@ -281,7 +281,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
   .appearsOnSection {
     padding-bottom: 0;
   }
@@ -296,6 +296,9 @@
   .thumbNailImageMix {
     width: 12em;
     margin: 0.5em;
+  }
+  .yearInfo p:nth-child(1) {
+    margin-bottom: 3em;
   }
 }
 
@@ -352,7 +355,8 @@
   }
 
   .yearInfo p {
-    font-size: 1.2em;
+    font-size: 1em;
+    
   }
 
 }
