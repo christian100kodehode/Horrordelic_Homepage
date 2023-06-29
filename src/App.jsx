@@ -9,6 +9,7 @@ import Artists from "./components/Artists";
 import Main from "./components/Main";
 import ReleaseAndEvents from "./components/ReleaseAndEvents";
 import ArtistDetail from "./components/ArtistDetail";
+import ReleaseDetail from "./components/ReleaseDetail";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 // Importing hooks/packages
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="Release" element={<Release />} />
           <Route exact path="ReleaseAndEvents" element={<ReleaseAndEvents />} />
           <Route path="/artist/:id" element={<ArtistDetail />} />
+          <Route path="/release/:path" element={<ReleaseDetail />} />
           <Route exact path="*" element={<Main />} />
         </Routes>
       </div>

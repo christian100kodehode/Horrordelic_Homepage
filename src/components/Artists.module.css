@@ -17,16 +17,16 @@
 }
 
 .container a {
-  color: var(--text-primary);
+  color: white;
 }
 
 .artistsContainer a:hover {
-  color: var(--text-primary-hover);
+  color: var(--text-primary-transparent);
 }
 
 .categoryHeader {
   width: 100vw;
-  color: var(--text-primary);
+  color: white;
   padding-bottom: 0.5em;
 }
 
@@ -37,8 +37,9 @@
 }
 
 .artistsContainer {
+ 
   position: relative;
-  margin: 1em;
+  margin: 1em 1em 2em;
   width: 42vh;
   /* height: 42vh; */
   border-radius: 5%;
@@ -65,6 +66,7 @@
   /* position: absolute;
   bottom: 10px;
   left: 16px; */
+   /* color: white; */
   z-index: 10;
   text-shadow: var(--text-shadowBg);
   font-family: "01digitall";
@@ -90,6 +92,15 @@
   top: 10px;
   right: 10px;
   z-index: 0;
+}
+
+.footerBackLink {
+  padding: 1em;
+  margin: 0;
+}
+
+.footerBackLink a:hover {
+  color: var(--text-primary-transparent)
 }
 
 @media (max-width: 800px) {

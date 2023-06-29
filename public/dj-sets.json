@@ -2,18 +2,21 @@
   {
     "id": "0",
     "name": "Kuroobi",
+    "type":"",
     "mix": "https://www.youtube.com/watch?v=csiyZO0kFTg",
     "year": "2023"
   },
   {
     "id": "1",
     "name": "Psycholouis",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=SWwww6d272o",
     "year": "2023"
   },
   {
     "id": "2",
     "name": "t'OxyMoron",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=RSvQzCnWed4",
     "year": "2023"
   },
@@ -26,235 +29,386 @@
   {
     "id": "4",
     "name": "Kuroobi",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=3ThNO4w4m_4",
     "year": "2023"
   },
   {
     "id": "5",
     "name": "Kuroobi",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=1RUGLF85JLA",
     "year": "2022"
   },
   {
     "id": "6",
     "name": "Cassidy Green",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=6cHRtbzatck",
     "year": "2022"
   },
   {
     "id": "7",
     "name": "Kuroobi",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=KNpDNmSo2H4",
     "year": "2022"
   },
   {
     "id": "8",
     "name": "Psycholouis",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=bfAHQOTc6co",
     "year": "2022"
   },
   {
     "id": "9",
     "name": "Psycholouis",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=9lft6FF1TK4",
     "year": "2022"
   },
   {
     "id": "10",
     "name": "Diabolical Orchestra",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=55_762gzUbg",
     "year": "2022"
   },
   {
     "id": "11",
     "name": "Deeveerse",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=28bYK_COZd0",
     "year": "2022"
   },
   {
     "id": "12",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=Kv4t1y69ogw",
     "year": "2022"
   },
   {
     "id": "13",
     "name": "Killjoy",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=PS89aKuzT38",
     "year": "2022"
   },
   {
     "id": "14",
     "name": "Yata-Garasu",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=D0F1E9FQq7M",
     "year": "2020"
   },
   {
     "id": "15",
     "name": "Ziqada",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=qwVuDc6mlmQ",
     "year": "2020"
   },
   {
     "id": "16",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=OPQz3b9XFpA",
     "year": "2018"
   },
   {
     "id": "17",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=8cNit9ZFTbk",
     "year": "2017"
   },
   {
     "id": "18",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=AHipxMIfukw",
     "year": "2017"
   },
   {
     "id": "19",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=gU6UxB0o_qA",
     "year": "2017"
   },
   {
     "id": "20",
     "name": "Psytanic",
+     "type":"",
     "year": "2017",
     "mix": "https://www.youtube.com/watch?v=eW8hMFW3cnA"
   },
   {
     "id": "39",
     "name": "Antikriz",
+     "type":"",
     "year": "2017",
     "mix": "https://www.youtube.com/watch?v=eW8hMFW3cnA"
   },
   {
     "id": "21",
     "name": "Psytanic",
+     "type":"",
     "year": "2017",
     "mix": "https://www.youtube.com/watch?v=XniPDh-QALI"
   },
   {
     "id": "22",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=M24H5UKxlGI",
     "year": "2017"
   },
   {
     "id": "23",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=2DXQ0BuGqAg",
     "year": "2017"
   },
   {
     "id": "24",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=_fABkWxV90E",
     "year": "2017"
   },
   {
     "id": "25",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=QDaJS7IkZ8M",
     "year": "2017"
   },
   {
     "id": "26",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=VnkP_lCDNZ8",
     "year": "2017"
   },
   {
     "id": "27",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=8cNit9ZFTbk",
     "year": "2017"
   },
   {
     "id": "28",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=zniXqfcKZ20",
     "year": "2016"
   },
   {
     "id": "29",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=wssdtXOimjM",
     "year": "2016"
   },
   {
     "id": "30",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=zKRo2gDBW5I",
     "year": "2014"
   },
   {
     "id": "31",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=eW8hMFW3cnA",
     "year": "2014"
   },
   {
     "id": "32",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=2FZdqfFo6UY",
     "year": "2014"
   },
   {
     "id": "33",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=xMTPdfY_1qo",
     "year": "2014"
   },
   {
     "id": "34",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=XlD-N_aT5HA",
     "year": "2014"
   },
   {
     "id": "35",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=XlD-N_aT5HA",
     "year": "2014"
   },
   {
     "id": "36",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=-SMss284abE",
     "year": "2014"
   },
   {
     "id": "37",
     "name": "Psytanic",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=-SMss284abE",
     "year": "2014"
   },
   {
     "id": "38",
     "name": "Dr. Cassidy Green",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=6cHRtbzatck",
     "year": "2022"
   },
   {
     "id": "40",
     "name": "Antikriz",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=kIJFnRs27DM",
     "year": "2023"
   },
   {
     "id": "41",
     "name": "Cosmic BlueMoon",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=6iMfLSlyo08",
     "year": "2017"
   },
   {
     "id": "42",
     "name": "Cosmic BlueMoon",
+     "type":"",
     "mix": "https://www.youtube.com/watch?v=_lABHZXrTi4",
     "year": "2016"
+  },
+  {
+    "id": "43",
+    "name": "Delirious Moon",
+     "type":"",
+    "mix": "https://www.youtube.com/watch?v=mZQrBUACIGA",
+    "year": "2021"
+  },
+  {
+    "id": "44",
+    "name": "Abgrund B",
+     "type":"",
+    "mix": "https://youtu.be/2-sspJTn7YI",
+    "year": "2023"
+  },
+  {
+    "id": "45",
+    "name": "Mother Of Datura",
+     "type":"",
+    "mix": "https://www.youtube.com/watch?v=hfJ0EM5V3yM",
+    "year": "2023"
+  },
+  {
+    "id": "46",
+    "name": "Antikriz",
+     "type":"",
+    "mix": "https://www.youtube.com/watch?v=N0DE0-G4aVM",
+    "year": "2023"
+  },
+  {
+    "id": "47",
+    "name": "Gurgamesh",
+     "type":"Mix",
+    "mix": "https://www.youtube.com/watch?v=8joKkgJPtQs",
+    "year": "2014"
+  },
+  {
+    "id": "48",
+    "name": "Gurgamesh",
+     "type":"",
+    "mix": "https://www.youtube.com/watch?v=y6xwLVL8DZA",
+    "year": "2014"
+  },
+  {
+    "id": "49",
+    "name": "Gurgamesh",
+     "type":"",
+    "mix": "https://www.youtube.com/watch?v=9QKFsr8LajE",
+    "year": "2014"
+  },
+  {
+    "id": "50",
+    "name": "Gurgamesh",
+     "type":"",
+    "mix": "https://www.youtube.com/watch?v=DIYjyJeATWg",
+    "year": "2018"
+  },
+  {
+    "id": "51",
+    "name": "Gurgamesh",
+     "type":"Album",
+    "mix": "https://www.youtube.com/watch?v=MwSAGaCUPnY",
+    "year": "2018"
+  },
+  {
+    "id": "52",
+    "name": "Gurgamesh",
+     "type":"",
+    "mix": "https://www.youtube.com/watch?v=3binmtrdRcI",
+    "year": "2013"
+  },
+  {
+    "id": "53",
+    "name": "Gurgamesh",
+     "type":"Live",
+    "mix": "https://www.youtube.com/watch?v=0lAK_cGSiWg",
+    "year": "2014"
+  },
+  {
+    "id": "",
+    "name": "",
+    "type":"",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+     "type":"",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+     "type":"",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+     "type":"",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+     "type":"",
+    "mix": "",
+    "year": ""
   }
 ]

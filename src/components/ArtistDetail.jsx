@@ -5,6 +5,7 @@ import styles from "./ArtistDetail.module.css";
 import { useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // Importing images
 import bandCampLogo from "../images/bc-logotype-color-128.png";
@@ -90,7 +91,7 @@ const ArtistDetail = () => {
     fetchDjRelases();
   }, []);
 
-  console.log(mix);
+  // console.log(mix);
 
   const params = useParams();
   // Test for search through tracklist!!
@@ -158,15 +159,15 @@ const ArtistDetail = () => {
                 </div>
                 <div className={styles.artistText}>
                   <p>{artists_text}</p>
-                  {console.log(album.tracklist)}
+                  {/* {console.log(album.tracklist)} */}
                   {/* {tracklist.map((e, i) => (
                     <p key={`${album_name}${i}`} style={e.length > 40 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
                       {e.length > 100 ? e.substring(0, 100) + "..." : e}
                     </p> */}
                   {/* ))} */}
-                  {/* {console.log(album.filter((e) => e.release_text.includes(name.split(" ")[0]) || e.credits.includes(name.split(" ")[0])))}
-                  {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))}
-                  {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))} */}
+              {/* {console.log(album.filter((e) => e.release_text.includes(name.split(" ")[0]) || e.credits.includes(name.split(" ")[0])))}
+              {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))} */}
+                  {/* {console.log(album.filter((e) => e.tracklist.includes(name.split(" "))))} */}
                 </div>
                 <div className={styles.appearsOnSection}>
                   <h1>Appears on:</h1>
@@ -178,12 +179,13 @@ const ArtistDetail = () => {
                     .filter(
                       (e) =>
                         e.release_text.includes(name.split(" ")[0]) ||
-                        e.credits.includes(name.split(" ")[0]) ||
+                        e.credits.toString().replace(/\s/g, "").includes(nameNoSpace) || 
                         e.tracklist.toString().replace(/\s/g, "").includes(nameNoSpace)
                     )
                     .map(({ album_name, youtube_full_album, youtube_playlist_embed, spotify, bandcamp, mp3, wav, tracklist }) => {
                       return (
-                        <div className={styles.appearsOnSection}>
+                        <div className={styles.appearsOnSection} key={album_name}>
+                          {/* {console.log(name.replace(/\s/g, ""))} */}
                           {/* Check if artists or dj, change text accordingly */}
                           {/* {album.release_text.includes(name.split(" ")[0]) + album.credits.includes(name.split(" ")[0]) ? <h1>Albums:</h1> : ""} */}
                           <a href={bandcamp} target="_blank" rel="noreferrer">
@@ -223,27 +225,48 @@ const ArtistDetail = () => {
                   <div className={styles.appearsOnSection}>{category.toLowerCase() === "dj" ? <h1>Mixes:</h1> : ""}</div>
 
                   <div className={styles.djMixes}>
+        
+                  {/* {mix
+.filter((e) => e.name.toLowerCase() === name.toLowerCase())
+// .sort((a, b) => b.year - a.year)
+.map(({ name, mix, id, type, year }) => {
+  return (
+    <div key={id} className={styles.djMixElements}>
+     <p>Hallo</p>
+  </div>
+    
+  );
+})} */}
+                   
                     {mix
 
                       .filter((e) => e.name.toLowerCase() === name.toLowerCase())
                       .sort((a, b) => b.year - a.year)
-                      .map(({ name, mix, id }) => {
+                      .map(({ name, mix, id, type, year }) => {
                         return (
-                          <div key={id}>
+                          <div key={id} className={styles.djMixElements}>
+                           
+                           
+                           
                             <a
                               href={"https://www.youtube.com/watch?v=" + mix.slice(-11)}
-                              title={name + " Dj Mix // Stream"}
+                              title={name + " Set..."}
                               target="_blank"
                               rel="noreferrer"
-                            >
+                                                        > 
+  {/* Mix will be default name if nothing is entered in the mix list */}
+                                                        <div  className={styles.yearInfo}>
+                            {type ? <p>{type}</p> : <p>Mix</p>}
+                                <p>{year}</p></div>
                               <LazyLoadImage
                                 className={styles.thumbNailImageMix}
                                 src={"https://img.youtube.com/vi/" + mix.slice(-11) + "/hqdefault.jpg"}
                                 effect="blur"
-                                alt={name + "dj mix"}
+                                alt={name + "Set"}
                               />
                             </a>
-                          </div>
+                                              </div>
+                          
                         );
                       })}
                   </div>
@@ -251,7 +274,12 @@ const ArtistDetail = () => {
               </div>
             );
           })}
+          <h2 className={styles.footerBackLink}>
+      <HashLink smooth to={"#top"}>
+          Go to top of Page
+        </HashLink></h2>
       </div>
+      
     </main>
   );
 };

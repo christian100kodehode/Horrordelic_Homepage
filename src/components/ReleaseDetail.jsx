@@ -1,42 +1,91 @@
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import styles from "./ReleaseDetail.module.css";
+import { useParams } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import YoutubePlayer from "./YoutubePlayer";
+
 // Importing images
 import bandCampLogo from "../images/bc-logotype-color-128.png";
 import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
+import { BsFillFileMusicFill } from "react-icons/bs";
+import { BsFillChatDotsFill } from "react-icons/bs";
 
-// Importing CSS
-import styles from "./Release.module.css";
-import "react-lazy-load-image-component/src/effects/blur.css";
+const ReleaseDetail = () => {
+  const { path } = useParams();
 
-// importing packages/hooks/components
-import { useState, useEffect, useRef, useTransition, lazy, startTransition } from "react";
-import { HashLink } from "react-router-hash-link";
-import axios from "axios";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import YoutubePlayer from "./YoutubePlayer";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+  const [artist, setArtist] = useState({ name: {} });
 
-// const YoutubePlayer = lazy(() => import("./YoutubePlayer"));
+  // Imported from Release.jsx
+  const today = new Date();
+  const yearNow = today.getFullYear();
+  const [isSelected, setIsSelected] = useState(yearNow.toString());
+  const [showVideo, setShowVideo] = useState({ id: false });
+  const [hasLoaded, setHasLoaded] = useState({ id: false });
+    // Show text only on selected id
+    const [showText, setShowText] = useState({});
+    const toggleText = (id) => {
+      setShowText((previousText) => {
+        return {
+          ...previousText,
+          [id]: !previousText[id],
+        };
+      });
+    };
 
-const Release = () => {
-  // State for loading
+    const handleVideos = (id) => {
+      setShowVideo((previousVideo) => {
+        return {
+          ...previousVideo,
+          [id]: !previousVideo[id],
+        };
+      });
+    };
+    const handleHasLoaded = (id) => {
+      setHasLoaded((previousVideo) => {
+        return {
+          ...previousVideo,
+          [id]: !previousVideo[id],
+        };
+      });
+    };
+
+  // State for loading Artist data
   const [isLoading, setIsLoading] = useState(false);
-  // State for Release data
-  const [album, setAlbum] = useState([]);
-
-  // useRef for window.location.hash URL
-  const selectedRef = useRef(null);
-
+  const [list, setList] = useState([]);
   const fetchData = () => {
     setIsLoading(true);
     setTimeout(
       async () => {
-        const API_URL = `./release-list.json`;
+        const API_URL = `../artist-list.json`;
+        const response = await axios.get(API_URL);
+        setList(response.data);
+        setIsLoading(false);
+      }
+      // 2000 - if wanting timeout
+    );
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  // Get release data for artists releases and compilations
+  const [album, setAlbum] = useState([]);
+  const [isLoadingRelease, setIsLoadingRelease] = useState(false);
+
+  const fetchDataRelease = () => {
+    setIsLoadingRelease(true);
+    setTimeout(
+      async () => {
+        const API_URL = `/release-list.json`;
         const response = await axios.get(API_URL);
         setAlbum(response.data);
-        setIsLoading(false);
+        setIsLoadingRelease(false);
         // Old version:
         // Get the URL and add the hash then scrollintoView on load
         // let a = new URL(window.location.href);
@@ -48,182 +97,54 @@ const Release = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    fetchDataRelease();
   }, []);
 
-  // Scroll to element, when enter page from URL and #
+  // Fetch dj mixes
+  const [mix, setMix] = useState([]);
+  const [isLoadingMix, setIsLoadingMix] = useState(false);
+
+  const fetchDjRelases = () => {
+    setIsLoadingMix(true);
+    setTimeout(
+      async () => {
+        const API_URL = `/dj-sets.json`;
+        const response = await axios.get(API_URL);
+        setMix(response.data);
+        setIsLoadingMix(false);
+        // Old version:
+        // Get the URL and add the hash then scrollintoView on load
+        // let a = new URL(window.location.href);
+        // document.querySelector(a.hash).scrollIntoView();
+        // console.log(a.hash);
+      }
+      // 2000 - if wanting timeout
+    );
+  };
+
   useEffect(() => {
-    if (selectedRef.current) selectedRef.current.scrollIntoView();
-  }, [selectedRef.current]);
+    fetchDjRelases();
+  }, []);
 
-  // Show text only on selected id
-  const [showText, setShowText] = useState({});
 
-  const toggleText = (id) => {
-    setShowText((previousText) => {
-      return {
-        ...previousText,
-        [id]: !previousText[id],
-      };
-    });
-  };
 
-  // TESTING
-
-  // Menu
-
-  const today = new Date();
-  const yearNow = today.getFullYear();
-
-  const [openMenu, setOpenMenu] = useState(false);
-  const [isSelected, setIsSelected] = useState(yearNow.toString());
-
-  const menuSelected = (value) => () => {
-    setIsSelected(value);
-    setOpenMenu(false);
-  };
-
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
-
-  // Drop down menu - All years
-
-  const mobileOptions = ["2023", "2022", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"];
-
-  const [indexMenu, setindexMenu] = useState(0);
-
-  // Go through the array, if at the end (length - 1 = end of array), stop. else + 1
-  const handleindexMenu = () => {
-    setindexMenu((value) => {
-      setIsSelected(mobileOptions[value + 1]);
-      if (value === mobileOptions.length - 1) {
-        return value;
-      } else {
-        return value + 1;
-      }
-    });
-  };
-
-  // go through the array, if at start (location 0) stop, if larger than 0 go back one step at a time
-  const handleindexMenuPositive = () => {
-    setindexMenu((value) => {
-      setIsSelected(mobileOptions[value - 1]);
-      if (value === 0) {
-        return value;
-      } else {
-        return value - 1;
-      }
-    });
-  };
-
-  const mobileYear = mobileOptions[indexMenu];
-  // console.log(mobileYear);
-  // console.log(isSelected);
-
-  const options = [
-    { label: "2023", value: "2023" },
-    { label: "2022", value: "2022" },
-    { label: "2020", value: "2020" },
-    { label: "2019", value: "2019" },
-    { label: "2018", value: "2018" },
-    { label: "2017", value: "2017" },
-    { label: "2016", value: "2016" },
-    { label: "2015", value: "2015" },
-    { label: "2014", value: "2014" },
-    { label: "2013", value: "2013" },
-    { label: "2012", value: "2012" },
-  ];
-
-  // Youtube states for preloading the videos
-  const [, startTransistion] = useTransition();
-
-  const [showVideo, setShowVideo] = useState({ id: false });
-  const [hasLoaded, setHasLoaded] = useState({ id: false });
-
-  const handleVideos = (id) => {
-    setShowVideo((previousVideo) => {
-      return {
-        ...previousVideo,
-        [id]: !previousVideo[id],
-      };
-    });
-  };
-
-  const handleHasLoaded = (id) => {
-    setHasLoaded((previousVideo) => {
-      return {
-        ...previousVideo,
-        [id]: !previousVideo[id],
-      };
-    });
-  };
-
+  const params = useParams();
+  // console.log(params);
+  // Test for search through tracklist!!
+  // let artistAppears = album.filter(function (e) {
+  //   return e.tracklist.indexOf(name.split(" ")[0]) >= 0;
+  // });
+  // {
+  //   console.log(artistAppears);
+  // }
+  // TEST
   return (
     <main className={styles.container}>
-      {/* Optional Loading message */}
-      {/* <span className={styles.loadingScreen} id="Loading">
-        {isLoading ? "Loading Releases" : null}
-      </span> */}
-      {/* Menues Desktop + Nobile */}
-      <Helmet>
-        <meta property="og:title" content="Horrordelic - Releases" />
-        <meta property="og:description" content="G  et some killer Darkpsy/Psycore here.." />
-        <meta property="og:image" content="https://horrordelic.com/FBwebmediaReleases1080x600.png" />
-      </Helmet>
-      <div onClick={toggleMenu} className={styles.yearSelector} style={isLoading ? { display: "none" } : { display: "" }}>
-        <p>{!openMenu ? "Select Year of Release" : ""}</p>
 
-        {openMenu &&
-          options.map((option) => (
-            <li key={option.value} onClick={menuSelected(option.value)}>
-              {option.label}
-            </li>
-          ))}
-        <p>{!openMenu ? "Selected : " + isSelected : ""}</p>
-      </div>
-      <div className={styles.mobileMenu}>
-        <button
-          type="button"
-          style={indexMenu <= 0 ? { visibility: "hidden" } : { display: "" }}
-          onClick={handleindexMenuPositive}
-          title="Go to previous releases.."
-        >
-          <AiOutlineArrowLeft />
-        </button>
-        <p>{mobileOptions[indexMenu]}</p>
-        <button
-          type="button"
-          style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }}
-          onClick={handleindexMenu}
-          title="Go to next release.."
-        >
-          <AiOutlineArrowRight />
-        </button>
-      </div>
-      <div>
-        {/* <p>{styles.releaseContainer ? "Text": "No"}</p> */}
-        {album
-          .filter((e) => e.release_date.slice(-4) === isSelected)
-          .map(({ release_date }, i) => (
-            <h1 style={release_date.length <= 4 ? { display: "" } : { display: "none" }} className={styles.inProgress}>
-              {/* {console.log(release_date.length)} */}
-              {/* {console.log(i)} */}
-              {/* {console.log(release_date)} */}
-              {!release_date.length <= 4 ? (
-                <a href="https://horrordelic.bandcamp.com" target="_blank" rel="noreferrer">
-                  <h3>Updates in Progress, check Bandcamp for now!</h3>
-                </a>
-              ) : (
-                ""
-              )}
-            </h1>
-          ))}
-      </div>
 
       {/* Map release data abd filter each year selected by user */}
       {album
-        .filter((e) => e.release_date.slice(-4) === isSelected)
+        .filter((e) => e.path === params.path)
         .map(
           (
             {
@@ -245,7 +166,8 @@ const Release = () => {
             },
             filteredAlbum
           ) => (
-            <article key={path} className={styles.releaseContainer} id={path} ref={path === window.location.hash.slice(1) ? selectedRef : null}>
+            <article key={path} className={styles.releaseContainer} id={path} 
+            ref={path === window.location.hash.slice(1) ? selectedRef : null            }>
               {/* {console.log(filteredAlbum)} */}
               <div className={styles.releaseName}>
                 {/* <HashLink smooth to={"/release#" + path}> */}
@@ -359,11 +281,11 @@ const Release = () => {
                           {release_text.substring(0, 550) + "...."}
                         </p>
                         <div style={!showText[id] ? { display: "" } : { display: "none" }}>
-                          <HashLink smooth to={"/release#" + album_name}>
+                          {/* <HashLink smooth to={"/release#" + album_name}> */}
                             <button type="button" onClick={() => toggleText(id)} title="Read more about this release..">
                               Read More
                             </button>
-                          </HashLink>
+                          {/* </HashLink> */}
                         </div>
                         {/* Show the readmore contents */}
                         {showText[id] && [
@@ -375,7 +297,7 @@ const Release = () => {
                               <p>Release date:</p>
                               <p>{release_date}</p>
                             </div>
-                            <HashLink smooth to={"/release#" + path}>
+                            <HashLink smooth to={"#top"}>
                               <button onClick={() => toggleText(id)}>Read less</button>
                             </HashLink>
                           </div>,
@@ -434,7 +356,7 @@ const Release = () => {
       )}  OLD END*/}
 
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
-        <HashLink smooth to={"/release#top"}>
+        <HashLink smooth to={"#top"}>
           Go to top of Page
         </HashLink>
       </h2>
@@ -442,4 +364,4 @@ const Release = () => {
   );
 };
 
-export default Release;
+export default ReleaseDetail;

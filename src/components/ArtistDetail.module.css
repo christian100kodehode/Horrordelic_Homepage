@@ -80,7 +80,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
+  transition: all 1s ease-in-out;
+  }
+
+  .djMixElements {
+    margin-right: 5em;
+  }
 
 .thumbNailImageMix {
   border-radius: 20px;
@@ -89,14 +94,26 @@
   margin: 1em;
 }
 
+.appearsOnSection h1 {
+  font-family: "01digitall";
+  /* color: var(--text-primary);
+   */
+   color: white;
+  font-weight: bolder;
+  margin-bottom: -3em;
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+}
+
 .artistHeader h2,
 .artistHeader h1,
-.appearsOnSection h1,
 .appearsOnSection p,
 .locationContainer h2,
 .locationContainer h3 {
   font-family: "01digitall";
-  color: var(--text-primary);
+  /* color: var(--text-primary);
+   */
+   color: white;
   font-weight: lighter;
   margin-bottom: 0;
   letter-spacing: 0.1em;
@@ -135,12 +152,13 @@
   align-items: center;
   padding-bottom: 2em;
   position: relative;
+  margin-bottom: 3em;
 }
 
 .albumReleaseNameStream {
   z-index: 2;
-  top: -5%;
-  position: absolute;
+  /* top: -5%; */
+  /* position: absolute; */
   transition: all 0.5s ease;
   background-color: var(--releaseContainerStreamLinksBg);
   border-radius: 20px;
@@ -151,7 +169,7 @@
 
 .streamLinks {
   position: absolute;
-  top: 75%;
+  top: 85%;
   width: 20em;
   display: flex;
   justify-content: space-evenly;
@@ -161,6 +179,7 @@
   border: var(--text-primary) 1px solid;
   border-radius: 20px;
   cursor: pointer;
+
 }
 .streamLinks img {
   padding: 0.2rem;
@@ -191,14 +210,74 @@
 .artistLinks button {
   margin: 0 0.2em;
   padding: 0.2em;
-  color: var(--text-primary);
+  color: white;
   background-color: var(--accentTransp);
+  
+}
+
+.footerBackLink {
+ /* background-color: blue; */
+ padding: 3em;
+ margin: 0;
+}
+
+.yearInfo {
+  position: relative;
+  top: 50%;
+  height: 2em;
+   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  /* align-items: center; */
+  /* transition: all 0.5s ease; */
+  z-index: 10;
+}
+
+.yearInfo p:nth-child(2){
+   padding: 0.3rem;
+    font-family: "megalomaniac";
+  font-size: 1.6rem;
+  color: black;
+  background-color: var(--releaseContainerStreamLinksBg);
+  border: var(--text-primary) 1px solid;
+  border-radius: 10px;
+  color: white;
+  
+}
+
+
+.yearInfo p:nth-child(1){
+  padding: 0.3em 0.5em;
+   font-family: "megalomaniac";
+  font-size: 1.6rem;
+  margin-bottom: 7em;
+  margin-right: 85%;
+  color: black;
+  background-color: var(--releaseContainerStreamLinksBg);
+  border: var(--text-primary) 1px solid;
+  border-radius: 10px;
+  color: white;
+}
+
+.djMixes  {
+  transition: transform .2s;
+
+}
+
+.djMixElements img:hover,
+.djMixElements p:hover {
+  transform: scale(1.2);
+
 }
 
 @media (max-width: 785px) {
   .thumbNailImageMix {
     width: 15em;
     margin: 0.5em;
+  }
+  .albumReleaseNameStream {
+    margin: 0 5%;
   }
 }
 
@@ -208,7 +287,7 @@
   }
 
   .appearsOnSection h1 {
-    margin-bottom: 1em;
+    /* margin-bottom: 0.2em; */
   }
 
   .thumbNailImage {
@@ -258,7 +337,7 @@
 
   .albumReleaseNameStream {
     font-size: 1em;
-    top: 10%;
+    top: -10%;
   }
 
   .streamLinks {
@@ -271,4 +350,9 @@
     font-size: 1em;
     padding: 0.4em;
   }
+
+  .yearInfo p {
+    font-size: 1.2em;
+  }
+
 }

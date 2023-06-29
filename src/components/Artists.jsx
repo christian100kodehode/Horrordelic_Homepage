@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { HashLink } from "react-router-hash-link";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Artists = () => {
@@ -87,7 +88,7 @@ const Artists = () => {
                   />
 
                   <h2 className={styles.artistHeader} style={name.length >= 9 ? { fontSize: "1em" } : { fontSize: "1.5em" }}>
-                    {console.log(name.length)}
+                    {/* {console.log(name.length)} */}
                     {name.replace(/_+/g, " ")}
                   </h2>
                   <span className={styles.land}>{flag}</span>
@@ -96,6 +97,10 @@ const Artists = () => {
             );
           })}
       </div>
+      <h2 className={styles.footerBackLink}>
+      <HashLink smooth to={"#top"}>
+          Go to top of Page
+        </HashLink></h2>
     </main>
   );
 };

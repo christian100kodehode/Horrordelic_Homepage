@@ -43,7 +43,7 @@ const Main = () => {
     fetchData();
   }, []);
 
-  console.log(youTubeImage);
+  // console.log(youTubeImage);
 
   const LatestAlbumScrollText = () => {
     return (
