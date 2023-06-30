@@ -11,6 +11,23 @@
   z-index: 100;
 }
 
+.navbarlinks img {
+  position: absolute;
+  top: 0em;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  height: 5em;
+}
+
+.navbarlinks img:hover {
+  filter: drop-shadow(10px 0px 10px rgba(255, 255, 255, 0.5));
+}
+
+.homeButton {
+  display: none;
+}
 .goToTopButton {
   position: absolute;
   top: calc(100vh);
@@ -32,6 +49,7 @@
   color: var(--text-primary-hover);
 }
 
+
 @media (max-width: 900px) {
   .goToTopButton {
     position: absolute;
@@ -40,16 +58,38 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 700px){
+  /* .navbarlinks img {
+    display: none;
+  } */
+
+  /* .homeButton {
+    display:contents;
+    color: var(--text-primary);
+    text-shadow: 0 0 10px #ffffff;
+    padding-left: 1rem;
+    font-family: Megalomaniac, fantasy, serif;
+    font-size: 2rem;
+  } */
+}
+
+@media (max-width: 500px) {
+.navbarlinks img {
+  top:0.5em;
+  left: 0;
+  height:3em;
+}
+
   .goToTopButton {
     font-size: 1rem;
+  }
+  .upcomingLink {
+    display: none;
   }
 }
 
 @media (max-width: 380px) {
-  .upcomingLink {
-    display: none;
-  }
+ 
 
   .goToTopButton {
     padding: 0 0.5em 0 0.5em;
@@ -61,6 +101,11 @@
   .navbarlinks a {
     font-size: 1.5rem;
     padding: 0.2rem;
+  }
+
+  .navbarlinks img {
+    height: 1em;
+    top:0.4em;
   }
 
   .navbarlinks {

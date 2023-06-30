@@ -4,6 +4,8 @@ import styles from "./Navbar.module.css";
 import { debounce } from "../utilities/helpers.js";
 import { HashLink } from "react-router-hash-link";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import  Logo  from "../images/HorrordelicLogo300x300.png"
 
 const Navbar = () => {
   // Make the previous scroll state, start at 0.
@@ -28,10 +30,13 @@ const Navbar = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
+    
     <nav className={styles.navbarlinks} style={{ top: visible ? "0" : "-65px" }}>
+   <span className={styles.homeButton}>
       <Link to="/" title="Go back to main page">
         Main
       </Link>
+      </span>
       <Link to="/Artists" title="Artist and Djs">
         Artists
       </Link>
@@ -48,7 +53,15 @@ const Navbar = () => {
       <Link to="/ReleaseAndEvents" title="Upcoming releases and Events" className={styles.upcomingLink}>
         Upcoming
       </Link>
+     
       <div>
+        <Link to="/" title="Horrordelic Records">
+      <LazyLoadImage
+          className={styles.Logo}
+          src={Logo}
+          // effect="blur"
+          alt={Logo}
+        /></Link>
         <HashLink smooth to={"#"}>
           <button className={styles.goToTopButton} title="Go to top of page..">
             <AiOutlineArrowUp />

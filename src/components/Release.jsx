@@ -251,6 +251,7 @@ const Release = () => {
                 {/* <HashLink smooth to={"/release#" + path}> */}
                 <Link to={`/release/${path}`}>
                   <p className={styles.heading}>
+                  🔗
                     &nbsp;{artist}:&nbsp;{album_name}
                     <span>{land}</span>
                   </p>

@@ -107,7 +107,7 @@ const ArtistDetail = () => {
       <div className={styles.cssFix}>
         {list
           .filter((e) => e.nameNoSpace === params.id)
-          .map(({ name, category, id, headerInfo, artists_text, soundcloud, facebook, nameNoSpace, location, land, tracklist }) => {
+          .map(({ name, category, id, headerInfo, artists_text, soundcloud, facebook, nameNoSpace, location, land }) => {
             return (
               <div key={id + name} className={styles.artistsContainer}>
                 <div className={styles.imageContainer} style={{ backgroundImage: `url('${"/artists/" + nameNoSpace + "Banner" + ".jpg"}')` }}>
@@ -182,14 +182,14 @@ const ArtistDetail = () => {
                         e.credits.toString().replace(/\s/g, "").includes(nameNoSpace) || 
                         e.tracklist.toString().replace(/\s/g, "").includes(nameNoSpace)
                     )
-                    .map(({ album_name, youtube_full_album, youtube_playlist_embed, spotify, bandcamp, mp3, wav, tracklist }) => {
+                    .map(({ album_name, youtube_full_album, youtube_playlist_embed, spotify, bandcamp, mp3, wav, artist }) => {
                       return (
                         <div className={styles.appearsOnSection} key={album_name}>
                           {/* {console.log(name.replace(/\s/g, ""))} */}
                           {/* Check if artists or dj, change text accordingly */}
                           {/* {album.release_text.includes(name.split(" ")[0]) + album.credits.includes(name.split(" ")[0]) ? <h1>Albums:</h1> : ""} */}
                           <a href={bandcamp} target="_blank" rel="noreferrer">
-                            <p className={styles.albumReleaseNameStream}>{album_name}</p>
+                            <p className={styles.albumReleaseNameStream}>{artist}: {album_name}</p>
                             <LazyLoadImage
                               className={styles.thumbNailImage}
                               src={"https://img.youtube.com/vi/" + youtube_full_album.slice(-11) + "/hqdefault.jpg"}

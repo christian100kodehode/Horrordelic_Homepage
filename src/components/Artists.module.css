@@ -37,10 +37,9 @@
 }
 
 .artistsContainer {
- 
-  position: relative;
+   position: relative;
   margin: 1em 1em 2em;
-  width: 42vh;
+  width: 12em;
   /* height: 42vh; */
   border-radius: 5%;
   background: var(--releaseContainerBg);
@@ -75,7 +74,7 @@
 }
 
 .artistsContainer img {
-  width: 40vh;
+  width: 12em;
   height: 36vh;
   overflow: hidden;
   z-index: 1;

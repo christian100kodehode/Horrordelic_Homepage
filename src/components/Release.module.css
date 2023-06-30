@@ -127,6 +127,10 @@ iframe {
   justify-content: space-between;
 }
 
+.heading:hover{
+  transform: scale(1.05);
+}
+
 .headingright {
   margin-left: auto;
   width: 10%;
