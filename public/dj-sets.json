@@ -337,7 +337,7 @@
   {
     "id": "48",
     "name": "Gurgamesh",
-     "type":"",
+     "type":"Live",
     "mix": "https://www.youtube.com/watch?v=y6xwLVL8DZA",
     "year": "2014"
   },
@@ -351,7 +351,7 @@
   {
     "id": "50",
     "name": "Gurgamesh",
-     "type":"",
+     "type":"Live",
     "mix": "https://www.youtube.com/watch?v=DIYjyJeATWg",
     "year": "2018"
   },
@@ -365,21 +365,70 @@
   {
     "id": "52",
     "name": "Gurgamesh",
-     "type":"",
+     "type":"Album",
     "mix": "https://www.youtube.com/watch?v=3binmtrdRcI",
     "year": "2013"
   },
   {
     "id": "53",
     "name": "Gurgamesh",
-     "type":"Live",
+     "type":"Album",
     "mix": "https://www.youtube.com/watch?v=0lAK_cGSiWg",
     "year": "2014"
   },
   {
+    "id": "54",
+    "name": "Wave Savage",
+    "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=OinoeODi9_Y",
+    "year": "2020"
+  },
+  {
+    "id": "55",
+    "name": "Wave Savage",
+     "type":"Live Set",
+    "mix": "https://www.youtube.com/watch?v=kyCYOhS97aY",
+    "year": "2022"
+  },
+  {
+    "id": "56",
+    "name": "Wave Savage",
+     "type":"Live Psycore",
+    "mix": "https://www.youtube.com/watch?v=JzLLRBJdWwo",
+    "year": "2020"
+  },
+  {
+    "id": "57",
+    "name": "Wave Savage",
+     "type":"Album",
+    "mix": "https://www.youtube.com/watch?v=js61EjIz0g8",
+    "year": "2020"
+  },
+  {
+    "id": "58",
+    "name": "Yetzirah",
+     "type":"Promo",
+    "mix": "https://www.youtube.com/watch?v=Wxwk6l5eBOk",
+    "year": "2023"
+  },
+  {
+    "id": "59",
+    "name": "Yetzirah",
+     "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=5PS6mTURgZI",
+    "year": "2022"
+  },
+  {
     "id": "",
     "name": "",
-    "type":"",
+     "type":"",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+     "type":"",
     "mix": "",
     "year": ""
   },

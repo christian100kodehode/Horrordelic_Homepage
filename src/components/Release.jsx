@@ -8,7 +8,14 @@ import styles from "./Release.module.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 // importing packages/hooks/components
-import { useState, useEffect, useRef, useTransition, lazy, startTransition } from "react";
+import {
+  useState,
+  useEffect,
+  useRef,
+  useTransition,
+  lazy,
+  startTransition,
+} from "react";
 import { HashLink } from "react-router-hash-link";
 import axios from "axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -89,7 +96,19 @@ const Release = () => {
 
   // Drop down menu - All years
 
-  const mobileOptions = ["2023", "2022", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"];
+  const mobileOptions = [
+    "2023",
+    "2022",
+    "2020",
+    "2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014",
+    "2013",
+    "2012",
+  ];
 
   const [indexMenu, setindexMenu] = useState(0);
 
@@ -168,10 +187,20 @@ const Release = () => {
       {/* Menues Desktop + Nobile */}
       <Helmet>
         <meta property="og:title" content="Horrordelic - Releases" />
-        <meta property="og:description" content="G  et some killer Darkpsy/Psycore here.." />
-        <meta property="og:image" content="https://horrordelic.com/FBwebmediaReleases1080x600.png" />
+        <meta
+          property="og:description"
+          content="G  et some killer Darkpsy/Psycore here.."
+        />
+        <meta
+          property="og:image"
+          content="https://horrordelic.com/FBwebmediaReleases1080x600.png"
+        />
       </Helmet>
-      <div onClick={toggleMenu} className={styles.yearSelector} style={isLoading ? { display: "none" } : { display: "" }}>
+      <div
+        onClick={toggleMenu}
+        className={styles.yearSelector}
+        style={isLoading ? { display: "none" } : { display: "" }}
+      >
         <p>{!openMenu ? "Select Year of Release" : ""}</p>
 
         {openMenu &&
@@ -194,7 +223,11 @@ const Release = () => {
         <p>{mobileOptions[indexMenu]}</p>
         <button
           type="button"
-          style={indexMenu === mobileOptions.length - 1 ? { visibility: "hidden" } : { display: "" }}
+          style={
+            indexMenu === mobileOptions.length - 1
+              ? { visibility: "hidden" }
+              : { display: "" }
+          }
           onClick={handleindexMenu}
           title="Go to next release.."
         >
@@ -206,12 +239,22 @@ const Release = () => {
         {album
           .filter((e) => e.release_date.slice(-4) === isSelected)
           .map(({ release_date }, i) => (
-            <h1 style={release_date.length <= 4 ? { display: "" } : { display: "none" }} className={styles.inProgress}>
+            <h1
+              key={release_date + i}
+              style={
+                release_date.length <= 4 ? { display: "" } : { display: "none" }
+              }
+              className={styles.inProgress}
+            >
               {/* {console.log(release_date.length)} */}
               {/* {console.log(i)} */}
               {/* {console.log(release_date)} */}
               {!release_date.length <= 4 ? (
-                <a href="https://horrordelic.bandcamp.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://horrordelic.bandcamp.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <h3>Updates in Progress, check Bandcamp for now!</h3>
                 </a>
               ) : (
@@ -242,20 +285,25 @@ const Release = () => {
               credits,
               release_date,
               youtube_full_album,
+              flac,
             },
             filteredAlbum
           ) => (
-            <article key={path} className={styles.releaseContainer} id={path} ref={path === window.location.hash.slice(1) ? selectedRef : null}>
+            <article
+              key={path}
+              className={styles.releaseContainer}
+              id={path}
+              ref={path === window.location.hash.slice(1) ? selectedRef : null}
+            >
               {/* {console.log(filteredAlbum)} */}
               <div className={styles.releaseName}>
                 {/* <HashLink smooth to={"/release#" + path}> */}
                 <Link to={`/release/${path}`}>
                   <p className={styles.heading}>
-                  🔗
-                    &nbsp;{artist}:&nbsp;{album_name}
+                    🔗 &nbsp;{artist}:&nbsp;{album_name}
                     <span>{land}</span>
                   </p>
-                  </Link>
+                </Link>
                 {/* </HashLink> */}
               </div>
 
@@ -283,7 +331,11 @@ const Release = () => {
                             <div className={styles.videoInner}>
                               <LazyLoadImage
                                 className={styles.thumbNailImage}
-                                src={"https://img.youtube.com/vi/" + youtube_full_album.slice(-11) + "/hqdefault.jpg"}
+                                src={
+                                  "https://img.youtube.com/vi/" +
+                                  youtube_full_album.slice(-11) +
+                                  "/hqdefault.jpg"
+                                }
                                 effect="blur"
                                 alt={album_name}
                               />
@@ -298,7 +350,12 @@ const Release = () => {
                           </button>
                         ))}
 
-                      {showVideo[id] && <YoutubePlayer autoplay="0" videoId={youtube_full_album.slice(-11)} />}
+                      {showVideo[id] && (
+                        <YoutubePlayer
+                          autoplay="0"
+                          videoId={youtube_full_album.slice(-11)}
+                        />
+                      )}
                     </div>
                   </div>
                   {/* TESTING */}
@@ -333,10 +390,20 @@ const Release = () => {
                     ) : (
                       ""
                     )}
-
-                    <a href={youtube_playlist_embed} target="_blank" rel="noreferrer">
+                    <a
+                      href={youtube_playlist_embed}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img src={youtubeLogo} alt="Youtube Link" />
                     </a>
+                    {flac ? (
+                      <a href={flac} target="_blank" rel="noreferrer">
+                        <p>FLAC</p>
+                      </a>
+                    ) : (
+                      ""
+                    )}
                     <a href={mp3} target="_blank" rel="noreferrer">
                       <p>MP3</p>
                     </a>
@@ -356,19 +423,40 @@ const Release = () => {
                       <div>
                         {/* Show and hide the text if more text is selected, also show and hide the
                           show more button to make it appear under the showing text */}
-                        <p style={!showText[id] ? { display: "" } : { display: "none" }} className={styles.releaseTextShort}>
+                        <p
+                          style={
+                            !showText[id]
+                              ? { display: "" }
+                              : { display: "none" }
+                          }
+                          className={styles.releaseTextShort}
+                        >
                           {release_text.substring(0, 550) + "...."}
                         </p>
-                        <div style={!showText[id] ? { display: "" } : { display: "none" }}>
+                        <div
+                          style={
+                            !showText[id]
+                              ? { display: "" }
+                              : { display: "none" }
+                          }
+                        >
                           <HashLink smooth to={"/release#" + album_name}>
-                            <button type="button" onClick={() => toggleText(id)} title="Read more about this release..">
+                            <button
+                              type="button"
+                              onClick={() => toggleText(id)}
+                              title="Read more about this release.."
+                            >
                               Read More
                             </button>
                           </HashLink>
                         </div>
                         {/* Show the readmore contents */}
                         {showText[id] && [
-                          <div key={{ id } + { album_name }} id={album_name} className={styles.readMoreContainer}>
+                          <div
+                            key={{ id } + { album_name }}
+                            id={album_name}
+                            className={styles.readMoreContainer}
+                          >
                             <div className={styles.readMoreText}>
                               <p>{release_text}</p>
                               <p>Credits:</p>
@@ -377,7 +465,9 @@ const Release = () => {
                               <p>{release_date}</p>
                             </div>
                             <HashLink smooth to={"/release#" + path}>
-                              <button onClick={() => toggleText(id)}>Read less</button>
+                              <button onClick={() => toggleText(id)}>
+                                Read less
+                              </button>
                             </HashLink>
                           </div>,
                         ]}
@@ -392,7 +482,14 @@ const Release = () => {
                 <p>Track list:</p>
                 {/* Map through the tracklist and show all tracks , also check if names are longer than 50, then set extra line height. if longer line than 100, cut @ 100 else just write it normally. */}
                 {tracklist.map((e, i) => (
-                  <p key={`${album_name}${i}`} style={e.length > 40 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
+                  <p
+                    key={`${e}${i}`}
+                    style={
+                      e.length > 40
+                        ? { lineHeight: "1em" }
+                        : { lineHeight: "0.5em" }
+                    }
+                  >
                     {e.length > 100 ? e.substring(0, 100) + "..." : e}
                   </p>
                 ))}
@@ -435,7 +532,7 @@ const Release = () => {
       )}  OLD END*/}
 
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
-        <HashLink smooth to={"/release#top"}>
+        <HashLink smooth to={"#"}>
           Go to top of Page
         </HashLink>
       </h2>

@@ -1,7 +1,13 @@
 .container {
-  height: 95vh;
-  /* margin-top: 5em; */
+  height: 100dvh;
+  /* height: calc(100%); */
+  /* margin-top: 2em; */
   background: var(--backgroundImage);
+  background-attachment: fixed;
+  padding-top: 5em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container h1 {
@@ -17,4 +23,9 @@
   /* padding: 2em; */
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 1rem;
+  }
 }

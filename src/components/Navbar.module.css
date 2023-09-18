@@ -1,12 +1,15 @@
 .navbarlinks {
-  border-bottom: solid 1px;
+  border-bottom: solid 1p black;
   padding: 1rem 0;
   position: fixed;
   width: 100%;
   /* background: blueviolet; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(48, 0, 37, 0.55)), var(--backgroundImageTop);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(48, 0, 37, 0.55)),
+    var(--backgroundImageTop);
   transition: all 0.1s;
-  box-shadow: 0.5px 0.5px 0.9px rgba(126, 126, 126, 0.46), 1.8px 1.6px 3.1px rgba(224, 224, 224, 0.161), 8px 7px 14px rgba(0, 0, 0, 0.556);
+  box-shadow: 0.5px 0.5px 0.9px rgba(126, 126, 126, 0.46),
+    1.8px 1.6px 3.1px rgba(224, 224, 224, 0.161),
+    8px 7px 14px rgba(0, 0, 0, 0.556);
   left: 0;
   z-index: 100;
 }
@@ -18,7 +21,7 @@
   margin: 0;
   padding: 0;
   object-fit: contain;
-  height: 5em;
+  height: 2em;
 }
 
 .navbarlinks img:hover {
@@ -49,7 +52,6 @@
   color: var(--text-primary-hover);
 }
 
-
 @media (max-width: 900px) {
   .goToTopButton {
     position: absolute;
@@ -58,7 +60,7 @@
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   /* .navbarlinks img {
     display: none;
   } */
@@ -74,11 +76,11 @@
 }
 
 @media (max-width: 500px) {
-.navbarlinks img {
-  top:0.5em;
-  left: 0;
-  height:3em;
-}
+  .navbarlinks img {
+    top: 0.2em;
+    left: 0;
+    height: 1.5em;
+  }
 
   .goToTopButton {
     font-size: 1rem;
@@ -89,8 +91,6 @@
 }
 
 @media (max-width: 380px) {
- 
-
   .goToTopButton {
     padding: 0 0.5em 0 0.5em;
     left: calc(85vw);
@@ -104,8 +104,7 @@
   }
 
   .navbarlinks img {
-    height: 1em;
-    top:0.4em;
+    height: 1.2em;
   }
 
   .navbarlinks {
@@ -116,5 +115,53 @@
 @media (max-width: 200px) {
   .navbarlinks a {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .navbarlinks {
+    border-bottom: solid 1px black;
+    padding: 0;
+    /* give it dimensions */
+    height: 4em;
+    width: 100%;
+    max-width: 1280px;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* *flex */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    /* flex-direction: row;
+    /* max-width: 1400px; */
+    /* background: blueviolet; */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.39),
+        rgba(48, 0, 37, 0.55)
+      ),
+      var(--backgroundImageTop);
+    transition: all 0.1s;
+    box-shadow: 0.5px 0.5px 0.9px rgba(126, 126, 126, 0.46),
+      1.8px 1.6px 3.1px rgba(224, 224, 224, 0.161),
+      8px 7px 14px rgba(0, 0, 0, 0.556);
+    left: 0;
+    z-index: 100;
+  }
+  .navbarlinks img {
+    /* position: absolute; */
+    /* top: 0em;
+    left: 0; */
+    margin: 0;
+    object-fit: contain;
+  }
+
+  .Logo {
+    /* padding-right: -10em; */
+    height: 7em;
   }
 }

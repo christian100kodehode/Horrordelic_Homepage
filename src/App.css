@@ -14,7 +14,11 @@
   --yearSelectorBg: rgb(124, 54, 190);
   --releaseContainerStreamLinksBg: blueviolet;
   --releaseBorder: blueviolet;
-  --releaseContainerBg: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
+  --releaseContainerBg: linear-gradient(
+    179.4deg,
+    rgb(6, 7, 9) -16.9%,
+    rgb(117, 77, 130) 119.9%
+  );
   --releaseContainerReadMoreBg: blueviolet;
   --text-shadowBg: 0 0 10px #50505085;
   --text-primary: black;
@@ -34,7 +38,11 @@
   --logoFilter: hue-rotate(70deg) drop-shadow(4px 4px 6px red);
   --yearSelectorBg: darkred;
   --releaseBorder: black;
-  --releaseContainerBg: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(197, 25, 25) 119.9%);
+  --releaseContainerBg: linear-gradient(
+    179.4deg,
+    rgb(6, 7, 9) -16.9%,
+    rgb(197, 25, 25) 119.9%
+  );
   --releaseContainerReadMoreBg: rgb(92, 6, 6);
   --releaseContainerStreamLinksBg: rgb(161, 52, 52);
   --text-shadowBg: 0 0 10px #fff;
@@ -48,10 +56,17 @@
   --line: red;
 }
 
+.themeButtonContainer {
+  width: 100%;
+  position: absolute;
+  z-index: 101;
+  height: 0.1em;
+}
+
 .themeChangerButton {
+  z-index: 102;
   top: 1em;
   right: 1em;
-  z-index: 101;
   position: fixed;
   padding: 0.5em 0.5em;
   background-color: var(--releaseContainerReadMoreBg);
@@ -153,5 +168,26 @@ a:hover {
   .themeChangerButton {
     margin-top: 0.5em;
     padding: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .themeButtonContainer {
+    max-width: 1280px;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* *flex */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+  }
+
+  .themeChangerButton {
+    position: absolute;
   }
 }

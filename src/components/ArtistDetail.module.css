@@ -4,7 +4,7 @@
   background: var(--backgroundImage);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+ background-attachment: fixed; 
 }
 
 .cssFix {
@@ -287,9 +287,9 @@ background-color: black;
     padding-bottom: 0;
   }
 
-  .appearsOnSection h1 {
-    /* margin-bottom: 0.2em; */
-  }
+  /* .appearsOnSection h1 {
+    margin-bottom: 0.2em;
+  } */
 
   .thumbNailImage {
     width: 22em;

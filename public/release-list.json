@@ -1,4 +1,36 @@
-[    {
+[  {
+    "id": "HORD088",
+    "path": "return_to_the_fog",
+    "artist": "VA",
+    "album_name": "Return to the Fog",
+    "land": "\uD83C\uDF10",
+    "release_text": "VA: Return to the Fog presented proudly by Horrordelic.\n\nIf you think you had left Silent Hill you were wrong. You just came back from the Otherworld, only to return to heavy creeping fog embracing you.\n\nThere is a hole in the ground. Will you jump down into the Abyss?\n\n15 new Dark Psychedelic visions twisted into the fog of Silent Hill are waiting for you.",
+    "release_date": "23/July/2023",
+    "credits": "\n\nCompiled by Psytanic\nMastering by Krono Audio\nArtwork by Kathryn Brooks\nReleased By Horrordelic\nRelease 23th July 2023",
+    "tracklist": ["1. Bizzare Frequency - Return 155",
+"2. Hypnos Live - Now Here 165 ",
+"3. Abgrund B - Misty Day 175",
+"4. Ololiuhqui - Horror Porror 162",
+"5. DarkAlien Live - Back to Game 180",
+"6. Transtech - Silent Echos of Arkontes 158",
+"7. Gajiru - Valtiel 182",
+"8. Diabolical Orchestra - Maze 220",
+"9. Delirious Moon - Dark Alessa 157",
+"10. Maleficarvm - Flauros 157",
+"11. FluroNeuro vs Inverk - Laugh Now Cry Later 165",
+"12. Siniestro - Ritual of Ixchel 200",
+"13. Archeos - Fuzzy Memory 155",
+"14. Dr Tryptamine - Restless Dreams 165",
+"15. Snailtrail - RockaMonsta 152"],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298C8zSUmAlhOk1oGLb2x0L3",
+    "youtube_full_album": "https://youtu.be/GsnouprSvzA",
+    "spotify": "https://open.spotify.com/album/5c1lvp7NYn3Ij7Clho1ChQ",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/return-to-the-fog",
+    "mp3": "https://drive.google.com/file/d/1k7NJAsM8DtguYZe-lBdChKzcnLt9FY_h/view?usp=drive_link",
+    "wav": "",
+    "flac":"https://drive.google.com/file/d/1t9omX7mT5mBNoBMEaHB6svexmGZJ9yiJ/view?usp=drive_link"
+  },   
+    {
     "id": "HORD087",
     "path": "tandav_nritya_second_chapter",
     "artist": "VA",
@@ -23,6 +55,8 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-the-second-chapter-sthiti",
     "mp3": "https://drive.google.com/file/d/1BPYDvwX4TPlqopdv93dWCPVebwMV5aBD/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1RpvBgoTdACkAOcFNhB8lKIxKsdRiSKDe/view?usp=drive_link"
+    ,
+    "flac":""
   },
     {
     "id": "HORD086",
@@ -53,7 +87,8 @@
     "spotify": "https://open.spotify.com/album/2yTlp3LmcovfoC0ugFNRTS",
     "bandcamp": "https://horrordelic.bandcamp.com/album/otherworld",
     "mp3": "https://drive.google.com/file/d/1lYWCIeumuf1dFtvBv-qL_AFe3rsQSslH/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1y5xZMIOSPzK5XnzgPs5waIjYwtx3ducK/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1y5xZMIOSPzK5XnzgPs5waIjYwtx3ducK/view?usp=share_link",
+    "flac":""
   },
     {
     "id": "HORD085",
@@ -63,7 +98,7 @@
     "land": "\uD83C\uDDEE\uD83C\uDDF3",
     "release_text": "Horrordelic Proudly Presents the debut EP from Diabolical Orchestra (India).\n\nAs the composer tell us this story: When I was wandering in the forest I found an old CD of symphonies. I came home, played it on my speakers and I was mesmerized by the music. It made me feel all kinds of emotions and it took me to a state of meditation. I was astonished and inspired by the symphony and decide to add some elements in it to make it more emotional, ecstatic and cinematic.\n\nI am happily presenting you all my my debut EP: Bacterial Symphonies. The music is cooked in order to make people in the dance floor experience a journey of emotions.",
     "release_date": "19/May/2023",
-    "credits": "\n\nMusic by Gokul Kannan (DIabolical Orchestra)\n\nText Layout by Antikriz\n\nMastering Krono Audio",
+    "credits": "\n\nMusic by Gokul Kannan (Diabolical Orchestra)\n\nText Layout by Antikriz\n\nMastering Krono Audio",
     "tracklist": [
 "1. Hereditary (160 BPM)",
 "2. Galactic Terror (168 BPM)",
@@ -73,7 +108,8 @@
     "spotify": "https://open.spotify.com/album/1V0M8oIxmcX4PuRKJn98aB",
     "bandcamp": "https://horrordelic.bandcamp.com/album/bacterial-symphonies",
     "mp3": "https://drive.google.com/file/d/1lEX7xZL4yfkmw-1NhSyyS_eIzUri-EPM/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1g215f3LPwulwKxodoq0X9gLF8IlSNGqu/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1g215f3LPwulwKxodoq0X9gLF8IlSNGqu/view?usp=share_link",
+    "flac":""
   },
     {
     "id": "HORD084",
@@ -98,6 +134,8 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/psychic-miasma",
     "mp3": "https://drive.google.com/file/d/1iJ9WyFYKxwJPZeU9UNpykGJt_irxO5j3/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1PiC1xFWBmvsbQTUUO1ASApNqKI2cAPw1/view?usp=share_link"
+    ,
+    "flac":""
   },
   {
     "id": "HORD083",
@@ -126,6 +164,8 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-the-first-chapter-srishti",
     "mp3": "https://drive.google.com/file/d/13y_tyYb8-35X4swWbE-C-NPc3Pu_amu3/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1dReN-0_dYmui18ipISgHAWKykUDw0S00/view?usp=share_link"
+    ,
+    "flac":""
   },
   {
     "id": "HORD082",
@@ -146,7 +186,8 @@
     "spotify": "https://open.spotify.com/album/6WO3ukmPLBFD6JWdrukeYK",
     "bandcamp": "https://horrordelic.bandcamp.com/album/mental-chaos",
     "mp3": "https://drive.google.com/file/d/1EhcZdJU5Ca5sPjKgcYwX45MPFxSH1m6T/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1DMpBAkXS2oocJwycD6TOrpH0enHuA9Xb/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1DMpBAkXS2oocJwycD6TOrpH0enHuA9Xb/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD081",
@@ -167,7 +208,8 @@
     "spotify": "https://open.spotify.com/album/1f0SWusrCD4LSGvceu0FKS",
     "bandcamp": "https://horrordelic.bandcamp.com/album/i-miss-being-a-blender",
     "mp3": "https://drive.google.com/file/d/1jdCRBMnH9fkf49BQsTcNLozoCbS5QEAW/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1NFoggp6uhBChQO0PtNVeFIwS44FlC7lp/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1NFoggp6uhBChQO0PtNVeFIwS44FlC7lp/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD080",
@@ -208,7 +250,8 @@
     "spotify": "https://open.spotify.com/album/4u1yESxUaVKbVfuHhYBnza",
     "bandcamp": "https://horrordelic.bandcamp.com/album/past-present-and-evil",
     "mp3": "https://drive.google.com/file/d/1ONZ-H3sz7YKtwaRO0l6l-LKQBsh9xMXt/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1uwlsn_et9ctJhYfVf-Dvps307fLNkhVd/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1uwlsn_et9ctJhYfVf-Dvps307fLNkhVd/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD079",
@@ -230,7 +273,8 @@
     "spotify": "https://open.spotify.com/album/2HE0HIj5BnhxxpPzfhwLyv",
     "bandcamp": "https://horrordelic.bandcamp.com/album/wake-the-fuck-up",
     "mp3": "https://drive.google.com/file/d/1L8TB8JLBq_2ioiOUpTUPr4663JdGtKSk/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1MGnQyJw3hOxHZwNjvaVFQkGJ5dRw3A_n/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1MGnQyJw3hOxHZwNjvaVFQkGJ5dRw3A_n/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD078",
@@ -258,7 +302,8 @@
     "spotify": "https://open.spotify.com/album/4DyTVos0cxyLcWwUVdUOYu",
     "bandcamp": "https://horrordelic.bandcamp.com/album/accession-of-the-dark-age-volume-2",
     "mp3": "https://drive.google.com/file/d/1sXXKWjZUngY9NepDCMreVygedq1SedAf/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/18gthfhjyZ9kP4LTNbysPFEoWMvKwZiCG/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/18gthfhjyZ9kP4LTNbysPFEoWMvKwZiCG/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD077",
@@ -286,7 +331,8 @@
     "spotify": "https://open.spotify.com/album/3wrsIrBQvezcI6myR3sX88",
     "bandcamp": "https://horrordelic.bandcamp.com/album/accession-of-the-dark-age-volume-1",
     "mp3": "https://drive.google.com/file/d/1zGO_EIDZh3eaT3dI-nVZXV-ACYBPrtpj/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1BJ8AVy7qglEuSZXu8xylK2oC4uZyZOii/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1BJ8AVy7qglEuSZXu8xylK2oC4uZyZOii/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD076",
@@ -313,7 +359,8 @@
     "spotify": "https://open.spotify.com/album/3JtbmagSLJUjJa91nnF3Lt",
     "bandcamp": "https://horrordelic.bandcamp.com/album/shadows-at-dawn",
     "mp3": "https://drive.google.com/file/d/1sFRQhnwBIycgYsMwmLcXclNkh30Mua2p/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1UkL9opg_p9ohb8ku6e9W7fdwoc6JNr2v/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1UkL9opg_p9ohb8ku6e9W7fdwoc6JNr2v/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD075",
@@ -336,7 +383,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/spaceyard",
     "mp3": "https://drive.google.com/file/d/1aFPhgoW9GOi6-515_V2uVUSyDNl6VnE0/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1PyjwNf2SHmHOnFbgI78THO6V-V6kAtLS/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1PyjwNf2SHmHOnFbgI78THO6V-V6kAtLS/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD073",
@@ -366,7 +414,8 @@
     "spotify": "https://open.spotify.com/album/4n8S0ZSKPalyHB8zc9ttyp",
     "bandcamp": "https://horrordelic.bandcamp.com/album/force-fields",
     "mp3": "https://drive.google.com/file/d/1k6zSmZFHRYY6WNmIdWT_5-SLO1nAp3yd/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1sXPqOe9lzr-qkaEufMze8ThZ1o20AxhR/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1sXPqOe9lzr-qkaEufMze8ThZ1o20AxhR/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD074",
@@ -394,7 +443,8 @@
     "spotify": "https://open.spotify.com/album/0BWphoUJjF5ql1cPiyWbGk",
     "bandcamp": "https://horrordelic.bandcamp.com/album/the-realm-of-death",
     "mp3": "https://drive.google.com/file/d/1mDmc7a09y7YTeZl6FGUQm8nWMJ4S2kVS/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1FFV6IUHDDRP_YmxzUFRM-cXuAgNCIg-K/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1FFV6IUHDDRP_YmxzUFRM-cXuAgNCIg-K/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD072",
@@ -421,7 +471,8 @@
     "spotify": "https://open.spotify.com/album/6DXiazNd5zYpKLFil7TLxU",
     "bandcamp": "https://horrordelic.bandcamp.com/album/art-is-an-explosion-vol-2",
     "mp3": "https://drive.google.com/file/d/19dKQ3KnG2ZZ2B234qpjFkTFIJ7pQ5Wzt/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1IGcoq6BJXOVUZsm7TCf7uCjqqcK6jXuA/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1IGcoq6BJXOVUZsm7TCf7uCjqqcK6jXuA/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD071",
@@ -438,7 +489,8 @@
     "spotify": "https://open.spotify.com/album/5XySofDsSSksWRLV8rra4U",
     "bandcamp": "https://horrordelic.bandcamp.com/album/chants-of-chimera",
     "mp3": "https://drive.google.com/file/d/1tniByQDi3HxDeJWSJHpeNqfJXMOTw1RP/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1PPQgHEwmxcN2Rn-6dbomIQBuqbDO5A0j/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1PPQgHEwmxcN2Rn-6dbomIQBuqbDO5A0j/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD070",
@@ -466,7 +518,8 @@
     "spotify": "https://open.spotify.com/album/4FnEyxnfaBjKV4ZaGhyCsL",
     "bandcamp": "https://horrordelic.bandcamp.com/album/horror-tales-chapter-3",
     "mp3": "https://drive.google.com/file/d/1cpAJuoguWYzZHpvzdSNOaRPFh__AjMRD/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1iXhPPMnSM9BsptMVVt41OTw40Cv4xSTu/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1iXhPPMnSM9BsptMVVt41OTw40Cv4xSTu/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD069",
@@ -479,7 +532,7 @@
     "credits": "\n\n Mastered By SooSpicey (USA).(Except Track 1 = Mastered By Crone (Greece) and Track 4 = Mastered By Agnus Dei (Brazil)). Artwork By Antikriz",
     "tracklist": [
       "1. Atom & Agnus Dei - Acorda Negro Velho [175 Bpm] 06:40",
-      "2. Wave savage Vs. Agnus Dei - Reunion Of the Devils [180 Bpm] 07:54",
+      "2. Wave Savage Vs. Agnus Dei - Reunion Of the Devils [180 Bpm] 07:54",
       "3. Agnus Dei & Hypnokrono - Sanitatem [183 Bmp] 07:52",
       "4. Metagnus - Mysterium [185-200 Bpms] 07:48",
       "5. Agnus Dei & Atom - Phantom Of The Opera [200 Bpm] 06:47",
@@ -495,7 +548,8 @@
     "spotify": "https://open.spotify.com/album/1UYisaHj0Kn09AFN4hShEz",
     "bandcamp": "https://horrordelic.bandcamp.com/album/agnus-dei-and-friends-world-of-horrors",
     "mp3": "https://drive.google.com/file/d/1KpWFakMEq1kr8n1WFDKb4EXTFG3dzsRy/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1uskcr8QjGbplnhl6iu7ts-UZ3mzv2I-P/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1uskcr8QjGbplnhl6iu7ts-UZ3mzv2I-P/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD068",
@@ -518,7 +572,8 @@
     "spotify": "https://open.spotify.com/album/70Gl1f1yd2ZJGCyu9SYwr7",
     "bandcamp": "https://horrordelic.bandcamp.com/album/ganduna-calucus",
     "mp3": "https://drive.google.com/file/d/1JSNxbIqY8b26TEgDGBt3mj82YQE3AOZb/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1ex3dlKelh8uaGPegbzwnX5s74kZXqtN_/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1ex3dlKelh8uaGPegbzwnX5s74kZXqtN_/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD067",
@@ -541,7 +596,8 @@
     "spotify": "https://open.spotify.com/album/59xVmBpNrT5AVrkshRUXnr",
     "bandcamp": "https://horrordelic.bandcamp.com/album/fofo-e-bravo",
     "mp3": "https://drive.google.com/file/d/1QWueB3jjrbHFh9TC61wtRZG7Uivi71j_/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1Xa4H-vKuxBGhpMZM5mCmsJxqxq5ApHjf/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1Xa4H-vKuxBGhpMZM5mCmsJxqxq5ApHjf/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD066",
@@ -571,7 +627,8 @@
     "spotify": "https://open.spotify.com/album/3d0WiAwjIsF7p9mGy4e5sa",
     "bandcamp": "https://horrordelic.bandcamp.com/album/baba-yaga",
     "mp3": "https://drive.google.com/file/d/1_WI3dCpNauDo7ZukDqEdjQs53RPtjX9c/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1-_t4e2jYYjpYvtc53MV0spShIdZK09fE/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1-_t4e2jYYjpYvtc53MV0spShIdZK09fE/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD065",
@@ -581,7 +638,7 @@
     "land": "\uD83C\uDDF8\uD83C\uDDEA",
     "release_text": " From Sweden this killer Psycore will take you far out of the normal realms. \n\nGet high, get low and get ready for some true Dark Forest Psycore.",
     "release_date": "02/Novemeber/2019",
-    "credits": "\n\nTracks by Ludvig Herlevsson @ MOD Studio.\n\nMastering by Samuel Frisk.\n\nArtwork By Johan Wergeland ",
+    "credits": "\n\nTracks by \n\nLudvig Herlevsson - Mother Of Datura @ MOD Studio.\n\nMastering by Samuel Frisk.\n\nArtwork By Johan Wergeland ",
     "tracklist": [
       "1. Dödskult 02:35",
       "2. Abyssal 07:41",
@@ -598,7 +655,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/inside-the-womb-ov-darkness",
     "mp3": "https://drive.google.com/file/d/1y1zBcvMm-llYS_602LI9HvNHHWPBmG6k/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1bK4Ns-8wtIKzewe0u9wXxuLq57N7wbCQ/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1bK4Ns-8wtIKzewe0u9wXxuLq57N7wbCQ/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD064",
@@ -626,7 +684,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/art-is-an-explosion",
     "mp3": "https://drive.google.com/file/d/18WN0gjyPMCgdR_orCCuaXyQk-Fr5haCV/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1gCF1uiXkMPg-HwJko9VRNK4-mQVEFyfR/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1gCF1uiXkMPg-HwJko9VRNK4-mQVEFyfR/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD063",
@@ -655,7 +714,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/rites-unholy",
     "mp3": "https://drive.google.com/file/d/1oRuw58XYFoRKdr465169NO7hlKPl8_da/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/10-SZsPXCG2A5r305NAURcoAA7PwO5h2v/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/10-SZsPXCG2A5r305NAURcoAA7PwO5h2v/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD062",
@@ -682,7 +742,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/crone-and-friends",
     "mp3": "https://drive.google.com/file/d/1_0IISjNDZs-PbGrZWnG9LL0ArZpdBRaW/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1vNYIo5dhyWci2nzU65dyXr3N_jqRj5Zs/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1vNYIo5dhyWci2nzU65dyXr3N_jqRj5Zs/view?usp=share_link",
+    "flac":""
   },
 
   {
@@ -711,7 +772,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/shiki",
     "mp3": "https://drive.google.com/file/d/1OeNErMFI5E5_CLcVy6E2iZMM9WgH14aL/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1tMNIGg1kWLZqEnFffpaWH9zDVoj4MyqD/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1tMNIGg1kWLZqEnFffpaWH9zDVoj4MyqD/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD060",
@@ -739,7 +801,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/pagan-altar",
     "mp3": "https://drive.google.com/file/d/16WiC9IVeIMD1Z2jbh6ET-vaPFLOZqRhb/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/18nPq4iw8oP2VX62uZsf0MeO0n29Jq6f-/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/18nPq4iw8oP2VX62uZsf0MeO0n29Jq6f-/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD059",
@@ -767,7 +830,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/echoes-in-the-dark",
     "mp3": "https://drive.google.com/file/d/1G6F5FraCdNsH3fpvJ0hQIEIxDH8nIyXS/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/17TcbYnTjhPqIYuuforRHYqAvLQ9Uy0kb/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/17TcbYnTjhPqIYuuforRHYqAvLQ9Uy0kb/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD058",
@@ -795,7 +859,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/obscurism",
     "mp3": "https://drive.google.com/file/d/1BZ5kUO7EVW_YqYiNa37q75SGwN0PBjUx/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1K79c9YkEqaj1WoZr-B_pTi3aoWKlvZwC/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1K79c9YkEqaj1WoZr-B_pTi3aoWKlvZwC/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD057",
@@ -822,7 +887,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/at-the-end-of-the-rainbow",
     "mp3": "https://drive.google.com/file/d/10jKoqD3W0Jta4s81zk0XkPpy-sRbSkKv/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1Tn0RW8HQVWyjeR6p0LR6CfjOh2ctWESa/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1Tn0RW8HQVWyjeR6p0LR6CfjOh2ctWESa/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD056",
@@ -849,7 +915,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/horror-tales-chapter-2",
     "mp3": "https://drive.google.com/file/d/1sRCbRvCwscu5QT_l5nnM4e_Z-mOa-9_V/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1OqAREjXB3R9qaTyzwSvW_6Y4B6OGciRq/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1OqAREjXB3R9qaTyzwSvW_6Y4B6OGciRq/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD055",
@@ -866,7 +933,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/the-dead-alien",
     "mp3": "https://drive.google.com/file/d/1QSuZAYLbx87H4a96Haop0AbUtRFGdiHP/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1PY4dD5tk2K7DRLVaRBACgQpSsq48McoC/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1PY4dD5tk2K7DRLVaRBACgQpSsq48McoC/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD054",
@@ -893,7 +961,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/lost-tapes-3",
     "mp3": "https://drive.google.com/file/d/1VZhSIbfhyY8RzbyNpVIA4y1DhlaMSZZv/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/15mGO1f78fimp4uC5M7QNltNbas1vWS7b/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/15mGO1f78fimp4uC5M7QNltNbas1vWS7b/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD053",
@@ -910,7 +979,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/inner-circle",
     "mp3": "https://drive.google.com/file/d/18BO95jla08UB8ZCeMoP1QbIMFEEs_NG7/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1e6DwHSC8GVGFACbBaPqY55BSljbNrePS/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1e6DwHSC8GVGFACbBaPqY55BSljbNrePS/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "HORD052",
@@ -948,35 +1018,10 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/night-of-sacrifice",
     "mp3": "https://drive.google.com/file/d/1UXO69zELKr0-QbzdUJnNUaq79IcJlurz/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1MlaLjaQ2tN2QoM0nA_yezuLtslSDzw9w/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1MlaLjaQ2tN2QoM0nA_yezuLtslSDzw9w/view?usp=share_link",
+    "flac":""
   }, 
-  {
-    "id": "HORD065",
-    "path": "Mother_Of_Datura_-_Inside_the_womb_ov_Darkness",
-    "artist": "Mother Of Datura",
-    "album_name": "Inside the womb ov Darkness",
-    "land": "\ud83c\uddf8\ud83c\uddea",
-    "release_text": "From Sweden this killer Psycore will take you far out of the normal realms, get high, get low and get ready for some true Dark Forest Psycore. ",
-    "release_date": "02/Nov/2019",
-    "credits": "Tracks by Ludvig Herlevsson (Mother of Datura) @ MOD Studio\n\nMastering by Samuel Frisk\n\nArtwork By Johan Wergeland",
-    "tracklist": [
-    "    1. Dödskult 02:35",
-"2. Abyssal 07:41",
-"3. Rotting Teeth 06:58",
-"4. Welcome to my Void 08:42",
-"5. Chemical Necromancy 06:35",
-"6. Hollow 01:53",
-"7. Inside the Womb Ov Darkness 08:33",
-"8. Maranatha 06:06",
-"9. Until The Light Takes Us 07:27"],
-    "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp298yRnCZfb5TjWTQvoODA5Tf",
-    "youtube_full_album": "https://www.youtube.com/watch?v=TsK7RGUFtYw",
-    "spotify": "",
-    "bandcamp": "https://horrordelic.bandcamp.com/album/inside-the-womb-ov-darkness",
-    "mp3": "https://drive.google.com/file/d/1y1zBcvMm-llYS_602LI9HvNHHWPBmG6k/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1bK4Ns-8wtIKzewe0u9wXxuLq57N7wbCQ/view?usp=share_link"
-  },
-{
+ {
     "id": "HORD045",
     "path": "Amnesia-Breaking_Point",
     "artist": "Amnesia",
@@ -994,7 +1039,8 @@
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/breaking-point",
     "mp3": "https://drive.google.com/file/d/18N0tbRc1WrD8Vnsa21yBv8apiSdN8p0z/view?usp=drive_link",
-    "wav": "https://drive.google.com/file/d/1XThKqGd8LrZsLsBLd74eltw0L4hHOHRW/view?usp=drive_link"
+    "wav": "https://drive.google.com/file/d/1XThKqGd8LrZsLsBLd74eltw0L4hHOHRW/view?usp=drive_link",
+    "flac":""
   },
   {
     "id": "",
@@ -1011,7 +1057,8 @@
     "spotify": "",
     "bandcamp": "",
     "mp3": "",
-    "wav": ""
+    "wav": "",
+    "flac":""
   },
   {
     "id": "HORD013",
@@ -1080,7 +1127,8 @@
     "spotify": "https://horrordelic.bandcamp.com/album/va-mysteries-of-death-part-2",
     "bandcamp": "https://horrordelic.bandcamp.com/album/va-mysteries-of-death-part-1",
     "mp3": "https://drive.google.com/file/d/1Ps14jcrTL3XTUf_qSwsh0nSG_FPDjLmJ/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1vqHrWxXSILwYlk4TAI7ENEfFNTKm36LF/view?usp=share_link"
+    "wav": "https://drive.google.com/file/d/1vqHrWxXSILwYlk4TAI7ENEfFNTKm36LF/view?usp=share_link",
+    "flac":""
   },
   {
     "id": "",
@@ -1097,7 +1145,8 @@
     "spotify": "",
     "bandcamp": "",
     "mp3": "",
-    "wav": ""
+    "wav": "",
+    "flac":""
   },
   {
     "id": "",
@@ -1114,7 +1163,8 @@
     "spotify": "",
     "bandcamp": "",
     "mp3": "",
-    "wav": ""
+    "wav": "",
+    "flac":""
   },
   {
     "id": "",
@@ -1131,7 +1181,8 @@
     "spotify": "",
     "bandcamp": "",
     "mp3": "",
-    "wav": ""
+    "wav": "",
+    "flac":""
   },
   {
     "id": "",
@@ -1148,6 +1199,7 @@
     "spotify": "",
     "bandcamp": "",
     "mp3": "",
-    "wav": ""
+    "wav": "",
+    "flac":""
   }
 ]

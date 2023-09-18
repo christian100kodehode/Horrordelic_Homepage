@@ -26,33 +26,33 @@ const ReleaseDetail = () => {
   const [isSelected, setIsSelected] = useState(yearNow.toString());
   const [showVideo, setShowVideo] = useState({ id: false });
   const [hasLoaded, setHasLoaded] = useState({ id: false });
-    // Show text only on selected id
-    const [showText, setShowText] = useState({});
-    const toggleText = (id) => {
-      setShowText((previousText) => {
-        return {
-          ...previousText,
-          [id]: !previousText[id],
-        };
-      });
-    };
+  // Show text only on selected id
+  const [showText, setShowText] = useState({});
+  const toggleText = (id) => {
+    setShowText((previousText) => {
+      return {
+        ...previousText,
+        [id]: !previousText[id],
+      };
+    });
+  };
 
-    const handleVideos = (id) => {
-      setShowVideo((previousVideo) => {
-        return {
-          ...previousVideo,
-          [id]: !previousVideo[id],
-        };
-      });
-    };
-    const handleHasLoaded = (id) => {
-      setHasLoaded((previousVideo) => {
-        return {
-          ...previousVideo,
-          [id]: !previousVideo[id],
-        };
-      });
-    };
+  const handleVideos = (id) => {
+    setShowVideo((previousVideo) => {
+      return {
+        ...previousVideo,
+        [id]: !previousVideo[id],
+      };
+    });
+  };
+  const handleHasLoaded = (id) => {
+    setHasLoaded((previousVideo) => {
+      return {
+        ...previousVideo,
+        [id]: !previousVideo[id],
+      };
+    });
+  };
 
   // State for loading Artist data
   const [isLoading, setIsLoading] = useState(false);
@@ -126,8 +126,6 @@ const ReleaseDetail = () => {
     fetchDjRelases();
   }, []);
 
-
-
   const params = useParams();
   // console.log(params);
   // Test for search through tracklist!!
@@ -140,8 +138,6 @@ const ReleaseDetail = () => {
   // TEST
   return (
     <main className={styles.container}>
-
-
       {/* Map release data abd filter each year selected by user */}
       {album
         .filter((e) => e.path === params.path)
@@ -157,6 +153,7 @@ const ReleaseDetail = () => {
               release_text,
               bandcamp,
               spotify,
+              flac,
               mp3,
               wav,
               path,
@@ -166,8 +163,12 @@ const ReleaseDetail = () => {
             },
             filteredAlbum
           ) => (
-            <article key={path} className={styles.releaseContainer} id={path} 
-            ref={path === window.location.hash.slice(1) ? selectedRef : null            }>
+            <article
+              key={path}
+              className={styles.releaseContainer}
+              id={path}
+              ref={path === window.location.hash.slice(1) ? selectedRef : null}
+            >
               {/* {console.log(filteredAlbum)} */}
               <div className={styles.releaseName}>
                 {/* <HashLink smooth to={"/release#" + path}> */}
@@ -176,7 +177,7 @@ const ReleaseDetail = () => {
                     &nbsp;{artist}:&nbsp;{album_name}
                     <span>{land}</span>
                   </p>
-                  </Link>
+                </Link>
                 {/* </HashLink> */}
               </div>
 
@@ -204,7 +205,11 @@ const ReleaseDetail = () => {
                             <div className={styles.videoInner}>
                               <LazyLoadImage
                                 className={styles.thumbNailImage}
-                                src={"https://img.youtube.com/vi/" + youtube_full_album.slice(-11) + "/hqdefault.jpg"}
+                                src={
+                                  "https://img.youtube.com/vi/" +
+                                  youtube_full_album.slice(-11) +
+                                  "/hqdefault.jpg"
+                                }
                                 effect="blur"
                                 alt={album_name}
                               />
@@ -219,7 +224,12 @@ const ReleaseDetail = () => {
                           </button>
                         ))}
 
-                      {showVideo[id] && <YoutubePlayer autoplay="0" videoId={youtube_full_album.slice(-11)} />}
+                      {showVideo[id] && (
+                        <YoutubePlayer
+                          autoplay="0"
+                          videoId={youtube_full_album.slice(-11)}
+                        />
+                      )}
                     </div>
                   </div>
                   {/* TESTING */}
@@ -255,9 +265,20 @@ const ReleaseDetail = () => {
                       ""
                     )}
 
-                    <a href={youtube_playlist_embed} target="_blank" rel="noreferrer">
+                    <a
+                      href={youtube_playlist_embed}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img src={youtubeLogo} alt="Youtube Link" />
                     </a>
+                    {flac ? (
+                      <a href={flac} target="_blank" rel="noreferrer">
+                        <p>FLAC</p>
+                      </a>
+                    ) : (
+                      ""
+                    )}
                     <a href={mp3} target="_blank" rel="noreferrer">
                       <p>MP3</p>
                     </a>
@@ -277,19 +298,40 @@ const ReleaseDetail = () => {
                       <div>
                         {/* Show and hide the text if more text is selected, also show and hide the
                           show more button to make it appear under the showing text */}
-                        <p style={!showText[id] ? { display: "" } : { display: "none" }} className={styles.releaseTextShort}>
+                        <p
+                          style={
+                            !showText[id]
+                              ? { display: "" }
+                              : { display: "none" }
+                          }
+                          className={styles.releaseTextShort}
+                        >
                           {release_text.substring(0, 550) + "...."}
                         </p>
-                        <div style={!showText[id] ? { display: "" } : { display: "none" }}>
+                        <div
+                          style={
+                            !showText[id]
+                              ? { display: "" }
+                              : { display: "none" }
+                          }
+                        >
                           {/* <HashLink smooth to={"/release#" + album_name}> */}
-                            <button type="button" onClick={() => toggleText(id)} title="Read more about this release..">
-                              Read More
-                            </button>
+                          <button
+                            type="button"
+                            onClick={() => toggleText(id)}
+                            title="Read more about this release.."
+                          >
+                            Read More
+                          </button>
                           {/* </HashLink> */}
                         </div>
                         {/* Show the readmore contents */}
                         {showText[id] && [
-                          <div key={{ id } + { album_name }} id={album_name} className={styles.readMoreContainer}>
+                          <div
+                            key={{ id } + { album_name }}
+                            id={album_name}
+                            className={styles.readMoreContainer}
+                          >
                             <div className={styles.readMoreText}>
                               <p>{release_text}</p>
                               <p>Credits:</p>
@@ -298,7 +340,9 @@ const ReleaseDetail = () => {
                               <p>{release_date}</p>
                             </div>
                             <HashLink smooth to={"#top"}>
-                              <button onClick={() => toggleText(id)}>Read less</button>
+                              <button onClick={() => toggleText(id)}>
+                                Read less
+                              </button>
                             </HashLink>
                           </div>,
                         ]}
@@ -313,7 +357,14 @@ const ReleaseDetail = () => {
                 <p>Track list:</p>
                 {/* Map through the tracklist and show all tracks , also check if names are longer than 50, then set extra line height. if longer line than 100, cut @ 100 else just write it normally. */}
                 {tracklist.map((e, i) => (
-                  <p key={`${album_name}${i}`} style={e.length > 40 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
+                  <p
+                    key={`${album_name}${i}`}
+                    style={
+                      e.length > 40
+                        ? { lineHeight: "1em" }
+                        : { lineHeight: "0.5em" }
+                    }
+                  >
                     {e.length > 100 ? e.substring(0, 100) + "..." : e}
                   </p>
                 ))}

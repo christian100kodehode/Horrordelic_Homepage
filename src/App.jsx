@@ -3,7 +3,7 @@ import "./App.css";
 // import "./index.css";
 // Importing components
 import Release from "./components/Release";
-import Release2022 from "./components/2022/Release2022";
+// import Release2022 from "./components/2022/Release2022";
 import Navbar from "./components/Navbar";
 import Artists from "./components/Artists";
 import Main from "./components/Main";
@@ -20,7 +20,10 @@ import { HelmetProvider } from "react-helmet-async";
 function App() {
   // change theme
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [theme, setTheme] = useLocalStorage("theme", defaultDark ? "dark" : "light");
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
 
   console.log(theme);
 
@@ -33,9 +36,16 @@ function App() {
     <HelmetProvider>
       <div className="App" data-theme={theme}>
         <Navbar />
-        <button type="button" className="themeChangerButton" onClick={switchTheme} title="Change colors on site..">
-          {theme === "light" ? <FaMoon /> : <FaSun />}
-        </button>
+        <div className="themeButtonContainer">
+          <button
+            type="button"
+            className="themeChangerButton"
+            onClick={switchTheme}
+            title="Change colors on site.."
+          >
+            {theme === "light" ? <FaMoon /> : <FaSun />}
+          </button>
+        </div>
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route exact path="Artists" element={<Artists />} />

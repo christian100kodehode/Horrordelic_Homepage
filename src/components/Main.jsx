@@ -5,9 +5,15 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import HorrordelicLogo from "../images/horrordelic.jpg";
 // Import Components/Hooks
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { AiOutlineTwitter, AiOutlineFacebook, AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
+import {
+  AiOutlineTwitter,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineYoutube,
+} from "react-icons/ai";
 import { FaBandcamp } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 
@@ -48,20 +54,36 @@ const Main = () => {
   const LatestAlbumScrollText = () => {
     return (
       <>
-        <span className={styles.latestAlbumDetails}>Latest&nbsp;Release:&nbsp;&nbsp;</span>
+        <span className={styles.latestAlbumDetails}>
+          <Link to={"/release"}>
+            <span className={styles.marqueeText}>
+              Latest&nbsp;Release:&nbsp;&nbsp;
+            </span>
+          </Link>
+        </span>
         &nbsp;&nbsp;
-        <LazyLoadImage
-          className={styles.thumbNailImage}
-          src={"https://img.youtube.com/vi/" + youTubeImage + "/1.jpg"}
-          // effect="blur"
-          alt={latestAlbum.album_name}
-        />
+        <span className={styles.marqueeText}>
+          <Link to={"/release"}>
+            <LazyLoadImage
+              className={styles.thumbNailImage}
+              src={"https://img.youtube.com/vi/" + youTubeImage + "/1.jpg"}
+              // effect="blur"
+              alt={latestAlbum.album_name}
+            />
+          </Link>
+        </span>
         &nbsp;
         <a href="/release">
           &nbsp;{latestAlbum.artist}:&nbsp;{latestAlbum.album_name}&nbsp;&nbsp;
         </a>
         &nbsp;&nbsp;
-        <span className={styles.latestAlbumDetails}>{latestAlbum.release_date}</span>
+        <span className={styles.latestAlbumDetails}>
+          <Link to={"/release"}>
+            <span className={styles.marqueeText}>
+              {latestAlbum.release_date}
+            </span>
+          </Link>
+        </span>
       </>
     );
   };
@@ -105,7 +127,8 @@ const Main = () => {
         <div>
           <h1>Welcome! </h1>
           <h2>
-            New site in the <span style={{ color: "var(--accent)" }}>making...</span>
+            New site in the{" "}
+            <span style={{ color: "var(--accent)" }}>making...</span>
           </h2>
           <h2>
             Stay tuned and get some{" "}
@@ -123,13 +146,35 @@ const Main = () => {
               </div>
             </div>
             <div>
-              Horrordelic: <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>
+              Horrordelic:{" "}
+              <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>
             </div>
           </h2>
         </div>
-        <LazyLoadImage src={HorrordelicLogo} alt="Horrordelic Logo" className={styles.Logo} effect="blur" />
-
+        <LazyLoadImage
+          src={HorrordelicLogo}
+          alt="Horrordelic Logo"
+          className={styles.Logo}
+          effect="blur"
+        />
+        {/* <div className={styles.iframeContainer}>
+          <span className={styles.mainLinksText2}>
+            <p>This is what we are about:</p>
+          </span>
+          <iframe
+            width="360"
+            height="215"
+            src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div> */}
         <div className={styles.mainLinks}>
+          <span className={styles.mainLinksText}>
+            <p>Visit our sites below:</p>
+          </span>
           <a
             href="https://horrordelic.bandcamp.com"
             target="_blank"
@@ -140,7 +185,14 @@ const Main = () => {
           >
             <FaBandcamp size={40} />
           </a>
-          <a href="https://youtube.com/horrordelic" title="Youtube" target="_blank" rel="noreferrer" alt="Facebook" className={styles.mainLinksChild}>
+          <a
+            href="https://youtube.com/horrordelic"
+            title="Youtube"
+            target="_blank"
+            rel="noreferrer"
+            alt="Facebook"
+            className={styles.mainLinksChild}
+          >
             <AiOutlineYoutube size={40} />
           </a>
 
@@ -154,7 +206,14 @@ const Main = () => {
           >
             <AiOutlineInstagram size={40} />
           </a>
-          <a href="https://twitter.com/horrordelic" title="Twitter" target="_blank" rel="noreferrer" alt="Twitter" className={styles.mainLinksChild}>
+          <a
+            href="https://twitter.com/horrordelic"
+            title="Twitter"
+            target="_blank"
+            rel="noreferrer"
+            alt="Twitter"
+            className={styles.mainLinksChild}
+          >
             <AiOutlineTwitter size={40} />
           </a>
           <a

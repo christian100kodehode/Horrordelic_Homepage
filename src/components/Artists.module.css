@@ -1,6 +1,6 @@
 .container {
   height: calc(100%);
-  margin-top: 2em;
+  /* margin-top: 2em; */
   background: var(--backgroundImage);
   background-attachment: fixed;
   padding-top: 5em;
@@ -25,9 +25,13 @@
 }
 
 .categoryHeader {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
   width: 100vw;
   color: white;
-  padding-bottom: 0.5em;
+  /* padding-bottom: 0.5em; */
 }
 
 .categoryHeader h2 {
@@ -36,8 +40,17 @@
   margin: 2em;
 }
 
+.categoryHeader h3 {
+  /* font-weight: 700; */
+  font-family: "megalomaniac";
+  font-size: 2rem;
+  margin: 2em;
+  text-align: center;
+  max-width: 20em;
+}
+
 .artistsContainer {
-   position: relative;
+  position: relative;
   margin: 1em 1em 2em;
   width: 12em;
   /* height: 42vh; */
@@ -65,7 +78,7 @@
   /* position: absolute;
   bottom: 10px;
   left: 16px; */
-   /* color: white; */
+  /* color: white; */
   z-index: 10;
   text-shadow: var(--text-shadowBg);
   font-family: "01digitall";
@@ -99,10 +112,15 @@
 }
 
 .footerBackLink a:hover {
-  color: var(--text-primary-transparent)
+  color: var(--text-primary-transparent);
 }
 
 @media (max-width: 800px) {
+  .categoryHeader h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem 2rem;
+  }
+
   .artistsContainer img {
     width: 11em;
     height: 13em;
@@ -113,5 +131,24 @@
     width: 12em;
     display: flex;
     justify-content: center;
+  }
+
+  .categoryHeader h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .categoryHeader h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .categoryHeader h2 {
+    font-size: 1rem;
+  }
+  .categoryHeader h3 {
+    font-size: 1.1rem;
   }
 }

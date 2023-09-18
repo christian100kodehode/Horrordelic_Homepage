@@ -38,6 +38,11 @@ const Artists = () => {
       <div className={styles.artistList}>
         <div className={styles.categoryHeader}>
           <h2>Artists</h2>
+          <h3>
+            Here you find Psychedelic artists who all have specialized and
+            developed deep Psychedelic states, deep into the twisted world of
+            Darkpsy and all its paths into our minds.
+          </h3>
         </div>
         {sortedList
           .filter((e) => e.category.toLowerCase() === "artist")
@@ -55,7 +60,14 @@ const Artists = () => {
                     effect="blur"
                     placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
                   />
-                  <h2 className={styles.artistHeader} style={name.length >= 9 ? { fontSize: "1.2em" } : { fontSize: "1.5em" }}>
+                  <h2
+                    className={styles.artistHeader}
+                    style={
+                      name.length >= 9
+                        ? { fontSize: "1.2em" }
+                        : { fontSize: "1.5em" }
+                    }
+                  >
                     {name.replace(/_+/g, " ")}
                   </h2>
                   <span className={styles.land}>{flag}</span>
@@ -64,9 +76,19 @@ const Artists = () => {
             );
           })}
       </div>
+
       <div className={styles.artistList}>
+        <h2 className={styles.categoryHeader}>
+          Support your local Darkpsy dealer...
+        </h2>
         <div className={styles.categoryHeader}>
           <h2>Djs</h2>
+
+          <h3>
+            Here you find Psychedelic explorers that got steady flow of power
+            and energy for any event. Going deep and far into the Darkpsy world,
+            try out a set or two from any of our djs:
+          </h3>
         </div>
 
         {artist
@@ -87,7 +109,14 @@ const Artists = () => {
                     placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
                   />
 
-                  <h2 className={styles.artistHeader} style={name.length >= 9 ? { fontSize: "1em" } : { fontSize: "1.5em" }}>
+                  <h2
+                    className={styles.artistHeader}
+                    style={
+                      name.length >= 9
+                        ? { fontSize: "1em" }
+                        : { fontSize: "1.5em" }
+                    }
+                  >
                     {/* {console.log(name.length)} */}
                     {name.replace(/_+/g, " ")}
                   </h2>
@@ -97,10 +126,12 @@ const Artists = () => {
             );
           })}
       </div>
+
       <h2 className={styles.footerBackLink}>
-      <HashLink smooth to={"#top"}>
+        <HashLink smooth to={"#"}>
           Go to top of Page
-        </HashLink></h2>
+        </HashLink>
+      </h2>
     </main>
   );
 };

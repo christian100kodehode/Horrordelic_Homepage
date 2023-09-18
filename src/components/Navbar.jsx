@@ -5,7 +5,7 @@ import { debounce } from "../utilities/helpers.js";
 import { HashLink } from "react-router-hash-link";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import  Logo  from "../images/HorrordelicLogo300x300.png"
+import Logo from "../images/HorrordelicLogo300x300.png";
 
 const Navbar = () => {
   // Make the previous scroll state, start at 0.
@@ -18,7 +18,11 @@ const Navbar = () => {
     const currentScrollPos = window.pageYOffset;
     // set visible when preScroll is smaller than currentScroll aswell as prevscroll - currentstill is larger than 200 pixels. Last part is if the
     //  currentscrollPos if close to the top, it will appear (just scrolling a little bit up and down from the top)
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 100) || currentScrollPos < 10);
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 100) ||
+        currentScrollPos < 10
+    );
     // timer for the r
     setPrevScrollPos(currentScrollPos);
   }, 100);
@@ -30,18 +34,34 @@ const Navbar = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    
-    <nav className={styles.navbarlinks} style={{ top: visible ? "0" : "-65px" }}>
-   <span className={styles.homeButton}>
+    <nav
+      className={styles.navbarlinks}
+      style={{ top: visible ? "0" : "-65px" }}
+    >
+      {/* <span className={styles.homeButton}>
       <Link to="/" title="Go back to main page">
         Main
       </Link>
-      </span>
-      <Link to="/Artists" title="Artist and Djs">
-        Artists
+      </span> */}
+      <Link to="/" title="Horrordelic Records">
+        <LazyLoadImage
+          className={styles.Logo}
+          src={Logo}
+          // effect="blur"
+          alt={Logo}
+        />
       </Link>
+      {prevScrollPos > 0 && window.location.href.slice(-1) === "s" ? (
+        <HashLink smooth to={"#"}>
+          Artists
+        </HashLink>
+      ) : (
+        <Link to="/Artists" title="All our Artists and Dj`s">
+          Artists
+        </Link>
+      )}
       {/* Scroll to top when release page is not at top, else go to release page */}
-      {prevScrollPos > 0 ? (
+      {prevScrollPos > 100 && window.location.href.slice(-1) === "e" ? (
         <HashLink smooth to={"#"}>
           Releases
         </HashLink>
@@ -50,18 +70,15 @@ const Navbar = () => {
           Releases
         </Link>
       )}
-      <Link to="/ReleaseAndEvents" title="Upcoming releases and Events" className={styles.upcomingLink}>
+      {/* <Link
+        to="/ReleaseAndEvents"
+        title="Upcoming releases and Events"
+        className={styles.upcomingLink}
+      >
         Upcoming
-      </Link>
-     
+      </Link> */}
+
       <div>
-        <Link to="/" title="Horrordelic Records">
-      <LazyLoadImage
-          className={styles.Logo}
-          src={Logo}
-          // effect="blur"
-          alt={Logo}
-        /></Link>
         <HashLink smooth to={"#"}>
           <button className={styles.goToTopButton} title="Go to top of page..">
             <AiOutlineArrowUp />
