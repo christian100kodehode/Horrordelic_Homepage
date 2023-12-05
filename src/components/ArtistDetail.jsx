@@ -11,8 +11,8 @@ import { HashLink } from "react-router-hash-link";
 import bandCampLogo from "../images/bc-logotype-color-128.png";
 import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
-import { BsFillFileMusicFill } from "react-icons/bs";
-import { BsFillChatDotsFill } from "react-icons/bs";
+import { RiSoundcloudFill } from "react-icons/ri";
+import { RiFacebookCircleFill } from "react-icons/ri";
 
 const ArtistDetail = () => {
   const { id } = useParams();
@@ -147,10 +147,10 @@ const ArtistDetail = () => {
                               href={facebook}
                               target="_blank"
                               rel="noreferrer"
-                              title="Contact.."
+                              title={"Contact " + name + " " + "at Facebook"}
                             >
                               <button>
-                                <BsFillChatDotsFill />
+                                <RiFacebookCircleFill />
                               </button>
                             </a>
                           ) : (
@@ -161,10 +161,10 @@ const ArtistDetail = () => {
                               href={soundcloud}
                               target="_blank"
                               rel="noreferrer"
-                              title="Music.."
+                              title={"Soundcloud site for " + name + "!"}
                             >
                               <button>
-                                <BsFillFileMusicFill />
+                                <RiSoundcloudFill />
                               </button>
                             </a>
                           ) : (

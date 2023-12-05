@@ -9,10 +9,97 @@
   background-attachment: fixed;
 }
 
+/* TEST */
+
+.hamburgerMenu {
+  position: absolute;
+  padding: 1rem;
+  top: calc(29vh);
+  left: calc(26vw);
+}
+.hamburgerMenu:hover {
+  background-color: var(--accent);
+}
+
+.artistlistMenu:hover {
+  background-color: var(--accentTransp);
+  cursor: pointer;
+  border-radius: 25% 0 0 25%;
+}
+
+.navItem {
+  padding: 0.1rem 0;
+}
+
+.navItem:hover {
+  background-color: var(--accentTransp);
+}
+
+.navMenu {
+  position: absolute;
+  /* display: none; */
+  left: -110%;
+  top: 195px;
+  /* flex-direction: row; */
+  /* background-color: rgba(0, 0, 0, 0.8);
+  width: 100%; */
+  /* height: 1.8rem; */
+  /* z-index: 10;
+  justify-content: center;
+  text-align: center; */
+  transition: 0.5s;
+}
+.navMenuActive {
+  position: absolute;
+  /* left: 0;
+  top: 195px; */
+  top: calc(22vh);
+  left: calc(2vw);
+  /* flex-direction: row; */
+  background-color: rgba(203, 23, 23, 0.8);
+  /* width: 10%; */
+  /* height: 1.8rem; */
+  z-index: 10;
+  justify-content: center;
+  text-align: center;
+  transition: 0.4s;
+  list-style: none;
+  padding-right: 1rem;
+  border-radius: 0 5% 5% 0;
+}
+
+.navItem svg {
+  width: 15px;
+  height: 20px;
+}
+
+.navItem a {
+  padding: 0;
+}
+
+.navItem button {
+  margin: 0em 0em 0em 1em;
+  border: 0;
+  padding: 0em;
+  color: rgb(228, 228, 228);
+  background-color: var(--accentTransp);
+}
+
+.navItem a h2 {
+  /* margin: 1rem; */
+  padding: 1rem;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0;
+  display: contents;
+}
+
+/* TEST */
 .container h2 {
   font-family: "megalomaniac";
   font-size: 2em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   margin: 0;
 }
 
@@ -22,6 +109,7 @@
 
 .artistsContainer a:hover {
   color: var(--text-primary-transparent);
+  border-radius: 20%;
 }
 
 .categoryHeader {
@@ -57,12 +145,24 @@
   border-radius: 5%;
   background: var(--releaseContainerBg);
   box-shadow: 10px 5px 5px black;
+  /* height: 25em; */
 }
 
 .artistHeader {
   background-color: var(--releaseContainerBg);
   border-radius: 20px;
   padding: 0 0.3em;
+}
+
+.artistlistMenu {
+  background-color: var(--releaseContainerBg);
+  padding: 0em;
+  display: flex;
+  justify-content: right;
+}
+
+.artistlistMenu h2 {
+  color: blue;
 }
 
 .artistList {
@@ -87,12 +187,12 @@
 }
 
 .artistsContainer img {
-  width: 12em;
-  height: 36vh;
+  width: 12rem;
+  height: 10rem;
   overflow: hidden;
   z-index: 1;
   object-fit: contain;
-  padding-top: 0.3em;
+  padding-top: 0.3rem;
 }
 
 .thumbNailImage {
@@ -113,6 +213,40 @@
 
 .footerBackLink a:hover {
   color: var(--text-primary-transparent);
+}
+
+/* @media (min-width: 900px) {
+  .hamburgerMenu {
+    position: absolute;
+    top: calc(17vh);
+    left: calc(25vw);
+  }
+} */
+
+@media (min-width: 1300px) {
+  .hamburgerMenu {
+    position: absolute;
+    top: calc(27vh);
+    left: calc(29vw);
+  }
+
+  .navMenuActive {
+    top: calc(22vh);
+    left: calc(5vw);
+  }
+}
+
+@media (min-width: 1600px) {
+  .hamburgerMenu {
+    position: absolute;
+    top: calc(23vh);
+    left: calc(31vw);
+  }
+
+  .navMenuActive {
+    top: calc(28vh);
+    left: calc(20vw);
+  }
 }
 
 @media (max-width: 800px) {

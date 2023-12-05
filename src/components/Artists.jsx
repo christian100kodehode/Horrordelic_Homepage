@@ -3,15 +3,25 @@ import styles from "./Artists.module.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { HashLink } from "react-router-hash-link";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { RiSoundcloudFill } from "react-icons/ri";
 
 const Artists = () => {
   // State for loading
   const [isLoading, setIsLoading] = useState(false);
   // State for Release data
   const [artist, setArtist] = useState([]);
+  //state for dropDownMenu
+  const [click, setClick] = useState(false);
+  const closeMenu = () => setClick(false);
+
+  const handleClick = () => {
+    setClick(!click);
+  };
 
   const fetchData = () => {
     setIsLoading(true);
@@ -37,7 +47,61 @@ const Artists = () => {
     <main className={styles.container}>
       <div className={styles.artistList}>
         <div className={styles.categoryHeader}>
+          {/* Hamburger Menu icon changing on click */}
+          <div className={styles.hamburgerMenu} onClick={handleClick}>
+            {click ? (
+              <FaTimes size={30} style={{ color: "#ffffff" }} />
+            ) : (
+              <FaBars size={25} style={{ color: "#ffffff" }} />
+            )}
+          </div>
+          {/* Hamburger Menu show contents or not */}
+          <ul className={click ? styles["navMenuActive"] : styles["navMenu"]}>
+            <li className={styles.navItems}>
+              {sortedList
+                .filter((e) => e.category.toLowerCase() === "artist")
+                .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
+                  return (
+                    <div key={id} className={styles.navItem}>
+                      <Link
+                        title={"for " + name + "!"}
+                        to={`/artist/${nameNoSpace}`}
+                      >
+                        <h2
+                          className={styles.artistlistMenu}
+                          style={
+                            name.length >= 9
+                              ? { fontSize: "0.9em" }
+                              : { fontSize: "1em" }
+                          }
+                        >
+                          {name.replace(/_+/g, " ") + " "}
+                          <span
+                          // className={styles.land}
+                          >
+                            {flag}
+                          </span>
+                        </h2>
+                      </Link>
+                      <span>
+                        <a
+                          href={soundcloud}
+                          target="_blank"
+                          rel="noreferrer"
+                          title={name + "`s" + " " + "Soundcloud Link."}
+                        >
+                          <button>
+                            <RiSoundcloudFill />
+                          </button>
+                        </a>
+                      </span>
+                    </div>
+                  );
+                })}
+            </li>
+          </ul>
           <h2>Artists</h2>
+
           <h3>
             Here you find Psychedelic artists who all have specialized and
             developed deep Psychedelic states, deep into the twisted world of
