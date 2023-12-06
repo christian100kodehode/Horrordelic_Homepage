@@ -12,11 +12,12 @@
 /* TEST */
 
 .hamburgerMenu {
-  position: absolute;
+  /* position: absolute; */
   padding: 1rem;
   top: calc(29vh);
   left: calc(26vw);
 }
+
 .hamburgerMenu:hover {
   background-color: var(--accent);
 }
@@ -29,17 +30,20 @@
 
 .navItem {
   padding: 0.1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
 }
 
 .navItem:hover {
-  background-color: var(--accentTransp);
+  background-color: var(--releaseContainerStreamLinksBg);
 }
 
 .navMenu {
   position: absolute;
   /* display: none; */
   left: -110%;
-  top: 195px;
+  top: 200px;
   /* flex-direction: row; */
   /* background-color: rgba(0, 0, 0, 0.8);
   width: 100%; */
@@ -48,15 +52,17 @@
   justify-content: center;
   text-align: center; */
   transition: 0.5s;
+  display: none;
 }
 .navMenuActive {
   position: absolute;
+  /* display: contents; */
   /* left: 0;
   top: 195px; */
-  top: calc(22vh);
-  left: calc(2vw);
+  top: 200px;
+  left: 70px;
   /* flex-direction: row; */
-  background-color: rgba(203, 23, 23, 0.8);
+  background-color: var(--accent);
   /* width: 10%; */
   /* height: 1.8rem; */
   z-index: 10;
@@ -224,28 +230,28 @@
 } */
 
 @media (min-width: 1300px) {
-  .hamburgerMenu {
-    position: absolute;
-    top: calc(27vh);
-    left: calc(29vw);
-  }
-
   .navMenuActive {
-    top: calc(22vh);
-    left: calc(5vw);
+    top: calc(13vh);
+    left: calc(18vw);
   }
 }
 
 @media (min-width: 1600px) {
   .hamburgerMenu {
-    position: absolute;
     top: calc(23vh);
     left: calc(31vw);
   }
 
+  /* .navMenuActive {
+    top: calc(18vh);
+    left: calc(28vw);
+  } */
+}
+
+@media (min-width: 2000px) {
   .navMenuActive {
-    top: calc(28vh);
-    left: calc(20vw);
+    top: calc(19vh);
+    left: calc(23vw);
   }
 }
 
