@@ -9,6 +9,18 @@
   background-attachment: fixed;
 }
 
+.categoryHeader h4 {
+  font-family: "megalomaniac";
+  font-size: 1.8rem;
+  text-align: start;
+  margin: 0.2rem;
+  text-decoration: underline;
+}
+
+.navItem a {
+  font-size: 1.1rem;
+}
+
 /* TEST */
 
 .hamburgerMenu {
@@ -20,6 +32,7 @@
 
 .hamburgerMenu:hover {
   background-color: var(--accent);
+  cursor: pointer;
 }
 
 .artistlistMenu:hover {
@@ -70,7 +83,7 @@
   text-align: center;
   transition: 0.4s;
   list-style: none;
-  padding-right: 1rem;
+  padding: 1rem 1rem 3.6rem;
   border-radius: 0 5% 5% 0;
 }
 
@@ -255,6 +268,13 @@
   }
 }
 
+@media (min-width: 3000px) {
+  .navMenuActive {
+    top: calc(11vh);
+    left: calc(36vw);
+  }
+}
+
 @media (max-width: 800px) {
   .categoryHeader h2 {
     font-size: 1.5rem;
@@ -281,6 +301,9 @@
 @media (max-width: 650px) {
   .categoryHeader h3 {
     font-size: 1.3rem;
+  }
+  .navItem a {
+    font-size: 1rem;
   }
 }
 

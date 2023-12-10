@@ -17,10 +17,15 @@ const Artists = () => {
   const [artist, setArtist] = useState([]);
   //state for dropDownMenu
   const [click, setClick] = useState(false);
+  const [hover, setHover] = useState(false);
   const closeMenu = () => setClick(false);
 
   const handleClick = () => {
     setClick(!click);
+  };
+
+  const handleHover = () => {
+    setHover(!hover);
   };
 
   const fetchData = () => {
@@ -48,15 +53,24 @@ const Artists = () => {
       <div className={styles.artistList}>
         <div className={styles.categoryHeader}>
           {/* Hamburger Menu icon changing on click */}
-          <div className={styles.hamburgerMenu} onClick={handleClick}>
+          <div
+            className={styles.hamburgerMenu}
+            onClick={handleClick}
+            // onMouseEnter={handleClick}
+          >
             {click ? (
               <FaTimes size={30} style={{ color: "#ffffff" }} />
             ) : (
-              <FaBars size={25} style={{ color: "#ffffff" }} />
+              <FaBars size={30} style={{ color: "#ffffff" }} />
             )}
           </div>
           {/* Hamburger Menu show contents or not */}
-          <ul className={click ? styles["navMenuActive"] : styles["navMenu"]}>
+          <ul
+            className={click ? styles["navMenuActive"] : styles["navMenu"]}
+            onMouseLeave={handleClick}
+            onDoubleClick={handleClick}
+          >
+            <h4>Artists:</h4>
             <li className={styles.navItems}>
               {sortedList
                 .filter((e) => e.category.toLowerCase() === "artist")
@@ -64,7 +78,7 @@ const Artists = () => {
                   return (
                     <div key={id} className={styles.navItem}>
                       <Link
-                        title={"for " + name + "!"}
+                        title={"Artist page for " + name + "!"}
                         to={`/artist/${nameNoSpace}`}
                       >
                         <h2
