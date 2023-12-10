@@ -128,24 +128,24 @@ const Main = () => {
         <div>
           <h1>Welcome! </h1>
           <h2>
-            New site in the{" "}
-            <span style={{ color: "var(--accent)" }}>making...</span>
+            Site up and{" "}
+            <span style={{ color: "var(--accent)" }}>running...</span>
           </h2>
           <h2>
-            Stay tuned and get some{" "}
+            Stay tuned and get all the{" "}
             <span style={{ color: "var(--accent)" }} href="/release">
               <a href="/release" title="Go to our releases..">
                 Releases.
               </a>
             </span>
-            <div className={styles.calenderContainer}>
+            {/* <div className={styles.calenderContainer}>
               <div className={styles.calenderMobileLink}>
                 Get up to date here:&nbsp;
                 <a href="/ReleaseAndEvents" title="Check our scheduele..">
                   Calender.
                 </a>
               </div>
-            </div>
+            </div> */}
             <div>
               Horrordelic:{" "}
               <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>

@@ -55,10 +55,11 @@
 
 .Logo {
   /* max-height: 50vh;   */
-  max-width: 55vh;
+  /* max-width: 55vh; */
+  max-height: 20rem;
   object-fit: contain;
   border-radius: 20px;
-  margin: calc(10% - 20px);
+  margin: calc(20% - 20px);
   filter: var(--logoFilter);
 }
 
@@ -408,54 +409,48 @@
     }
   }
 
-  @media (max-width: 320px) {
-    .Logo {
-      height: 14vh;
+  @keyframes marquee {
+    0% {
+      left: 100%;
     }
-
-    @keyframes marquee {
-      0% {
-        left: 100%;
-      }
-      50% {
-        left: -490%;
-      }
-      100% {
-        left: -590%;
-      }
+    50% {
+      left: -490%;
+    }
+    100% {
+      left: -590%;
     }
   }
+}
 
-  @media (max-width: 330px) {
-    .mainLinks a {
-      padding: 0;
-    }
+@media (max-width: 330px) {
+  .mainLinks a {
+    padding: 0;
+  }
+}
+
+@media (max-width: 332px) {
+  .Logo {
+    display: none;
+  }
+}
+
+@media (max-width: 220px) {
+  .Container h1,
+  .Container h2 {
+    margin-top: 3.5em;
+    font-size: 1rem;
   }
 
-  @media (max-width: 232px) {
-    .Logo {
-      display: none;
-    }
+  .marquee {
+    display: none;
   }
 
-  @media (max-width: 220px) {
-    .Container h1,
-    .Container h2 {
-      margin-top: 3.5em;
-      font-size: 1rem;
-    }
-
-    .marquee {
-      display: none;
-    }
-
-    .mainLinks {
-      width: 80%;
-      overflow: hidden;
-    }
-    .mainLinks a {
-      padding: 0;
-    }
+  .mainLinks {
+    width: 80%;
+    overflow: hidden;
+  }
+  .mainLinks a {
+    padding: 0;
   }
 }
 

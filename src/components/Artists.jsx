@@ -113,6 +113,47 @@ const Artists = () => {
                   );
                 })}
             </li>
+            <h4>Dj`s:</h4>
+            {sortedList
+              .filter((e) => e.category.toLowerCase() === "dj")
+              .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
+                return (
+                  <div key={id} className={styles.navItem}>
+                    <Link
+                      title={"Artist page for " + name + "!"}
+                      to={`/artist/${nameNoSpace}`}
+                    >
+                      <h2
+                        className={styles.artistlistMenu}
+                        style={
+                          name.length >= 9
+                            ? { fontSize: "0.9em" }
+                            : { fontSize: "1em" }
+                        }
+                      >
+                        {name.replace(/_+/g, " ") + " "}
+                        <span
+                        // className={styles.land}
+                        >
+                          {flag}
+                        </span>
+                      </h2>
+                    </Link>
+                    <span>
+                      <a
+                        href={soundcloud}
+                        target="_blank"
+                        rel="noreferrer"
+                        title={name + "`s" + " " + "Soundcloud Link."}
+                      >
+                        <button>
+                          <RiSoundcloudFill />
+                        </button>
+                      </a>
+                    </span>
+                  </div>
+                );
+              })}
           </ul>
           <h2>Artists</h2>
 
