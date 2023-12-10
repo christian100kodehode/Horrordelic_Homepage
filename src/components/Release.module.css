@@ -125,8 +125,119 @@ iframe {
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
+  font-family: "Megalomaniac";
+  font-size: 2rem;
 }
 
+/* TEST */
+
+.navMenuActive h4 {
+  font-family: "megalomaniac";
+  font-size: 1.8rem;
+  text-align: start;
+  margin: 0.2rem;
+  text-decoration: underline;
+  color: white;
+}
+
+.hamburgerMenu {
+  /* position: absolute; */
+  padding: 1rem;
+  top: calc(29vh);
+  left: calc(26vw);
+}
+
+.hamburgerMenu:hover {
+  background-color: var(--accent);
+  cursor: pointer;
+}
+
+.artistlistMenu:hover {
+  background-color: var(--accentTransp);
+  cursor: pointer;
+  border-radius: 25% 0 0 25%;
+}
+
+.navItem {
+  padding: 0.1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 0.5rem;
+}
+
+.navItem p {
+  font-size: 0.7m;
+  font-family: "helveticaNeue";
+}
+
+.navItem:hover {
+  background-color: var(--releaseContainerStreamLinksBg);
+}
+
+.navMenu {
+  position: absolute;
+  /* display: none; */
+  left: -110%;
+  top: 200px;
+  /* flex-direction: row; */
+  /* background-color: rgba(0, 0, 0, 0.8);
+  width: 100%; */
+  /* height: 1.8rem; */
+  /* z-index: 10;
+  justify-content: center;
+  text-align: center; */
+  transition: 0.5s;
+  display: none;
+}
+.navMenuActive {
+  position: absolute;
+  /* display: contents; */
+  /* left: 0;
+  top: 195px; */
+  top: 200px;
+  left: 70px;
+  /* flex-direction: row; */
+  background-color: var(--accent);
+  /* width: 10%; */
+  /* height: 1.8rem; */
+  z-index: 10;
+  justify-content: center;
+  text-align: center;
+  transition: 0.4s;
+  list-style: none;
+  padding: 1rem 1rem 3.6rem;
+  /* border-radius: 0 5% 5% 0; */
+}
+
+.navItem svg {
+  width: 15px;
+  height: 20px;
+}
+
+.navItem a {
+  padding: 0;
+}
+
+.navItem button {
+  margin: 0em 0em 0em 1em;
+  border: 0;
+  padding: 0em;
+  color: rgb(228, 228, 228);
+  background-color: var(--accentTransp);
+}
+
+.navItem h2 {
+  /* margin: 1rem; */
+  padding: 1rem;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0;
+  display: contents;
+  font-family: "helveticaNeue";
+}
+
+/* TEST */
 .heading:hover {
   transform: scale(1.05);
 }

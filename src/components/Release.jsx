@@ -2,6 +2,8 @@
 import bandCampLogo from "../images/bc-logotype-color-128.png";
 import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
+import { RiSoundcloudFill } from "react-icons/ri";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 // Importing CSS
 import styles from "./Release.module.css";
@@ -92,6 +94,11 @@ const Release = () => {
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
+  };
+
+  const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
   };
 
   // Drop down menu - All years
@@ -263,6 +270,104 @@ const Release = () => {
             </h1>
           ))}
       </div>
+      <div>
+        {/* Hamburger Menu icon changing on click */}
+        <div
+          className={styles.hamburgerMenu}
+          onClick={handleClick}
+          // onMouseEnter={handleClick}
+        >
+          {click ? (
+            <FaTimes size={30} style={{ color: "#ffffff" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#ffffff" }} />
+          )}
+        </div>
+        <ul
+          className={click ? styles["navMenuActive"] : styles["navMenu"]}
+          onMouseLeave={handleClick}
+          onDoubleClick={handleClick}
+        >
+          <h4>Releases for {isSelected} :</h4>
+          <li className={styles.navItems}>
+            {album
+              .filter((e) => e.release_date.slice(-4) === isSelected)
+              .map(
+                ({
+                  artist,
+                  id,
+                  flag,
+                  youtube_full_album,
+                  album_name,
+                  path,
+                  release_date,
+                }) => {
+                  return (
+                    <Link
+                      title={
+                        "Release page for " + artist + ": " + album_name + "!"
+                      }
+                      to={`/release/${path}`}
+                    >
+                      <div
+                        key={id}
+                        className={styles.navItem}
+                        style={{
+                          backgroundImage: `url(${
+                            "https://img.youtube.com/vi/" +
+                            youtube_full_album.slice(-11) +
+                            "/hqdefault.jpg"
+                          })`,
+                          backgroundPosition: "center",
+                        }}
+                      >
+                        <h2
+                          className={styles.artistlistMenu}
+                          style={
+                            album_name.length >= 9
+                              ? { fontSize: "0.9em" }
+                              : { fontSize: "1em" }
+                          }
+                        >
+                          {
+                            artist + ":" + album_name
+                            // .replace(/_+/g, " ") + " "
+                          }
+                          <span className={styles.land}>{flag}</span>
+                        </h2>
+
+                        <LazyLoadImage
+                          className={styles.thumbNailImage}
+                          src={
+                            "https://img.youtube.com/vi/" +
+                            youtube_full_album.slice(-11) +
+                            "/hqdefault.jpg"
+                          }
+                          effect="blur"
+                          alt={album_name}
+                          height="88px"
+                        />
+                        <span>
+                          <a
+                            href={youtube_full_album}
+                            target="_blank"
+                            rel="noreferrer"
+                            title={album_name + "`s" + " " + "Youtube Link."}
+                          >
+                            <p className={styles.navItem}>{release_date}</p>
+                            {/* <button>
+                            <RiSoundcloudFill />
+                          </button> */}
+                          </a>
+                        </span>
+                      </div>
+                    </Link>
+                  );
+                }
+              )}
+          </li>
+        </ul>
+      </div>
 
       {/* Map release data abd filter each year selected by user */}
       {album
@@ -296,16 +401,14 @@ const Release = () => {
               ref={path === window.location.hash.slice(1) ? selectedRef : null}
             >
               {/* {console.log(filteredAlbum)} */}
-              <div className={styles.releaseName}>
-                {/* <HashLink smooth to={"/release#" + path}> */}
-                <Link to={`/release/${path}`}>
-                  <p className={styles.heading}>
-                    🔗 &nbsp;{artist}:&nbsp;{album_name}
-                    <span>{land}</span>
-                  </p>
-                </Link>
-                {/* </HashLink> */}
-              </div>
+
+              {/* <HashLink smooth to={"/release#" + path}> */}
+              <Link to={`/release/${path}`}>
+                <p className={styles.heading}>
+                  🔗 &nbsp;{artist}:&nbsp;{album_name}
+                  <span>{land}</span>
+                </p>
+              </Link>
 
               {/* TESTING */}
 
