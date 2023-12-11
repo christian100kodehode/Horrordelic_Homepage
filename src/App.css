@@ -140,10 +140,10 @@ a {
   color: var(--text-primary);
   text-decoration: inherit;
 }
-a:hover {
+/* a:hover {
   color: var(--text-secondary);
   text-shadow: #213547;
-}
+} */
 
 /* @keyframes logo-spin {
   from {

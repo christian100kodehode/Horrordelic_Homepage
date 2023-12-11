@@ -15,10 +15,10 @@ a {
   color: white;
   text-decoration: inherit;
 }
-a:hover {
+/* a:hover {
   color: black;
   text-shadow: #213547;
-}
+} */
 
 body {
   box-sizing: border-box;

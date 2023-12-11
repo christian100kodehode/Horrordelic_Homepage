@@ -78,7 +78,15 @@ const Release = () => {
   };
 
   // TESTING
+  //   const style1 = {
+  //     album_name.length >= 20
+  //     ? { fontSize: "1.2em" }
+  //     : { fontSize: "1.7em" }
+  // }
 
+  const style2 = {
+    Color: "black",
+  };
   // Menu
 
   const today = new Date();
@@ -288,7 +296,7 @@ const Release = () => {
           onMouseLeave={handleClick}
           onDoubleClick={handleClick}
         >
-          <h4>Releases for {isSelected} :</h4>
+          <h4>Releases from {isSelected} :</h4>
           <li className={styles.navItems}>
             {album
               .filter((e) => e.release_date.slice(-4) === isSelected)
@@ -297,6 +305,7 @@ const Release = () => {
                   artist,
                   id,
                   flag,
+                  land,
                   youtube_full_album,
                   album_name,
                   path,
@@ -321,43 +330,53 @@ const Release = () => {
                           backgroundPosition: "center",
                         }}
                       >
-                        <h2
-                          className={styles.artistlistMenu}
-                          style={
-                            album_name.length >= 9
-                              ? { fontSize: "0.9em" }
-                              : { fontSize: "1em" }
-                          }
-                        >
-                          {
-                            artist + ":" + album_name
-                            // .replace(/_+/g, " ") + " "
-                          }
-                          <span className={styles.land}>{flag}</span>
-                        </h2>
-
-                        <LazyLoadImage
-                          className={styles.thumbNailImage}
-                          src={
-                            "https://img.youtube.com/vi/" +
-                            youtube_full_album.slice(-11) +
-                            "/hqdefault.jpg"
-                          }
-                          effect="blur"
-                          alt={album_name}
-                          height="88px"
-                        />
-                        <span>
+                        {" "}
+                        <div className={styles.leftReleaseMenuBox}>
+                          <p>{release_date}</p>
+                          <p
+                            className={styles.headerMenuText}
+                            style={
+                              album_name.length >= 20
+                                ? { fontSize: "1.2em" }
+                                : { fontSize: "1.7em" }
+                            }
+                          >
+                            {
+                              artist + ": " + album_name
+                              // .replace(/_+/g, " ") + " "
+                            }
+                            <span className={styles.land}>{land}</span>
+                          </p>
+                        </div>
+                        <span className={styles.youtubeLinkMenu}>
                           <a
                             href={youtube_full_album}
                             target="_blank"
                             rel="noreferrer"
-                            title={album_name + "`s" + " " + "Youtube Link."}
+                            title={
+                              artist +
+                              " " +
+                              album_name +
+                              "`s" +
+                              " " +
+                              "Youtube Stream."
+                            }
                           >
-                            <p className={styles.navItem}>{release_date}</p>
+                            <LazyLoadImage
+                              className={styles.thumbNailImage}
+                              src={
+                                "https://img.youtube.com/vi/" +
+                                youtube_full_album.slice(-11) +
+                                "/hqdefault.jpg"
+                              }
+                              effect="blur"
+                              alt={album_name}
+                              height="88px"
+                            />
+
                             {/* <button>
-                            <RiSoundcloudFill />
-                          </button> */}
+                         <RiSoundcloudFill />
+                       </button> */}
                           </a>
                         </span>
                       </div>
