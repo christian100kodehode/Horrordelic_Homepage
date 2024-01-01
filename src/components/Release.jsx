@@ -91,9 +91,10 @@ const Release = () => {
 
   const today = new Date();
   const yearNow = today.getFullYear();
+  const lastYear = yearNow - 1;
 
   const [openMenu, setOpenMenu] = useState(false);
-  const [isSelected, setIsSelected] = useState(yearNow.toString());
+  const [isSelected, setIsSelected] = useState(lastYear.toString());
 
   const menuSelected = (value) => () => {
     setIsSelected(value);
@@ -112,6 +113,7 @@ const Release = () => {
   // Drop down menu - All years
 
   const mobileOptions = [
+    "2024",
     "2023",
     "2022",
     "2020",
@@ -156,6 +158,7 @@ const Release = () => {
   // console.log(isSelected);
 
   const options = [
+    { label: "2024", value: "2024" },
     { label: "2023", value: "2023" },
     { label: "2022", value: "2022" },
     { label: "2020", value: "2020" },
@@ -253,7 +256,7 @@ const Release = () => {
         {/* <p>{styles.releaseContainer ? "Text": "No"}</p> */}
         {album
           .filter((e) => e.release_date.slice(-4) === isSelected)
-          .map(({ release_date }, i) => (
+          .map(({ release_date, album_name }, i) => (
             <h1
               key={release_date + i}
               style={
@@ -263,6 +266,7 @@ const Release = () => {
             >
               {/* {console.log(release_date.length)} */}
               {/* {console.log(i)} */}
+              {console.log(album_name)}
               {/* {console.log(release_date)} */}
               {!release_date.length <= 4 ? (
                 <a
@@ -285,6 +289,7 @@ const Release = () => {
           onClick={handleClick}
           // onMouseEnter={handleClick}
         >
+          <p>Drop a click for all releases </p>
           {click ? (
             <FaTimes size={30} style={{ color: "#ffffff" }} />
           ) : (
@@ -297,6 +302,7 @@ const Release = () => {
           onDoubleClick={handleClick}
         >
           <h4>Releases from {isSelected} :</h4>
+
           <li className={styles.navItems}>
             {album
               .filter((e) => e.release_date.slice(-4) === isSelected)
@@ -335,11 +341,11 @@ const Release = () => {
                           <p>{release_date}</p>
                           <p
                             className={styles.headerMenuText}
-                            style={
-                              album_name.length >= 20
-                                ? { fontSize: "1.2em" }
-                                : { fontSize: "1.7em" }
-                            }
+                            // style={
+                            //   album_name.length >= 20
+                            //     ? { fontSize: "1.2em" }
+                            //     : { fontSize: "1.7em" }
+                            // }
                           >
                             {
                               artist + ": " + album_name
@@ -651,6 +657,7 @@ const Release = () => {
         }) => (
           <></>
         )
+        
       )}  OLD END*/}
 
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
