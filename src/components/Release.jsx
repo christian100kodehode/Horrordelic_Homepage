@@ -324,6 +324,10 @@ const Release = () => {
                       }
                       to={`/release/${path}`}
                     >
+                      {" "}
+                      <span className={styles.land}>
+                        <article>{land}</article>
+                      </span>
                       <div
                         key={id}
                         className={styles.navItem}
@@ -338,9 +342,10 @@ const Release = () => {
                       >
                         {" "}
                         <div className={styles.leftReleaseMenuBox}>
-                          <p>{release_date}</p>
+                          <p>{release_date}</p>{" "}
                           <p
                             className={styles.headerMenuText}
+
                             // style={
                             //   album_name.length >= 20
                             //     ? { fontSize: "1.2em" }
@@ -351,7 +356,6 @@ const Release = () => {
                               artist + ": " + album_name
                               // .replace(/_+/g, " ") + " "
                             }
-                            <span className={styles.land}>{land}</span>
                           </p>
                         </div>
                         <span className={styles.youtubeLinkMenu}>

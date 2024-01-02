@@ -162,7 +162,7 @@ iframe {
   justify-content: flex-start;
 
   /* width: 12vw; */
-  height: 3.2vh;
+  height: 2em;
 }
 
 .hamburgerMenu p {
@@ -201,13 +201,19 @@ iframe {
   border: 2px black solid;
 }
 
+.navItem:hover {
+  transform: scale(1.02);
+}
+
 .navItem p:nth-child(1) {
   font-size: 0.566em;
   font-family: "helveticaNeue";
-  width: 100px;
+  width: 140px;
   height: 20px;
-  margin: 0;
+  margin: 0 0 0.1em;
+  padding-left: 0.2em;
   color: white;
+  text-align: left;
   /* position: absolute; */
   /* left: 36px;
   z-index: 130;
@@ -215,7 +221,7 @@ iframe {
   /* top: -20px; */
   /* justify-content: flex-start; */
   background-color: var(--accent);
-  padding-top: 4px;
+  padding-top: 2px;
 }
 
 .navItem h3 {
@@ -308,7 +314,7 @@ iframe {
   flex-direction: column;
   justify-content: flex-start;
   height: 88px;
-  width: 250px;
+  width: 80%;
   margin-right: 50px;
   font-size: 2em;
 }
@@ -324,15 +330,19 @@ iframe {
 }
 
 .land {
+  font-size: 1.5rem;
+  padding-top: 0.1em;
+}
+
+.land {
   position: absolute;
   /* top: 20px;
   right: 10px; */
   z-index: 1;
   text-shadow: none;
   display: flex;
-  align-items: center;
-  height: 150px;
-  left: 420px;
+  align-items: flex-end;
+  left: 92%;
   width: 1rem;
   text-shadow: 1px 3px 4px black;
 }
@@ -617,8 +627,12 @@ li {
 }
 
 @media (max-width: 468px) {
+  .land {
+    font-size: 1.2rem;
+    left: 85%;
+  }
   .leftReleaseMenuBox p {
-    font-size: 0.33em;
+    font-size: 0.28em;
     display: block;
     line-height: 120%;
   }

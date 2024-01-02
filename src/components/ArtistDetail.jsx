@@ -227,7 +227,9 @@ const ArtistDetail = () => {
                           bandcamp,
                           mp3,
                           wav,
+                          flac,
                           artist,
+                          path,
                         }) => {
                           return (
                             <div
@@ -238,9 +240,9 @@ const ArtistDetail = () => {
                               {/* Check if artists or dj, change text accordingly */}
                               {/* {album.release_text.includes(name.split(" ")[0]) + album.credits.includes(name.split(" ")[0]) ? <h1>Albums:</h1> : ""} */}
                               <a
-                                href={bandcamp}
-                                target="_blank"
-                                rel="noreferrer"
+                                href={"https://horrordelic.com/release/" + path}
+                                target="_self"
+                                // rel="noreferrer"
                               >
                                 <p className={styles.albumReleaseNameStream}>
                                   {artist}: {album_name}
@@ -289,6 +291,17 @@ const ArtistDetail = () => {
                                 <a href={wav} target="_blank" rel="noreferrer">
                                   <p>WAV</p>
                                 </a>
+                                {flac ? (
+                                  <a
+                                    href={flac}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <p>FLAC</p>
+                                  </a>
+                                ) : (
+                                  ""
+                                )}
                               </div>
                             </div>
                           );

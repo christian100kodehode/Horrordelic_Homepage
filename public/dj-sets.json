@@ -2,90 +2,91 @@
   {
     "id": "0",
     "name": "Kuroobi",
-    "type":"",
+    "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=csiyZO0kFTg",
     "year": "2023"
   },
   {
     "id": "1",
     "name": "Psycholouis",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=SWwww6d272o",
     "year": "2023"
   },
   {
     "id": "2",
     "name": "t'OxyMoron",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=RSvQzCnWed4",
     "year": "2023"
   },
   {
     "id": "3",
     "name": "Kuroobi",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=PY5CIVP77tI",
     "year": "2023"
   },
   {
     "id": "4",
     "name": "Kuroobi",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=3ThNO4w4m_4",
     "year": "2023"
   },
   {
     "id": "5",
     "name": "Kuroobi",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=1RUGLF85JLA",
     "year": "2022"
   },
   {
     "id": "6",
     "name": "Cassidy Green",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=6cHRtbzatck",
     "year": "2022"
   },
   {
     "id": "7",
     "name": "Kuroobi",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=KNpDNmSo2H4",
     "year": "2022"
   },
   {
     "id": "8",
     "name": "Psycholouis",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=bfAHQOTc6co",
     "year": "2022"
   },
   {
     "id": "9",
     "name": "Psycholouis",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=9lft6FF1TK4",
     "year": "2022"
   },
   {
     "id": "10",
     "name": "Diabolical Orchestra",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=55_762gzUbg",
     "year": "2022"
   },
   {
     "id": "11",
-    "name": "Deeveerse",
-     "type":"",
+    "name": "Deeverse",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=28bYK_COZd0",
     "year": "2022"
   },
   {
     "id": "12",
     "name": "Antikriz",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=Kv4t1y69ogw",
     "year": "2022"
   },
@@ -295,7 +296,7 @@
   {
     "id": "42",
     "name": "Cosmic BlueMoon",
-     "type":"",
+     "type":"Mix",
     "mix": "https://www.youtube.com/watch?v=_lABHZXrTi4",
     "year": "2016"
   },
@@ -309,7 +310,7 @@
   {
     "id": "44",
     "name": "Abgrund B",
-     "type":"",
+     "type":"Track",
     "mix": "https://youtu.be/2-sspJTn7YI",
     "year": "2023"
   },
@@ -416,6 +417,139 @@
     "name": "Yetzirah",
      "type":"Track",
     "mix": "https://www.youtube.com/watch?v=5PS6mTURgZI",
+    "year": "2022"
+  },
+  {
+    "id": "60",
+    "name": "Master of Horror",
+     "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=39HocFbBkcI",
+    "year": "2014"
+  },
+  {
+    "id": "61",
+    "name": "Master of Horror",
+     "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=CzoYYlLBwCQ",
+    "year": "2014"
+  },
+  {
+    "id": "62",
+    "name": "Master of Horror",
+     "type":"Live Set",
+    "mix": "https://www.youtube.com/watch?v=EWO3lj6cVAU",
+    "year": "2021"
+  },
+  {
+    "id": "63",
+    "name": "Suffer Misery",
+     "type":"Live Set",
+    "mix": "https://www.youtube.com/watch?v=GpyxqcnvsVY",
+    "year": "2017"
+  },
+  {
+    "id": "64",
+    "name": "Suffer Misery",
+     "type":"Live Stream",
+    "mix": "https://www.youtube.com/watch?v=sTXiodg-lXg",
+    "year": "2021"
+  },
+  {
+    "id": "64",
+    "name": "Suffer Misery",
+     "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=gyVHMLeui44",
+    "year": "2017"
+  },
+  {
+    "id": "65",
+    "name": "Suffer Misery",
+     "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=FMkJ_N7odj0",
+    "year": "2016"
+  },
+  {
+    "id": "66",
+    "name": "Kuroobi",
+     "type":"Mix",
+    "mix": "https://youtu.be/unw3IiS6aw0",
+    "year": "2023"
+  },
+  {
+    "id": "67",
+    "name": "Hypnos Live",
+     "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=S7zHMavLsYw",
+    "year": "2023"
+  },
+  {
+    "id": "70",
+    "name": "Efect Mushroom",
+     "type":"Mix",
+    "mix": "https://www.youtube.com/watch?v=UK7XRv6t5OA",
+    "year": "2023"
+  },
+  {
+    "id": "69",
+    "name": "Efect Mushroom",
+     "type":"Mix",
+    "mix": "https://www.youtube.com/watch?v=fx3SDBnzZH8",
+    "year": "2023"
+  },
+  {
+    "id": "68",
+    "name": "Efect Mushroom",
+     "type":"Track",
+    "mix": "https://www.youtube.com/watch?v=h6bdODJ6fTI",
+    "year": "2023"
+  },
+  {
+    "id": "71",
+    "name": "Efect Mushroom",
+     "type":"Tutorial",
+    "mix": "https://www.youtube.com/watch?v=L4i_EubA6Yo",
+    "year": "2023"
+  },
+  {
+    "id": "72",
+    "name": "Efect Mushroom",
+     "type":"Tutorial",
+    "mix": "https://www.youtube.com/watch?v=A5TpM98Gvx8",
+    "year": "2023"
+  },
+  {
+    "id": "73",
+    "name": "Psytanic",
+     "type":"Mix",
+    "mix": "https://www.youtube.com/watch?v=1Q7NE1v4MqE",
+    "year": "2023"
+  },
+  {
+    "id": "74",
+    "name": "Deeverse",
+     "type":"Dj set",
+    "mix": "https://www.youtube.com/watch?v=u2hMR1AtueM",
+    "year": "2022"
+  },
+  {
+    "id": "75",
+    "name": "Deeverse",
+     "type":"Shorts",
+    "mix": "https://youtube.com/shorts/yg7fOQAlaDw",
+    "year": "2023"
+  },
+  {
+    "id": "76",
+    "name": "Killjoy",
+     "type":"Live Stream",
+    "mix": "https://youtu.be/sBXGeGoshJM",
+    "year": "2022"
+  },
+  {
+    "id": "77",
+    "name": "Killjoy",
+     "type":"Mix",
+    "mix": "https://www.youtube.com/watch?v=rhhY9lFMo30",
     "year": "2022"
   },
   {
