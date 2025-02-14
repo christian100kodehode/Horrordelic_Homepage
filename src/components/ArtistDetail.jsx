@@ -208,7 +208,12 @@ const ArtistDetail = () => {
                     {album
                       .filter(
                         (e) =>
-                          e.release_text.includes(name.split(" ")[0]) ||
+                          // e.release_text.includes(name.split(" ")[0])
+                          //  ||
+                          e.release_text
+                            .toString()
+                            .replace(/\s/g, "")
+                            .includes(nameNoSpace) ||
                           e.credits
                             .toString()
                             .replace(/\s/g, "")

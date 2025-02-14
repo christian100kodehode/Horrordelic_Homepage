@@ -80,7 +80,7 @@ const Main = () => {
         &nbsp;&nbsp;
         <span className={styles.latestAlbumDetails}>
           <Link to={"/release/" + latestAlbum.path}>
-            <span className={styles.marqueeText}>
+            <span className={styles.marqueeTextDate}>
               {latestAlbum.release_date}
             </span>
           </Link>
@@ -153,7 +153,7 @@ const Main = () => {
           </h2>
         </div>
         <LazyLoadImage
-          src={HorrordelicSantaLogo}
+          src={HorrordelicLogo}
           alt="Horrordelic Logo"
           className={styles.Logo}
           effect="blur"

@@ -91,6 +91,8 @@ const Release = () => {
 
   const today = new Date();
   const yearNow = today.getFullYear();
+
+  //use when new year us emnpty..
   const lastYear = yearNow - 1;
 
   const [openMenu, setOpenMenu] = useState(false);
@@ -113,6 +115,7 @@ const Release = () => {
   // Drop down menu - All years
 
   const mobileOptions = [
+    "2025",
     "2024",
     "2023",
     "2022",
@@ -155,9 +158,10 @@ const Release = () => {
 
   const mobileYear = mobileOptions[indexMenu];
   // console.log(mobileYear);
-  // console.log(isSelected);
+  console.log(isSelected);
 
   const options = [
+    { label: "2025", value: "2025" },
     { label: "2024", value: "2024" },
     { label: "2023", value: "2023" },
     { label: "2022", value: "2022" },
@@ -207,7 +211,7 @@ const Release = () => {
         <meta property="og:title" content="Horrordelic - Releases" />
         <meta
           property="og:description"
-          content="G  et some killer Darkpsy/Psycore here.."
+          content="Get some killer Darkpsy/Psycore here.."
         />
         <meta
           property="og:image"
@@ -372,18 +376,22 @@ const Release = () => {
                               "Youtube Stream."
                             }
                           >
-                            <LazyLoadImage
-                              className={styles.thumbNailImage}
-                              src={
-                                "https://img.youtube.com/vi/" +
-                                youtube_full_album.slice(-11) +
-                                "/hqdefault.jpg"
-                              }
-                              effect="blur"
-                              alt={album_name}
-                              height="88px"
-                            />
-
+                            <div className={styles.thumbnailContainer}>
+                              <LazyLoadImage
+                                className={styles.thumbNailImage}
+                                src={
+                                  "https://img.youtube.com/vi/" +
+                                  youtube_full_album.slice(-11) +
+                                  "/hqdefault.jpg"
+                                }
+                                effect="blur"
+                                alt={album_name}
+                                height="88px"
+                                width="110px"
+                                // transform="translateY(-50%)"
+                                // object-fit="contain"
+                              />
+                            </div>
                             {/* <button>
                          <RiSoundcloudFill />
                        </button> */}
