@@ -14,13 +14,14 @@ import { FaMoon, FaSun } from "react-icons/fa";
 
 // Importing hooks/packages
 import { Routes, Route, Link } from "react-router-dom";
-import useLocalStorage from "use-Local-Storage";
-import { HelmetProvider } from "react-helmet-async";
+// import { useLocalStorage } from "use-Local-Storage";
 
+import { HelmetProvider } from "react-helmet-async";
+import UseLocalStorage from "use-local-storage";
 function App() {
   // change theme
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [theme, setTheme] = useLocalStorage(
+  const [theme, setTheme] = UseLocalStorage(
     "theme",
     defaultDark ? "dark" : "light"
   );
