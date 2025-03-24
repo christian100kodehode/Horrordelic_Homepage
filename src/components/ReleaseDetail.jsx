@@ -172,7 +172,7 @@ const ReleaseDetail = () => {
               {/* {console.log(filteredAlbum)} */}
               <div className={styles.releaseName}>
                 {/* <HashLink smooth to={"/release#" + path}> */}
-                <Link to={`/release/${path}`}>
+                <Link to={`/Release/${path}`}>
                   <p className={styles.heading}>
                     &nbsp;{artist}:&nbsp;{album_name}
                     <span>{land}</span>

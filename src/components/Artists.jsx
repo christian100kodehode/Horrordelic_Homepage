@@ -16,10 +16,11 @@ const Artists = () => {
   // State for Release data
   const [artist, setArtist] = useState([]);
   //state for dropDownMenu
-  const [click, setClick] = useState(false);
+
   const [hover, setHover] = useState(false);
   const closeMenu = () => setClick(false);
 
+  const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(!click);
   };
@@ -79,7 +80,7 @@ const Artists = () => {
                     <div key={id} className={styles.navItem}>
                       <Link
                         title={"Artist page for " + name + "!"}
-                        to={`/artist/${nameNoSpace}`}
+                        to={`/Artist/${nameNoSpace}`}
                       >
                         <h2
                           className={styles.artistlistMenu}
@@ -121,7 +122,7 @@ const Artists = () => {
                   <div key={id} className={styles.navItem}>
                     <Link
                       title={"Artist page for " + name + "!"}
-                      to={`/artist/${nameNoSpace}`}
+                      to={`/Artist/${nameNoSpace}`}
                     >
                       <h2
                         className={styles.artistlistMenu}
@@ -168,7 +169,7 @@ const Artists = () => {
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
-                <Link to={`/artist/${nameNoSpace}`}>
+                <Link to={`/Artist/${nameNoSpace}`}>
                   <LazyLoadImage
                     className={styles.thumbNailImage}
                     src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
@@ -215,7 +216,7 @@ const Artists = () => {
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
-                <Link to={`/artist/${nameNoSpace}`}>
+                <Link to={`/Artist/${nameNoSpace}`}>
                   <LazyLoadImage
                     className={styles.thumbNailImage}
                     // Remove space in name, picture have to have to have no spaces

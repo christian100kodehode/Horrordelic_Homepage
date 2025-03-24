@@ -52,9 +52,10 @@ function App() {
           <Route exact path="Artists" element={<Artists />} />
           <Route exact path="Release" element={<Release />} />
           <Route exact path="ReleaseAndEvents" element={<ReleaseAndEvents />} />
-          <Route path="/artist/:id" element={<ArtistDetail />} />
-          <Route path="/release/:path" element={<ReleaseDetail />} />
+          <Route path="/Artist/:id" element={<ArtistDetail />} />
+          <Route path="/Release/:path" element={<ReleaseDetail />} />
           <Route exact path="*" element={<Main />} />
+          <Route exact path="/Release/*" element={<Release />} />
         </Routes>
       </div>
     </HelmetProvider>

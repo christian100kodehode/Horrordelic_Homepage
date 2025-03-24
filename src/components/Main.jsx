@@ -56,7 +56,7 @@ const Main = () => {
     return (
       <>
         <span className={styles.latestAlbumDetails}>
-          <Link to={"/release/" + latestAlbum.path}>
+          <Link to={"/Release/" + latestAlbum.path}>
             <span className={styles.marqueeText}>
               Latest&nbsp;Release:&nbsp;&nbsp;
             </span>
@@ -64,7 +64,7 @@ const Main = () => {
         </span>
         &nbsp;&nbsp;
         <span className={styles.marqueeText}>
-          <Link to={"/release/" + latestAlbum.path}>
+          <Link to={"/Release/" + latestAlbum.path}>
             <LazyLoadImage
               className={styles.thumbNailImage}
               src={
@@ -76,12 +76,12 @@ const Main = () => {
           </Link>
         </span>
         &nbsp;
-        <a href={"/release/" + latestAlbum.path}>
+        <a href={"/Release/" + latestAlbum.path}>
           &nbsp;{latestAlbum.artist}:&nbsp;{latestAlbum.album_name}&nbsp;&nbsp;
         </a>
         &nbsp;&nbsp;
         <span className={styles.latestAlbumDetails}>
-          <Link to={"/release/" + latestAlbum.path}>
+          <Link to={"/Release/" + latestAlbum.path}>
             <span className={styles.marqueeTextDate}>
               {latestAlbum.release_date}
             </span>

@@ -326,9 +326,8 @@ const Release = () => {
                       title={
                         "Release page for " + artist + ": " + album_name + "!"
                       }
-                      to={`/release/${path}`}
+                      to={`/Release/${path}`}
                     >
-                      {" "}
                       <span className={styles.land}>
                         <article>{land}</article>
                       </span>
@@ -363,7 +362,7 @@ const Release = () => {
                           </p>
                         </div>
                         <span className={styles.youtubeLinkMenu}>
-                          <a
+                          <button
                             href={youtube_full_album}
                             target="_blank"
                             rel="noreferrer"
@@ -395,7 +394,7 @@ const Release = () => {
                             {/* <button>
                          <RiSoundcloudFill />
                        </button> */}
-                          </a>
+                          </button>
                         </span>
                       </div>
                     </Link>
@@ -432,7 +431,7 @@ const Release = () => {
             filteredAlbum
           ) => (
             <article
-              key={path}
+              key={path + id}
               className={styles.releaseContainer}
               id={path}
               ref={path === window.location.hash.slice(1) ? selectedRef : null}
@@ -440,7 +439,7 @@ const Release = () => {
               {/* {console.log(filteredAlbum)} */}
 
               {/* <HashLink smooth to={"/release#" + path}> */}
-              <Link to={`/release/${path}`}>
+              <Link to={`/Release/${path}`}>
                 <p className={styles.heading}>
                   🔗 &nbsp;{artist}:&nbsp;{album_name}
                   <span>{land}</span>
@@ -580,7 +579,7 @@ const Release = () => {
                               : { display: "none" }
                           }
                         >
-                          <HashLink smooth to={"/release#" + album_name}>
+                          <HashLink smooth to={"/Release#" + album_name}>
                             <button
                               type="button"
                               onClick={() => toggleText(id)}
@@ -604,7 +603,7 @@ const Release = () => {
                               <p>Release date:</p>
                               <p>{release_date}</p>
                             </div>
-                            <HashLink smooth to={"/release#" + path}>
+                            <HashLink smooth to={"/Release#" + path}>
                               <button onClick={() => toggleText(id)}>
                                 Read less
                               </button>

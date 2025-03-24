@@ -66,7 +66,7 @@ const Navbar = () => {
           Releases
         </HashLink>
       ) : (
-        <Link to="/release" title="All our Releases">
+        <Link to="/Release" title="All our Releases">
           Releases
         </Link>
       )}

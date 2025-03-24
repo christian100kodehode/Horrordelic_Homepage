@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Helmet } from "react-helmet-async";
 
 // Importing images
 import bandCampLogo from "../images/bc-logotype-color-128.png";
@@ -104,6 +105,19 @@ const ArtistDetail = () => {
   // TEST
   return (
     <main className={styles.container}>
+      <Helmet>
+        <meta property="og:url" content="https://horrordelic.com/artists/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Artist page" />
+        <meta
+          property="og:description"
+          content="Worldwide Psychedelic Movement - Darkpsy"
+        />
+        <meta
+          property="og:image"
+          content="https://horrordelic.com/FBwebmediaFront1080x600.png"
+        />
+      </Helmet>
       <div className={styles.cssFix}>
         {list
           .filter((e) => e.nameNoSpace === params.id)
