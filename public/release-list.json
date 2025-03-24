@@ -1,4 +1,32 @@
-[   {
+[    {
+    "id": "HORD119",
+    "path": "Catronomix_-_CO2_Album",
+    "artist": "Catronomix",
+    "album_name": "CO2 - Debut Album",
+    "land": "\uD83C\uDDE7\uD83C\uDDEA",
+    "release_text": "Horrordelic proudly presents the debut release from up and coming Belgium artist “Catronomix”.\n\nCatronomix brings an energetic and original adrenaline packed sound. A curation of his darkest tracks and an attempt to confront the demons inside him, unwilling to conform or surrender.\n\nBeing  dismissive of what already exists, he always tries to make something different. Sometimes ending up making something similar that doesn't quite fit in nothing, like life itself.\n\nJust live life! Breathe in, breathe out. Co2",
+    "release_date": "21/March/2025",
+    "credits": "\n\nMusic and Artwork: Catronomix\nMastering: Krono Audio\n\n\nRelease: Horrordelic",
+    "tracklist": [
+        "01. Gaia Ex Profundis  185",
+"02. Gali Leo 180",
+"03. Aqwar  190",
+"04.  Imaginaire Vrienden 195",
+"05.  Factory Reset 200",
+"06. The Pinball Effect 195",
+"07. Bedding Wells 220",
+"08. Love Now 175",
+"09. Genesis 190"],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2988P28BAbkpqHiBxURnlREN",
+    "youtube_full_album": "https://youtu.be/GhKhsbTp9Pw",
+    "spotify": "https://open.spotify.com/album/2IfZ0uaePoSx06KRa0u4cV",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/co2",
+    "mp3": "https://drive.google.com/file/d/1qT_RpUPjcm9YfjYLdW6FpJslJlg3qVV8/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/17D0NGhZEvFoaMGA9C4c7FDKhOnxJADDv/view?usp=sharing",
+    "flac":"https://drive.google.com/file/d/1-y6QGLqD5LZkfof4jQos40Rz7I8AGJmX/view?usp=sharing"
+  },
+    
+    {
     "id": "HORD118",
     "path": "VA_-_Petrified_From_Horror",
     "artist": "VA",

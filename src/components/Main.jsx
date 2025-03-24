@@ -67,7 +67,9 @@ const Main = () => {
           <Link to={"/release/" + latestAlbum.path}>
             <LazyLoadImage
               className={styles.thumbNailImage}
-              src={"https://img.youtube.com/vi/" + youTubeImage + "/1.jpg"}
+              src={
+                "https://img.youtube.com/vi/" + youTubeImage + "/hqdefault.jpg"
+              }
               // effect="blur"
               alt={latestAlbum.album_name}
             />

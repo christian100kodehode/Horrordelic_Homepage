@@ -96,7 +96,7 @@ const Release = () => {
   const lastYear = yearNow - 1;
 
   const [openMenu, setOpenMenu] = useState(false);
-  const [isSelected, setIsSelected] = useState(lastYear.toString());
+  const [isSelected, setIsSelected] = useState(yearNow.toString());
 
   const menuSelected = (value) => () => {
     setIsSelected(value);
