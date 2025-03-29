@@ -1,4 +1,29 @@
-[    {
+[
+  {
+    "id": "HORD120",
+    "path": "Nervous_System_A_kaleidoscope_of_incomprehensible_Events",
+    "artist": "Nervous System",
+    "album_name": "A kaleidoscope of incomprehensible Events",
+    "land": "\uD83C\uDDF7\uD83C\uDDFA",
+    "release_text": "Horrordelic proudly presents the debut release from Nervous System from Russia.\n\nGood and evil have mixed into a single substance, forming a singularity at a point called planet Earth in the middle of the desert of space, where there is infinite time, infinite space, infinite life and death.\n\nOur body is an instrument given on loan. We are the agent of the universe whose mission is to interpret the kaleidoscope of incomprehensible events that is happening.",
+    "release_date": "29/March/2025",
+    "credits": "\n\nTracks by Maxim Tkachiov - Nervous System\nArtwork by Christian Westbye - Antikriz\nMastering by Vitor Oliveira - Krono Audio ",
+    "tracklist": [
+      "1. The end of the world 190",
+      "2. Retreat and catharsis 180",
+      "3. Overdose",
+      "4. Thoughts, thoughts, thoughts... 160",
+      "5. Survivor's mistake 240"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2986QKGq8S0D7kFwo6nbXyn1",
+    "youtube_full_album": "https://youtu.be/Yb7VUmNela4",
+    "spotify": "https://open.spotify.com/album/2nELEGQQaMxoxWiS7NFGSL",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/a-kaleidoscope-of-incomprehensible-events",
+    "mp3": "https://drive.google.com/file/d/1H8mfR2hNmym9DCpTbm-CguKiD7cdjEkG/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/1zlalZAkvS2IvO2R3WTxhH6LBm7T_wUMY/view?usp=drive_link",
+    "flac": "https://drive.google.com/file/d/1fgPXxoljKA2-MiBf5Lq1pGSQblwyq0x9/view?usp=sharing"
+  },
+  {
     "id": "HORD119",
     "path": "Catronomix_-_CO2_Album",
     "artist": "Catronomix",
@@ -8,25 +33,26 @@
     "release_date": "21/March/2025",
     "credits": "\n\nMusic and Artwork: Catronomix\nMastering: Krono Audio\n\n\nRelease: Horrordelic",
     "tracklist": [
-        "01. Gaia Ex Profundis  185",
-"02. Gali Leo 180",
-"03. Aqwar  190",
-"04.  Imaginaire Vrienden 195",
-"05.  Factory Reset 200",
-"06. The Pinball Effect 195",
-"07. Bedding Wells 220",
-"08. Love Now 175",
-"09. Genesis 190"],
+      "01. Gaia Ex Profundis  185",
+      "02. Gali Leo 180",
+      "03. Aqwar  190",
+      "04.  Imaginaire Vrienden 195",
+      "05.  Factory Reset 200",
+      "06. The Pinball Effect 195",
+      "07. Bedding Wells 220",
+      "08. Love Now 175",
+      "09. Genesis 190"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2988P28BAbkpqHiBxURnlREN",
     "youtube_full_album": "https://youtu.be/GhKhsbTp9Pw",
     "spotify": "https://open.spotify.com/album/2IfZ0uaePoSx06KRa0u4cV",
     "bandcamp": "https://horrordelic.bandcamp.com/album/co2",
     "mp3": "https://drive.google.com/file/d/1qT_RpUPjcm9YfjYLdW6FpJslJlg3qVV8/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/17D0NGhZEvFoaMGA9C4c7FDKhOnxJADDv/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1-y6QGLqD5LZkfof4jQos40Rz7I8AGJmX/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1-y6QGLqD5LZkfof4jQos40Rz7I8AGJmX/view?usp=sharing"
   },
-    
-    {
+
+  {
     "id": "HORD118",
     "path": "VA_-_Petrified_From_Horror",
     "artist": "VA",
@@ -35,27 +61,29 @@
     "release_text": "An all Greek Darkpsy trip at the end of the year, into the next!\n\nKris.Ma gathered friends to come together with killer ideas and sounds, now is all ready for you to experience.\n\nA true journey through the chaos we live, 12 strong trips awaits.",
     "release_date": "27/Dec/2024",
     "credits": "\n\nCompiled Kris.Ma\n\nMastering Krono Audio\nArtwork Sergio Costa BullyArt\nLayout Antikriz\n\nHorrordelic 2024",
-    "tracklist": ["01. Saint Trospe - Dementria 175",
-"02. Psychedflow - Follow The Illusion 170",
-"03. Alemao Inhibitors - Akadudu 200",
-"04. M3gagor - Circes Out Of Tempo 184",
-"05. Evil_7  X M3gagor- Fairy Tail 191",
-"06. Evil_7 - Bad Trip 211",
-"07. Odoxis - Painfull Erotic Bond 207.4",
-"08. Absolsys - O Ro Chi 240",
-"09. Dark Kine - Teacher Flow 199",
-"10. Apetech - The Spirit Song - 210",
-"11. Yamakasi - Akumu 210",
-"12. Necromorph Project - Kaulida Traveling 285.4"],
+    "tracklist": [
+      "01. Saint Trospe - Dementria 175",
+      "02. Psychedflow - Follow The Illusion 170",
+      "03. Alemao Inhibitors - Akadudu 200",
+      "04. M3gagor - Circes Out Of Tempo 184",
+      "05. Evil_7  X M3gagor- Fairy Tail 191",
+      "06. Evil_7 - Bad Trip 211",
+      "07. Odoxis - Painfull Erotic Bond 207.4",
+      "08. Absolsys - O Ro Chi 240",
+      "09. Dark Kine - Teacher Flow 199",
+      "10. Apetech - The Spirit Song - 210",
+      "11. Yamakasi - Akumu 210",
+      "12. Necromorph Project - Kaulida Traveling 285.4"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298LmoYT7O-_m_wOZlIiA3Cx",
     "youtube_full_album": "https://youtu.be/VuxBqR4e2hg",
     "spotify": "https://open.spotify.com/album/2pRsnHhfMghECFoieb5GsB",
     "bandcamp": "https://horrordelic.bandcamp.com/album/petrified-from-horror",
     "mp3": "https://drive.google.com/file/d/1rvQnm_vLZ9Ln8R78fPVXe6Cov4FkmaQK/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/16yewKMdD8MNOUmCMFhfdWyJmDw1d3y-E/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1hTAFdxfcEs0sM9jLRE-3mQN6DiEexRpC/view?usp=drive_link"
+    "flac": "https://drive.google.com/file/d/1hTAFdxfcEs0sM9jLRE-3mQN6DiEexRpC/view?usp=drive_link"
   },
-    {
+  {
     "id": "HORD117",
     "path": "VA_-_Scary_Xmas_2024",
     "artist": "VA",
@@ -64,31 +92,33 @@
     "release_text": "We continue our tradition from last years release VA: Ultimate X-Mas power! With another dark psychedelic holiday special compilation named: Scary Xmas!\n\nLet the holidays in with Horrordelic on Your system!",
     "release_date": "07/Dec/2024",
     "credits": "\n\nArtwork by Skr0mt + Antikriz\n\nMastering Krono Audio\n\nRelease Horrordelic 2024",
-    "tracklist": ["01. Efect Mushroom - Noche de Dark - 190 ",
-"02. Psykotropic - Se me suvio el nuerto 155 ",
-"03. NANO REXX- Merry Christmas in the Trench 150",
-"04. YRSKOG - DarkSanta-Trip 155 ",
-"05. Belegur - Xmas Invader 210 ",
-"06. 7xion - Data Klaus 177 ",
-"07. Obsorbo - Ethan Grinch 180 ",
-"08. Drifting Interface - Trip 2 Blodfjell 190 ",
-"09. Psycholouis - Santa Klaustrophobic 187 ",
-"10. EviL_7 - Krampus reborn 193",
-"11. Dark Wish - Santa Kaoz 214 ",
-"12. M3gagor - ho ho holocaust 184 ",
-"13. Dr Tryptamine - Santas Blotter 164",
-"14. Psylo - Ghostly Reflections 240 ",
-"15. MaNooB - Krampus 220"],
+    "tracklist": [
+      "01. Efect Mushroom - Noche de Dark - 190 ",
+      "02. Psykotropic - Se me suvio el nuerto 155 ",
+      "03. NANO REXX- Merry Christmas in the Trench 150",
+      "04. YRSKOG - DarkSanta-Trip 155 ",
+      "05. Belegur - Xmas Invader 210 ",
+      "06. 7xion - Data Klaus 177 ",
+      "07. Obsorbo - Ethan Grinch 180 ",
+      "08. Drifting Interface - Trip 2 Blodfjell 190 ",
+      "09. Psycholouis - Santa Klaustrophobic 187 ",
+      "10. EviL_7 - Krampus reborn 193",
+      "11. Dark Wish - Santa Kaoz 214 ",
+      "12. M3gagor - ho ho holocaust 184 ",
+      "13. Dr Tryptamine - Santas Blotter 164",
+      "14. Psylo - Ghostly Reflections 240 ",
+      "15. MaNooB - Krampus 220"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-5fQBF5jMWAfcI7PcaAnVt",
     "youtube_full_album": "https://youtu.be/uWP2Ru6W3d4",
     "spotify": "https://open.spotify.com/album/4YHS5bYB1gvtuMT4pDd1uk",
     "bandcamp": "https://horrordelic.bandcamp.com/album/scary-xmas",
     "mp3": "https://drive.google.com/file/d/1oju-gJTsPRwJS8zQfDwzbxjK1RoivKJs/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1RMin3mUquFZu33r9QNabMxcKz4xs5eYT/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1T4ivSBmhF7Aj3NS5n4J3H4gri6vWhdA_/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1T4ivSBmhF7Aj3NS5n4J3H4gri6vWhdA_/view?usp=sharing"
   },
-    
-    {
+
+  {
     "id": "HORD116",
     "path": "Dark_Wish_-_Keep_Dark_and_Full_Power_Psychedelic",
     "artist": "Dark Wish",
@@ -97,28 +127,30 @@
     "release_text": "Horrordelic proudly presents the third full length album from Pedro Melito also known as a Dark Wish (Brasil).\n\nIn a world where people cling to titles and create barriers between each other, a portal from other dimensions emerges, bringing with it a dark wish of psychedelic energy.\n\nCrossing boundaries between different tribes, this movement is born in darkness and rises with full power in the psychedelic realm, celebrating the vision and legacy of master Babaji.",
     "release_date": "16/Nov/2024",
     "credits": "\n\nMusic By Dark Wish (Pedro Melito)\nArt + Layout Psytanic, Hulder & Antikriz\nMastering Dark Wish",
-    "tracklist": ["01. Magia do Caos 180 (Vs. Project Zero)",
-"02. Full Power 180 (Vs.  Annexed Data)",
-"03. Time travel 187",
-"04. Iozzodelic 188 (Vs. Igor Iozzo)",
-"05. From another dimension 192",
-"06. Keep Dark 200",
-"07. Psicodelia 203 (Vs. Takay)",
-"08. Megalofantastic 204",
-"09. Melancolia 213",
-"10. A Cosmic Channel (Tributo ao Babaji) 217",
-"11. Summerdelic 220 (Vs. HylianToddy)",
-"12. Horror Time  220 (Vs. Yetzirah)",
-"13. A Bruxa e o Mago 240 (Vs. Storm Witch)"],
+    "tracklist": [
+      "01. Magia do Caos 180 (Vs. Project Zero)",
+      "02. Full Power 180 (Vs.  Annexed Data)",
+      "03. Time travel 187",
+      "04. Iozzodelic 188 (Vs. Igor Iozzo)",
+      "05. From another dimension 192",
+      "06. Keep Dark 200",
+      "07. Psicodelia 203 (Vs. Takay)",
+      "08. Megalofantastic 204",
+      "09. Melancolia 213",
+      "10. A Cosmic Channel (Tributo ao Babaji) 217",
+      "11. Summerdelic 220 (Vs. HylianToddy)",
+      "12. Horror Time  220 (Vs. Yetzirah)",
+      "13. A Bruxa e o Mago 240 (Vs. Storm Witch)"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2986bHoLZqwISVWBbA1QqsVq",
     "youtube_full_album": "https://youtu.be/5K49p0ryyTo",
     "spotify": "https://open.spotify.com/album/6NmNTb3PGSg1Sp0Iuu2S1s",
     "bandcamp": "https://horrordelic.bandcamp.com/album/keep-dark-and-full-power-psychedelic",
     "mp3": "https://drive.google.com/file/d/1q-bCNVgIOZjeEbR9c3Dx-kuaV4hPHo7T/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1MRtPvGA68Q4w5uvAj05jrFBjjXDIWl4s/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1OWTNhu_0oToy1tbZPgbqg1zvfNPJEiM9/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1OWTNhu_0oToy1tbZPgbqg1zvfNPJEiM9/view?usp=sharing"
   },
- {
+  {
     "id": "HORD114",
     "path": "Codex_Gigas_-_The_Night_of_Horror",
     "artist": "Codex Gigas",
@@ -128,21 +160,21 @@
     "release_date": "02/Nov/2024",
     "credits": "\n\n",
     "tracklist": [
-"01. Codex Gigas - Night Horror 160",
-"02. Codex Gigas - Middle Eastern 166",
-"03. Codex Gigas - Dejavu 168",
-"04. Codex Gigas - Existo 180"],
+      "01. Codex Gigas - Night Horror 160",
+      "02. Codex Gigas - Middle Eastern 166",
+      "03. Codex Gigas - Dejavu 168",
+      "04. Codex Gigas - Existo 180"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299vMjTz-Ao5hWzWfL8JOQzA",
     "youtube_full_album": "https://youtu.be/fscQpFoKD8s",
     "spotify": "https://open.spotify.com/album/76Sx3v3MBhPkUtK9mUVpF4",
     "bandcamp": "https://horrordelic.bandcamp.com/album/the-night-of-horror",
     "mp3": "https://drive.google.com/file/d/16bAvhlmiRxSC28gybJvvCWM1Gyd0Ezlg/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/12eH8tB1X-3-K2PTyRTYxHeXYVi5kS5LU/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1-MRspV8QU5nAYSY9dhFCX8BcxzFSFsGo/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1-MRspV8QU5nAYSY9dhFCX8BcxzFSFsGo/view?usp=sharing"
   },
-    
-    
-    {
+
+  {
     "id": "HORD115",
     "path": "Efect_Mushroom_-_Brujas",
     "artist": "Efect Mushroom",
@@ -152,19 +184,21 @@
     "release_date": "31/Oct/2024",
     "credits": "\n\nMusic + Art: Efect Mushroom\nMastering: Krono Audio\nRelease: Horrordelic",
     "tracklist": [
-    "01. La Bruja",
-    "02. Fuego Purificador",
-    "03. Almas Perdidas",
-    "04. El Mundo de Alesa"],
+      "01. La Bruja",
+      "02. Fuego Purificador",
+      "03. Almas Perdidas",
+      "04. El Mundo de Alesa"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2982n9byyN3e8BvoNzw5RuTx",
     "youtube_full_album": "https://youtu.be/WCE6CAmms70",
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/brujas",
     "mp3": "https://drive.google.com/file/d/1NeNAe7XvkUGU3mluRDdSY3hamn5eJ3Cz/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1q_ZIZsz6aZ7r-mMIIv4TPhs8pVhHn2WO/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1fSHyBzte9CshcO_-lRIICJzsG4bewgCi/view?usp=sharing"
-  }, 
-  {"id": "HORD113",
+    "flac": "https://drive.google.com/file/d/1fSHyBzte9CshcO_-lRIICJzsG4bewgCi/view?usp=sharing"
+  },
+  {
+    "id": "HORD113",
     "path": "VA_-_FastFood",
     "artist": "VA",
     "album_name": "FastFood",
@@ -173,37 +207,38 @@
     "release_date": "15/Oct/2024",
     "credits": "\n\nCompile by Antikriz & Psytanic\nArtwork by Psytanic & Hulder\nMastering by Krono Audio\nHorrordelic 2024",
     "tracklist": [
-"1. Macrofreak - Dominion 240",
-"2. Abgrund B - Cold Pizza 232",
-"3. Multypolar - El Barco Tenebroso 200",
-"4. Yetzirah - Bob Without Ganja 210",
-"5. Obsorbo X Psykotropic - Campo De Medusas 201",
-"6. Efect Mushroom - Spongebob And Friends 190",
-"7. Nano Rexx - Si Los Mundos Chocan 200",
-"8. Baba G - Fine Dark Chocolate 300",
-"9. SooSpicey - Squirrel Jelly 220",
-"10. Omzig - Wacky Core 214",
-"11. Belegur - Under D'sea 176",
-"12. Skellington - Aquatic Sludge 210",
-"13. Drifting Interface - Komputer Overload 210",
-"14. Dr Tryptamine - Not For Human Consumption 220",
-"15. Nervous System - White Clouds 210",
-"16. Codex Gigas - Noche De Brujas 168",
-"17. Snailtrail - Liquid Levels 200",
-"18. Dark Wish - The Dark Side 222",
-"19. Noctivagorum Ft. Apokryphos - Esponjoso 250-270-290",
-"20. Rasibu - Brzo Sranje 280",
-"21. Mude-mahana - Burn Bykini Burn 217",
-"22. Delirious Moon - Salty's Spittoon 260"],
+      "1. Macrofreak - Dominion 240",
+      "2. Abgrund B - Cold Pizza 232",
+      "3. Multypolar - El Barco Tenebroso 200",
+      "4. Yetzirah - Bob Without Ganja 210",
+      "5. Obsorbo X Psykotropic - Campo De Medusas 201",
+      "6. Efect Mushroom - Spongebob And Friends 190",
+      "7. Nano Rexx - Si Los Mundos Chocan 200",
+      "8. Baba G - Fine Dark Chocolate 300",
+      "9. SooSpicey - Squirrel Jelly 220",
+      "10. Omzig - Wacky Core 214",
+      "11. Belegur - Under D'sea 176",
+      "12. Skellington - Aquatic Sludge 210",
+      "13. Drifting Interface - Komputer Overload 210",
+      "14. Dr Tryptamine - Not For Human Consumption 220",
+      "15. Nervous System - White Clouds 210",
+      "16. Codex Gigas - Noche De Brujas 168",
+      "17. Snailtrail - Liquid Levels 200",
+      "18. Dark Wish - The Dark Side 222",
+      "19. Noctivagorum Ft. Apokryphos - Esponjoso 250-270-290",
+      "20. Rasibu - Brzo Sranje 280",
+      "21. Mude-mahana - Burn Bykini Burn 217",
+      "22. Delirious Moon - Salty's Spittoon 260"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299eq37OMrTeeezXvUro82z5",
     "youtube_full_album": "https://youtu.be/eWw-j_Dp9dc",
     "spotify": "https://open.spotify.com/album/584GcFsKN36aKPBjE6i7sx",
     "bandcamp": "https://horrordelic.bandcamp.com/album/fastfood",
     "mp3": "https://drive.google.com/file/d/1M4W5YO6cufIfI9xPm7UXX8E4Ofx3OvxR/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1gYv6KXcH1Y0EcIsYm_A56qy6vp0L7wQM/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/18KphRQvlQDi3T6t2Ls-cns12RC9UTHpb/view?usp=sharing"
-  },  
-     {
+    "flac": "https://drive.google.com/file/d/18KphRQvlQDi3T6t2Ls-cns12RC9UTHpb/view?usp=sharing"
+  },
+  {
     "id": "HORD112",
     "path": "Omzig_-_Laws_Of_the_Sun",
     "artist": "Omzig",
@@ -212,18 +247,20 @@
     "release_text": "Horrordelic proudly presents Omzig (Serbia) new EP named `Laws of the Sun`.\n\nAn eclectic fusion of sound and storytelling, drawing inspiration from both the show and book of the same name.\n\nEach track delves into the core themes of spiritual awakening, enlightenment, and the cosmic forces that shape human existence.\n\nThe EP captures the essence of these mystical teachings through a blend of ambient soundscapes, ethereal vocals, and dynamic instrumentation.",
     "release_date": "09/Oct/2024",
     "credits": "\n\nMusic + Art by Omzig (Bendzamin Salic)\nLayout by Antikriz\nMastering by Krono Audio",
-    "tracklist": ["1. One Source 150",
-"2. One Planet 180",
-"3. One People 214"],
+    "tracklist": [
+      "1. One Source 150",
+      "2. One Planet 180",
+      "3. One People 214"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_p5ilISPrewovjV2Q1HGJC",
     "youtube_full_album": "https://youtu.be/ZdUddEudaDc",
     "spotify": "https://open.spotify.com/album/2zuREh3WnunI8OC1XwPMOW",
     "bandcamp": "https://horrordelic.bandcamp.com/album/laws-of-the-sun",
     "mp3": "https://drive.google.com/file/d/1nj6p2U-_NKvBXMRpxdDiJ8tsnvQ67JaL/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1XCzdUPek6CZui0XrBbqazlqHhlThv-g8/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1hTzoRLCH4sqreAw468jvMaWp_4HKETm5/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1hTzoRLCH4sqreAw468jvMaWp_4HKETm5/view?usp=sharing"
   },
-    {
+  {
     "id": "HORD111",
     "path": "Vaidia_-_Offering_to_the_Lord",
     "artist": "Vaidia",
@@ -232,23 +269,25 @@
     "release_text": "Horrordelic proudly presents Vaidia: Offering to the Lord, an epic 8 track dark forest journey from Manuel Hernández (Mexico).\n\nIn the heart of the dark psychedelic forest, where destruction and creation intertwine, a sonorous prayer rises to Shiva, the lord of the cosmos. A journey through the cosmic dance, where darkness becomes light and reality dissolves into eternity.\n\nLet the music guide you to the third eye of Shiva, where consciousness expands and liberation becomes possible. Offer your being to creative destruction, and be reborn in the eternal dance of the universe.",
     "release_date": "06/Sep/2024",
     "credits": "\n\nMusic and Artwork by Vaidia (Manuel Hernández)\n\nLayout by Antikriz\n\nMastering by Krono Audio\n\nHorrordelic - Darkpsy Life 2024",
-    "tracklist": ["1. Revelations 137",
-"2. Interdimensional Soul 150",
-"3. Karma in Maya 151",
-"4. Supreme Attractive 152",
-"5. Path to Planet Vaikuntha 153",
-"6. From Darkness to Light 153 ",
-"7. Liberaci dal Male 154",
-"8. Love against Fear 150"],
+    "tracklist": [
+      "1. Revelations 137",
+      "2. Interdimensional Soul 150",
+      "3. Karma in Maya 151",
+      "4. Supreme Attractive 152",
+      "5. Path to Planet Vaikuntha 153",
+      "6. From Darkness to Light 153 ",
+      "7. Liberaci dal Male 154",
+      "8. Love against Fear 150"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_igb-j8cDKIdW8fQgeoQiV",
     "youtube_full_album": "https://youtu.be/Jo8qTwF-JtU",
     "spotify": "https://open.spotify.com/album/4SUnkCHQ8sFAzc5WRgir6B",
     "bandcamp": "https://horrordelic.bandcamp.com/album/offering-to-the-lord",
     "mp3": "https://drive.google.com/file/d/1S0Ls5a5pdY7eMgyxrU-d3Kc5YHKYy5ar/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1oqe3koUhNKPZdOGao7Ba-co2K-AIlv8a/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1bi7ECcsIBxCrNa79yMTOVhmJUpKpJ53n/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1bi7ECcsIBxCrNa79yMTOVhmJUpKpJ53n/view?usp=sharing"
   },
-    {
+  {
     "id": "HORD109",
     "path": "Mental_Freak_-_The_Paradox_of_an_Existence",
     "artist": "Mental Freak",
@@ -257,19 +296,22 @@
     "release_text": "Horrordelic proudly presents the debut EP from Mental Freak titled - Paradox of Existence.\n\nFrom the depths of a being's innermost being you can find different versions of yourself. Our pure and clean essence is still there, submerged in various frames and filters created by the experience of existing.\n\nThrough experimentalism, Mental Freak opens this temporal rift, inducing the listener into a trance where it is possible to delve into these layers and go deeper and deeper, until each being finds the final essence for an ideal and futuristic society, overcoming the paradoxes of existence itself.\n\nWhile dancing to the abstract rhythm of each track made especially for each being to gradually achieve their own freedom.",
     "release_date": "09/August/2024",
     "credits": "\n\nMusic by Mental Freak (Hiderik Lima)\nArtwork by Anami & Antikriz \nMastering Krono Audio\nHorrordelic 2024",
-    "tracklist": ["01. Transitions Of My Mind 180",
-"02. My Hate For Primates 188",
-"03. Mental Freak & Yetzirah & Ardalii - Predestination 190",
-"04. Uzumaki 200-666-200",
-"05. Mental Freak & Kromacore - Magnetic Utopia -  300"],
+    "tracklist": [
+      "01. Transitions Of My Mind 180",
+      "02. My Hate For Primates 188",
+      "03. Mental Freak & Yetzirah & Ardalii - Predestination 190",
+      "04. Uzumaki 200-666-200",
+      "05. Mental Freak & Kromacore - Magnetic Utopia -  300"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_XCOCgSoTI881oC-98v906",
     "youtube_full_album": "https://youtu.be/ZRrABnv3dXQ",
     "spotify": "https://open.spotify.com/album/3yC9IP065dTOEbVosUA4uT",
     "bandcamp": "https://horrordelic.bandcamp.com/album/the-paradox-of-an-existence",
     "mp3": "https://drive.google.com/file/d/17r1zmcF7Iq4-cHzA2A-NJ6WfBxmJjB0m/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/11l7uQoG8X4FeZxFzBGI6oO0xcg3hydKA/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1CikZbyPlBtpsZOLcquRSQ_bqI608YAYr/view?usp=sharing"
-  }, {
+    "flac": "https://drive.google.com/file/d/1CikZbyPlBtpsZOLcquRSQ_bqI608YAYr/view?usp=sharing"
+  },
+  {
     "id": "HORD108",
     "path": "Tandav_Nritya_The_Complete_Edition",
     "artist": "VA",
@@ -278,66 +320,69 @@
     "release_text": "The Tandav Nritya Series\n\nCOMPILED by COSMIC BLUEMOON (India)\n\nThe Complete series - chapter 1-5.\n\n51 Killer Dark psychedelic tracks.",
     "release_date": "02/August/2024",
     "credits": "\n\nCompiled by Cosmic Bluemoon\nCover by Antikriz\nMastering by Krono Audio",
-    "tracklist": ["1. Maleficarvm - Creatura dimensio Tertius 155 BPM (Rodrigo Gudiño)",
-"2. Acoustamind - Vibrations 155 BPM (Niraj Singh)",
-"3. Snailtrail - Insect Politics 157 BPM (Kostas Hatziloukas)",
-"4. Gajiru - Whistle of Death 158 BPM (Gregory Gageiro)",
-"5. Transtech -  Fragments Conection 158 BPM (Manuel Abihu Mondragon Sotelo)",
-"6. Bizzare FrequenCy -  Svartálfaheim 159 BPM (Luis Gustavo Gonzalez Peña)",
-"7. Ololiuhqui - Hemlock Breeze 160 BPM (Damian Mariano Chalvignac Auclair)",
-"8. Inimical Darkness - Natural Disorder 160 BPM (Omar Alejandro Guerrero Pérez)",
-"9. Diabolical Orchestra - Maha Kumbamela 165 BPM (Gokul Kannan)",
-"10. Delirious Moon - Obey the Morza  170 BPM (Jose Luis Salgado Rodriguez)",
-"\n\n11. Snailtrail - StRaW DemOnS 148 BPM (Kostas Hatziloukas)",
-"12. Pnakotic Phantasm - Blighttown 150 BPM (Jerome Lesterps)",
-"13. Basaltic - Mirage 150 BPM (Michael Elishakov)",
-"14. Mazo Sadu - Night on Earth (Stranger Signals rmx) 151 BPM (Johann & Damian Marquardt)",
-"15. Kounoupi - Deep Introduction 154 BPM (Yves Böllersen)",
-"16. Organic Waves - Not Dead 155 BPM (Hugo Mattei)",
-"17. Cali'Balam - Internal Mutation 158 (Carlos Gonzalez) ",
-"18. Zyamaliman - Purple Helmet Warrior 158 BPM (Anil Kumar)",
-"19. Psycholouis - Hakuna Matata 165 BPM (Louis Ochysp)",
-"20. Fluroneuro -  Nowhere to Hyde 165 BPM (Priyanka Sudhir)",
-"\n\n21. Elephant - Cannacoffee Market 148 BPM  (Klaus Rosalewski)",
-"22. SnaiLTraiL - Gravity 154 BPM (Kostas Hatziloukas)",
-"23. Disruptor - UP n DOwn 154 BPM (Joey Keith Fernandes)",
-"24. Organic Waves - AcidForBreakfast 158 BPM (Hugo Mattei)",
-"25. Psynyde - Wolf of the streets 158 BPM (Abhishek Dhar)",
-"26. Nauuake - Noveno 158 BPM (Jaír Valle and Manuel Abihu Mondragon Sotelo)",
-"27. Gyn-X - Threnody of Marla 160 BPM (Cem Berkman)",
-"28. Tivrā - The Dark Romantic 160 BPM (Rajesh Vedula)",
-"29. Mazo Sadu - Holistic 171 BPM (Johann & Damian Marquardt)",
-"30. Gajiru - Sequencies 172 BPM (Gregory Gageiro)",
-"\n\n31. Yawanawa - Turna 154 BPM (Jan Höhenwarter)",
-"32. Dark O'la7or - Dark Mandili 157 BPM (Kevin Atkinson)",
-"33. Umbrella - Sampa Chaos 157 BPM (Pedro Vitor Melito Ribeiro)",
-"34. Zion - Malware 159 BPM (David Jiménez Olvera)",
-"35. Organic Waves - Mushrooms for Dinner 160 BPM (Hugo Mattei)",
-"36. Grey Aathma & Lymbic System - Ragasya 160 BPM (Prabhakaran , Aravind Adiyodi)",
-"37. Pnakotic Phantasm -  I thought I had a Family 162 BPM (Jerome Lesterps)",
-"38. Ek Balam - Axis Mundi 165 BPM (Luis Fernández Trenado)",
-"39. PicharknesS - Purkho Ki Pukaar 165 BPM (Gustavo Picharki)",
-"40. Psycholouis - Darkness Inside You 168 BPM (Luis Costa)",
-"\n\n41. Nano Rexx - Hanuman 150 BPM (Moises Davila Granados)",
-"42. Rakmo - Quantum Odyssey - 150 BPM (Omkar Umesh More)",
-"43. Evil Scream . DeathStalker 155 BPM (Caio Silveira)",
-"44. ReversaMente & Fractal Waves - Speed Riders 155 BPM (Elio Afonso, Fernando Acocella & Gabriel F. Cunha)",
-"45. Organic Waves - Boat on the Styx 155 BPM (Hugo Mattei)",
-"46. KAV - Quanta 156 BPM (Luis Alexander Vargas Lopez)",
-"47. YantraX - Melted Perception  159 BPM (Victor Scherer Lemos)",
-"48. Killjoy - Numero Uno 160 BPM (Lesley Saad)",
-"49. Lu PsY FeR - A Pinch Of Insanity 160 BPM (Jag Sai Pravesh)",
-"50. Pnakotic Phantasm - Something Stirred 163 BPM (Jerome Lesterps)",
-"51. Endelyon - Textures 165 BPM (Alexa Fernanda Hernández)"],
+    "tracklist": [
+      "1. Maleficarvm - Creatura dimensio Tertius 155 BPM (Rodrigo Gudiño)",
+      "2. Acoustamind - Vibrations 155 BPM (Niraj Singh)",
+      "3. Snailtrail - Insect Politics 157 BPM (Kostas Hatziloukas)",
+      "4. Gajiru - Whistle of Death 158 BPM (Gregory Gageiro)",
+      "5. Transtech -  Fragments Conection 158 BPM (Manuel Abihu Mondragon Sotelo)",
+      "6. Bizzare FrequenCy -  Svartálfaheim 159 BPM (Luis Gustavo Gonzalez Peña)",
+      "7. Ololiuhqui - Hemlock Breeze 160 BPM (Damian Mariano Chalvignac Auclair)",
+      "8. Inimical Darkness - Natural Disorder 160 BPM (Omar Alejandro Guerrero Pérez)",
+      "9. Diabolical Orchestra - Maha Kumbamela 165 BPM (Gokul Kannan)",
+      "10. Delirious Moon - Obey the Morza  170 BPM (Jose Luis Salgado Rodriguez)",
+      "\n\n11. Snailtrail - StRaW DemOnS 148 BPM (Kostas Hatziloukas)",
+      "12. Pnakotic Phantasm - Blighttown 150 BPM (Jerome Lesterps)",
+      "13. Basaltic - Mirage 150 BPM (Michael Elishakov)",
+      "14. Mazo Sadu - Night on Earth (Stranger Signals rmx) 151 BPM (Johann & Damian Marquardt)",
+      "15. Kounoupi - Deep Introduction 154 BPM (Yves Böllersen)",
+      "16. Organic Waves - Not Dead 155 BPM (Hugo Mattei)",
+      "17. Cali'Balam - Internal Mutation 158 (Carlos Gonzalez) ",
+      "18. Zyamaliman - Purple Helmet Warrior 158 BPM (Anil Kumar)",
+      "19. Psycholouis - Hakuna Matata 165 BPM (Louis Ochysp)",
+      "20. Fluroneuro -  Nowhere to Hyde 165 BPM (Priyanka Sudhir)",
+      "\n\n21. Elephant - Cannacoffee Market 148 BPM  (Klaus Rosalewski)",
+      "22. SnaiLTraiL - Gravity 154 BPM (Kostas Hatziloukas)",
+      "23. Disruptor - UP n DOwn 154 BPM (Joey Keith Fernandes)",
+      "24. Organic Waves - AcidForBreakfast 158 BPM (Hugo Mattei)",
+      "25. Psynyde - Wolf of the streets 158 BPM (Abhishek Dhar)",
+      "26. Nauuake - Noveno 158 BPM (Jaír Valle and Manuel Abihu Mondragon Sotelo)",
+      "27. Gyn-X - Threnody of Marla 160 BPM (Cem Berkman)",
+      "28. Tivrā - The Dark Romantic 160 BPM (Rajesh Vedula)",
+      "29. Mazo Sadu - Holistic 171 BPM (Johann & Damian Marquardt)",
+      "30. Gajiru - Sequencies 172 BPM (Gregory Gageiro)",
+      "\n\n31. Yawanawa - Turna 154 BPM (Jan Höhenwarter)",
+      "32. Dark O'la7or - Dark Mandili 157 BPM (Kevin Atkinson)",
+      "33. Umbrella - Sampa Chaos 157 BPM (Pedro Vitor Melito Ribeiro)",
+      "34. Zion - Malware 159 BPM (David Jiménez Olvera)",
+      "35. Organic Waves - Mushrooms for Dinner 160 BPM (Hugo Mattei)",
+      "36. Grey Aathma & Lymbic System - Ragasya 160 BPM (Prabhakaran , Aravind Adiyodi)",
+      "37. Pnakotic Phantasm -  I thought I had a Family 162 BPM (Jerome Lesterps)",
+      "38. Ek Balam - Axis Mundi 165 BPM (Luis Fernández Trenado)",
+      "39. PicharknesS - Purkho Ki Pukaar 165 BPM (Gustavo Picharki)",
+      "40. Psycholouis - Darkness Inside You 168 BPM (Luis Costa)",
+      "\n\n41. Nano Rexx - Hanuman 150 BPM (Moises Davila Granados)",
+      "42. Rakmo - Quantum Odyssey - 150 BPM (Omkar Umesh More)",
+      "43. Evil Scream . DeathStalker 155 BPM (Caio Silveira)",
+      "44. ReversaMente & Fractal Waves - Speed Riders 155 BPM (Elio Afonso, Fernando Acocella & Gabriel F. Cunha)",
+      "45. Organic Waves - Boat on the Styx 155 BPM (Hugo Mattei)",
+      "46. KAV - Quanta 156 BPM (Luis Alexander Vargas Lopez)",
+      "47. YantraX - Melted Perception  159 BPM (Victor Scherer Lemos)",
+      "48. Killjoy - Numero Uno 160 BPM (Lesley Saad)",
+      "49. Lu PsY FeR - A Pinch Of Insanity 160 BPM (Jag Sai Pravesh)",
+      "50. Pnakotic Phantasm - Something Stirred 163 BPM (Jerome Lesterps)",
+      "51. Endelyon - Textures 165 BPM (Alexa Fernanda Hernández)"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298oSsrdDPc69nw9XXbPVPrd",
     "youtube_full_album": "https://www.youtube.com/watch?v=Rv3nJgzvZaw",
     "spotify": "https://open.spotify.com/album/4nenLo6joK3EMQO5SktxXy",
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-the-complete-series-1-5",
     "mp3": "https://drive.google.com/file/d/1EmffW8bIcwpNDgtPTd-acoaSQxVFR1WF/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1OjYHb_zdq33e1VVtVPQhZ69N6PfMjch8/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1W1XeCmTVZrYQcwdhtGMEFTDsvPdQkCZi/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1W1XeCmTVZrYQcwdhtGMEFTDsvPdQkCZi/view?usp=sharing"
   },
-  { "id": "HORD110",
+  {
+    "id": "HORD110",
     "path": "Efect_Mushroom_-_Historias_de_Terror_EP_2024",
     "artist": "Efect Mushroom",
     "album_name": "Historias De Terror",
@@ -346,19 +391,21 @@
     "release_date": "26/July/2024",
     "credits": "\nMusic & Artwork by Efect Mushroom\n\nMastering Krono Audio\n\nRelease by Horrordelic 2024",
     "tracklist": [
-"1. Sintonia Tenebrosa 155",
-"2. El Ritual Vudu 175",
-"3. Catacumbas Siniestras 180",
-"4. Seres de Ultratumba 175"],
+      "1. Sintonia Tenebrosa 155",
+      "2. El Ritual Vudu 175",
+      "3. Catacumbas Siniestras 180",
+      "4. Seres de Ultratumba 175"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp298_re7jnGm8e_qz0RBXR-Dn&si=8PJfZCD96PlyRYup",
     "youtube_full_album": "https://youtu.be/B40cLNaxwfc",
     "spotify": "https://open.spotify.com/album/0s6ayfRjVw3QKkuNBr9nn7",
     "bandcamp": "https://horrordelic.bandcamp.com/album/historias-de-terror",
     "mp3": "https://drive.google.com/file/d/15BO0gMtxxjZZGBc8uNEv1eN4zP6kjxGi/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1TTUdjG0gGV0bE9gsQzkmO5zunjRaIhNc/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/190NVBZS6UBwcjlXGcNUr_edsHr6cqK1C/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/190NVBZS6UBwcjlXGcNUr_edsHr6cqK1C/view?usp=sharing"
   },
-  { "id": "HORD107",
+  {
+    "id": "HORD107",
     "path": "Dark_Simha_-_Vasudevaya_EP",
     "artist": "Dark Simha",
     "album_name": "Vasudevaya",
@@ -366,19 +413,21 @@
     "release_text": "Horrordelic proudly presents the debut EP from Dark Simha named: Vasudevaya! Presenting Manuel Hernández, the creator behind this project and also behind the Vaidia project.\n\nHaving been involved in the scene for years and making music since 2015 now is the time to let the world listen to the creations! Experimenting with organic atmospheres and futuristic sounds, with the dark environment that characterizes it…\n\nConnect your soul with dance and travel to another dimension within you with the power of supreme attractiveness and honor your divinity by going through your darkness in this material form and enjoy!\n\nPurification of karma over time, giving thanks for existence and walking towards the absolute truth all together as one..",
     "release_date": "05/July/2024",
     "credits": "\n\nMusic by Dark Simha (Manuel Hernández)\nLayout Antikriz\nMastering Krono Audio\n\nHorrordelic 2024",
-    "tracklist": ["1. Celestial Planets of the Vedas 170",
-"2. Vasudevaya 170",
-"3. El mundo de los hombres caera 177-200",
-"4. Inside The Portal 200"],
+    "tracklist": [
+      "1. Celestial Planets of the Vedas 170",
+      "2. Vasudevaya 170",
+      "3. El mundo de los hombres caera 177-200",
+      "4. Inside The Portal 200"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299SuuU3KmwbwlANxb40MPdF",
     "youtube_full_album": "https://youtu.be/3g5eKaokuOQ",
     "spotify": "https://open.spotify.com/album/58nXhTtFlUXHA124pF2Nr8",
     "bandcamp": "https://horrordelic.bandcamp.com/album/vasudevaya",
     "mp3": "https://drive.google.com/file/d/1w1vPu074jGXDFlqayjhxiJhvAICNyrZ4/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/10ne1t77rezQusuz8ZZTGcuVABzpJE_pu/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/13BXiP10SgT_vziDObN8sX67tTbgGqrGl/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/13BXiP10SgT_vziDObN8sX67tTbgGqrGl/view?usp=sharing"
   },
- {
+  {
     "id": "HORD106",
     "path": "Efect_Mushroom_-_Magia_Ancestral",
     "artist": "Efect Mushroom",
@@ -387,18 +436,20 @@
     "release_text": "Step into the enchanted realm of “Ancestral Magic,” a Dark Psy EP created by visionary artist Efect Mushroom.\n\nThis work is a tribute to the hidden forces that have guided humanity since time immemorial, and a tribute to the unexplored powers of the human brain.\n\nMusic acts as an echo that resonates through the echolocation of our souls, guiding us toward understanding the deepest mysteries.\n\n Ancestral Magic is that place. With influences reminiscent of Halloween music, each song is an incantation that invokes spirits of tradition and innovation, blending the ancient with the modern in a mystical dance.\n\nGet ready to explore the possibilities of what could happen if we unlocked 100% of our brain capacity. Ancestral Magic is not just an EP, it is a master key to the doors of perception, a journey through time and space, and an experience that will change you forever.",
     "release_date": "24/Jun/2024",
     "credits": "\n\nMusic & Artwork by Efect Mushroom\n\nMastering Krono Audio\n\n\n\nRelease by Horrordelic 2024",
-    "tracklist": ["1. Efect Mushroom - Bioluminicencia del Bosque 175",
-"2. Efect Mushroom - Sin el tiempo nadie existe 175",
-"3. Efect Mushroom - Perdido en el espacio infiito 175"],
+    "tracklist": [
+      "1. Efect Mushroom - Bioluminicencia del Bosque 175",
+      "2. Efect Mushroom - Sin el tiempo nadie existe 175",
+      "3. Efect Mushroom - Perdido en el espacio infiito 175"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-8jkLmOolHVBYlhlXBoB8O",
     "youtube_full_album": "https://youtu.be/x3QWx0AfooE",
     "spotify": "https://open.spotify.com/album/4H7Zj7u9ZoEsHIl97ntubj",
     "bandcamp": "https://horrordelic.bandcamp.com/album/magia-ancestral",
     "mp3": "https://drive.google.com/file/d/1YTXin65NLcEjXFv1MbdXdGx9OXfZlfcE/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1A1v3Py6GG8LHeiz2LDHvxtl6W9K1pAVu/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1hhMSVQQEH3B8EbaIGhl2eHfnIztzx0gh/view?usp=sharing"
-  },     
-    {
+    "flac": "https://drive.google.com/file/d/1hhMSVQQEH3B8EbaIGhl2eHfnIztzx0gh/view?usp=sharing"
+  },
+  {
     "id": "HORD105",
     "path": "VA_-_Monsters_of_Darkness",
     "artist": "VA",
@@ -407,40 +458,42 @@
     "release_text": "The Monsters of Darkness, ones of mankind's oldest enemies. They are fearsome monsters who lurk in the darkness of the moon. Nasty bunch. While there are good people among them, the majority of them are pure monsters. Where else do you think humans get their fear of the dark from, kiddo?\n\nThere are many definitions of what a creature of the night is. The main idea is that the Monsters of Darkness are a supernatural, mostly malevolent, creature that comes from the darkness of the moon or the world. Most are creatures born through unnatural means, some examples being cursed in the form of a monster or being turned into an undead creature. They are known as the opposites and enemies of the Fae and Angels, which also makes them the reluctant allies of the Demons.\n\nThey usually reside in the Nightland, a realm for them created by Death for those who seeks isolation from humanity either in distaste for them or in fear that they would be hunted down. However, unlike the Fae enemies, many of Monsters of darkness refuse to go the realm and so instead stay in the Human Realm as before.\n\nGet ready for this Monster Gathering!\n\nThe Monsters will gather to celebrate another fearful full moon, filled with dark and malevolent forces, macabre symphonies and persuasive deadly percussions from beyond the spirit of death. Follow the arrows, venture out, join this magnificent Monster gathering all night! Be part of the Dark Circle, check out our Circle of Darkness.\n\n\n\nBut beware - you might never get out - once in!",
     "release_date": "21/Jun/2024",
     "credits": "\n\nCompiled by Psycholouis & Antikriz\nArtwork by OMZIG & Antikriz\nMastering Krono Audio\n\nHorrordelic 2024\n#darkpsy Life",
-    "tracklist": ["01. SnaiLTrail - Grey skull Island 147",
-"02. Umbrella - Voz da noite 159",
-"03. Nervous System - Insomnia 196",
-"04. Codex Gigas - Out of Darkness 180",
-"05. M3gagor & Evil7 - Orphicore 191",
-"06. Microsapiens - Dark Amazon 170",
-"07. Dr Tryptamine - Bind Torture Kill 155",
-"08. Distorted AtmosFear - Devine Chaos 2 190",
-"09. Mental Freak - The Labyrinth of 1000 Bodies 205",
-"10. Dark Wish - Rock Danger 215",
-"11. Dark Simha - Divine nature 175",
-"12. Skellington - Confused Delay 150",
-"13. Multypolar - Garra Y Diente 185",
-"14. Tantrik Monkey - Who are Aghoris 155",
-"15. Ponomi - Nosalis 190",
-"16. Psykotropic & Surround Roots - El juego de Pelota 226",
-"17. Erofex - Science fiction (Zion Remix) 151",
-"18. OMZIG - Over World Theme 190",
-"19. Delirius Moon & Infektor - How many more Lifes ? Soros 215",
-"20. Macrofreak - Instrumental Reason 232",
-"21. Sastoke - El amanecer de los muertos 210",
-"22. Psicofonia - Monsters are Real 152",
-"23. Noctivagorum - Bobo da Corte 160",
-"24. YRSKOG - Shock Therapy 180",
-"25. Baba G - Spirit isomerisation 280"],
+    "tracklist": [
+      "01. SnaiLTrail - Grey skull Island 147",
+      "02. Umbrella - Voz da noite 159",
+      "03. Nervous System - Insomnia 196",
+      "04. Codex Gigas - Out of Darkness 180",
+      "05. M3gagor & Evil7 - Orphicore 191",
+      "06. Microsapiens - Dark Amazon 170",
+      "07. Dr Tryptamine - Bind Torture Kill 155",
+      "08. Distorted AtmosFear - Devine Chaos 2 190",
+      "09. Mental Freak - The Labyrinth of 1000 Bodies 205",
+      "10. Dark Wish - Rock Danger 215",
+      "11. Dark Simha - Divine nature 175",
+      "12. Skellington - Confused Delay 150",
+      "13. Multypolar - Garra Y Diente 185",
+      "14. Tantrik Monkey - Who are Aghoris 155",
+      "15. Ponomi - Nosalis 190",
+      "16. Psykotropic & Surround Roots - El juego de Pelota 226",
+      "17. Erofex - Science fiction (Zion Remix) 151",
+      "18. OMZIG - Over World Theme 190",
+      "19. Delirius Moon & Infektor - How many more Lifes ? Soros 215",
+      "20. Macrofreak - Instrumental Reason 232",
+      "21. Sastoke - El amanecer de los muertos 210",
+      "22. Psicofonia - Monsters are Real 152",
+      "23. Noctivagorum - Bobo da Corte 160",
+      "24. YRSKOG - Shock Therapy 180",
+      "25. Baba G - Spirit isomerisation 280"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_RaUexv6JNAeZCZZNhOKUJ",
     "youtube_full_album": "https://youtu.be/xjii4id6W6M",
     "spotify": "https://open.spotify.com/album/33eVzb6cPG5khKPVr9Sq0p",
     "bandcamp": "https://horrordelic.bandcamp.com/album/monsters-of-darkness",
     "mp3": "https://drive.google.com/file/d/1YT6LCdQTiqqzBzOgMVFKK008vp9ZAybO/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1ANWlsGteBVpNStcvuQ5RnDl6Zmgk3ERF/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1HBBNaP0DsSNjrhExTK-8HFRFQeBuTmCp/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1HBBNaP0DsSNjrhExTK-8HFRFQeBuTmCp/view?usp=sharing"
   },
-    {
+  {
     "id": "HORD104",
     "path": "Maleficarvm_-_Cuerpo_Y_Mente",
     "artist": "Maleficarvm",
@@ -449,16 +502,18 @@
     "release_text": "A new Maleficarvm EP proudly released at Horrordelic. From Mexico, with a strong connection to the Darkpsy scene he hits the scene with 3 new tools for your mind and body.\n\nThe relationship between body and mind is an endless dance of mutual influences. Our physical health and mental well-being are intrinsically connected. Taking care of one without considering the other is like trying to balance a scale with only one side.\n\nFrom food to physical activity and stress management, every choice we make impinges on both aspects of our existence. Let us always remember to nourish both our body and our mind, for together they form the foundation of our happiness and fulfillment.",
     "release_date": "20/Jun/2024",
     "credits": "\n\nMusic Maleficarvm (Rodrigo Gudiño)\nArtwork Antikriz\nMastering Krono Audio\n\nRelease Horrordelic 2024",
-    "tracklist": ["1. Maleficarvm  - Nada más 155",
-"2. Maleficarvm  - Vivir Con Miedo 150",
-"3. Maleficarvm  - Lattice 153"],
+    "tracklist": [
+      "1. Maleficarvm  - Nada más 155",
+      "2. Maleficarvm  - Vivir Con Miedo 150",
+      "3. Maleficarvm  - Lattice 153"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp299M9OCGX8AIuwS7LAoxVGJs",
     "youtube_full_album": "https://youtu.be/7j41Ej1Z_sc",
     "spotify": "https://open.spotify.com/album/3yTznxVLa4sWHfn0wMNho1",
     "bandcamp": "https://horrordelic.bandcamp.com/album/cuerpo-y-mente",
     "mp3": "https://drive.google.com/file/d/1eXIox-1Y4oEyL9wCkqRlTG3EGel8XSri/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1nGGg1UOgsWWdxyi3CG6UgLZcLjobiiMv/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1H3VbtUWxRkGANvuMW_YZwyjpevdiA7Kl/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1H3VbtUWxRkGANvuMW_YZwyjpevdiA7Kl/view?usp=sharing"
   },
   {
     "id": "HORD103",
@@ -469,31 +524,33 @@
     "release_text": "Arr Ya ready Freaks? Deep down in the sea, there are dark psychedelic adventures compiled by Psytanic, at Horrordelic. You like Krabby Patties or maybe you prefer chum?\n\nWe got it all.\n18 tales from the Bikini Bottom have been created for you to dive deep into the abyss.",
     "release_date": "07/Jun/2024",
     "credits": "\n\nArtwork and compile by Psytanic\nMastering by Krono Audio\nLayout by Antikriz\nReleased by Horrordelic 2024",
-    "tracklist": ["1. FluroNeuro - Tentacle Vision 150",
-"2. Efect Mushroom - Bibbubobbububob 175-200",
-"3. Maleficarvm - Wphíiia 165 ",
-"4. Hypnokrono - Yderacs 160",
-"5. Zion - SB-129 154",
-"6. Pnakotic Phantasm - Lurkers behind the Stairs 153 ",
-"7. Umbrella - Bob Esponja cartela Quadrada 156",
-"8. Bizzare Frequency - SpongeCy 157",
-"9. Killjoy - Anima Cordelia 165",
-"10. Drifting Interface - Chum Caverns 152",
-"11. Dr Tryptamine & Skellington - Psychonaught Submarine 150",
-"12. SnailTrail - Rise of Leviathan 152",
-"13. Delirious Moon - Los Hijos de Gary 170",
-"14. Cranium Drill - Monstar 163",
-"15. Transtech - Artigondyt inside Bikini Bottom 158",
-"16. Abgrund B - The Future 162",
-"17. Braio - The Sinister SpongeBob Sea Sickness 190",
-"18. Phyllorum - Flying Dutchman 230"],
+    "tracklist": [
+      "1. FluroNeuro - Tentacle Vision 150",
+      "2. Efect Mushroom - Bibbubobbububob 175-200",
+      "3. Maleficarvm - Wphíiia 165 ",
+      "4. Hypnokrono - Yderacs 160",
+      "5. Zion - SB-129 154",
+      "6. Pnakotic Phantasm - Lurkers behind the Stairs 153 ",
+      "7. Umbrella - Bob Esponja cartela Quadrada 156",
+      "8. Bizzare Frequency - SpongeCy 157",
+      "9. Killjoy - Anima Cordelia 165",
+      "10. Drifting Interface - Chum Caverns 152",
+      "11. Dr Tryptamine & Skellington - Psychonaught Submarine 150",
+      "12. SnailTrail - Rise of Leviathan 152",
+      "13. Delirious Moon - Los Hijos de Gary 170",
+      "14. Cranium Drill - Monstar 163",
+      "15. Transtech - Artigondyt inside Bikini Bottom 158",
+      "16. Abgrund B - The Future 162",
+      "17. Braio - The Sinister SpongeBob Sea Sickness 190",
+      "18. Phyllorum - Flying Dutchman 230"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299b3jIoGesC6nKTt-VNZ-X7",
     "youtube_full_album": "https://www.youtube.com/watch?v=-inPf_RwD1s",
     "spotify": "https://open.spotify.com/album/04DZFwvUQ1kiO6VpAL7fBV",
     "bandcamp": "https://horrordelic.bandcamp.com/album/sea-u-in-hell",
     "mp3": "https://drive.google.com/file/d/1O6feW-tp9xrbOfyEPcShaj7ha6CCNC5o/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/13lm-aMDJ6F6_HX5YdhlUZHKoS53kt-RO/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1AIAkpa4yjMrwWFKS4x_C93AGA_alTbJF/view?usp=drive_link"
+    "flac": "https://drive.google.com/file/d/1AIAkpa4yjMrwWFKS4x_C93AGA_alTbJF/view?usp=drive_link"
   },
   {
     "id": "HORD102",
@@ -504,18 +561,20 @@
     "release_text": "Psychedelic Plants is a sonic journey through the ethereal darkness and hallucinatory landscapes of the subconscious.\n\nEach track is an invitation to explore the deepest corners of the mind, where reality intertwines with fantasy and the known fades into the unknown.\n\nThis album is a tribute to the dual nature of psychoactive plants: their ability to illuminate the shadows of the psyche and reveal the truths hidden in the gloom. With intense rhythms and atmospheres.",
     "release_date": "20/April/2024",
     "credits": "\n\nMusic Efect Mushroom\nLayout Antikri\nMastering Krono Audio\nHorrordelic 2024",
-    "tracklist": ["01. Plantas Psycodelicas 150",
-"02. La serpiente de el bosque 150 05:49",
-"03. Todos los sonidos del Universo 150"],
+    "tracklist": [
+      "01. Plantas Psycodelicas 150",
+      "02. La serpiente de el bosque 150 05:49",
+      "03. Todos los sonidos del Universo 150"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-eFPBdVEHo-tOg6E4CgPrQ",
     "youtube_full_album": "https://youtu.be/MrYtrOYmaJg",
     "spotify": "https://open.spotify.com/album/544h27WjdZI40bvJPoZolX",
     "bandcamp": "https://horrordelic.bandcamp.com/album/plantas-psycodelicas",
     "mp3": "https://drive.google.com/file/d/1Fj0iJM1ehSjKSG3L7bMS1PUzrhqz-6u6/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1QaLXqvv5MyXBBitI_B_YlmhQLSkHJjdF/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1gDAFbzQoXYH2X34jLtLLSwyF1S1NbjE6/view?usp=sharing"
+    "flac": "https://drive.google.com/file/d/1gDAFbzQoXYH2X34jLtLLSwyF1S1NbjE6/view?usp=sharing"
   },
-    {  
+  {
     "id": "HORD101",
     "path": "VA_-_World_of_Horror",
     "artist": "VA",
@@ -524,22 +583,25 @@
     "release_text": "Compiled by Kuroobi & Antikriz\n\nThe Seven Gods of L‎uck and Good Fortune are featured within these seven tracks! Turn on, tune in and drop out to the beat.\n\nKuroobi and Antikriz brings biggest thanks to everyone involved in this project and to the Horrodelic Family.",
     "release_date": "17/April/2024",
     "credits": "\n\nCompiled by Kuroobi & Antikriz\nArtwork by Natsuki Hasegawa\nMastering by Krono Audio\nReleased by Horrordelic",
-    "tracklist": ["1.Mazo Sadu - Tu Mente 150",
-"2.Skup - Snag Snaggeltoot (N,N Remix) 165",
-"3.Mazo Sadu - Watashiva 160",
-"4.Mental Effects - Serpentes Divinorium 170",
-"5.HARA - Experimental Disorder 190",
-"6.Hypnokrono - Talking Block 190",
-"7.HARA - searching for happiness 200"],
+    "tracklist": [
+      "1.Mazo Sadu - Tu Mente 150",
+      "2.Skup - Snag Snaggeltoot (N,N Remix) 165",
+      "3.Mazo Sadu - Watashiva 160",
+      "4.Mental Effects - Serpentes Divinorium 170",
+      "5.HARA - Experimental Disorder 190",
+      "6.Hypnokrono - Talking Block 190",
+      "7.HARA - searching for happiness 200"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp29-H-WKcxKnDUcnyOPVyVqyp",
     "youtube_full_album": "https://www.youtube.com/watch?v=JgZBgeEYhNI",
     "spotify": "https://open.spotify.com/album/6iAd1BXZXN7SyUMwwYIRFo",
     "bandcamp": "https://horrordelic.bandcamp.com/album/world-of-horror",
     "mp3": "https://drive.google.com/file/d/10EfZVGdghyx1I8FQu8XlWxBJ0IqRj43J/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1q10p3qu8aszQ-9940zpPG4jQaBd43XqN/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1aRmKgqwtcCRad-gFqLqevgsDQEweihSw/view?usp=drive_link"
+    "flac": "https://drive.google.com/file/d/1aRmKgqwtcCRad-gFqLqevgsDQEweihSw/view?usp=drive_link"
   },
-  {"id": "HORD100",
+  {
+    "id": "HORD100",
     "path": "VA_-_Cannibalistic_Dinner_Party",
     "artist": "VA",
     "album_name": "Cannibalistic Dinner Party",
@@ -547,44 +609,46 @@
     "release_text": "The follow up to the `What a Killer party` VA .. The concept continues where each artist use each killer for theme of the track!\n\nThe killers are again gathered for a feast.. 29 new tracks for a hell of a meal!",
     "release_date": "29/Feb/2024",
     "credits": "\n\nArtwork: Psytanic & Hulder\nCompiled: Antikriz & Psytanic\nMastering: Krono Audio\n\nHorrordelic 2024",
-    "tracklist": ["01. Carach - Liturgy of the Dark 136",
-"02. Bizzare FrequenCy - Station Kill 175",
-"03. Maleficarvm - Algunas Personas no Aprenden 158",
-"04. Pnakotic Phantasm - Dr Satan 165",
-"05. NoSkool - Yautja`s Potion 158",
-"06. Kushroom - Cursed Videotape 192",
-"07. Master of Horror - Infernal Specter of Hell 176",
-"08. Dr Tryptamine - Chainsaw Dinner 160",
-"09. KAV - Enchanted Waves 154",
-"10. FluroNeuro - Secret Sauce 175",
-"11. Hypnos - The Wrath 195",
-"12. Transtech - Apologies of Tiffany`s 163",
-"13. Megagor and Multypolar - Cannibal Appetizer 166",
-"14. Organic Waves - Magic Shelter 155",
-"15. Voidscream - Azami Lady of Scrolls 175,5",
-"16. Mental Freak - Sentence Of The Underworld 180",
-"17. Transtech - Where Did Chucky Go 155",
-"18. Snailtrail- Knife Methods 152",
-"19. Umbrella - Aterrorizante 169",
-"20. Artriad Solariss - Nosferatu, the Immortal 182",
-"21. Psylo - Come Join the Clown 197",
-"22. Yetzirah - Olhos Famintos 280",
-"23. Ololiuhqui - Stickman 190",
-"24. Psycholouis - Silence of the Lambs 195",
-"25. Inimical Darkness - Ritual of Darkness 185",
-"26. Hypnoctus - Nightmare on Elm Street 180",
-"27. Ek Balam - Melodic Scream of Hell 170",
-"28. Kromugha - Trick or Treat 150",
-"29. Sortna - Deadly Romance 184"],
+    "tracklist": [
+      "01. Carach - Liturgy of the Dark 136",
+      "02. Bizzare FrequenCy - Station Kill 175",
+      "03. Maleficarvm - Algunas Personas no Aprenden 158",
+      "04. Pnakotic Phantasm - Dr Satan 165",
+      "05. NoSkool - Yautja`s Potion 158",
+      "06. Kushroom - Cursed Videotape 192",
+      "07. Master of Horror - Infernal Specter of Hell 176",
+      "08. Dr Tryptamine - Chainsaw Dinner 160",
+      "09. KAV - Enchanted Waves 154",
+      "10. FluroNeuro - Secret Sauce 175",
+      "11. Hypnos - The Wrath 195",
+      "12. Transtech - Apologies of Tiffany`s 163",
+      "13. Megagor and Multypolar - Cannibal Appetizer 166",
+      "14. Organic Waves - Magic Shelter 155",
+      "15. Voidscream - Azami Lady of Scrolls 175,5",
+      "16. Mental Freak - Sentence Of The Underworld 180",
+      "17. Transtech - Where Did Chucky Go 155",
+      "18. Snailtrail- Knife Methods 152",
+      "19. Umbrella - Aterrorizante 169",
+      "20. Artriad Solariss - Nosferatu, the Immortal 182",
+      "21. Psylo - Come Join the Clown 197",
+      "22. Yetzirah - Olhos Famintos 280",
+      "23. Ololiuhqui - Stickman 190",
+      "24. Psycholouis - Silence of the Lambs 195",
+      "25. Inimical Darkness - Ritual of Darkness 185",
+      "26. Hypnoctus - Nightmare on Elm Street 180",
+      "27. Ek Balam - Melodic Scream of Hell 170",
+      "28. Kromugha - Trick or Treat 150",
+      "29. Sortna - Deadly Romance 184"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299EAp3ljLVKiHsJd3gdm2ad",
     "youtube_full_album": "https://www.youtube.com/watch?v=H43XK1ri6PA",
     "spotify": "https://open.spotify.com/album/4gjCh5cNc5MKgRkRoTFghN",
     "bandcamp": "https://horrordelic.bandcamp.com/album/cannibalistic-dinner-party",
     "mp3": "https://drive.google.com/file/d/1lc7wUFSeSI4Ov7eKrneFj1mba-IkvbUX/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1AmAOwswE4yYaphKicQvxtm_Oz-WxNQ8H/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1L_12WBVSe2e_TAdCT2wq43LUSAIP_Wvq/view?usp=sharing"
-},
-{
+    "flac": "https://drive.google.com/file/d/1L_12WBVSe2e_TAdCT2wq43LUSAIP_Wvq/view?usp=sharing"
+  },
+  {
     "id": "HORD099",
     "path": "Efect_Mushroom_-_Esporas_renacen_de_la_Tierra",
     "artist": "Efect Mushroom",
@@ -593,18 +657,20 @@
     "release_text": "Horrordelic proudly presents a new EP series from Efect Mushroom (Mexico).\n\nThis first edition is called `Esporas renacen de la Tierra` translating to `Spores reborn from the Earth`.\n\n3 magical tunes of dark psychedelic trance, enjoy and tune in to these tunes accelerating full speed into the Universe.\n\nLet the magic spores guide you through Ancient wisdom and knowledge.",
     "release_date": "10/Feb/2024",
     "credits": "\n\nMusic & Artwork Ideas:\nEfect Mushroom\nLayout: Antikriz\nMastering; Krono Audio\nHorrordelic 2024",
-    "tracklist": ["1. Esporas renacen de la tierra 145",
-"2. Sonoro Angelical 155",
-"3. Danza al ritmo de la musica 190"],
+    "tracklist": [
+      "1. Esporas renacen de la tierra 145",
+      "2. Sonoro Angelical 155",
+      "3. Danza al ritmo de la musica 190"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp29_TNdiwb2gFQaopUh8VvXkH&si=Qw8Oh2oTn9j8fG5r",
     "youtube_full_album": "https://youtu.be/DFMtF77De4o",
     "spotify": "https://open.spotify.com/album/6Tr1fqbAT9k1uUf4xAqeFd",
     "bandcamp": "https://horrordelic.bandcamp.com/album/esporas-renacen-de-la-tierra",
     "mp3": "https://drive.google.com/file/d/1qSaGa4qyGkVXk_AqBnK0NQNLkBunOgoA/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1Cej01nq69qHhYhzNQNhbzoiWGpE4-H6f/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1506zvwCZzNIA40hcKXVh8ZRXfDCL_kL1/view?usp=drive_link"
-  },  
-    {
+    "flac": "https://drive.google.com/file/d/1506zvwCZzNIA40hcKXVh8ZRXfDCL_kL1/view?usp=drive_link"
+  },
+  {
     "id": "HORD098",
     "path": "Tandav_Nritya_-_The_Fifth_Chapter_Anugraha",
     "artist": "VA",
@@ -613,26 +679,28 @@
     "release_text": "The final chapter of the Tandav Nritya series, covering all 5 manifestations of eternal energy through the dance of Shiva. All 5 releases compiled by Cosmic Bluemoon and released by Horrordelic in 2023.\n\nThis is Anugraha - The release, the liberation..\n\n -How many various dances of Shiva are known to His worshipers I cannot say. No doubt the root idea behind all of these dances is more or less one and the same, the manifestation of primal rhythmic energy- (Ananda Coomaraswamy)",
     "release_date": "29/Dec/2023",
     "credits": "\n\nCompiled by Cosmic Bluemoon (India)\nArtwork by Antikriz (Norway)\nMastered by Krono Audio (Brazil), 8*  by Divine Stones (Portugal)",
-    "tracklist": ["01. Nano Rexx - Hanuman 150 BPM",
-"02. Rakmo - Quantum Odyssey 150 BPM",
-"03. Evil Scream - DeathStalker 155 BPM",
-"04. ReversaMente & Fractal Waves - Speed Riders 155 BPM",
-"05. Organic Waves - Boat on the Styx 155 BPM",
-"06. KAV - Quanta 156 BPM",
-"07. YantraX - Melted Perception  159 BPM",
-"08. Killjoy - Numero Uno 160 BPM",
-"09. Lu PsY FeR - A Pinch Of Insanity 160 BPM",
-"10. Pnakotic Phantasm - Something Stirred 163 BPM",
-"11. Endelyon - Textures 165 BPM"],
+    "tracklist": [
+      "01. Nano Rexx - Hanuman 150 BPM",
+      "02. Rakmo - Quantum Odyssey 150 BPM",
+      "03. Evil Scream - DeathStalker 155 BPM",
+      "04. ReversaMente & Fractal Waves - Speed Riders 155 BPM",
+      "05. Organic Waves - Boat on the Styx 155 BPM",
+      "06. KAV - Quanta 156 BPM",
+      "07. YantraX - Melted Perception  159 BPM",
+      "08. Killjoy - Numero Uno 160 BPM",
+      "09. Lu PsY FeR - A Pinch Of Insanity 160 BPM",
+      "10. Pnakotic Phantasm - Something Stirred 163 BPM",
+      "11. Endelyon - Textures 165 BPM"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-IX4CnOI30zjFQqnMvdWA6",
     "youtube_full_album": "https://youtu.be/NKuys33Yrt4",
     "spotify": "https://open.spotify.com/album/6wmuGLJTGQS5OKSgW8sWIb",
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-chapter-five-anugraha",
     "mp3": "https://drive.google.com/file/d/1VbB3LLtvfAhO9hXpKMuGE6hUED2SxeOT/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1kD6xZ15GfmIK3gnhXyAKczmxLT-KmzS3/view?usp=sharings",
-    "flac":"https://drive.google.com/file/d/1x_HmCoErmxDu2mYHfK6uLy8Nm3JTClPT/view?usp=sharing"
-  }, 
-    {
+    "flac": "https://drive.google.com/file/d/1x_HmCoErmxDu2mYHfK6uLy8Nm3JTClPT/view?usp=sharing"
+  },
+  {
     "id": "HORD097",
     "path": "VA_-_Ultimate_Xmas_Power",
     "artist": "VA",
@@ -641,29 +709,32 @@
     "release_text": "Bringing true Dark Psychedelic Power to Your Holidays! The darkest time of the year will glow and sparkle with this soon-to-be Holiday Classic! Downloads below.\n\nAll tracks made for Your Holiday Experience 2023 (and beyond) - Embrace the gifts of Power.",
     "release_date": "15/Dec/2023",
     "credits": "\n\nArtwork Psytanic & Antikriz\n\nCompiled by Antikriz\n\nMastering Krono Audio\n\nHorrordelic 2023",
-    "tracklist": ["01. Pnakotic Phantasm - La Magie de Noel 165",
-"02. FluroNeuro - Knotty or Nice 165",
-"03. Distorted AtmosFear - Raving Santa 170",
-"04. Multypolar - Krampus Portal 175",
-"05. Psycholouis - It's Christmas time Again 172",
-"06. Dubvibes - Grinch Came to Steal Christmas 180",
-"07. Efect Mushroom & Nano Rexx - Dark Christmas 175",
-"08. sNAiLTRAiL - Snowing Blood 175",
-"09. Sortna - Midnight Snack 178",
-"10. Skellington- Merry x Mass 190",
-"11. Artriad Solariss - Papai Noel filho da Puta 221",
-"12. M3gagor - Satan Cla`us 211",
-"13. Necrotic Nightmares - Woodland Critters 200",
-"14. Delirious Moon - Invitation to Krampus 200",
-"15. Brainblender - Xmas Torture 185"],
+    "tracklist": [
+      "01. Pnakotic Phantasm - La Magie de Noel 165",
+      "02. FluroNeuro - Knotty or Nice 165",
+      "03. Distorted AtmosFear - Raving Santa 170",
+      "04. Multypolar - Krampus Portal 175",
+      "05. Psycholouis - It's Christmas time Again 172",
+      "06. Dubvibes - Grinch Came to Steal Christmas 180",
+      "07. Efect Mushroom & Nano Rexx - Dark Christmas 175",
+      "08. sNAiLTRAiL - Snowing Blood 175",
+      "09. Sortna - Midnight Snack 178",
+      "10. Skellington- Merry x Mass 190",
+      "11. Artriad Solariss - Papai Noel filho da Puta 221",
+      "12. M3gagor - Satan Cla`us 211",
+      "13. Necrotic Nightmares - Woodland Critters 200",
+      "14. Delirious Moon - Invitation to Krampus 200",
+      "15. Brainblender - Xmas Torture 185"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp29--HE1kiMElN_94WwT9uz0Z&si=n1lVG_YjKeVAJIwH",
     "youtube_full_album": "https://youtu.be/7yNclOFXcZk",
     "spotify": "https://open.spotify.com/album/4ZM6e56BqxeEIy6VZQKTN8",
     "bandcamp": "https://horrordelic.bandcamp.com/album/ultimate-xmas-power",
     "mp3": "https://drive.google.com/file/d/1TVbt8GclYSEq3f2VhtSfroJ5MWfIeO_O/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1GfqxGmx6SIJ4BpT9sZq5up8SsN9hYeKB/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1SdoWiK5ESyxoMSO4dlllo_H1qEZglNRt/view?usp=sharing"
-  }, {
+    "flac": "https://drive.google.com/file/d/1SdoWiK5ESyxoMSO4dlllo_H1qEZglNRt/view?usp=sharing"
+  },
+  {
     "id": "HORD095",
     "path": "Dr_Tryptamine_-_Dark_Psychedelic_Arts",
     "artist": "Dr Tryptamine",
@@ -672,21 +743,23 @@
     "release_text": "Horrordelic Proudly presents a new EP from Dr Tryptamine (South Africa).  Here we are getting 6 true classic Darkpsy experiences packed with power.\n\nThe strong Goa influences and trippy elements will guide you down to the dancefloor, the power and atmosphere will make you stay and freak out!\n\nJoin the madness - Hit play!",
     "release_date": "11/Dec/2023",
     "credits": "\n\nMusic By Dr Tryptamine\nMaster by Swampmatix (swampmatix@gmail.com)\nConcept Artwork Six Axis Graphics\nLayout Antikriz",
-    "tracklist": ["01. Coffin Feeder 150bpm",
-"02. The Hunt 150bpm",
-"03. Death Dealer 155bpm",
-"04. I Drink Your Blood, I Eat Your Skin 160bpm",
-"05. Haunted House 165bpm",
-"06. Dark Psychedelic Arts 180bpm"],
+    "tracklist": [
+      "01. Coffin Feeder 150bpm",
+      "02. The Hunt 150bpm",
+      "03. Death Dealer 155bpm",
+      "04. I Drink Your Blood, I Eat Your Skin 160bpm",
+      "05. Haunted House 165bpm",
+      "06. Dark Psychedelic Arts 180bpm"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-eL6yUCEeVo-sohVrTM11V",
     "youtube_full_album": "https://youtu.be/1BBLmIc6taM",
     "spotify": "https://open.spotify.com/album/0F9CU5gAQYfEdboJasklKO",
     "bandcamp": "https://horrordelic.bandcamp.com/album/dark-psychedelic-arts",
     "mp3": "https://drive.google.com/file/d/1SloifjIza9AyJ8yDkcvnr3aGgufIt68G/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1A0Tcj_l848zzyInygDrJpSrNifgLb5de/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/14AnatgTOI1dMzD-sHmqPQZezILVadMNp/view?usp=sharing"
-  },  
-    {
+    "flac": "https://drive.google.com/file/d/14AnatgTOI1dMzD-sHmqPQZezILVadMNp/view?usp=sharing"
+  },
+  {
     "id": "HORD096",
     "path": "VA_-_Nightmare_Hospital",
     "artist": "VA",
@@ -695,38 +768,40 @@
     "release_text": "The final chapter of the Silent Hill trilogy is presented in this edition called: Nightmare Hospital.\n\nIn this final nightmare Psytanic teamed up with Antikriz to bring in more underground works from the Darkpsy scene.\n\n...It's all over now...",
     "release_date": "30/Nov/2023",
     "credits": "\n\nCompiled by Psytanic & Antikriz\nMastering by Krono Audio\nArtwork by Kathryn Brooks\nReleased by Horrordelic 2023",
-    "tracklist": ["01. Efect Mushroom - El mundo de las Tinieblas - 155",
-"02. Leonofobia - Streets of Silent Hill - 168",
-"03. Phyllorum -  bogeyman Labyrinth - 180",
-"04. DarkAlien Live - Final Game - 200",
-"05. Sortna - Tidal - 186",
-"06. SnaiLTraiL - Howling Forest - 154",
-"07. Mental Freak - Aberration Of Species - 195",
-"08. FluroNeuro - Smoke & Mirrors - 160",
-"09. Hypnos - Forest World - 165",
-"10. Inimical Darkness -The, goddes moon - 185",
-"11. Kromugha - Madness - 200",
-"12. Cosmogonia - Modular Dark - 160",
-"13. M3gagor - Silent Pill - 188",
-"14. BrainBlender - Endless Nightmare - 198",
-"15. Mother Of Datura - Terrifying - 231",
-"16. Multipolar - Tumba Antigua - 190",
-"17. N,N & Tryptamind - Witchuals - 218.51",
-"18. Necrotic Nightmares - Fading away in the Asylums embrace - 140",
-"19. Cranium Drill - Merlin is Under the Oak Tree - 167",
-"20. Distorted AtmosFear - The Shadows - 178",
-"21. Sortna - Never Late - 480",
-"22. Delirious Moon - Piramid Head - 198",
-"23. Yetzirah - Asylum - 196"],
+    "tracklist": [
+      "01. Efect Mushroom - El mundo de las Tinieblas - 155",
+      "02. Leonofobia - Streets of Silent Hill - 168",
+      "03. Phyllorum -  bogeyman Labyrinth - 180",
+      "04. DarkAlien Live - Final Game - 200",
+      "05. Sortna - Tidal - 186",
+      "06. SnaiLTraiL - Howling Forest - 154",
+      "07. Mental Freak - Aberration Of Species - 195",
+      "08. FluroNeuro - Smoke & Mirrors - 160",
+      "09. Hypnos - Forest World - 165",
+      "10. Inimical Darkness -The, goddes moon - 185",
+      "11. Kromugha - Madness - 200",
+      "12. Cosmogonia - Modular Dark - 160",
+      "13. M3gagor - Silent Pill - 188",
+      "14. BrainBlender - Endless Nightmare - 198",
+      "15. Mother Of Datura - Terrifying - 231",
+      "16. Multipolar - Tumba Antigua - 190",
+      "17. N,N & Tryptamind - Witchuals - 218.51",
+      "18. Necrotic Nightmares - Fading away in the Asylums embrace - 140",
+      "19. Cranium Drill - Merlin is Under the Oak Tree - 167",
+      "20. Distorted AtmosFear - The Shadows - 178",
+      "21. Sortna - Never Late - 480",
+      "22. Delirious Moon - Piramid Head - 198",
+      "23. Yetzirah - Asylum - 196"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp29_M9C71Y5V2OiKGkhEoKNmO&si=HRjFz3K1Y6DIWPkF",
     "youtube_full_album": "https://www.youtube.com/watch?v=kJ-PymAqW_w",
     "spotify": "https://open.spotify.com/album/2PPQIIiqcnb2RhADW7nPPY",
     "bandcamp": "https://horrordelic.bandcamp.com/album/nightmare-hospital",
     "mp3": "https://drive.google.com/file/d/1VLiHGBY4YI_dt3v0XIgXR9VfbfK_fSHQ/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1Elfo0HZ5uynQ6DxVeQ1x9NPkKOKkzzM6/view?usp=sharin",
-    "flac":"https://drive.google.com/file/d/1zdYiiOWCnvOVwJE0TEjYB8CoX-ctjaPJ/view?usp=sharing"
-  },  
-    {
+    "flac": "https://drive.google.com/file/d/1zdYiiOWCnvOVwJE0TEjYB8CoX-ctjaPJ/view?usp=sharing"
+  },
+  {
     "id": "HORD094",
     "path": "Tandav_Nritya_-_The_Fourth_Chapter",
     "artist": "VA",
@@ -735,25 +810,27 @@
     "release_text": "Horrordelic Presents VA: Tandav Nritya - Chapter 4 - Tirodhana.\nCompiled by ૐ Cosmic BlueMoon ૐ (India)\n\nThe fourth act, Tirodhana, means concealment, occlusion, or illusion.\n\nConsciousness possesses all possible qualities; in order to manifest as one specific thing, it must conceal all the other qualities that don’t belong to that thing.\n\nThis allows for beings to have the experience of free will. ",
     "release_date": "22/Nov/2023",
     "credits": "\n\nCompiled By Cosmic BlueMoon (India)\nMastering Krono Audio (Brazil)\nArtwork Antikriz (Norway)",
-    "tracklist": ["01. Yawanawa - Turna 154 BPM",
-"02. DARK O'LA7OR - Dark Mandili 157 BPM",
-"03. Umbrella - Sampa Chaos 157 BPM (Pedro Melito)",
-"04. Zion - Malware 159 BPM",
-"05. Organic Waves - Mushrooms for Dinner 160 BPM",
-"06. Grey AAthma & Lymbic system - Ragasya 160 BPM",
-"07. Pnakotic Phantasm -  I thought I had a Family 162 BPM",
-"08. Ek Balam - Axis Mundi 165 BPM",
-"09. PicharknesS - Purkho Ki Pukaar 165 BPM",
-"10. Psycholouis - Darkness Inside You 168 BPM"],
+    "tracklist": [
+      "01. Yawanawa - Turna 154 BPM",
+      "02. DARK O'LA7OR - Dark Mandili 157 BPM",
+      "03. Umbrella - Sampa Chaos 157 BPM (Pedro Melito)",
+      "04. Zion - Malware 159 BPM",
+      "05. Organic Waves - Mushrooms for Dinner 160 BPM",
+      "06. Grey AAthma & Lymbic system - Ragasya 160 BPM",
+      "07. Pnakotic Phantasm -  I thought I had a Family 162 BPM",
+      "08. Ek Balam - Axis Mundi 165 BPM",
+      "09. PicharknesS - Purkho Ki Pukaar 165 BPM",
+      "10. Psycholouis - Darkness Inside You 168 BPM"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298oruI5qDTK8IsZZqnYQEi1",
     "youtube_full_album": "https://www.youtube.com/watch?v=KWGPWDmLm24",
     "spotify": "https://open.spotify.com/album/6z7DKBL6g0hUO9pmOJ6Jmr",
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-the-fourth-chapter-tirodhana",
     "mp3": "https://drive.google.com/file/d/1-PflS1zeKErETxDoH986l1OAgH8teO95/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1-hYnAMLP7mrjHVKdVxaZyh9HMCMmH5pn/view?usp=drive_link",
-    "flac":" https://drive.google.com/file/d/1noMzD8NJip1eEitx4PdqDImixo6_V-_u/view?usp=drive_link"
-  }, 
-    {
+    "flac": " https://drive.google.com/file/d/1noMzD8NJip1eEitx4PdqDImixo6_V-_u/view?usp=drive_link"
+  },
+  {
     "id": "HORD093",
     "path": "VA_-_What_a_Killer_Party",
     "artist": "VA",
@@ -763,44 +840,45 @@
     "release_date": "30/10/2023",
     "credits": "\n\nCompiled by Antikriz & Psytanic. \nMastering by Krono Audio. \nArtwork By Psytanic and Hulder. \nLayout by Antikriz.",
     "tracklist": [
-"01. INTRO - con-crete",
-"02. Ponomi - The Ring 200",
-"03. Cranium drill - Cenobites with Caramel 172",
-"04. Yetzirah & Mental Freak  - Killer Party 195",
-"05. Necrotic Nightmares - Chainsaw Ritual 180",
-"06. Delirious Moon - Good Guys 185",
-"07. BrainBlender - Trick or Treat 190",
-"08. Distorted AtmosFear - Ghost Scream 200",
-"09. Hypnos Live - Poltergeist the Beast 162",
-"10. Delirious Moon - Halloween at the Beginning 208",
-"11. Ololiuhqui - I Saw It 210",
-"12. MIDTRO",
-"13. FluroNeuro - Sogni D'oro 168",
-"14. Psycholouis - Brain Stoker's Dracula 197",
-"15. Kromugha - Toshio 165",
-"16. Abgrund B - Crystal Lake Revenant 323",
-"17. FluroNeuro - Premonitions 154",
-"18. Siniestro vs Ek Balam - Horrific Acts 180",
-"19. Delirious Moon - Terror Station 143",
-"20. Dr Tryptamine - They All Float Down Here 160",
-"21. Mental Freak - Macabre Doll 240",
-"22. Hypnokrono - Bleedi 198",
-"23. Mother Of Datura vs Luuli - and you will never be human agAIN 231",
-"24. Bizzare FrequenCy & FluroNeuro - BioHazard 157",
-"25. Snailtrail - Suspiria 185",
-"26. FluroNeuro - Voodoo Bride 165 BPM",
-"27. Phyllorum - Nazgûl 000 BPM",
-"28. Con-Crete - Art The Clown - Killer Party Anthem - Bonus BPM",
-"29. OUTRO - con-crete BPM"],
+      "01. INTRO - con-crete",
+      "02. Ponomi - The Ring 200",
+      "03. Cranium drill - Cenobites with Caramel 172",
+      "04. Yetzirah & Mental Freak  - Killer Party 195",
+      "05. Necrotic Nightmares - Chainsaw Ritual 180",
+      "06. Delirious Moon - Good Guys 185",
+      "07. BrainBlender - Trick or Treat 190",
+      "08. Distorted AtmosFear - Ghost Scream 200",
+      "09. Hypnos Live - Poltergeist the Beast 162",
+      "10. Delirious Moon - Halloween at the Beginning 208",
+      "11. Ololiuhqui - I Saw It 210",
+      "12. MIDTRO",
+      "13. FluroNeuro - Sogni D'oro 168",
+      "14. Psycholouis - Brain Stoker's Dracula 197",
+      "15. Kromugha - Toshio 165",
+      "16. Abgrund B - Crystal Lake Revenant 323",
+      "17. FluroNeuro - Premonitions 154",
+      "18. Siniestro vs Ek Balam - Horrific Acts 180",
+      "19. Delirious Moon - Terror Station 143",
+      "20. Dr Tryptamine - They All Float Down Here 160",
+      "21. Mental Freak - Macabre Doll 240",
+      "22. Hypnokrono - Bleedi 198",
+      "23. Mother Of Datura vs Luuli - and you will never be human agAIN 231",
+      "24. Bizzare FrequenCy & FluroNeuro - BioHazard 157",
+      "25. Snailtrail - Suspiria 185",
+      "26. FluroNeuro - Voodoo Bride 165 BPM",
+      "27. Phyllorum - Nazgûl 000 BPM",
+      "28. Con-Crete - Art The Clown - Killer Party Anthem - Bonus BPM",
+      "29. OUTRO - con-crete BPM"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/watch?v=wsIVYZSg3Rw&list=PLNlcSeDBp29_Gja7GBzaglK3KEs5j9c_-",
     "youtube_full_album": "https://www.youtube.com/watch?v=wsIVYZSg3Rw",
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/what-a-killer-party",
     "mp3": "https://drive.google.com/file/d/1KKF1F0HqQpA3vKgZO2HXD6s3nYGxpKWR/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1E3fu-69kfymg_We556zUV0OU8UAkTYyK/view?usp=sharing",
-    "flac":"https://drive.google.com/file/d/1XCDRk9BViO16xO2urI4AJI82LDLctTNy/view?usp=sharing"
-  },    
-    {
+    "flac": "https://drive.google.com/file/d/1XCDRk9BViO16xO2urI4AJI82LDLctTNy/view?usp=sharing"
+  },
+  {
     "id": "HORD091",
     "path": "Diabolical_Orchestra_-_Burn_the_Rose_EP_2023",
     "artist": "Diabolical Orchestra",
@@ -809,18 +887,21 @@
     "release_text": "Horrordelic Proudly Presents the second EP from Diabolical Orchestra (India). A very personal and powerful journey through the mind and life… There is always darkness and light in our life!\n\nIn the process of making this release, the sounds became a tool of healing, so can they for you. \n\nEnjoy these 4 new tunes and let your mind and body flow to the vibrations.",
     "release_date": "10/September/2023",
     "credits": "\nMusic by Gokul Kannan\nArtwork  by Mad Professor\nLayout by Antikriz\nMastering by Krono Audio\nHorrordelic 2023",
-    "tracklist": ["01. Nyanpasu 190 BPM",
-"02. Healing's Only One Mile Away 192 BPM",
-"03. Love can change with the seasons 200 BPM",
-"04.  Dancing in the Nightmare 197 BPM"],
+    "tracklist": [
+      "01. Nyanpasu 190 BPM",
+      "02. Healing's Only One Mile Away 192 BPM",
+      "03. Love can change with the seasons 200 BPM",
+      "04.  Dancing in the Nightmare 197 BPM"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2988h3bH7so7zQddu7i2ba35",
     "youtube_full_album": "https://youtu.be/Mh7lskTz4ms",
     "spotify": "https://open.spotify.com/album/3iYW1IZbZ1thaxhAbAM7H1",
     "bandcamp": "https://horrordelic.bandcamp.com/album/burn-the-rose",
     "mp3": "https://drive.google.com/file/d/1tOUevWNZvg9iyQHldl-qQ9jGUX7nqFZE/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1Id6oXhqHHl1CE7y-kXC0lc2_vzmCxXgk/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1aUzo4akwqPTu_77oEAMwbUV_AGPXdDUj/view?usp=drive_link"
-  },  {
+    "flac": "https://drive.google.com/file/d/1aUzo4akwqPTu_77oEAMwbUV_AGPXdDUj/view?usp=drive_link"
+  },
+  {
     "id": "HORD090",
     "path": "Efect_Mushroom_-_Dark_Galaxies",
     "artist": "Efect Mushroom",
@@ -829,18 +910,21 @@
     "release_text": "Horrordelic proudly presents a new EP from Efect Mushroom featuring Rose Well named Dark Galaxies.\n\nIn 2019 Efect Mushroom dedicated himself to study music production and audio engineering, here in 2023 we are served 4 new productions all with a story to tell.\n\nTo understand, imagine and feel more of the 4 tracks; Read the stories included for each track.\n\nThe images with the stories are included in the download and in the videos at Youtube. \n\nDive even deeper into the music with these back stories for the tracks, you are invited!!",
     "release_date": "03/September/2023",
     "credits": "\n\nMusic by Efect Mushroom (Marcos André Salinas Serrato)\n\nMastering By Krono Audio\n\nArtwork By Antikriz\n\nelease By Horrordelic",
-    "tracklist": ["1. Efect Mushroom: A Strange Galaxy 175",
-"2. Efect Mushroom: Galaxian Creatures 175",
-"3. Efect Mushroom & Rose Well: The Invasion 175",
-"4. Efect Mushroom & Rose Well: The End of the Ages 175"],
+    "tracklist": [
+      "1. Efect Mushroom: A Strange Galaxy 175",
+      "2. Efect Mushroom: Galaxian Creatures 175",
+      "3. Efect Mushroom & Rose Well: The Invasion 175",
+      "4. Efect Mushroom & Rose Well: The End of the Ages 175"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp2996h0txEm-gLLVDde4BE9IJ",
     "youtube_full_album": "https://youtu.be/gLE9tqy9Qho",
     "spotify": "https://open.spotify.com/album/32jEZV5j0bgqBIr0EFE7KO",
     "bandcamp": "https://horrordelic.bandcamp.com/album/dark-galaxies",
     "mp3": "https://drive.google.com/file/d/1FVTnGRlba7nQxoEsdJ9uhbX4WrenFtbG/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1rejlnBNYK-pDMmYIJVBbPNfBNdkj86dU/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1GwQs_cb7LjAqEaoYm3o_kTUVleOhh92I/view?usp=drive_link"
-  },{
+    "flac": "https://drive.google.com/file/d/1GwQs_cb7LjAqEaoYm3o_kTUVleOhh92I/view?usp=drive_link"
+  },
+  {
     "id": "HORD092",
     "path": "Mother_of_Datura_-_For_You_Oblivion_My_Love",
     "artist": "Mother Of Datura",
@@ -849,19 +933,22 @@
     "release_text": "Release September 2nd 2023.",
     "release_date": "02/September/2023",
     "credits": "\n\nAll tracks by Mother Of Datura\n\nMastering Samuel Frisk\n\nPyromaniac Witchcult - Horrordelic 2023",
-    "tracklist": ["1. At the pale bridge end",
-"2. Baptized in Witchblood",
-"3. For you...Oblivion... My Love... ",
-"4. Take me home (Remastered version)",
-"5. We are the lost children of the abyss"],
+    "tracklist": [
+      "1. At the pale bridge end",
+      "2. Baptized in Witchblood",
+      "3. For you...Oblivion... My Love... ",
+      "4. Take me home (Remastered version)",
+      "5. We are the lost children of the abyss"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-Sy1usdXmT_-TVMoj2OH-o",
     "youtube_full_album": "https://youtu.be/bDbM7LNKgoE",
     "spotify": "https://open.spotify.com/album/3gSngBfa19IRtQ1D9i0vtP",
     "bandcamp": "https://horrordelic.bandcamp.com/album/for-you-oblivion-my-love",
     "mp3": "https://drive.google.com/file/d/195hCl_q2Z9B-HLoVOnNVlTHi3AyIGhAN/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1T4JPEHOw5XP_ioCfMWFdcd0Y_dmSiJ1a/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1a4a4e7y5qmx_qjZNjDmNNL6Mt4oCe_Uq/view?usp=drive_link"
-  }, {
+    "flac": "https://drive.google.com/file/d/1a4a4e7y5qmx_qjZNjDmNNL6Mt4oCe_Uq/view?usp=drive_link"
+  },
+  {
     "id": "HORD089",
     "path": "Tandav_Nritya_-_The_third_Chapter",
     "artist": "VA",
@@ -870,24 +957,27 @@
     "release_text": "Horrordelic Proudly presents\nVA: Tandav Nritya - Third Chapter: Samhara\n\nChapter 3 of the Tandav Nritya series compiled by Cosmic BlueMoon (India). This chapter is Samhara - The part of destruction and evolution.\n\nShiva destroys everything and everyone into him. Thereby gives rise to a new beginning.\n\nThe root idea behind all of Shiva dances is more or less one and the same, the manifestation of primal rhythmic energy.\n\nAn exciting lineup is ready to provide you another tool-set for the journey of life.",
     "release_date": "29/August/2023",
     "credits": "\n\nCompiled By Cosmic BlueMoon (India)\nMastering Krono Audio (Brazil) *Track 08 By Kri Samadhi\nArtwork Antikriz (Norway)",
-    "tracklist": ["01. Elephant - Cannacoffee Market 148 BPM",
-"02. SnaiLTraiL - Gravity 154 BPM",
-"03. Disruptor - UP n Down 154 BPM",
-"04. Organic Waves - Acid For Breakfast 158 BPM",
-"05. Psynyde - Wolf of the streets 158 BPM",
-"06. Nauuake - Noveno 158 BPM",
-"07. Gyn-X - Threnody of Marla 160 BPM",
-"08. Tivrā - The Dark Romantic 160 BPM",
-"09. Mazo Sadu - Holistic 171 BPM",
-"10. Gajiru - Sequencies 172 BPM"],
+    "tracklist": [
+      "01. Elephant - Cannacoffee Market 148 BPM",
+      "02. SnaiLTraiL - Gravity 154 BPM",
+      "03. Disruptor - UP n Down 154 BPM",
+      "04. Organic Waves - Acid For Breakfast 158 BPM",
+      "05. Psynyde - Wolf of the streets 158 BPM",
+      "06. Nauuake - Noveno 158 BPM",
+      "07. Gyn-X - Threnody of Marla 160 BPM",
+      "08. Tivrā - The Dark Romantic 160 BPM",
+      "09. Mazo Sadu - Holistic 171 BPM",
+      "10. Gajiru - Sequencies 172 BPM"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299nFvWcmegTUc4OEk-S8eXT",
     "youtube_full_album": "https://www.youtube.com/watch?v=FxEKGj9dYZI",
     "spotify": "https://open.spotify.com/album/1F1EtpAiIfsYSmaIGgShMh",
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-the-third-chapter-samhara",
     "mp3": "",
     "wav": "https://drive.google.com/file/d/1k_izM9Di_dH_GJFM_m0DeqdmkmRwQsu9/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/12-2fAJ_J-ZZLYU1X3B55Jgeli-3I9O8g/view?usp=drive_link"
-  },{
+    "flac": "https://drive.google.com/file/d/12-2fAJ_J-ZZLYU1X3B55Jgeli-3I9O8g/view?usp=drive_link"
+  },
+  {
     "id": "HORD088",
     "path": "return_to_the_fog",
     "artist": "VA",
@@ -896,30 +986,32 @@
     "release_text": "VA: Return to the Fog presented proudly by Horrordelic.\n\nIf you think you had left Silent Hill you were wrong. You just came back from the Otherworld, only to return to heavy creeping fog embracing you.\n\nThere is a hole in the ground. Will you jump down into the Abyss?\n\n15 new Dark Psychedelic visions twisted into the fog of Silent Hill are waiting for you.",
     "release_date": "23/July/2023",
     "credits": "\n\nCompiled by Psytanic\nMastering by Krono Audio\nArtwork by Kathryn Brooks\nReleased By Horrordelic\nRelease 23th July 2023",
-    "tracklist": ["1. Bizzare Frequency - Return 155",
-"2. Hypnos Live - Now Here 165 ",
-"3. Abgrund B - Misty Day 175",
-"4. Ololiuhqui - Horror Porror 162",
-"5. DarkAlien Live - Back to Game 180",
-"6. Transtech - Silent Echos of Arkontes 158",
-"7. Gajiru - Valtiel 182",
-"8. Diabolical Orchestra - Maze 220",
-"9. Delirious Moon - Dark Alessa 157",
-"10. Maleficarvm - Flauros 157",
-"11. FluroNeuro vs Inverk - Laugh Now Cry Later 165",
-"12. Siniestro - Ritual of Ixchel 200",
-"13. Archeos - Fuzzy Memory 155",
-"14. Dr Tryptamine - Restless Dreams 165",
-"15. Snailtrail - RockaMonsta 152"],
+    "tracklist": [
+      "1. Bizzare Frequency - Return 155",
+      "2. Hypnos Live - Now Here 165 ",
+      "3. Abgrund B - Misty Day 175",
+      "4. Ololiuhqui - Horror Porror 162",
+      "5. DarkAlien Live - Back to Game 180",
+      "6. Transtech - Silent Echos of Arkontes 158",
+      "7. Gajiru - Valtiel 182",
+      "8. Diabolical Orchestra - Maze 220",
+      "9. Delirious Moon - Dark Alessa 157",
+      "10. Maleficarvm - Flauros 157",
+      "11. FluroNeuro vs Inverk - Laugh Now Cry Later 165",
+      "12. Siniestro - Ritual of Ixchel 200",
+      "13. Archeos - Fuzzy Memory 155",
+      "14. Dr Tryptamine - Restless Dreams 165",
+      "15. Snailtrail - RockaMonsta 152"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298C8zSUmAlhOk1oGLb2x0L3",
     "youtube_full_album": "https://youtu.be/GsnouprSvzA",
     "spotify": "https://open.spotify.com/album/5c1lvp7NYn3Ij7Clho1ChQ",
     "bandcamp": "https://horrordelic.bandcamp.com/album/return-to-the-fog",
     "mp3": "https://drive.google.com/file/d/1k7NJAsM8DtguYZe-lBdChKzcnLt9FY_h/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1leR3TKt-wZD9wwnPVqr9eIjYX3naR4lx/view?usp=drive_link",
-    "flac":"https://drive.google.com/file/d/1t9omX7mT5mBNoBMEaHB6svexmGZJ9yiJ/view?usp=drive_link"
-  },   
-    {
+    "flac": "https://drive.google.com/file/d/1t9omX7mT5mBNoBMEaHB6svexmGZJ9yiJ/view?usp=drive_link"
+  },
+  {
     "id": "HORD087",
     "path": "tandav_nritya_second_chapter",
     "artist": "VA",
@@ -928,26 +1020,27 @@
     "release_text": "Chapter 2 of the Tandav Nritya series compiled by Cosmic BlueMoon (India). The dance is a pictorial allegory of the five principal manifestations of eternal energy (Srishti - Sthiti - Samhara - Tirodhana - Anugraha).\n\nThis is Sthiti (Preservation, Support).",
     "release_date": "20/June/2023",
     "credits": "\n\nCompiled By Cosmic Blue Moon (India)\n\nArtwork By Antikriz (Norway)\n\nMastering Krono Audio (Brazil) - Except Track 3 By Basaltic",
-    "tracklist": ["1. Snailtrail - StRaW DemOnS 148 BPM",
-"2. Pnakotic Phantasm - Blighttown 150 BPM",
-"3. Basaltic - Mirage 150 BPM",
-"4. Mazo Sadu - Night on Earth 151 BPM",
-"5. Kounoupi - Deep Introduction 154 BPM",
-"6. Organic Waves - Not Dead 155 BPM",
-"7. Cali'Balam - Internal Mutation 158",
-"8. Zyamaliman - Purple Helmet Warrior 158 BPM",
-"9.  Psycholouis - Hakuna Matata 165 BPM",
-"10. FluroNeuro -  Nowhere to Hyde 165 BPM"],
+    "tracklist": [
+      "1. Snailtrail - StRaW DemOnS 148 BPM",
+      "2. Pnakotic Phantasm - Blighttown 150 BPM",
+      "3. Basaltic - Mirage 150 BPM",
+      "4. Mazo Sadu - Night on Earth 151 BPM",
+      "5. Kounoupi - Deep Introduction 154 BPM",
+      "6. Organic Waves - Not Dead 155 BPM",
+      "7. Cali'Balam - Internal Mutation 158",
+      "8. Zyamaliman - Purple Helmet Warrior 158 BPM",
+      "9.  Psycholouis - Hakuna Matata 165 BPM",
+      "10. FluroNeuro -  Nowhere to Hyde 165 BPM"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_OhuZ6BoLXGeevV-L2VVrs",
     "youtube_full_album": "https://www.youtube.com/watch?v=r-ZB_keS9vw",
     "spotify": "https://open.spotify.com/album/0HIKpX8PvkngH12PSaYT7V",
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-the-second-chapter-sthiti",
     "mp3": "https://drive.google.com/file/d/1BPYDvwX4TPlqopdv93dWCPVebwMV5aBD/view?usp=drive_link",
-    "wav": "https://drive.google.com/file/d/1RpvBgoTdACkAOcFNhB8lKIxKsdRiSKDe/view?usp=drive_link"
-    ,
-    "flac":""
+    "wav": "https://drive.google.com/file/d/1RpvBgoTdACkAOcFNhB8lKIxKsdRiSKDe/view?usp=drive_link",
+    "flac": ""
   },
-    {
+  {
     "id": "HORD086",
     "path": "VA_-_Otherworld",
     "artist": "VA",
@@ -957,29 +1050,30 @@
     "release_date": "20/May/2023",
     "credits": "\n\nArtwork by Kathryn Brooks\n\nCompiled by Psytanic\n\nMastering by Krono Audio",
     "tracklist": [
-        "1. Dr Tryptamine - Fear (162 BPM) (free) 07:18",
-"2.Diabolical Orchestra - Lost Memories (185 BPM) 06:46",
-"3.Terashade - Halo of the Sun (215 BPM) 06:53",
-"4. Kushroom - Devil's Hoe (185 BPM) 08:11",
-"5. FluroNeuro - Shattered Memories (200 BPM) 07:04",
-"6. Ectoplasmik - Ora e Labora (168 BPM) 07:18",
-"7. DarkAlien Live - The Game (155 BPM) 07:06",
-"8. Inimical Darkness - Pandemonium (180 BPM) 09:02",
-"9. Abgrund B - Video Tape (163 BPM) 06:34",
-"10. Paramashiva - Sozidanie (220 BPM) 05:49",
-"11. Hypnos Live - Noisy Hill (158 BPM) 09:55",
-"12. Kromugha - Strange Frequencies (222 BPM) 06:33",
-"13. Efect Mushroom - Mumm-Ra El Inmortal (175 BPM) 10:50",
-"14. Illumicorp feat. Mohinia - Silent Memes (200 BPM) 08:21"],
+      "1. Dr Tryptamine - Fear (162 BPM) (free) 07:18",
+      "2.Diabolical Orchestra - Lost Memories (185 BPM) 06:46",
+      "3.Terashade - Halo of the Sun (215 BPM) 06:53",
+      "4. Kushroom - Devil's Hoe (185 BPM) 08:11",
+      "5. FluroNeuro - Shattered Memories (200 BPM) 07:04",
+      "6. Ectoplasmik - Ora e Labora (168 BPM) 07:18",
+      "7. DarkAlien Live - The Game (155 BPM) 07:06",
+      "8. Inimical Darkness - Pandemonium (180 BPM) 09:02",
+      "9. Abgrund B - Video Tape (163 BPM) 06:34",
+      "10. Paramashiva - Sozidanie (220 BPM) 05:49",
+      "11. Hypnos Live - Noisy Hill (158 BPM) 09:55",
+      "12. Kromugha - Strange Frequencies (222 BPM) 06:33",
+      "13. Efect Mushroom - Mumm-Ra El Inmortal (175 BPM) 10:50",
+      "14. Illumicorp feat. Mohinia - Silent Memes (200 BPM) 08:21"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-_-LChYcH8pv66gOoCtmiU",
     "youtube_full_album": "https://youtu.be/U4QuBRaUoCg",
     "spotify": "https://open.spotify.com/album/2yTlp3LmcovfoC0ugFNRTS",
     "bandcamp": "https://horrordelic.bandcamp.com/album/otherworld",
     "mp3": "https://drive.google.com/file/d/1lYWCIeumuf1dFtvBv-qL_AFe3rsQSslH/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1y5xZMIOSPzK5XnzgPs5waIjYwtx3ducK/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
-    {
+  {
     "id": "HORD085",
     "path": "Diabolical_Orchestra_-_Bacterial_Symphonies",
     "artist": "Diabolical Orchestra",
@@ -989,18 +1083,19 @@
     "release_date": "19/May/2023",
     "credits": "\n\nMusic by Gokul Kannan (Diabolical Orchestra)\n\nText Layout by Antikriz\n\nMastering Krono Audio",
     "tracklist": [
-"1. Hereditary (160 BPM)",
-"2. Galactic Terror (168 BPM)",
-"3. Diabolical Experiment (170 - 190 - 220 BPM)"],
+      "1. Hereditary (160 BPM)",
+      "2. Galactic Terror (168 BPM)",
+      "3. Diabolical Experiment (170 - 190 - 220 BPM)"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299uZFK24om1MNu64w-19KsS",
     "youtube_full_album": "https://www.youtube.com/watch?v=Btv8pyG0HU8",
     "spotify": "https://open.spotify.com/album/1V0M8oIxmcX4PuRKJn98aB",
     "bandcamp": "https://horrordelic.bandcamp.com/album/bacterial-symphonies",
     "mp3": "https://drive.google.com/file/d/1lEX7xZL4yfkmw-1NhSyyS_eIzUri-EPM/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1g215f3LPwulwKxodoq0X9gLF8IlSNGqu/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
-    {
+  {
     "id": "HORD084",
     "path": "Abgrund_B_-_Psychic_Miasma",
     "artist": "Abgrund B",
@@ -1010,21 +1105,21 @@
     "release_date": "18/May/2023",
     "credits": "\n\nMusic by Abgrund B\n\nMastering by Soulexpander\n\nCover artwork by Sem",
     "tracklist": [
-"1. Insomnia 137 BPM",
-"2. V3X Neural Chip 144 150 BPM",
-"3. Human Voice 155 BPM",
-"4. Raven's Revelation 159 BPM",
-"5. Monday Morning 163 172 BPM",
-"6. Makeshift Mental State 177 BPM",
-"7. Ophanim 230 BPM"],
+      "1. Insomnia 137 BPM",
+      "2. V3X Neural Chip 144 150 BPM",
+      "3. Human Voice 155 BPM",
+      "4. Raven's Revelation 159 BPM",
+      "5. Monday Morning 163 172 BPM",
+      "6. Makeshift Mental State 177 BPM",
+      "7. Ophanim 230 BPM"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp29_YeggrhzBlvXch0-TxfVWk",
     "youtube_full_album": "https://youtu.be/EcMUjq36BSk",
     "spotify": "https://open.spotify.com/album/7dFsIMnOeqtk63ifPmZ9xG",
     "bandcamp": "https://horrordelic.bandcamp.com/album/psychic-miasma",
     "mp3": "https://drive.google.com/file/d/1iJ9WyFYKxwJPZeU9UNpykGJt_irxO5j3/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1PiC1xFWBmvsbQTUUO1ASApNqKI2cAPw1/view?usp=share_link"
-    ,
-    "flac":""
+    "wav": "https://drive.google.com/file/d/1PiC1xFWBmvsbQTUUO1ASApNqKI2cAPw1/view?usp=share_link",
+    "flac": ""
   },
   {
     "id": "HORD083",
@@ -1052,9 +1147,8 @@
     "spotify": "https://open.spotify.com/album/3dgAHZGQbZETrpQP8zH4aw",
     "bandcamp": "https://horrordelic.bandcamp.com/album/tandav-nritya-the-first-chapter-srishti",
     "mp3": "https://drive.google.com/file/d/13y_tyYb8-35X4swWbE-C-NPc3Pu_amu3/view?usp=share_link",
-    "wav": "https://drive.google.com/file/d/1dReN-0_dYmui18ipISgHAWKykUDw0S00/view?usp=share_link"
-    ,
-    "flac":""
+    "wav": "https://drive.google.com/file/d/1dReN-0_dYmui18ipISgHAWKykUDw0S00/view?usp=share_link",
+    "flac": ""
   },
   {
     "id": "HORD082",
@@ -1076,7 +1170,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/mental-chaos",
     "mp3": "https://drive.google.com/file/d/1EhcZdJU5Ca5sPjKgcYwX45MPFxSH1m6T/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1DMpBAkXS2oocJwycD6TOrpH0enHuA9Xb/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD081",
@@ -1098,7 +1192,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/i-miss-being-a-blender",
     "mp3": "https://drive.google.com/file/d/1jdCRBMnH9fkf49BQsTcNLozoCbS5QEAW/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1NFoggp6uhBChQO0PtNVeFIwS44FlC7lp/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD080",
@@ -1140,7 +1234,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/past-present-and-evil",
     "mp3": "https://drive.google.com/file/d/1ONZ-H3sz7YKtwaRO0l6l-LKQBsh9xMXt/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1uwlsn_et9ctJhYfVf-Dvps307fLNkhVd/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD079",
@@ -1163,7 +1257,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/wake-the-fuck-up",
     "mp3": "https://drive.google.com/file/d/1L8TB8JLBq_2ioiOUpTUPr4663JdGtKSk/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1MGnQyJw3hOxHZwNjvaVFQkGJ5dRw3A_n/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD078",
@@ -1192,7 +1286,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/accession-of-the-dark-age-volume-2",
     "mp3": "https://drive.google.com/file/d/1sXXKWjZUngY9NepDCMreVygedq1SedAf/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/18gthfhjyZ9kP4LTNbysPFEoWMvKwZiCG/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD077",
@@ -1221,7 +1315,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/accession-of-the-dark-age-volume-1",
     "mp3": "https://drive.google.com/file/d/1zGO_EIDZh3eaT3dI-nVZXV-ACYBPrtpj/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1BJ8AVy7qglEuSZXu8xylK2oC4uZyZOii/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD076",
@@ -1249,7 +1343,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/shadows-at-dawn",
     "mp3": "https://drive.google.com/file/d/1sFRQhnwBIycgYsMwmLcXclNkh30Mua2p/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1UkL9opg_p9ohb8ku6e9W7fdwoc6JNr2v/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD075",
@@ -1273,7 +1367,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/spaceyard",
     "mp3": "https://drive.google.com/file/d/1aFPhgoW9GOi6-515_V2uVUSyDNl6VnE0/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1PyjwNf2SHmHOnFbgI78THO6V-V6kAtLS/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD073",
@@ -1304,7 +1398,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/force-fields",
     "mp3": "https://drive.google.com/file/d/1k6zSmZFHRYY6WNmIdWT_5-SLO1nAp3yd/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1sXPqOe9lzr-qkaEufMze8ThZ1o20AxhR/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD074",
@@ -1333,7 +1427,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/the-realm-of-death",
     "mp3": "https://drive.google.com/file/d/1mDmc7a09y7YTeZl6FGUQm8nWMJ4S2kVS/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1FFV6IUHDDRP_YmxzUFRM-cXuAgNCIg-K/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD072",
@@ -1361,7 +1455,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/art-is-an-explosion-vol-2",
     "mp3": "https://drive.google.com/file/d/19dKQ3KnG2ZZ2B234qpjFkTFIJ7pQ5Wzt/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1IGcoq6BJXOVUZsm7TCf7uCjqqcK6jXuA/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD071",
@@ -1372,14 +1466,19 @@
     "release_text": "Horrordelic proudly presents a new release from Cronoboro, a project between Crone from Greece and Oroboro from Germany. \n\nAfter some collaboration tracks and meetings at events in Turkey and Brazil they decided to make the Cronoboro project. This is the first EP coming from them: “Chants of Chimera”.",
     "release_date": "22/August/2020",
     "credits": "\n\n ",
-    "tracklist": ["1. Chair of Forgetfulness 09:45", "2. Transiest 11:34", "3. Firebreath 08:58", "4. Hidden Sidual 14:41 "],
+    "tracklist": [
+      "1. Chair of Forgetfulness 09:45",
+      "2. Transiest 11:34",
+      "3. Firebreath 08:58",
+      "4. Hidden Sidual 14:41 "
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/embed/videoseries?list=PLNlcSeDBp299_POAAh9HMdtXNPk-yKEsO",
     "youtube_full_album": "https://youtu.be/JycHkGcuUSU",
     "spotify": "https://open.spotify.com/album/5XySofDsSSksWRLV8rra4U",
     "bandcamp": "https://horrordelic.bandcamp.com/album/chants-of-chimera",
     "mp3": "https://drive.google.com/file/d/1tniByQDi3HxDeJWSJHpeNqfJXMOTw1RP/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1PPQgHEwmxcN2Rn-6dbomIQBuqbDO5A0j/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD070",
@@ -1408,7 +1507,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/horror-tales-chapter-3",
     "mp3": "https://drive.google.com/file/d/1cpAJuoguWYzZHpvzdSNOaRPFh__AjMRD/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1iXhPPMnSM9BsptMVVt41OTw40Cv4xSTu/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD069",
@@ -1438,7 +1537,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/agnus-dei-and-friends-world-of-horrors",
     "mp3": "https://drive.google.com/file/d/1KpWFakMEq1kr8n1WFDKb4EXTFG3dzsRy/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1uskcr8QjGbplnhl6iu7ts-UZ3mzv2I-P/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD068",
@@ -1462,7 +1561,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/ganduna-calucus",
     "mp3": "https://drive.google.com/file/d/1JSNxbIqY8b26TEgDGBt3mj82YQE3AOZb/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1ex3dlKelh8uaGPegbzwnX5s74kZXqtN_/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD067",
@@ -1486,7 +1585,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/fofo-e-bravo",
     "mp3": "https://drive.google.com/file/d/1QWueB3jjrbHFh9TC61wtRZG7Uivi71j_/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1Xa4H-vKuxBGhpMZM5mCmsJxqxq5ApHjf/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD066",
@@ -1517,7 +1616,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/baba-yaga",
     "mp3": "https://drive.google.com/file/d/1_WI3dCpNauDo7ZukDqEdjQs53RPtjX9c/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1-_t4e2jYYjpYvtc53MV0spShIdZK09fE/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD065",
@@ -1545,7 +1644,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/inside-the-womb-ov-darkness",
     "mp3": "https://drive.google.com/file/d/1y1zBcvMm-llYS_602LI9HvNHHWPBmG6k/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1bK4Ns-8wtIKzewe0u9wXxuLq57N7wbCQ/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD064",
@@ -1574,7 +1673,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/art-is-an-explosion",
     "mp3": "https://drive.google.com/file/d/18WN0gjyPMCgdR_orCCuaXyQk-Fr5haCV/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1gCF1uiXkMPg-HwJko9VRNK4-mQVEFyfR/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD063",
@@ -1604,7 +1703,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/rites-unholy",
     "mp3": "https://drive.google.com/file/d/1oRuw58XYFoRKdr465169NO7hlKPl8_da/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/10-SZsPXCG2A5r305NAURcoAA7PwO5h2v/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD062",
@@ -1632,7 +1731,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/crone-and-friends",
     "mp3": "https://drive.google.com/file/d/1_0IISjNDZs-PbGrZWnG9LL0ArZpdBRaW/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1vNYIo5dhyWci2nzU65dyXr3N_jqRj5Zs/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
 
   {
@@ -1662,7 +1761,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/shiki",
     "mp3": "https://drive.google.com/file/d/1OeNErMFI5E5_CLcVy6E2iZMM9WgH14aL/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1tMNIGg1kWLZqEnFffpaWH9zDVoj4MyqD/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD060",
@@ -1691,7 +1790,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/pagan-altar",
     "mp3": "https://drive.google.com/file/d/16WiC9IVeIMD1Z2jbh6ET-vaPFLOZqRhb/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/18nPq4iw8oP2VX62uZsf0MeO0n29Jq6f-/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD059",
@@ -1720,7 +1819,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/echoes-in-the-dark",
     "mp3": "https://drive.google.com/file/d/1G6F5FraCdNsH3fpvJ0hQIEIxDH8nIyXS/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/17TcbYnTjhPqIYuuforRHYqAvLQ9Uy0kb/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD058",
@@ -1749,7 +1848,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/obscurism",
     "mp3": "https://drive.google.com/file/d/1BZ5kUO7EVW_YqYiNa37q75SGwN0PBjUx/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1K79c9YkEqaj1WoZr-B_pTi3aoWKlvZwC/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD057",
@@ -1777,7 +1876,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/at-the-end-of-the-rainbow",
     "mp3": "https://drive.google.com/file/d/10jKoqD3W0Jta4s81zk0XkPpy-sRbSkKv/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1Tn0RW8HQVWyjeR6p0LR6CfjOh2ctWESa/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD056",
@@ -1805,7 +1904,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/horror-tales-chapter-2",
     "mp3": "https://drive.google.com/file/d/1sRCbRvCwscu5QT_l5nnM4e_Z-mOa-9_V/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1OqAREjXB3R9qaTyzwSvW_6Y4B6OGciRq/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD055",
@@ -1816,14 +1915,19 @@
     "release_text": "HyperCrone is the project of Hypereklexia & Croné from Greece, started in 2017. \n\nThe project has more Psycore and Experimental fast sounds at fast bpm`s than the usual from these two musicians.\n\n Stay tuned for some real killer soundz...",
     "release_date": "31/Aug/2018",
     "credits": "\n\nArtwork by Paranoia Sector\n\nMastering by Croné\n\nLogo by Ashtak Singh  ",
-    "tracklist": ["1. HC200 200Bpm 08:07", "2. Liquid Crystals 205Bpm 06:46", "3. Bitch Abduction 210Bpm 05:42", "4. Critical Damage 220Bpm 06:53"],
+    "tracklist": [
+      "1. HC200 200Bpm 08:07",
+      "2. Liquid Crystals 205Bpm 06:46",
+      "3. Bitch Abduction 210Bpm 05:42",
+      "4. Critical Damage 220Bpm 06:53"
+    ],
     "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp29930768wISP09PhDRGRTe_F",
     "youtube_full_album": "https://www.youtube.com/watch?v=_jvZJTeDdEY",
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/the-dead-alien",
     "mp3": "https://drive.google.com/file/d/1QSuZAYLbx87H4a96Haop0AbUtRFGdiHP/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1PY4dD5tk2K7DRLVaRBACgQpSsq48McoC/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD054",
@@ -1851,7 +1955,7 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/lost-tapes-3",
     "mp3": "https://drive.google.com/file/d/1VZhSIbfhyY8RzbyNpVIA4y1DhlaMSZZv/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/15mGO1f78fimp4uC5M7QNltNbas1vWS7b/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD053",
@@ -1862,14 +1966,18 @@
     "release_text": "A symbiosis between dark psychedelic atmospheres and mechanical frequencies.\n\nThe connection between light and dark, creating a twilight of emotions.\n\n A deep journey through the mind of Source Error, who implied his vision of modern dark psychedelic sound in his debut EP.\n\nMesmerizing soundscapes combined with impulsive straight forward bass lines, create a unique style, guaranteed to drill your brain.\n\n From the deepest inner abyss to the highest physical states, this EP is meant to break the borders that surround mankind. ",
     "release_date": "13/Aug/2018",
     "credits": "\n\nAll Music by Source Error aka Florian Bunte\n\n;Mastering by: Antagon @Interzone Mastering  ",
-    "tracklist": [" 1. Ionosphere 155Bpm 09:32 ", "2. Inner Circle 155Bpm 06:50 ", "3. Suffer Under Your Existence 164Bpm 06:27"],
+    "tracklist": [
+      " 1. Ionosphere 155Bpm 09:32 ",
+      "2. Inner Circle 155Bpm 06:50 ",
+      "3. Suffer Under Your Existence 164Bpm 06:27"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299ofgfuuuyJen_J0LzMggXy",
     "youtube_full_album": "https://www.youtube.com/watch?v=I-2KKGc5Cdo",
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/inner-circle",
     "mp3": "https://drive.google.com/file/d/18BO95jla08UB8ZCeMoP1QbIMFEEs_NG7/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1e6DwHSC8GVGFACbBaPqY55BSljbNrePS/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD052",
@@ -1908,9 +2016,9 @@
     "bandcamp": "https://horrordelic.bandcamp.com/album/night-of-sacrifice",
     "mp3": "https://drive.google.com/file/d/1UXO69zELKr0-QbzdUJnNUaq79IcJlurz/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1MlaLjaQ2tN2QoM0nA_yezuLtslSDzw9w/view?usp=share_link",
-    "flac":""
-  }, 
- {
+    "flac": ""
+  },
+  {
     "id": "HORD045",
     "path": "Amnesia-Breaking_Point",
     "artist": "Amnesia",
@@ -1919,17 +2027,19 @@
     "release_text": "From the deep woods of Sweden, comes Amnesia with his Debut EP, Breaking Point.\n\nA dark and psychedelic voyage is in front of you, prepare to enter the dark realms of Amnesia...",
     "release_date": "10/Nov/2017",
     "credits": "\n\nMusic Amnesia - Mother Of Datura (Sweden)\n\nMastering SooSpicey (USA)\n\nArtwork Antikriz + Psytanic (Norway) ",
-    "tracklist": ["1. Feat. Gurgamesh - Life Before Birth 154 Bpm 07:21",
-"2. Séance 168 Bpm 07:47",
-"3. Ayahuasca 183 Bpm 06:54",
-"4. Breaking Point 195 Bpm 07:46"],
+    "tracklist": [
+      "1. Feat. Gurgamesh - Life Before Birth 154 Bpm 07:21",
+      "2. Séance 168 Bpm 07:47",
+      "3. Ayahuasca 183 Bpm 06:54",
+      "4. Breaking Point 195 Bpm 07:46"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_1C3g-fiA8HdlTIRDijXoF",
     "youtube_full_album": "https://youtu.be/6SBgugKb6R8",
     "spotify": "",
     "bandcamp": "https://horrordelic.bandcamp.com/album/breaking-point",
     "mp3": "https://drive.google.com/file/d/18N0tbRc1WrD8Vnsa21yBv8apiSdN8p0z/view?usp=drive_link",
     "wav": "https://drive.google.com/file/d/1XThKqGd8LrZsLsBLd74eltw0L4hHOHRW/view?usp=drive_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "",
@@ -1947,7 +2057,7 @@
     "bandcamp": "",
     "mp3": "",
     "wav": "",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "HORD013",
@@ -1959,65 +2069,66 @@
     "release_date": "10/Jan/2014",
     "credits": "\n\nCompiled: Antikriz and Fakhiru (Norway/India)\nArtwork: Paranoia Sector (Greece)\nMastered: Anomalistic Studios (USA)\nReleased By Horrordelic (Norway)",
     "tracklist": [
-        "1. MY Project - Let Me Enlighten You Priest - 150bpm 07:47",
-"2. Krono_psy - Abadababa - 146bpm 06:38",
-"3. Bizzare Frequency - The Dark Bike - 155bpm 08:44",
-"4. Voodoo - Preposition Of Mind - 155bpm 06:43",
-"5. Dark Element - Angry Mode - 150bpm 06:28",
-"6. Leonofobia- Grounds To Discuss The Fate - 155bpm 06:11",
-"7. K Lapso - Immolation -150bpm 06:41",
-"8. Ferratek and Donald Dark - Halloween - 152bpm 07:01",
-"9. Spagettibrain - Farfale - 154 bpm 07:34",
-"10. Paranoia Sector - Life Is A Lie - 153bpm 07:56",
-"11. Aum Sector - Deadly Happiness - 157bpm 07:41",
-"12. Necroillusion - Feel My Pain - 154bpm 06:40",
-"13. Zigorat - The World Can Not Restore Equilibrium - 150bpm 09:03",
-"14. Hyperburst - Sarah - 160bpm 05:55",
-"15. Dhrupad - Ramses - 164bpm 06:38",
-"16. Ozore - A Night In The India - 155bpm 05:11",
-"17. Dark Cygnus - Death Valley - 154bpm 07:39",
-"18. Skup - Fjord - 177bpm 06:30",
-"19. Lisergico Saeure - Cuda - 170bpm 05:21",
-"20. Lost Reflection - The Weight Of The End - 157bpm 09:00",
-"21. W.A.Lala - Ojos De Luna Llena - 160bpm 06:50",
-"22. Stef - Some Gift Are Curses - 159bpm 05:12",
-"23. Kashis - Bad Intension - 165bpm 07:57",
-"24. Fractal DNA - The Chanyid Bardo - 175bpm 07:28",
-"25. Psy Horror Noize - Thanatos - 160bpm 08:39",
-"26. ParaTrip - Biotech Anatomy - 168BPM 06:58",
-"27. Gloomy Phantom - Martyrium (Pain is God) - 164bpm 07:40",
-"28. Baphomet Engine - Spectral Army 08:02",
-"29 - Master of Horror - My Friend Not Dead - 160bpm 07:36",
-"30 - Intekshine - Brazilian Fuckers - 160bpm 07:04",
-"31 - Sanathana - Smiling Through Your Dark Times - 170bpm 08:08",
-"32 - Plasma Force - Gravestoned - 175bpm 07:13",
-"33 - Azzault - Give Status - 170bpm 06:10",
-"34 - Lyzergik Brain - Acid Bath - 175bpm 06:56",
-"35 - Silent Moon - Lysergic Memories - 170bpm 06:41",
-"36 - Qakbatzulu - Skeleton Key - 180bpm 05:09",
-"37 - Plasma Force vs Bones - Quantum Mechanisim - 180bpm 08:52",
-"38 - Aum Sync - Lunatik Karma - 172bpm 06:30",
-"39 - Xochipilli - Evolucion - 170bpm 07:55",
-"40 - Mr. Hades - Panic - 180bpm 08:42",
-"41 - Kujata - Strange Behaviours - 190bpm 07:18",
-"42 - Suffer Misery - It Dies Infected (Brutal Dead Edit) 190bpm 06:34",
-"43 - BrainBlender - Attack Began - 180bpm 06:13",
-"44 - Toxinexia - Screams In Panic - 175bpm 08:13",
-"45 - Ryux -Juice Box - 185bpm 06:38",
-"46 - CinderVOMIT (Ft Luuli) - Breaking Point - 201bpm 11:07",
-"47 - DarknesSs - Haunted Circus - 190bpm 07:45",
-"48 - Lepudness vs Xtraterrestre - Secondtrip - 192bpm 06:15",
-"49 - Injerto Proyect - Elysium - 200bpm 06:33",
-"50 - Miquiztli - Suffer Misery - 200bpm 06:37",
-"51 - JUNXPUNX - After End Start Before - 204bpm 09:49",
-"52 - CinderVOMIT - Distorted Visual Depth Perception - 210bpm 07:08"],
+      "1. MY Project - Let Me Enlighten You Priest - 150bpm 07:47",
+      "2. Krono_psy - Abadababa - 146bpm 06:38",
+      "3. Bizzare Frequency - The Dark Bike - 155bpm 08:44",
+      "4. Voodoo - Preposition Of Mind - 155bpm 06:43",
+      "5. Dark Element - Angry Mode - 150bpm 06:28",
+      "6. Leonofobia- Grounds To Discuss The Fate - 155bpm 06:11",
+      "7. K Lapso - Immolation -150bpm 06:41",
+      "8. Ferratek and Donald Dark - Halloween - 152bpm 07:01",
+      "9. Spagettibrain - Farfale - 154 bpm 07:34",
+      "10. Paranoia Sector - Life Is A Lie - 153bpm 07:56",
+      "11. Aum Sector - Deadly Happiness - 157bpm 07:41",
+      "12. Necroillusion - Feel My Pain - 154bpm 06:40",
+      "13. Zigorat - The World Can Not Restore Equilibrium - 150bpm 09:03",
+      "14. Hyperburst - Sarah - 160bpm 05:55",
+      "15. Dhrupad - Ramses - 164bpm 06:38",
+      "16. Ozore - A Night In The India - 155bpm 05:11",
+      "17. Dark Cygnus - Death Valley - 154bpm 07:39",
+      "18. Skup - Fjord - 177bpm 06:30",
+      "19. Lisergico Saeure - Cuda - 170bpm 05:21",
+      "20. Lost Reflection - The Weight Of The End - 157bpm 09:00",
+      "21. W.A.Lala - Ojos De Luna Llena - 160bpm 06:50",
+      "22. Stef - Some Gift Are Curses - 159bpm 05:12",
+      "23. Kashis - Bad Intension - 165bpm 07:57",
+      "24. Fractal DNA - The Chanyid Bardo - 175bpm 07:28",
+      "25. Psy Horror Noize - Thanatos - 160bpm 08:39",
+      "26. ParaTrip - Biotech Anatomy - 168BPM 06:58",
+      "27. Gloomy Phantom - Martyrium (Pain is God) - 164bpm 07:40",
+      "28. Baphomet Engine - Spectral Army 08:02",
+      "29 - Master of Horror - My Friend Not Dead - 160bpm 07:36",
+      "30 - Intekshine - Brazilian Fuckers - 160bpm 07:04",
+      "31 - Sanathana - Smiling Through Your Dark Times - 170bpm 08:08",
+      "32 - Plasma Force - Gravestoned - 175bpm 07:13",
+      "33 - Azzault - Give Status - 170bpm 06:10",
+      "34 - Lyzergik Brain - Acid Bath - 175bpm 06:56",
+      "35 - Silent Moon - Lysergic Memories - 170bpm 06:41",
+      "36 - Qakbatzulu - Skeleton Key - 180bpm 05:09",
+      "37 - Plasma Force vs Bones - Quantum Mechanisim - 180bpm 08:52",
+      "38 - Aum Sync - Lunatik Karma - 172bpm 06:30",
+      "39 - Xochipilli - Evolucion - 170bpm 07:55",
+      "40 - Mr. Hades - Panic - 180bpm 08:42",
+      "41 - Kujata - Strange Behaviours - 190bpm 07:18",
+      "42 - Suffer Misery - It Dies Infected (Brutal Dead Edit) 190bpm 06:34",
+      "43 - BrainBlender - Attack Began - 180bpm 06:13",
+      "44 - Toxinexia - Screams In Panic - 175bpm 08:13",
+      "45 - Ryux -Juice Box - 185bpm 06:38",
+      "46 - CinderVOMIT (Ft Luuli) - Breaking Point - 201bpm 11:07",
+      "47 - DarknesSs - Haunted Circus - 190bpm 07:45",
+      "48 - Lepudness vs Xtraterrestre - Secondtrip - 192bpm 06:15",
+      "49 - Injerto Proyect - Elysium - 200bpm 06:33",
+      "50 - Miquiztli - Suffer Misery - 200bpm 06:37",
+      "51 - JUNXPUNX - After End Start Before - 204bpm 09:49",
+      "52 - CinderVOMIT - Distorted Visual Depth Perception - 210bpm 07:08"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2988fMVXfAdVvlqqpxfLA6Sr",
     "youtube_full_album": "https://youtu.be/81UHhaXvGpk",
     "spotify": "https://horrordelic.bandcamp.com/album/va-mysteries-of-death-part-2",
     "bandcamp": "https://horrordelic.bandcamp.com/album/va-mysteries-of-death-part-1",
     "mp3": "https://drive.google.com/file/d/1Ps14jcrTL3XTUf_qSwsh0nSG_FPDjLmJ/view?usp=share_link",
     "wav": "https://drive.google.com/file/d/1vqHrWxXSILwYlk4TAI7ENEfFNTKm36LF/view?usp=share_link",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "",
@@ -2035,7 +2146,7 @@
     "bandcamp": "",
     "mp3": "",
     "wav": "",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "",
@@ -2053,7 +2164,7 @@
     "bandcamp": "",
     "mp3": "",
     "wav": "",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "",
@@ -2071,7 +2182,7 @@
     "bandcamp": "",
     "mp3": "",
     "wav": "",
-    "flac":""
+    "flac": ""
   },
   {
     "id": "",
@@ -2089,6 +2200,6 @@
     "bandcamp": "",
     "mp3": "",
     "wav": "",
-    "flac":""
+    "flac": ""
   }
 ]
