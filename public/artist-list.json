@@ -1,6 +1,7 @@
 [
   {
     "id": "0",
+    "active": "yes",
     "name": "Antikriz",
     "nameNoSpace": "Antikriz",
     "category": "dj",
@@ -14,6 +15,7 @@
   },
   {
     "id": "1",
+    "active": "yes",
     "name": "Kuroobi",
     "nameNoSpace": "Kuroobi",
     "category": "dj",
@@ -39,6 +41,7 @@
   },
   {
     "id": "4",
+    "active": "yes",
     "name": "Diabolical Orchestra",
     "nameNoSpace": "DiabolicalOrchestra",
     "category": "artist",
@@ -51,6 +54,7 @@
   },
   {
     "id": "2",
+    "active": "yes",
     "name": "Cosmic BlueMoon",
     "nameNoSpace": "CosmicBlueMoon",
     "category": "dj",
@@ -64,6 +68,7 @@
   },
   {
     "id": "5",
+    "active": "yes",
     "name": "Gloomy Phantom",
     "nameNoSpace": "GloomyPhantom",
     "category": "artist",
@@ -77,14 +82,15 @@
   },
   {
     "id": "6",
-    "name": "Psytanic",
-    "nameNoSpace": "Psytanic",
+    "active": "yes",
+    "name": "Morchant",
+    "nameNoSpace": "Morchant",
     "category": "DJ",
     "headerInfo": "Artwork",
     "location": "Southwest",
     "land": "Norway",
     "flag": "\ud83c\uddf3\ud83c\uddf4",
-    "artists_text": "Stumbeled upon her forest party with darkpsy on the speakers in 2008, with only DJ on the lineup was no other than Antikriz by coincidence(?). \n\nFell in love with the music. Bought own CDJs in 2011 and started playing at small parties herself. \n\nThen fell in love with Antikriz. Started playing music together, traveling around blasting darkpsy on the soundsystems. \n\nIn 2018 hey had a wedding and then 2 kids, so she took a little break from the musicscene, but is now returning from the dead to do the evil work of Horrordelic in form of dark sound and art.",
+    "artists_text": "Neither living nor dead. Only Darkpsy.",
     "soundcloud": "",
     "facebook": "https://www.facebook.com/psytanic666"
   },
@@ -142,6 +148,7 @@
   },
   {
     "id": "11",
+    "active": "yes",
     "name": "Distorted AtmosFear",
     "nameNoSpace": "DistortedAtmosFear",
     "category": "artist",
@@ -168,6 +175,7 @@
   },
   {
     "id": "13",
+    "active": "yes",
     "name": "Abgrund B",
     "nameNoSpace": "AbgrundB",
     "category": "Artist",
@@ -193,6 +201,7 @@
   },
   {
     "id": "15",
+    "active": "yes",
     "name": "Psycholouis",
     "nameNoSpace": "Psycholouis",
     "category": "Artist",
@@ -207,6 +216,7 @@
 
   {
     "id": "17",
+    "active": "yes",
     "name": "Dr. Tryptamine",
     "nameNoSpace": "DrTryptamine",
     "category": "Artist",
@@ -220,6 +230,7 @@
   },
   {
     "id": "18",
+    "active": "yes",
     "name": "Mother Of Datura",
     "nameNoSpace": "MotherOfDatura",
     "category": "Artist",
@@ -246,6 +257,7 @@
   },
   {
     "id": "20",
+    "active": "yes",
     "name": "FluroNeuro",
     "nameNoSpace": "FluroNeuro",
     "category": "Artist",
@@ -285,6 +297,7 @@
   },
   {
     "id": "23",
+    "active": "yes",
     "name": "Maleficarvm",
     "nameNoSpace": "Maleficarvm",
     "category": "Artist",
@@ -311,6 +324,7 @@
   },
   {
     "id": "25",
+    "active": "yes",
     "name": "Yetzirah",
     "nameNoSpace": "Yetzirah",
     "category": "Artist",
@@ -363,6 +377,7 @@
   },
   {
     "id": "29",
+    "active": "yes",
     "name": "Efect Mushroom",
     "nameNoSpace": "EfectMushroom",
     "category": "Artist",
@@ -402,6 +417,7 @@
   },
   {
     "id": "32",
+    "active": "yes",
     "name": "Deeverse",
     "nameNoSpace": "Deeverse",
     "category": "Dj",
@@ -415,6 +431,7 @@
   },
   {
     "id": "33",
+    "active": "yes",
     "name": "Killjoy",
     "nameNoSpace": "Killjoy",
     "category": "Dj",
@@ -428,6 +445,7 @@
   },
   {
     "id": "34",
+    "active": "yes",
     "name": "Mental Freak",
     "nameNoSpace": "MentalFreak",
     "category": "Artist",
@@ -441,6 +459,7 @@
   },
   {
     "id": "35",
+    "active": "yes",
     "name": "Kris.Ma",
     "nameNoSpace": "Kris.Ma",
     "category": "Dj",
@@ -454,6 +473,7 @@
   },
   {
     "id": "36",
+    "active": "yes",
     "name": "Cosmort",
     "nameNoSpace": "Cosmort",
     "category": "Dj",
@@ -467,6 +487,7 @@
   },
   {
     "id": "37",
+    "active": "yes",
     "name": "Nano Rexx",
     "nameNoSpace": "NanoRexx",
     "category": "Artist",
@@ -480,6 +501,7 @@
   },
   {
     "id": "38",
+    "active": "yes",
     "name": "Skellington",
     "nameNoSpace": "Skellington",
     "category": "Artist",
@@ -493,6 +515,7 @@
   },
   {
     "id": "39",
+    "active": "yes",
     "name": "M3gagor",
     "nameNoSpace": "M3gagor",
     "category": "Artist",
@@ -506,6 +529,7 @@
   },
   {
     "id": "40",
+    "active": "yes",
     "name": "Lu PsY FeR",
     "nameNoSpace": "LuPsYFeR",
     "category": "Artist",
@@ -519,6 +543,7 @@
   },
   {
     "id": "41",
+    "active": "yes",
     "name": "Dark Wish",
     "nameNoSpace": "DarkWish",
     "category": "Artist",
@@ -532,6 +557,7 @@
   },
   {
     "id": "42",
+    "active": "yes",
     "name": "Nervous System",
     "nameNoSpace": "NervousSystem",
     "category": "Artist",
@@ -545,6 +571,7 @@
   },
   {
     "id": "43",
+    "active": "yes",
     "name": "Odoxis",
     "nameNoSpace": "Odoxis",
     "category": "Artist",

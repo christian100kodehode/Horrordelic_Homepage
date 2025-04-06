@@ -1,0 +1,57 @@
+[
+  {
+    "id": "43",
+    "active": "yes",
+    "name": "Odoxis",
+    "nameNoSpace": "Odoxis",
+    "category": "Artist",
+    "headerInfo": "",
+    "location": "Athens",
+    "land": "Greece",
+    "flag": "\uD83C\uDDEC\uD83C\uDDF7",
+    "artists_text": "Odoxis is a mental place where one is called to face the depths of his unconscious mind, to fight the shadows that keep him away from the Sun of Truth and break free from their chains. In the real world...\n\nThe man behind the project is named Odysseas, he lives in Athens and he is currently studying in Athens school of fine arts. At the same time he is making experimental dark psychedelic music. \n\nHe wants to touch the melodic side of darkpsy to create a mythical vibe with a heavy and primitive groove.",
+    "soundcloud": "https://soundcloud.com/odyssism",
+    "facebook": "https://www.facebook.com/profile.php?id=100083381598694"
+  },
+  {
+    "id": "55",
+    "name": "test man",
+    "nameNoSpace": "testman",
+    "category": "Artist",
+    "headerInfo": "dd",
+    "location": "dd",
+    "land": "dd",
+    "flag": "",
+    "artists_text": "dd",
+    "soundcloud": "",
+    "facebook": ""
+  },
+  {
+    "id": "56",
+    "active": "yes",
+    "name": "test man2",
+    "nameNoSpace": "testman2",
+    "category": "Artist",
+    "headerInfo": "dd",
+    "location": "dd",
+    "land": "dd",
+    "flag": "",
+    "artists_text": "dd",
+    "soundcloud": "",
+    "facebook": ""
+  },
+  {
+    "id": "58",
+    "active": "no",
+    "name": "test man3",
+    "nameNoSpace": "testman3",
+    "category": "Artist",
+    "headerInfo": "dd",
+    "location": "dd",
+    "land": "dd",
+    "flag": "",
+    "artists_text": "dd",
+    "soundcloud": "",
+    "facebook": ""
+  }
+]

@@ -74,7 +74,13 @@ const Artists = () => {
             <h4>Artists:</h4>
             <li className={styles.navItems}>
               {sortedList
-                .filter((e) => e.category.toLowerCase() === "artist")
+
+                .filter((e) =>
+                  e.category.toLowerCase() === "artist" && e.active
+                    ? e.active.toLowerCase() === "yes" && e.active != undefined
+                    : ""
+                )
+
                 .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
                   return (
                     <div key={id} className={styles.navItem}>
@@ -116,7 +122,11 @@ const Artists = () => {
             </li>
             <h4>Dj`s:</h4>
             {sortedList
-              .filter((e) => e.category.toLowerCase() === "dj")
+              .filter((e) =>
+                e.category.toLowerCase() === "dj" && e.active
+                  ? e.active.toLowerCase() === "yes" && e.active != undefined
+                  : ""
+              )
               .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
                 return (
                   <div key={id} className={styles.navItem}>
@@ -165,7 +175,11 @@ const Artists = () => {
           </h3>
         </div>
         {sortedList
-          .filter((e) => e.category.toLowerCase() === "artist")
+          .filter((e) =>
+            e.category.toLowerCase() === "artist" && e.active
+              ? e.active.toLowerCase() === "yes" && e.active != undefined
+              : ""
+          )
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
@@ -205,14 +219,18 @@ const Artists = () => {
           <h2>Djs</h2>
 
           <h3>
-            Here you find Psychedelic explorers that got steady flow of power
-            and energy for any event. Going deep and far into the Darkpsy world,
-            try out a set or two from any of our djs:
+            Here you find our Active Psychedelic explorers that got steady flow
+            of power and energy for any event. Going deep and far into the
+            Darkpsy world, try out a set or two from any of our djs:
           </h3>
         </div>
 
         {artist
-          .filter((e) => e.category.toLowerCase() === "dj")
+          .filter((e) =>
+            e.category.toLowerCase() === "dj" && e.active
+              ? e.active.toLowerCase() === "yes" && e.active != undefined
+              : ""
+          )
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
