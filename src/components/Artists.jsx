@@ -75,10 +75,11 @@ const Artists = () => {
             <li className={styles.navItems}>
               {sortedList
 
-                .filter((e) =>
-                  e.category.toLowerCase() === "artist" && e.active
-                    ? e.active === "yes" && e.active != undefined
-                    : ""
+                .filter(
+                  (e) =>
+                    e.category.toLowerCase() === "artist" &&
+                    e.active === "yes" &&
+                    e.active != undefined
                 )
 
                 .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
@@ -122,10 +123,11 @@ const Artists = () => {
             </li>
             <h4>Dj`s:</h4>
             {sortedList
-              .filter((e) =>
-                e.category.toLowerCase() === "dj" && e.active
-                  ? e.active === "yes" && e.active != undefined
-                  : ""
+              .filter(
+                (e) =>
+                  e.category.toLowerCase() === "dj" &&
+                  e.active === "yes" &&
+                  e.active != undefined
               )
               .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
                 return (
@@ -175,10 +177,11 @@ const Artists = () => {
           </h3>
         </div>
         {sortedList
-          .filter((e) =>
-            e.category.toLowerCase() === "artist" && e.active
-              ? e.active === "yes" && e.active != undefined
-              : ""
+          .filter(
+            (e) =>
+              e.category.toLowerCase() === "artist" &&
+              e.active === "yes" &&
+              e.active != undefined
           )
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
@@ -226,10 +229,11 @@ const Artists = () => {
         </div>
 
         {artist
-          .filter((e) =>
-            e.category.toLowerCase() === "dj" && e.active
-              ? e.active === "yes" && e.active != undefined
-              : ""
+          .filter(
+            (e) =>
+              e.category.toLowerCase() === "dj" &&
+              e.active === "yes" &&
+              e.active != undefined
           )
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
