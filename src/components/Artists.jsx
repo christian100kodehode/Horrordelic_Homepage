@@ -77,7 +77,7 @@ const Artists = () => {
 
                 .filter((e) =>
                   e.category.toLowerCase() === "artist" && e.active
-                    ? e.active.toLowerCase() === "yes" && e.active != undefined
+                    ? e.active === "yes" && e.active != undefined
                     : ""
                 )
 
@@ -124,7 +124,7 @@ const Artists = () => {
             {sortedList
               .filter((e) =>
                 e.category.toLowerCase() === "dj" && e.active
-                  ? e.active.toLowerCase() === "yes" && e.active != undefined
+                  ? e.active === "yes" && e.active != undefined
                   : ""
               )
               .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
@@ -177,7 +177,7 @@ const Artists = () => {
         {sortedList
           .filter((e) =>
             e.category.toLowerCase() === "artist" && e.active
-              ? e.active.toLowerCase() === "yes" && e.active != undefined
+              ? e.active === "yes" && e.active != undefined
               : ""
           )
           .map(({ name, id, flag, nameNoSpace }) => {
@@ -228,7 +228,7 @@ const Artists = () => {
         {artist
           .filter((e) =>
             e.category.toLowerCase() === "dj" && e.active
-              ? e.active.toLowerCase() === "yes" && e.active != undefined
+              ? e.active === "yes" && e.active != undefined
               : ""
           )
           .map(({ name, id, flag, nameNoSpace }) => {
