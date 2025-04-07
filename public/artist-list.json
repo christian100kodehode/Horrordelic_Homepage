@@ -585,6 +585,7 @@
   },
   {
     "id": "44",
+    "active": "yes",
     "name": "Evil Scream",
     "nameNoSpace": "EvilScream",
     "category": "Artist",
@@ -598,6 +599,7 @@
   },
   {
     "id": "",
+    "active": "",
     "name": "",
     "nameNoSpace": "",
     "category": "",
@@ -611,6 +613,7 @@
   },
   {
     "id": "",
+    "active": "",
     "name": "",
     "nameNoSpace": "",
     "category": "",

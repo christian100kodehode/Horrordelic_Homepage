@@ -44,7 +44,7 @@
     "id": "58",
     "active": "no",
     "name": "test man3",
-    "nameNoSpace": "testman3",
+    "nameNoSpace": "test  man3",
     "category": "Artist",
     "headerInfo": "dd",
     "location": "dd",
