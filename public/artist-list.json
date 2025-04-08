@@ -163,6 +163,7 @@
   {
     "id": "12",
     "name": "Terashade",
+    "active": "yes",
     "nameNoSpace": "Terashade",
     "category": "artist",
     "headerInfo": "Teratom and Tollkirsche",
