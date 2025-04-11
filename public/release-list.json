@@ -1,5 +1,36 @@
 [
   {
+    "id": "HORD121",
+    "path": "VA_-_The_Dark_Wizards_of_the_Forest",
+    "artist": "VA",
+    "album_name": "The Dark Wizards of the Forest",
+    "land": "\uD83C\uDF10",
+    "release_text": "Horrordelic presents: The Dark Wizards of the Forest – Compiled by Vaidia\n\nStep into the depths of an enchanted forest with The Dark Wizards of the Forest, the new compilation curated by Vaidia. This collection of 10 tracks brings together artists who channel the most mystical and ritualistic essence of sound, blending darkpsy, forest, and hypnotic atmospheres to create a transcendental auditory experience.\n\nFrom tangled rhythms to shadowy soundscapes, each track is a unique incantation, transporting the listener on a journey where the energy of nature and the occult intertwine in mesmerizing frequencies. Carefully selected, Vaidia delivers a portal to sonic dimensions where the ancient and the modern converge in an irresistible spell.\n\nIf you are a lover of deep sounds, psychedelic textures, and sonic rituals,  The Dark Wizards of the Forest is an unmissable odyssey for your collection.",
+    "release_date": "11/April/2025",
+    "credits": "\n\nCompiled and Artowrk by Vaidia\nLayout by Antikriz\nMastered by Krono Audio\nExcept track: 1. aG0Ri TanTriK, 2.OvniVirus 5. Nimbus, 12. Pnakotic Phantasm\nReleased by Horrordelic",
+    "tracklist": [
+      "1. aG0Ri TanTriK - Deep Toasted 146",
+      "2. OvniVirus - Swamp 151",
+      "3. Sound Alchemist - The Main Source 152",
+      "4. Fobiaz - Shaman Vision 153",
+      "5. Holix - Mossy Trails 153",
+      "6. Thoth - Aztec realm 154",
+      "7. Vaidia - Es como un rio 155",
+      "8. Synthergica mechanics - Moontag 155",
+      "9. Dr Tryptamine - Formaldehyde  155",
+      "10. Obsorbo & Psykotropic - Six Meters Underground  155",
+      "11. Transtech - Reflections 154",
+      "12. Pnakotic Phantasm - Time Convolution 160"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-xf3MoG5M_xNPwk6yMgcTJ",
+    "youtube_full_album": "https://youtu.be/k-pdfzx9H9s",
+    "spotify": "https://open.spotify.com/album/3aypCKxONzc5xkI2fsJpxb",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/the-dark-wizards-of-the-forest",
+    "mp3": "https://drive.google.com/file/d/1ugWug9h6HpXbTp-t_E7fBNzKTB_rKkt7/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/19YPoShxkXxa_c1j3GBaAlTeHDnizDSS_/view?usp=drive_link",
+    "flac": "https://drive.google.com/file/d/1dzMU2Tv7on9dOB95eXWYtjgeqckXt__y/view?usp=drive_link"
+  },
+  {
     "id": "HORD120",
     "path": "Nervous_System_A_kaleidoscope_of_incomprehensible_Events",
     "artist": "Nervous System",
