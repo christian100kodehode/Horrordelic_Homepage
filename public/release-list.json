@@ -1,5 +1,29 @@
 [
   {
+    "id": "HORD122",
+    "path": "Dr.Zorg_-_Shamanic_Independance",
+    "artist": "Dr.Zorg",
+    "album_name": "Shamanic Independance",
+    "land": "\uD83C\uDDF7\uD83C\uDDFA",
+    "release_text": "",
+    "release_date": "25/April/2025",
+    "credits": "\n\nMUSIC by Dr.Zorg (Денис Ветров)\nARTWORK by MORCHANT - LAYOUT by ANTIKRIZ\nMASTERING by KRONO AUDIO\nHORRORDELIC 2025",
+    "tracklist": [
+      "1) Trip to Goa 135",
+      "2) Trible 147",
+      "3) I was Mad in Forest 169",
+      "4) HiOlika 183",
+      "5) New Form 190"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298c1lLl-V6EyQsAdwsVjRWG",
+    "youtube_full_album": "https://youtu.be/gS0RyXnFuq8",
+    "spotify": "https://open.spotify.com/album/3raZlzD2gKLDep5liIAdMz",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/shamanic-independance",
+    "mp3": "https://drive.google.com/file/d/1JYL4kEBqpBKePRgDe4x7gCfXVt8bWb6Q/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1qipaB1A1HhncOUZh53vxIhTmAoWXwS1A/view?usp=sharing",
+    "flac": "https://drive.google.com/file/d/1v9l4nNhtJZgDuQ0DTmCC0uFrJ3N05bsm/view?usp=sharing"
+  },
+  {
     "id": "HORD121",
     "path": "VA_-_The_Dark_Wizards_of_the_Forest",
     "artist": "VA",
