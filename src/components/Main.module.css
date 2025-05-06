@@ -4,6 +4,7 @@
   /* background-image: url("../images/triangles1.svg"); */
   background-image: var(--backgroundImage);
   transition: all 0.8s;
+  text-shadow: 0 1px 5px black;
 }
 
 .calenderMobileLink {
@@ -18,7 +19,8 @@
   margin: 0 0 0 0;
   text-decoration: underline var(--accent);
   letter-spacing: 0.15rem;
-  text-shadow: 0 0 10px #50505085;
+  /* text-shadow: 0 0 10px #50505085; */
+  text-shadow: 5px 5px 10px black;
 }
 
 .Container a {
@@ -144,9 +146,9 @@
   align-items: center;
 }
 
-/* .marquee:hover div {
-  animation-play-state:paused;
-} */
+.marquee:hover div {
+  animation-play-state: paused;
+}
 
 .mainLinks {
   border-radius: 10px;

@@ -5,6 +5,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: var(--text-primary);
+  text-shadow: 0 1px 1px black;
 }
 
 .cssFix {
@@ -62,6 +64,8 @@
 .artistHeader {
   display: flex;
   justify-content: space-around;
+  color: var(--text-primary);
+  text-shadow: 0 0 5px black;
 }
 
 .locationContainer {

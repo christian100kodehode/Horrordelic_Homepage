@@ -5,6 +5,11 @@
   cursor: pointer;
 } */
 
+h2 a:hover {
+  color: var(--text-primary);
+  text-shadow: 0 0 10px black;
+}
+
 .artistlistMenu h2 {
   font-family: "megalomaniac";
   font-size: 1.5rem;
@@ -30,6 +35,8 @@
   font-family: "helveticaNeue";
   font-size: 16px;
   letter-spacing: 0.08rem;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px black;
 }
 
 .musicPlayer {
@@ -89,6 +96,8 @@ iframe {
   font-family: "helveticaNeue";
   line-height: 0.5em;
   font-size: 1rem;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px black;
 }
 
 .trackList p:nth-child(1) {

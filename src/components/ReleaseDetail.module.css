@@ -79,6 +79,8 @@ iframe {
   margin: 0 2rem 5rem;
   padding: 3rem 1rem 1rem;
   user-select: none;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px black;
 }
 
 .tracksContainer {
@@ -312,7 +314,6 @@ li {
 }
 .cssFix button:hover {
   background-color: var(--accent);
-  color: white;
   transition: all 0.3s ease-in-out;
 }
 
