@@ -40,16 +40,26 @@
   color: white;
 }
 
+.goToTopButton:hover {
+  background: var(--releaseContainerStreamLinksBg);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 .navbarlinks > a {
   color: var(--text-primary);
-  text-shadow: 0 0 10px #ffffff;
+  text-shadow: 0 0 10px black;
+
   padding-left: 1rem;
   font-family: Megalomaniac, fantasy, serif;
   font-size: 2rem;
 }
 
 .navbarlinks a:hover {
-  color: var(--text-primary-hover);
+  /* color: var(--text-primary-hover);
+   */
+  text-shadow: 0 0 1px #ffffff;
 }
 
 @media (max-width: 900px) {

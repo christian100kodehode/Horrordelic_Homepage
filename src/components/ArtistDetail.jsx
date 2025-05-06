@@ -227,15 +227,18 @@ const ArtistDetail = () => {
                           e.release_text
                             .toString()
                             .replace(/\s/g, "")
-                            .includes(nameNoSpace) ||
+                            .toLowerCase()
+                            .includes(nameNoSpace.toLowerCase()) ||
                           e.credits
                             .toString()
                             .replace(/\s/g, "")
-                            .includes(nameNoSpace) ||
+                            .toLowerCase()
+                            .includes(nameNoSpace.toLowerCase()) ||
                           e.tracklist
                             .toString()
                             .replace(/\s/g, "")
-                            .includes(nameNoSpace)
+                            .toLowerCase()
+                            .includes(nameNoSpace.toLowerCase())
                       )
                       .map(
                         ({

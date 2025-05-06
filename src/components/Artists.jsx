@@ -48,7 +48,7 @@ const Artists = () => {
 
   // Sort the list alphabetically
   let sortedList = artist.sort((a, b) => a.name.localeCompare(b.name));
-
+  console.log(sortedList);
   return (
     <main className={styles.container}>
       <div className={styles.artistList}>

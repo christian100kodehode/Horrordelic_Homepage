@@ -4,7 +4,7 @@
   background: var(--backgroundImage);
   background-size: cover;
   background-repeat: no-repeat;
- background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .cssFix {
@@ -80,13 +80,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
 
-  }
-
-  .djMixElements {
-    margin: 0.7em;
-    transition: all 1s ease-in-out;
-  }
+.djMixElements {
+  margin: 0.7em;
+  transition: all 1s ease-in-out;
+}
 
 .thumbNailImageMix {
   border-radius: 20px;
@@ -99,7 +98,7 @@
   font-family: "01digitall";
   /* color: var(--text-primary);
    */
-   color: white;
+  color: white;
   font-weight: bolder;
   margin-bottom: -3em;
   letter-spacing: 0.1em;
@@ -114,7 +113,7 @@
   font-family: "01digitall";
   /* color: var(--text-primary);
    */
-   color: white;
+  color: white;
   font-weight: lighter;
   margin-bottom: 0;
   letter-spacing: 0.1em;
@@ -125,24 +124,24 @@
 }
 
 .artistText p {
-  font-family: "helveticaNeue";
-  font-size: 1rem;
+  font-family: "megalomaniac";
+  font-size: 3rem;
   color: var(--text-primary);
 }
 
 .artistText p:nth-child(1) {
-  font-size: 1.5rem;
-}
+  font-size: 2rem;
+  font-family: "01digitall";
+  font-weight: bolder;
 
-.artistText p:nth-child(1) {
-  font-size: 1.2rem;
+  letter-spacing: 0.1em;
 }
 
 .artistText {
   background-color: var(--releaseContainerReadMoreBg);
   max-width: 800px;
   margin: auto;
-  padding: 1em;
+  padding: 2em;
   border-radius: 20%;
 }
 
@@ -180,7 +179,6 @@
   border: var(--text-primary) 1px solid;
   border-radius: 20px;
   cursor: pointer;
-
 }
 .streamLinks img {
   padding: 0.2rem;
@@ -213,20 +211,19 @@
   padding: 0.2em;
   color: white;
   background-color: var(--accentTransp);
-  
 }
 
 .footerBackLink {
- /* background-color: blue; */
- padding: 3em;
- margin: 0;
+  /* background-color: blue; */
+  padding: 3em;
+  margin: 0;
 }
 
 .yearInfo {
   position: relative;
   top: 50%;
   height: 2em;
-   display: flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: end;
@@ -235,41 +232,37 @@
   z-index: 10;
 }
 
-.yearInfo p:nth-child(2){
-   padding: 0.3rem;
-    font-family: "megalomaniac";
+.yearInfo p:nth-child(2) {
+  padding: 0.3rem;
+  font-family: "megalomaniac";
   font-size: 1.4rem;
   color: black;
   background-color: var(--releaseContainerStreamLinksBg);
   border: var(--text-primary) 1px solid;
   border-radius: 10px;
   color: white;
-  
 }
 
-
-.yearInfo p:nth-child(1){
+.yearInfo p:nth-child(1) {
   padding: 0.1em 0.5em;
-   font-family: "megalomaniac";
+  font-family: "megalomaniac";
   font-size: 1.3rem;
   margin-bottom: 6em;
   margin-right: 85%;
   color: black;
   /* background-color: var(--releaseContainerStreamLinksBg); */
-background-color: black;
+  background-color: black;
   border: black 1px solid;
   border-radius: 10px;
   color: white;
 }
 
-.djMixes  {
-  transition: transform .2s;
-
+.djMixes {
+  transition: transform 0.2s;
 }
 
 .djMixElements:hover {
   transform: scale(1.2);
-
 }
 
 @media (max-width: 785px) {
@@ -358,7 +351,5 @@ background-color: black;
 
   .yearInfo p {
     font-size: 1em;
-    
   }
-
 }

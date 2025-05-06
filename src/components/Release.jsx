@@ -158,7 +158,7 @@ const Release = () => {
 
   const mobileYear = mobileOptions[indexMenu];
   // console.log(mobileYear);
-  console.log(isSelected);
+  // console.log(isSelected);
 
   const options = [
     { label: "2025", value: "2025" },
@@ -270,7 +270,7 @@ const Release = () => {
             >
               {/* {console.log(release_date.length)} */}
               {/* {console.log(i)} */}
-              {console.log(album_name)}
+              {/* {console.log(album_name)} */}
               {/* {console.log(release_date)} */}
               {!release_date.length <= 4 ? (
                 <a
