@@ -134,7 +134,7 @@
 }
 
 .artistText p:nth-child(1) {
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: "01digitall";
   font-weight: bolder;
 
@@ -282,6 +282,10 @@
 @media (max-width: 570px) {
   .appearsOnSection {
     padding-bottom: 0;
+  }
+
+  .artistText {
+    font-size: 0.8em;
   }
 
   /* .appearsOnSection h1 {
