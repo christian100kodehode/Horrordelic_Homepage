@@ -257,11 +257,10 @@ iframe {
   display: none;
 }
 .navMenuActive {
-  position: absolute;
+  position: sticky;
   /* display: contents; */
   /* left: 0;
   top: 195px; */
-
   /* flex-direction: row; */
   background-color: var(--accent);
   border: solid 2px black;
@@ -297,6 +296,7 @@ iframe {
   /* padding: 1rem; */
   /* padding: 0; */
   margin: 0;
+
   /* letter-spacing: 80%; */
 
   font-size: 0.68em;
@@ -331,7 +331,7 @@ iframe {
 .leftReleaseMenuBox p {
   line-height: 110%;
   display: block;
-  margin: 0.3rem 0 0 2rem;
+  margin: 0.3rem 0 0 0.8rem;
 }
 
 .leftHeaderBox {
@@ -642,6 +642,16 @@ li {
 
 .videoRatio button {
   background-color: black;
+}
+
+@media (max-width: 600px) {
+  .navMenuActive {
+    position: sticky;
+  }
+
+  .leftReleaseMenuBox p {
+    padding-left: 10%;
+  }
 }
 
 @media (max-width: 468px) {
