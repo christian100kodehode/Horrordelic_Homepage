@@ -129,8 +129,11 @@
 }
 
 .artistsContainer a:hover {
-  color: var(--text-primary-transparent);
-  border-radius: 20%;
+  /* color: var(--text-primary-transparent); */
+  /* color: var(--releaseContainerStreamLinksBg); */
+  text-decoration: white underline;
+  text-shadow: 0 1px 5px black;
+  /* border-radius: 20%; */
 }
 
 .categoryHeader {
