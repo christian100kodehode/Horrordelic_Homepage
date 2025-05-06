@@ -168,7 +168,7 @@ iframe {
   /* position: absolute; */
   padding: 1rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 
   /* width: 12vw; */
   height: 2em;
@@ -185,12 +185,13 @@ iframe {
 }
 
 .hamburgerMenu svg {
-  padding-left: 2vw;
+  /* padding-left: 2vw; */
 }
 
 .hamburgerMenu:hover {
-  background-color: var(--accent);
-  /* height: 2.5rem; */
+  /* background-color: var(--accent); */
+  text-shadow: 0 1px 10px black;
+  /* height: 2.5rem */
   cursor: pointer;
 }
 
@@ -257,7 +258,8 @@ iframe {
   display: none;
 }
 .navMenuActive {
-  position: sticky;
+  position: absolute;
+  left: 20%;
   /* display: contents; */
   /* left: 0;
   top: 195px; */
