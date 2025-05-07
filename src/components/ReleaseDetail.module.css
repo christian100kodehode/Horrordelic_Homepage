@@ -8,6 +8,7 @@ h2 a {
   font-size: 1.5rem;
   /* padding: 0.5rem; */
   color: white;
+  padding-bottom: 0.5em;
 }
 
 .artistAppearing a:hover {
