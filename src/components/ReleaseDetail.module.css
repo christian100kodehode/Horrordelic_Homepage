@@ -6,8 +6,7 @@ h2 a {
 .artistAppearing {
   font-family: "01Digitall";
   font-size: 1.5rem;
-  padding: 0.5rem;
-  margin: 0;
+  /* padding: 0.5rem; */
   color: white;
 }
 
@@ -76,8 +75,8 @@ iframe {
   background: var(--releaseContainerBg);
   color: white;
   min-width: 90%;
-  margin: 0 2rem 5rem;
-  padding: 3rem 1rem 1rem;
+  /* margin: 0 2rem 5rem; */
+  padding-top: 3em;
   user-select: none;
   color: var(--text-primary);
   text-shadow: 0 0 10px black;
@@ -130,9 +129,10 @@ iframe {
 
 .heading {
   color: white;
-  padding: 0 2rem;
+  /* padding: 0.5em 0; */
   display: flex;
   justify-content: center;
+  margin: 1em 0 0 0;
 }
 
 .headingright {
@@ -437,7 +437,7 @@ li {
 
   .releaseContainer {
     padding: 2.5rem 0;
-    margin: 2rem 1rem 0;
+    margin-top: 2rem;
     min-width: none;
   }
 
