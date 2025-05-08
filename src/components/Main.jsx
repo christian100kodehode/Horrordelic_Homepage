@@ -3,7 +3,7 @@ import styles from "./Main.module.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 // Import images
 import HorrordelicLogo from "../images/horrordelic.jpg";
-import HorrordelicSantaLogo from "../images/HorrordelicSantaLogo.png";
+// import HorrordelicSantaLogo from "../images/HorrordelicSantaLogo.png";
 // Import Components/Hooks
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";

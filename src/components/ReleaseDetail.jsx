@@ -101,7 +101,7 @@ const ReleaseDetail = () => {
   }, []);
 
   // TESTING
-  function MyComponentTest({ credits, list }) {
+  function getLastWordCap({ credits, list }) {
     // Ensure credits is a string, fallback to empty string if undefined
     const text = credits || "";
 
@@ -148,7 +148,7 @@ const ReleaseDetail = () => {
   // }, []);
 
   const params = useParams();
-  // console.log(params);
+  console.log(params);
   // Test for search through tracklist!!
   // let artistAppears = album.filter(function (e) {
   //   return e.credits.indexOf(name.split(" ")[0]) >= 0;
@@ -159,6 +159,7 @@ const ReleaseDetail = () => {
   // TEST
   return (
     <main className={styles.container}>
+      {console.log("Release detail")}
       {/* Map release data abd filter each year selected by user */}
       {album
         .filter((e) => e.path === params.path)
@@ -181,7 +182,7 @@ const ReleaseDetail = () => {
             release_date,
             youtube_full_album,
           }) => {
-            const lastWordCap = MyComponentTest({ credits });
+            const lastWordCap = getLastWordCap({ credits });
 
             return (
               <article
@@ -193,6 +194,7 @@ const ReleaseDetail = () => {
                 }
               >
                 {/* {console.log(filteredAlbum)} */}
+
                 <div className={styles.releaseName}>
                   {/* <HashLink smooth to={"/release#" + path}> */}
                   {/* <Link to={`/Release/${path}`}> */}
@@ -225,7 +227,6 @@ const ReleaseDetail = () => {
                       );
                     })}
                 </div>
-
                 <div className={styles.tracksContainer}>
                   <div className={styles.musicPlayer}>
                     <div className={styles.youtubeContainer}>

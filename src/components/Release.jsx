@@ -202,6 +202,7 @@ const Release = () => {
 
   return (
     <main className={styles.container}>
+      {console.log("Release page")}
       {/* Optional Loading message */}
       {/* <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}

@@ -48,13 +48,24 @@ function App() {
           </button>
         </div>
         <Routes>
-          <Route exact path="/" element={<Main />} />
-          <Route exact path="/Artists/" element={<Artists />} />
-          <Route exact path="Release" element={<Release />} />
-          <Route exact path="ReleaseAndEvents" element={<ReleaseAndEvents />} />
-          <Route path="/Artist/:id" element={<ArtistDetail />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/Artists" element={<Artists />} />
+
+          <Route path="/Release" element={<Release />} />
+          {/* {/* <Route path="/Releases" element={<Release />} /> */}
           <Route path="/Release/:path" element={<ReleaseDetail />} />
-          <Route exact path="*" element={<Main />} />
+          <Route path="/Artist/:id" element={<ArtistDetail />} />
+          {/* <Route path="/Release/*" element={<Release />} />
+          <Route path="/Releases/*" element={<Release />} /> */}
+          {/* <Route path="Releases/*" element={<Release />} /> */}
+          <Route path="/Artist/*" element={<Main />} />
+          <Route path="/Release/test" element={<Main />} />
+
+          {/* <Route path="Release/*" element={<Main />} /> */}
+          <Route path="/*" element={<Main />} />
+          {/* <Route path="/Release/*" element={<Release />} /> */}
+          {/* <Route path="ReleaseAndEvents" element={<ReleaseAndEvents />} /> */}
+          {/* <Route exact path="/*" element={<Main />} /> */}
           {/* <Route exact path="/Release/*" element={<Release />} /> */}
         </Routes>
       </div>

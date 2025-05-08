@@ -1,5 +1,28 @@
 [
   {
+    "id": "HORD123",
+    "path": "Marte_-_Darkness_Within",
+    "artist": "Marte",
+    "album_name": "Darkness Within",
+    "land": "\uD83C\uDDE7\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly presents Darkness Within, the debut EP from Brazilian artist Marte, aka Arthur Martins.\n\nHailing from Belém do Pará, Marte pours his passion for the mysterious and experimental into his music. He blends vibrant, atmospheric vibes with a unique melodic style, creating soundscapes that ripple across the airwaves.\n\nWhile this may be his first solo EP, Marte’s talent has already shone through in multiple releases, proving he’s a rising force here to make a lasting impact.",
+    "release_date": "08/May/2025",
+    "credits": "\n\nMUSIC and CONCEPT ART by Arthur Martins aka MARTE\n\nLAYOUT by ANTIKRIZ\n\nMASTERING by KRONO AUDIO",
+    "tracklist": [
+      "1. Cybertribal 180",
+      "2. Alone In The Dark 180",
+      "3. Star Providence 180",
+      "4. For The D3ad 180"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299rJqQC1n4mkgFwBb60yDzz",
+    "youtube_full_album": "https://www.youtube.com/watch?v=RjxpL-b2GcI",
+    "spotify": "https://open.spotify.com/album/6OxXJvnFKXam2hUKlFsQ0H",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/darkness-within",
+    "mp3": "https://drive.google.com/file/d/1xl7kOhN-7fhGhpyaUgHTW7OcM91225IB/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/1FIscFxP9782yLWGPDayGuHc8ayacTR94/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD124",
     "path": "VA_-_Take_Me_Home_Mother_of_Datura_Tribute",
     "artist": "VA",
