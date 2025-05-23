@@ -268,7 +268,55 @@ const Artists = () => {
             );
           })}
       </div>
+      {/* Show epcial series and such grouped together  */}
+      <div className={styles.categoryHeader}>
+        <h3>
+          Here you find some of our special series and themed releases, grouped
+          together:
+        </h3>
+      </div>
 
+      <div className={styles.artistList}>
+        {artist
+          .filter(
+            (e) =>
+              e.category.toLowerCase() === "special" &&
+              e.active === "yes" &&
+              e.active != undefined
+          )
+          .map(({ name, id, nameNoSpace }) => {
+            return (
+              <div key={id} className={styles.artistsContainer}>
+                <Link to={`/Artist/${nameNoSpace}`}>
+                  <LazyLoadImage
+                    className={styles.thumbNailImage}
+                    // Remove space in name, picture have to have to have no spaces
+                    src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
+                    // height={"40vh"}
+                    // width={"40vh"}
+                    alt={name}
+                    title={name}
+                    effect="blur"
+                    placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
+                  />
+
+                  <h2
+                    className={styles.artistHeader}
+                    style={
+                      name.length >= 9
+                        ? { fontSize: "1em" }
+                        : { fontSize: "1.5em" }
+                    }
+                  >
+                    {/* {console.log(name.length)} */}
+                    {name.replace(/_+/g, " ")}
+                  </h2>
+                  <span className={styles.land}></span>
+                </Link>
+              </div>
+            );
+          })}
+      </div>
       <h2 className={styles.footerBackLink}>
         <HashLink smooth to={"#"}>
           Go to top of Page
