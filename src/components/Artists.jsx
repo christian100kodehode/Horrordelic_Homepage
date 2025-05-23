@@ -268,15 +268,17 @@ const Artists = () => {
             );
           })}
       </div>
-      {/* Show epcial series and such grouped together  */}
-      <div className={styles.categoryHeader}>
-        <h3>
-          Here you find some of our special series and themed releases, grouped
-          together:
-        </h3>
-      </div>
 
       <div className={styles.artistList}>
+        {/* Show epcial series and such grouped together  */}
+
+        <div className={styles.categoryHeader}>
+          <h2>Specials:</h2>
+          <h3>
+            Here you find some of our special series and themed releases,
+            grouped together:
+          </h3>
+        </div>
         {artist
           .filter(
             (e) =>
@@ -311,7 +313,6 @@ const Artists = () => {
                     {/* {console.log(name.length)} */}
                     {name.replace(/_+/g, " ")}
                   </h2>
-                  <span className={styles.land}></span>
                 </Link>
               </div>
             );
