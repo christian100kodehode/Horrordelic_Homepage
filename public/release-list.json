@@ -1,5 +1,38 @@
 [
   {
+    "id": "HORD126",
+    "path": "VA_-_Restless_Nightmares",
+    "artist": "VA",
+    "album_name": "Restless Nightmares",
+    "land": "\uD83C\uDF10",
+    "release_text": "Horrordelic proudly presents VA: Restless Nightmares, a 14 track compilation compiled By Morchant (Norway). Featuring all underground darkpsy artists stuck in the Silent Hill underworld.\n\nJoin us on this forth chapter through the unknown and strange world we travel through in our lives.\n\nDay by day we walk inside our minds and feelings.",
+    "release_date": "",
+    "credits": "\n\nCOMPILED and ARTWORK by MORCHANT\n\nLAYOUT by ANTIKRIZ\n\nMASTERING by KRONO AUDIO ",
+    "tracklist": [
+      "01. Vaidia - You Heard that 155",
+      "02. Dr Tryptamine - Funeral Fog 160",
+      "03. Kuroobi - The Monster Inside me 170",
+      "04. Portal Distortion - Playful Nightmare 168",
+      "05. Catronomix - Quite Hillish 185",
+      "06. Odoxis - False Awakening 192.8",
+      "07. Psycholouis - Lost Silent Souls 205",
+      "08. Multypolar - Sangre de mi Sangre 210",
+      "09. Alumbra - Triangular Problems 210",
+      "10. Dr.Zorg - Silent Hill 160",
+      "11. A_P_E_P - Silent Bill 165",
+      "12. Psykotropic & Obsorbo - Silent Pleasure 186",
+      "13. Necromorph Project - Taking a Step Back 220",
+      "14. MaNooB - Survival to Silent Hill 256"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-7cLu2oQX_i0QaVhJtH5CF",
+    "youtube_full_album": "https://youtu.be/LLaZlHXV4X0",
+    "spotify": "https://open.spotify.com/album/6znBXSASv9jdWjJEo7qUE3",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/restless-nightmares",
+    "mp3": "https://drive.google.com/file/d/1bEcxER3NR-kepMeptw6INab4TPtQkDSM/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/16wtkMwfe3bj8yAlmOpsDq3x5GgUhhIjz/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD123",
     "path": "Marte_-_Darkness_Within",
     "artist": "Marte",
