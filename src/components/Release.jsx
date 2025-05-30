@@ -378,7 +378,7 @@ const Release = () => {
                           >
                             <div className={styles.thumbnailContainer}>
                               <LazyLoadImage
-                                className={styles.thumbNailImage}
+                                className={styles.thumbNailImageMenu}
                                 src={
                                   "https://img.youtube.com/vi/" +
                                   youtube_full_album.slice(-11) +
@@ -443,7 +443,7 @@ const Release = () => {
               <Link to={`/Release/${path}`}>
                 <p className={styles.heading}>
                   🔗 &nbsp;{artist}:&nbsp;{album_name}
-                  <span>{land}</span>
+                  <span className={styles.headingLand}>{land}</span>
                 </p>
               </Link>
 

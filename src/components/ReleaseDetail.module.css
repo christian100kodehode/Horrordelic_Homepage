@@ -325,6 +325,7 @@ li {
 
 .thumbNailImage {
   width: 100%;
+  transform: scale(1.7) translate(0, 5%);
 }
 
 .playIcon {
