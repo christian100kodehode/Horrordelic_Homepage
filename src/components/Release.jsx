@@ -382,7 +382,7 @@ const Release = () => {
                                 src={
                                   "https://img.youtube.com/vi/" +
                                   youtube_full_album.slice(-11) +
-                                  "/maxresdefault.jpg"
+                                  "/hqdefault.jpg"
                                 }
                                 effect="blur"
                                 alt={album_name}
@@ -474,7 +474,7 @@ const Release = () => {
                                 src={
                                   "https://img.youtube.com/vi/" +
                                   youtube_full_album.slice(-11) +
-                                  "/maxresdefault.jpg"
+                                  "/hqdefault.jpg"
                                 }
                                 effect="blur"
                                 alt={album_name}

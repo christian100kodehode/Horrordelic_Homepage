@@ -421,15 +421,16 @@ li {
 }
 
 @media (max-width: 468px) {
+  .videoRatio {
+    height: auto;
+  }
   .thumbNailImage {
     transform: scale(1.5) translate(0, 10%);
   }
   .mobileMenu {
     grid-template-columns: 20% 60% 20%;
   }
-  .heading {
-    justify-content: space-between;
-  }
+
   .yearSelector {
     flex-direction: column;
     justify-content: center;

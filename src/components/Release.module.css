@@ -6,7 +6,7 @@
 } */
 
 .thumbNailImageMenu {
-  transform: scale(1) translate(0, 0%);
+  transform: scale(1.4) translate(0, 0%);
 }
 
 .headingLand {
@@ -217,6 +217,7 @@ iframe {
   padding-right: 0.5rem;
   margin-bottom: 0.4rem;
   border: 2px black solid;
+  overflow: hidden;
 }
 
 .navItem:hover {
@@ -671,7 +672,7 @@ li {
 
 @media (max-width: 468px) {
   .headingLand {
-    padding-left: 0, 4em;
+    /* padding-left: 0.1em; */
   }
 
   .thumbNailImage {
