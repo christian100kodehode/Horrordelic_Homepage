@@ -656,6 +656,10 @@ li {
 }
 
 @media (max-width: 600px) {
+  .videoRatio {
+    height: auto;
+  }
+
   .navMenuActive {
     position: sticky;
   }
@@ -666,9 +670,13 @@ li {
 }
 
 @media (max-width: 468px) {
+  .headingLand {
+    padding-left: 0, 4em;
+  }
+
   .thumbNailImage {
     width: 100%;
-    transform: scale(2.5) translate(0, 7%);
+    transform: scale(1.8) translate(0, 12%);
   }
 
   .land {
@@ -692,8 +700,11 @@ li {
   .mobileMenu {
     grid-template-columns: 20% 60% 20%;
   }
+
   .heading {
-    justify-content: space-between;
+    padding: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.1px;
   }
   .yearSelector {
     flex-direction: column;
@@ -749,6 +760,11 @@ li {
 }
 
 @media (max-width: 323px) {
+  .thumbNailImage {
+    width: 100%;
+    transform: scale(1.9) translate(0, 12%);
+  }
+
   .inProgress {
     height: 105vh;
   }
@@ -763,13 +779,6 @@ li {
 
   .readMoreText {
     padding: 0.1rem;
-  }
-
-  .heading {
-    padding: 0;
-    flex-direction: column;
-    font-size: 1.8rem;
-    letter-spacing: 0.1px;
   }
 
   iframe {
