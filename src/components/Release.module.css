@@ -560,7 +560,7 @@ li {
 
 .thumbNailImage {
   width: 100%;
-  transform: scale(1.7) translate(0, 5%);
+  transform: scale(1.4) translate(0, 8%);
 }
 
 .playIcon {
@@ -676,7 +676,7 @@ li {
 
   .thumbNailImage {
     width: 100%;
-    transform: scale(1.8) translate(0, 12%);
+    transform: scale(1.5) translate(0, 10%);
   }
 
   .land {
