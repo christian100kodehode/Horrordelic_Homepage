@@ -218,6 +218,7 @@ iframe {
   margin-bottom: 0.4rem;
   border: 2px black solid;
   overflow: hidden;
+  background-size: 400px;
 }
 
 .navItem:hover {

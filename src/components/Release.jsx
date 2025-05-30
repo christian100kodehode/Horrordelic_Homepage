@@ -339,7 +339,7 @@ const Release = () => {
                           backgroundImage: `url(${
                             "https://img.youtube.com/vi/" +
                             youtube_full_album.slice(-11) +
-                            "/hqdefault.jpg"
+                            "/maxresdefault.jpg"
                           })`,
                           backgroundPosition: "center",
                         }}
