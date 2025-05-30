@@ -200,7 +200,7 @@ const ReleaseDetail = () => {
                   {/* <Link to={`/Release/${path}`}> */}
                   <p className={styles.heading}>
                     &nbsp;{artist}:&nbsp;{album_name}
-                    <span>{land}</span>
+                    <span className={styles.headingLand}>{land}</span>
                   </p>
 
                   {list
