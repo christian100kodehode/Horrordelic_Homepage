@@ -1,5 +1,27 @@
 [
   {
+    "id": "HORD125",
+    "path": "Evil_Scream_-_Thorns_of_Abyss",
+    "artist": "Evil Scream",
+    "album_name": "Thorns of Abyss",
+    "land": "\uD83C\uDDE7\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly presents the debut EP from Evil Scream (Brasil) named Thorns of the Abyss.\n\nFrom the depths of a hellish delirium comes Thorns of the Abyss, the new Darkpsy EP that tears the limits of perception with dense atmospheres, visceral textures and beats that echo like screams in an eternal abyss.\n\nPrepare to cross the membrane of reality and awaken what sleeps in the shadows.",
+    "release_date": "30/May/2025",
+    "credits": "\n\nMusic and art by Evil Scream\nLayout by Antikriz\nMastering by Krono Audio\n\nHorrordelic 2025",
+    "tracklist": [
+      "1. Evil Scream - Adrenochrome 220",
+      "2. Evil Scream - Mask Falling 180",
+      "3. Evil Scream - Rotten Kiss 190"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-Lww9sxd5i54SnDSeyqA-4",
+    "youtube_full_album": "https://youtu.be/Pics5Wh8wBQ",
+    "spotify": "",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/thorns-of-abyss",
+    "mp3": "https://drive.google.com/file/d/1Feu4dDXj-jh19gZ6zR4EJvUUfRsMB7Js/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1YyWoycpFFtXo1bznMQSepjqye5P5Z41E/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD126",
     "path": "VA_-_Restless_Nightmares",
     "artist": "VA",
