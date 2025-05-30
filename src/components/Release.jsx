@@ -474,7 +474,7 @@ const Release = () => {
                                 src={
                                   "https://img.youtube.com/vi/" +
                                   youtube_full_album.slice(-11) +
-                                  "/hqdefault.jpg"
+                                  "/maxresdefault.jpg"
                                 }
                                 effect="blur"
                                 alt={album_name}
