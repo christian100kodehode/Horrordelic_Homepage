@@ -213,127 +213,156 @@ const ArtistDetail = () => {
               {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))} */}
                     {/* {console.log(album.filter((e) => e.tracklist.includes(name.split(" "))))} */}
                   </div>
-                  <div className={styles.appearsOnSection}>
+                  <div className={styles.appearsOnSectionHeader}>
                     <h1>Appears on:</h1>
                   </div>
                   <div>
                     {/* Filter on first name before whitespace + show these compiled albums*/}
-                    <div className={styles.appearsOnSection}></div>
-                    {album
-                      .filter(
-                        (e) =>
-                          // e.release_text.includes(name.split(" ")[0])
-                          //  ||
-                          e.release_text
-                            .toString()
-                            .replace(/\s/g, "")
-                            .toLowerCase()
-                            .includes(nameNoSpace.toLowerCase()) ||
-                          e.credits
-                            .toString()
-                            .replace(/\s/g, "")
-                            .toLowerCase()
-                            .includes(nameNoSpace.toLowerCase()) ||
-                          e.tracklist
-                            .toString()
-                            .replace(/\s/g, "")
-                            .toLowerCase()
-                            .includes(nameNoSpace.toLowerCase())
-                      )
-                      .map(
-                        ({
-                          album_name,
-                          youtube_full_album,
-                          youtube_playlist_embed,
-                          spotify,
-                          bandcamp,
-                          mp3,
-                          wav,
-                          flac,
-                          artist,
-                          path,
-                        }) => {
-                          return (
-                            <div
-                              className={styles.appearsOnSection}
-                              key={album_name}
-                            >
-                              {/* {console.log(name.replace(/\s/g, ""))} */}
-                              {/* Check if artists or dj, change text accordingly */}
-                              {/* {album.release_text.includes(name.split(" ")[0]) + album.credits.includes(name.split(" ")[0]) ? <h1>Albums:</h1> : ""} */}
-                              <a
-                                href={"https://horrordelic.com/release/" + path}
-                                target="_self"
-                                // rel="noreferrer"
+                    <div className={styles.appearsOnSectionContain}>
+                      {album
+                        .filter(
+                          (e) =>
+                            // e.release_text.includes(name.split(" ")[0])
+                            //  ||
+                            e.release_text
+                              .toString()
+                              .replace(/\s/g, "")
+                              .toLowerCase()
+                              .includes(nameNoSpace.toLowerCase()) ||
+                            e.credits
+                              .toString()
+                              .replace(/\s/g, "")
+                              .toLowerCase()
+                              .includes(nameNoSpace.toLowerCase()) ||
+                            e.tracklist
+                              .toString()
+                              .replace(/\s/g, "")
+                              .toLowerCase()
+                              .includes(nameNoSpace.toLowerCase())
+                        )
+                        .map(
+                          ({
+                            album_name,
+                            youtube_full_album,
+                            youtube_playlist_embed,
+                            spotify,
+                            bandcamp,
+                            mp3,
+                            wav,
+                            flac,
+                            artist,
+                            path,
+                          }) => {
+                            return (
+                              <div
+                                className={
+                                  path.length <= 30
+                                    ? styles["appearsOnSection"]
+                                    : styles["appearsOnSectionLong"]
+                                }
+                                key={album_name}
                               >
-                                <p className={styles.albumReleaseNameStream}>
-                                  {artist}: {album_name}
-                                </p>
-                                <LazyLoadImage
-                                  className={styles.thumbNailImage}
-                                  src={
-                                    "https://img.youtube.com/vi/" +
-                                    youtube_full_album.slice(-11) +
-                                    "/hqdefault.jpg"
+                                {/* {console.log(name.replace(/\s/g, ""))} */}
+                                {/* Check if artists or dj, change text accordingly */}
+                                {/* {album.release_text.includes(name.split(" ")[0]) + album.credits.includes(name.split(" ")[0]) ? <h1>Albums:</h1> : ""} */}
+
+                                <a
+                                  href={
+                                    "https://horrordelic.com/release/" + path
                                   }
-                                  effect="blur"
-                                  alt={album_name}
-                                />
-                              </a>
-                              <div className={styles.streamLinks}>
-                                <a
-                                  href={bandcamp}
-                                  target="_blank"
-                                  rel="noreferrer"
+                                  target="_self"
+                                  // rel="noreferrer"
                                 >
-                                  <img src={bandCampLogo} alt="Bandcamp Link" />
+                                  <p className={styles.albumReleaseNameStream}>
+                                    {artist}: {album_name}
+                                  </p>
+                                  <LazyLoadImage
+                                    className={styles.thumbNailImage}
+                                    src={
+                                      "https://img.youtube.com/vi/" +
+                                      youtube_full_album.slice(-11) +
+                                      "/hqdefault.jpg"
+                                    }
+                                    effect="blur"
+                                    alt={album_name}
+                                  />
                                 </a>
-                                {spotify ? (
+                                <div className={styles.streamLinks}>
                                   <a
-                                    href={spotify}
+                                    href={bandcamp}
                                     target="_blank"
                                     rel="noreferrer"
                                   >
-                                    <img src={spotifyLogo} alt="Spotify Link" />
+                                    <img
+                                      src={bandCampLogo}
+                                      alt="Bandcamp Link"
+                                    />
                                   </a>
-                                ) : (
-                                  ""
-                                )}
+                                  {spotify ? (
+                                    <a
+                                      href={spotify}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                    >
+                                      <img
+                                        src={spotifyLogo}
+                                        alt="Spotify Link"
+                                      />
+                                    </a>
+                                  ) : (
+                                    ""
+                                  )}
 
-                                <a
-                                  href={youtube_playlist_embed}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                >
-                                  <img src={youtubeLogo} alt="Youtube Link" />
-                                </a>
-                                <a href={mp3} target="_blank" rel="noreferrer">
-                                  <p>MP3</p>
-                                </a>
-                                <a href={wav} target="_blank" rel="noreferrer">
-                                  <p>WAV</p>
-                                </a>
-                                {flac ? (
                                   <a
-                                    href={flac}
+                                    href={youtube_playlist_embed}
                                     target="_blank"
                                     rel="noreferrer"
                                   >
-                                    <p>FLAC</p>
+                                    <img src={youtubeLogo} alt="Youtube Link" />
                                   </a>
-                                ) : (
-                                  ""
-                                )}
+                                  <a
+                                    href={mp3}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <p>MP3</p>
+                                  </a>
+                                  <a
+                                    href={wav}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <p>WAV</p>
+                                  </a>
+                                  {flac ? (
+                                    <a
+                                      href={flac}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                    >
+                                      <p>FLAC</p>
+                                    </a>
+                                  ) : (
+                                    ""
+                                  )}
+                                </div>
                               </div>
-                            </div>
-                          );
-                        }
-                      )}
-                    <div className={styles.appearsOnSection}>
-                      {category.toLowerCase() === "dj" ? <h1>Mixes:</h1> : ""}
-                    </div>
+                            );
+                          }
+                        )}
 
-                    <div className={styles.djMixes}>
+                      <div className={styles.appearsOnSectionHeader}>
+                        {category.toLowerCase() === "dj" ? <h1>Mixes:</h1> : ""}
+                      </div>
+                      <div>
+                        {" "}
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                      </div>
+
+                      <div className={styles.djMixes}></div>
                       {/* {mix
 .filter((e) => e.name.toLowerCase() === name.toLowerCase())
 // .sort((a, b) => b.year - a.year)

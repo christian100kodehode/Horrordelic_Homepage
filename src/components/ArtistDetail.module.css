@@ -9,6 +9,39 @@
   text-shadow: 0 1px 1px black;
 }
 
+.appearsOnSectionContain {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.appearsOnSection:hover {
+  transform: scale(1.05);
+}
+
+.appearsOnSectionLong:hover {
+  transform: scale(1.05);
+}
+
+.appearsOnSectionHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  background-color: var(--releaseContainerHeaderBg);
+  font-family: "01digitall";
+  /* color: var(--text-primary);
+   */
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
 .cssFix {
   white-space: pre-wrap;
   padding: 0 0.5em;
@@ -111,6 +144,7 @@
 
 .artistHeader h2,
 .artistHeader h1,
+.appearsOnSectionLong p,
 .appearsOnSection p,
 .locationContainer h2,
 .locationContainer h3 {
@@ -157,6 +191,40 @@
   padding-bottom: 2em;
   position: relative;
   margin-bottom: 3em;
+  padding: 1em;
+  text-shadow: 0 0 10px black;
+}
+
+.streamLinks p {
+  font-size: 16px;
+}
+
+.appearsOnSectionLong {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  position: relative;
+  margin-bottom: 3em;
+  padding: 1em;
+  /* letter-spacing: 0; */
+  text-shadow: 0 0 10px black;
+}
+
+.appearsOnSectionLong :nth-child(1) p {
+  /* color: red; */
+  padding: 0 2.2em;
+  font-size: 1.2em;
+  max-width: 30ch;
+  word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.appearsOnSectionLong :nth-child(2) p {
+  padding: 0 0.1em;
+  font-size: 1.5em;
 }
 
 .albumReleaseNameStream {
@@ -169,6 +237,9 @@
   font-size: 1.5rem;
   padding: 0.25em;
   border: var(--text-primary) 1px solid;
+  min-height: 37px;
+  text-align: center;
+  justify-content: center;
 }
 
 .streamLinks {
@@ -196,9 +267,9 @@
 
 .streamLinks p {
   font-family: "megalomaniac";
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin: 0;
-  color: black;
+  color: white;
 }
 .artistLinkContainer {
   position: relative;
@@ -282,6 +353,10 @@
 @media (max-width: 570px) {
   .appearsOnSection {
     padding-bottom: 0;
+  }
+
+  .albumReleaseNameStream {
+    min-height: 20px;
   }
 
   .artistText {
