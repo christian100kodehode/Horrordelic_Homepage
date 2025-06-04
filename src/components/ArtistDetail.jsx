@@ -256,7 +256,7 @@ const ArtistDetail = () => {
                             return (
                               <div
                                 className={
-                                  path.length <= 30
+                                  artist.length + album_name.length <= 30
                                     ? styles["appearsOnSection"]
                                     : styles["appearsOnSectionLong"]
                                 }
@@ -276,17 +276,24 @@ const ArtistDetail = () => {
                                   <p className={styles.albumReleaseNameStream}>
                                     {artist}: {album_name}
                                   </p>
-                                  <LazyLoadImage
-                                    className={styles.thumbNailImage}
-                                    src={
-                                      "https://img.youtube.com/vi/" +
-                                      youtube_full_album.slice(-11) +
-                                      "/hqdefault.jpg"
+                                  <div
+                                    className={
+                                      styles.imageContainerYoutubeImage
                                     }
-                                    effect="blur"
-                                    alt={album_name}
-                                  />
+                                  >
+                                    <LazyLoadImage
+                                      className={styles.thumbNailImage}
+                                      src={
+                                        "https://img.youtube.com/vi/" +
+                                        youtube_full_album.slice(-11) +
+                                        "/maxresdefault.jpg"
+                                      }
+                                      effect="blur"
+                                      alt={album_name}
+                                    />
+                                  </div>
                                 </a>
+
                                 <div className={styles.streamLinks}>
                                   <a
                                     href={bandcamp}
@@ -354,15 +361,7 @@ const ArtistDetail = () => {
                       <div className={styles.appearsOnSectionHeader}>
                         {category.toLowerCase() === "dj" ? <h1>Mixes:</h1> : ""}
                       </div>
-                      <div>
-                        {" "}
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                      </div>
 
-                      <div className={styles.djMixes}></div>
                       {/* {mix
 .filter((e) => e.name.toLowerCase() === name.toLowerCase())
 // .sort((a, b) => b.year - a.year)
@@ -406,16 +405,18 @@ const ArtistDetail = () => {
                                   {type ? <p>{type}</p> : <p>Mix</p>}
                                   <p>{year}</p>
                                 </div>
-                                <LazyLoadImage
-                                  className={styles.thumbNailImageMix}
-                                  src={
-                                    "https://img.youtube.com/vi/" +
-                                    mix.slice(-11) +
-                                    "/hqdefault.jpg"
-                                  }
-                                  effect="blur"
-                                  alt={name + mix.type}
-                                />
+                                <div className={styles.djMixContainerThumbnail}>
+                                  <LazyLoadImage
+                                    className={styles.thumbNailImageMix}
+                                    src={
+                                      "https://img.youtube.com/vi/" +
+                                      mix.slice(-11) +
+                                      "/hqdefault.jpg"
+                                    }
+                                    effect="blur"
+                                    alt={name + mix.type}
+                                  />
+                                </div>
                               </a>
                             </div>
                           );
