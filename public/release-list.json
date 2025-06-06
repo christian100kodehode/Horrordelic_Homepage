@@ -1,5 +1,28 @@
 [
   {
+    "id": "HORD128",
+    "path": "Odoxis_-_For_Now_and_Forever",
+    "artist": "Odoxis",
+    "album_name": "For Now and Forever",
+    "land": "\uD83C\uDDEC\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly presents the debut EP from Odoxis (Greece), titled For Now and Forever.\n\nEnter the story of a creature born to dwell in the shadows of the Odoxis realm. From the very first breath, its fate was to confront the fears etched into the wheel of its past lives. Trapped in a world of endless darkness, the creature grows — until the moment it remembers…\n\nLose yourself in an eternal battle against the Cosmic Shadows. For now, and forever",
+    "release_date": "06/June/2025",
+    "credits": "\n\nMusic and  Artwork by Odoxis\n\nMastering by  Krono Audio\n\nReleased by Horrordelic 2025",
+    "tracklist": [
+      "01. Intro - Underwater birth 112.8",
+      "02. Manipulated by Spirits 172.1",
+      "03. Ancient God's Curses 198.2",
+      "04. For now and forever 182"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-YoAAWDQ3M2_yvY0QiZU2n",
+    "youtube_full_album": "https://youtu.be/jWNw9VZqFJs",
+    "spotify": "https://open.spotify.com/track/2x8eFx3kFNxGtJYdT2S0Gm",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/for-now-and-forever",
+    "mp3": "https://drive.google.com/file/d/1IXe7H81f8GHwW8nX_mc42UOnc_sR1jHn/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1EN0zePmj1XGOgqfhMnULsameUVuYAzSj/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD125",
     "path": "Evil_Scream_-_Thorns_of_Abyss",
     "artist": "Evil Scream",
