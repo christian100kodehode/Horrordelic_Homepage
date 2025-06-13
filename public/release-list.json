@@ -1,5 +1,31 @@
 [
   {
+    "id": "HORD127",
+    "path": "Dr_Tryptamine_-_Alchemist_Laboratory",
+    "artist": "Dr Tryptamine",
+    "album_name": "Alchemist Laboratory",
+    "land": "\uD83C\uDDFF\uD83C\uDDE6",
+    "release_text": "Horrordelic Proudly presents a new album from Dr Tryptamine (South Africa) named Alchemist Laboratory.\n\nDiscover 7 electrifying Darkpsy tracks with true energy. Infused with epic Goa vibes and mind-bending elements, these beats will pull you to the dancefloor and keep you locked in with their intense atmosphere!\n\nOr just blast at home, in the car or walking in your own space!",
+    "release_date": "13/June/2025",
+    "credits": "\n\nMusic By Dr Tryptamine\nArt + Layout Antikriz\nMaster by Swampmatix\n\nReleased by Horrordelic 2025",
+    "tracklist": [
+      "1. Blotter Forest 145",
+      "2. Alchemist 148",
+      "3. Map of the Universe 150",
+      "4. Vampire 150",
+      "5. Psychosis 160",
+      "6. No Mercy 165",
+      "7. Only the wounds remain 200 (Bonus track)"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-_jcJToVsRz-maXYAO_tR9",
+    "youtube_full_album": "https://youtu.be/AVlicA3-fyQ",
+    "spotify": "https://open.spotify.com/album/2xdlL4nROlgCYks0bGByUC",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/alchemist-laboratory",
+    "mp3": "https://drive.google.com/drive/u/0/folders/11dvitFLDzA8Dc0ka0oElehEX3HHwBS9t",
+    "wav": "https://drive.google.com/drive/u/0/folders/11dvitFLDzA8Dc0ka0oElehEX3HHwBS9t",
+    "flac": ""
+  },
+  {
     "id": "HORD128",
     "path": "Odoxis_-_For_Now_and_Forever",
     "artist": "Odoxis",
