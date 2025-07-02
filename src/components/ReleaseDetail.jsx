@@ -150,7 +150,7 @@ const ReleaseDetail = () => {
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
 
     const firstWord = firstNonEmptyLine.trim().replace(regex, "");
-    console.log(firstWord);
+    // console.log(firstWord);
     //
     return firstWord;
     // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
@@ -189,7 +189,7 @@ const ReleaseDetail = () => {
   // }, []);
 
   const params = useParams();
-  console.log(params);
+  // console.log(params);
   // Test for search through tracklist!!
   // let artistAppears = album.filter(function (e) {
   //   return e.credits.indexOf(name.split(" ")[0]) >= 0;
