@@ -122,12 +122,36 @@ const ReleaseDetail = () => {
     // Ensure credits is a string, fallback to empty string if undefined
     const text = credits || "";
 
+    const wordsToRemove = [
+      ": ",
+      "Compile",
+      "Compiled",
+      "compiled",
+      "Music",
+      "music",
+      "by",
+      "By",
+      "Artwork",
+      "art",
+      "Art",
+      "artwork",
+      "And",
+      "and",
+      "Produced",
+      " ",
+      "   ",
+      "  ",
+
+      "    ",
+    ];
+    const regex = new RegExp(`\\b(${wordsToRemove.join("|")})\\b`, "gi");
+
     const firstNonEmptyLine =
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
 
-    const firstWord = firstNonEmptyLine.trim().split(" ")[2] || "";
-    // console.log(firstWord);
-
+    const firstWord = firstNonEmptyLine.trim().replace(regex, "");
+    console.log(firstWord);
+    //
     return firstWord;
     // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
   }
@@ -218,7 +242,6 @@ const ReleaseDetail = () => {
                     &nbsp;{artist}:&nbsp;{album_name}
                     <span className={styles.headingLand}>{land}</span>
                   </p>
-
                   {list
                     .filter((e) =>
                       e.name
@@ -237,9 +260,42 @@ const ReleaseDetail = () => {
                             {artist === "VA" ? "Compiled by: " : "Made by: "}
                             {name}
                           </Link>
+
+                          {firstWordCap.includes("&") ? (
+                            <Link
+                              to={`/Artist/${firstWordCap.replace(/ .*/, "")}`}
+                            >
+                              {artist === "VA" ? " & " : " & "}
+                              {firstWordCap.replace(/ .*/, "")}
+                            </Link>
+                          ) : (
+                            ""
+                          )}
                         </div>
                       );
                     })}
+
+                  {/* {list
+                    .filter((e) =>
+                      e.name
+                        .toString()
+                        .replace(/\s/g, "")
+                        .toLowerCase()
+                        .includes(firstWordCap.toLowerCase())
+                    )
+                    .map(({ nameNoSpace, name }) => {
+                      return (
+                        <div
+                          className={styles.artistAppearing}
+                          key={album_name}
+                        >
+                          <Link to={`/Artist/${nameNoSpace}`}>
+                            {artist === "VA" ? "Compiled by: " : "Made by: "}
+                            {name}
+                          </Link>
+                        </div>
+                      );
+                    })} */}
                 </div>
                 <div className={styles.tracksContainer}>
                   <div className={styles.musicPlayer}>
