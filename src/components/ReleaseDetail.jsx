@@ -164,17 +164,6 @@ const ReleaseDetail = () => {
     ])
   );
 
-  function navigateManagamentBack() {
-    const navigate = useNavigate();
-
-    const goBack = () => {
-      navigate(-1); // Navigates back one step in history
-    };
-
-    return <button onClick={goBack}>GoBack</button>;
-  }
-  const [backState, setBackState] = useState(false);
-
   const params = useParams();
 
   // Function to extract artist names from track string
@@ -497,8 +486,7 @@ const ReleaseDetail = () => {
       {/* {(const artistName = JSON.stringify(list, ["nameNoSpace"]))}
       {console.log(artistName)} */}
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
-        {navigateManagamentBack()}
-
+        {/* {navigateManagamentBack()} */}
         <HashLink smooth to={"#top"}>
           Go to top of Page
         </HashLink>
