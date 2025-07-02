@@ -198,10 +198,13 @@ iframe {
   padding: 0.5rem;
 }
 .streamLinks img:hover,
-.streamLinks p:hover {
+.streamLinks p:hover,
+.streamLinks a:hover {
   transform: scale(1.2);
 }
 
+.streamLinks p {
+}
 .streamLinks p {
   font-family: "megalomaniac";
   font-size: 1.5rem;

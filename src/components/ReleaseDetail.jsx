@@ -104,7 +104,7 @@ const ReleaseDetail = () => {
   function getLastWordCap({ credits }) {
     // Ensure credits is a string, fallback to empty string if undefined
     const text = credits || "";
-
+    // console.log(credits);
     const firstNonEmptyLine =
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
     const lastWord = firstNonEmptyLine.trim().split(" ").pop() || "";
@@ -156,48 +156,28 @@ const ReleaseDetail = () => {
     // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
   }
 
-  // const newCredit = () => {
-  //   return credits.split("\n").slice(2, 3, 4);
-  // };
+  const artistMap = Object.fromEntries(
+    list.map(({ nameNoSpace, name }) => [
+      nameNoSpace.toLowerCase(),
+      { nameNoSpace, name },
+    ])
+  );
 
-  // console.log(list);
-
-  // Fetch dj mixes
-  // const [mix, setMix] = useState([]);
-  // const [isLoadingMix, setIsLoadingMix] = useState(false);
-
-  // const fetchDjRelases = () => {
-  //   setIsLoadingMix(true);
-  //   setTimeout(
-  //     async () => {
-  //       const API_URL = `/dj-sets.json`;
-  //       const response = await axios.get(API_URL);
-  //       setMix(response.data);
-  //       setIsLoadingMix(false);
-  // Old version:
-  // Get the URL and add the hash then scrollintoView on load
-  // let a = new URL(window.location.href);
-  // document.querySelector(a.hash).scrollIntoView();
-  // console.log(a.hash);
-  // }
-  // 2000 - if wanting timeout
-  //   );
-  // };
-
-  // useEffect(() => {
-  //   fetchDjRelases();
-  // }, []);
+  console.log(artistMap);
 
   const params = useParams();
-  // console.log(params);
-  // Test for search through tracklist!!
-  // let artistAppears = album.filter(function (e) {
-  //   return e.credits.indexOf(name.split(" ")[0]) >= 0;
-  // });
-  // {
 
-  // }
-  // TEST
+  // Function to extract artist names from track string
+  const extractArtists = (track) => {
+    // Split on " - " to separate artist(s) from track title
+    const [artistPart] = track.split(" - ");
+    // Handle collaborations (e.g., "Psykotropic & Obsorbo")
+    return artistPart
+      .replace(/^\d+\.\s*/, "") // Remove track number (e.g., "01. ")
+      .split(" & ")
+      .map((artist) => artist.trim());
+  };
+
   return (
     <main className={styles.container}>
       {/* Map release data abd filter each year selected by user */}
@@ -224,6 +204,7 @@ const ReleaseDetail = () => {
           }) => {
             const lastWordCap = getLastWordCap({ credits });
             const firstWordCap = getFirstWordCap({ credits });
+
             return (
               <article
                 key={path}
@@ -468,56 +449,43 @@ const ReleaseDetail = () => {
                 </div>
                 <div className={styles.trackList}>
                   <p>Track list:</p>
+                  {tracklist.map((track, i) => {
+                    // Extract artist names from track
+                    const trackArtists = extractArtists(track);
 
-                  {/* Map through the tracklist and show all tracks , also check if names are longer than 50, then set extra line height. if longer line than 100, cut @ 100 else just write it normally. */}
-                  {tracklist.map((e, i) => (
-                    <p
-                      key={`${album_name}${i}`}
-                      style={
-                        e.length > 40
-                          ? { lineHeight: "1em" }
-                          : { lineHeight: "0.5em" }
-                      }
-                    >
-                      {e.length > 100 ? e.substring(0, 100) + "..." : e}
-                    </p>
-                  ))}
+                    // Find the first artist in the list that matches
+                    const matchedArtist = list.find((a) =>
+                      trackArtists.includes(a.name)
+                    );
+
+                    // Set line height based on track name length
+                    const lineHeightStyle =
+                      track.length > 40
+                        ? { lineHeight: "0.2em" }
+                        : { lineHeight: "0.2em" };
+
+                    return (
+                      <p key={`${album_name}${i}`} style={lineHeightStyle}>
+                        {matchedArtist ? (
+                          <span className={styles.streamLinks}>
+                            <Link to={`/Artist/${matchedArtist.nameNoSpace}`}>
+                              {track}
+                            </Link>
+                          </span>
+                        ) : (
+                          <>{track}</>
+                        )}
+                      </p>
+                    );
+                  })}
                 </div>
               </article>
             );
           }
         )}
-      {/* {album.map(({ release_date, artist }) =>
-        release_date.slice(-4) === value ? (
-          <span>
-            <p>{artist}</p>
-          </span>
-        ) : null
-      )} */}
-      {/* TESTING */}
-      {/* OLD ---- 
-      
-      Map through releases array and destructure the array items wanted */}
-      {/* {album.map(
-        ({
-          artist,
-          album_name,
-          youtube_playlist_embed,
-          land,
-          id,
-          tracklist,
-          release_text,
-          bandcamp,
-          spotify,
-          mp3,
-          wav,
-          path,
-          credits,
-          release_date,
-        }) => (
-          <></>
-        )
-      )}  OLD END*/}
+
+      {/* {(const artistName = JSON.stringify(list, ["nameNoSpace"]))}
+      {console.log(artistName)} */}
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
         <HashLink smooth to={"#top"}>
           Go to top of Page
