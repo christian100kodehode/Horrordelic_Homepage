@@ -101,7 +101,7 @@ const ReleaseDetail = () => {
   }, []);
 
   // TESTING
-  function getLastWordCap({ credits, list }) {
+  function getLastWordCap({ credits }) {
     // Ensure credits is a string, fallback to empty string if undefined
     const text = credits || "";
 
@@ -109,9 +109,26 @@ const ReleaseDetail = () => {
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
     const lastWord = firstNonEmptyLine.trim().split(" ").pop() || "";
 
+    // const firstWord = firstNonEmptyLine.trim().split(" ")[2] || "";
+    // console.log(firstWord);
+
     const lastWordCap = lastWord.charAt(0).toUpperCase() + lastWord.slice(1);
 
     return lastWordCap;
+    // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
+  }
+
+  function getFirstWordCap({ credits }) {
+    // Ensure credits is a string, fallback to empty string if undefined
+    const text = credits || "";
+
+    const firstNonEmptyLine =
+      text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
+
+    const firstWord = firstNonEmptyLine.trim().split(" ")[2] || "";
+    // console.log(firstWord);
+
+    return firstWord;
     // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
   }
 
@@ -159,7 +176,6 @@ const ReleaseDetail = () => {
   // TEST
   return (
     <main className={styles.container}>
-      {console.log("Release detail")}
       {/* Map release data abd filter each year selected by user */}
       {album
         .filter((e) => e.path === params.path)
@@ -183,7 +199,7 @@ const ReleaseDetail = () => {
             youtube_full_album,
           }) => {
             const lastWordCap = getLastWordCap({ credits });
-
+            const firstWordCap = getFirstWordCap({ credits });
             return (
               <article
                 key={path}
@@ -205,15 +221,13 @@ const ReleaseDetail = () => {
 
                   {list
                     .filter((e) =>
-                      // e.release_text.includes(name.split(" ")[0])
-                      //  ||
                       e.name
                         .toString()
                         .replace(/\s/g, "")
                         .toLowerCase()
                         .includes(lastWordCap.toLowerCase())
                     )
-                    .map(({ nameNoSpace, name, al }) => {
+                    .map(({ nameNoSpace, name }) => {
                       return (
                         <div
                           className={styles.artistAppearing}
