@@ -7,6 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import YoutubePlayer from "./YoutubePlayer";
+import { useNavigate } from "react-router-dom";
 
 // Importing images
 import bandCampLogo from "../images/bc-logotype-color-128.png";
@@ -163,7 +164,16 @@ const ReleaseDetail = () => {
     ])
   );
 
-  console.log(artistMap);
+  function navigateManagamentBack() {
+    const navigate = useNavigate();
+
+    const goBack = () => {
+      navigate(-1); // Navigates back one step in history
+    };
+
+    return <button onClick={goBack}>GoBack</button>;
+  }
+  const [backState, setBackState] = useState(false);
 
   const params = useParams();
 
@@ -487,6 +497,8 @@ const ReleaseDetail = () => {
       {/* {(const artistName = JSON.stringify(list, ["nameNoSpace"]))}
       {console.log(artistName)} */}
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
+        {navigateManagamentBack()}
+
         <HashLink smooth to={"#top"}>
           Go to top of Page
         </HashLink>

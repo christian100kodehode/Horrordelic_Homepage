@@ -11,6 +11,8 @@ import ReleaseAndEvents from "./components/ReleaseAndEvents";
 import ArtistDetail from "./components/ArtistDetail";
 import ReleaseDetail from "./components/ReleaseDetail";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 // Importing hooks/packages
 import { Routes, Route, Link } from "react-router-dom";
@@ -18,6 +20,7 @@ import { Routes, Route, Link } from "react-router-dom";
 
 import { HelmetProvider } from "react-helmet-async";
 import UseLocalStorage from "use-local-storage";
+
 function App() {
   // change theme
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -26,26 +29,67 @@ function App() {
     defaultDark ? "dark" : "light"
   );
 
-  console.log(theme);
+  // console.log(theme);
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
 
+  // const backButtonState = "false";
+
+  // const [backState, setBackState] = UseLocalStorage(
+  //   "backState",
+  //   backButtonState ? "false" : true
+  // );
+
+  // const switchButtonState = () => {
+  //   const newState = backState === "false" ? "true" : "false";
+  //   setBackState(newState);
+  // };
+
+  // console.log(backState);
+
+  // function navigateManagamentBack() {
+  //   const navigate = useNavigate();
+
+  //   const goBack = () => {
+  //     navigate(-1); // Navigates back one step in history
+  //   };
+
+  //   return (
+  //     <button
+  //       onClick={() => {
+  //         goBack();
+  //       }}
+  //     >
+  //       GoBack
+  //     </button>
+  //   );
+  // }
+
   return (
     <HelmetProvider>
       <div className="App" data-theme={theme}>
         <Navbar />
         <div className="themeButtonContainer">
+          {/* {navigateManagamentBack()} */}
           <button
             type="button"
             className="themeChangerButton"
             onClick={switchTheme}
             title="Change colors on site.."
           >
+            {" "}
             {theme === "light" ? <FaMoon /> : <FaSun />}
           </button>
+          {/* <button onClick={switchButtonState}>
+             {backState === "true" ? "" : navigateManagamentBack()}
+          </button>
+          */}
+          {/* <button onClick={switchButtonState}>
+            {backState === "false" ? "true" : "false"}
+          </button> */}
         </div>
         <Routes>
           <Route path="/" element={<Main />} />

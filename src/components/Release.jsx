@@ -182,6 +182,35 @@ const Release = () => {
   const [showVideo, setShowVideo] = useState({ id: false });
   const [hasLoaded, setHasLoaded] = useState({ id: false });
 
+  // function navigateManagamentBack() {
+  //   const navigate = useNavigate();
+
+  //   const goBack = () => {
+  //     navigate(-1); // Navigates back one step in history
+  //   };
+
+  //   return (
+  //     <button
+  //       onClick={() => {
+  //         goBack();
+  //         setBackState(true);
+  //       }}
+  //     >
+  //       GoBack
+  //     </button>
+  //   );
+  // }
+
+  // function navigateManagamentForward() {
+  //   const navigate = useNavigate();
+
+  //   const goForward = () => {
+  //     navigate(1); // Navigates forward one step in history
+  //   };
+
+  //   return <button onClick={goForward}>GoForward</button>;
+  // }
+
   const handleVideos = (id) => {
     setShowVideo((previousVideo) => {
       return {
@@ -202,7 +231,7 @@ const Release = () => {
 
   return (
     <main className={styles.container}>
-      {console.log("Release page")}
+      {/* {console.log("Release page")} */}
       {/* Optional Loading message */}
       {/* <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}
