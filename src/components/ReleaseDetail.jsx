@@ -101,6 +101,25 @@ const ReleaseDetail = () => {
     fetchDataRelease();
   }, []);
 
+  function navigateManagamentBack() {
+    const navigate = useNavigate();
+
+    const goBack = () => {
+      navigate(-1); // Navigates back one step in history
+    };
+
+    return (
+      <button
+        onClick={() => {
+          goBack();
+          setBackState(true);
+        }}
+      >
+        GoBack
+      </button>
+    );
+  }
+
   // TESTING
   function getLastWordCap({ credits }) {
     // Ensure credits is a string, fallback to empty string if undefined
@@ -485,6 +504,7 @@ const ReleaseDetail = () => {
 
       {/* {(const artistName = JSON.stringify(list, ["nameNoSpace"]))}
       {console.log(artistName)} */}
+      <span className={styles.backButton}>{navigateManagamentBack()}</span>
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
         {/* {navigateManagamentBack()} */}
         <HashLink smooth to={"#top"}>
