@@ -55,6 +55,7 @@ const Main = () => {
     return (
       <>
         <span className={styles.latestAlbumDetails}>
+          <title>Welcome to Horrordelic HQ</title>
           <Link to={"../Release/" + latestAlbum.path}>
             <span className={styles.marqueeText}>
               Latest&nbsp;Release:&nbsp;&nbsp;
