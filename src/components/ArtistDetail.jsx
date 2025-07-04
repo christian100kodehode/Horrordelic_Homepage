@@ -134,7 +134,7 @@ const ArtistDetail = () => {
                 <div key={id + name} className={styles.artistsContainer}>
                   <meta
                     property="og:title"
-                    content={"Horrordelic Member" + name}
+                    content={"Horrordelic Member" + "" + name}
                   />
                   <meta
                     property="og:description"

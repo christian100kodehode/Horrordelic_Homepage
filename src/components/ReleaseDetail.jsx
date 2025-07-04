@@ -228,6 +228,23 @@ const ReleaseDetail = () => {
                 }
               >
                 {/* {console.log(filteredAlbum)} */}
+                <meta
+                  property="og:title"
+                  content={artist + album_name + " " + "Download and Stream"}
+                />
+                <meta
+                  property="og:description"
+                  content="Worldwide Psychedelic Movement - Darkpsy Life."
+                />
+                <meta
+                  property="og:image"
+                  content={
+                    "https://img.youtube.com/vi/" +
+                    youtube_full_album.slice(-11) +
+                    "/maxresdefault.jpg"
+                  }
+                />
+                <title>{"Horrordelic Member" + name}</title>
 
                 <div className={styles.releaseName}>
                   {/* <HashLink smooth to={"/release#" + path}> */}
