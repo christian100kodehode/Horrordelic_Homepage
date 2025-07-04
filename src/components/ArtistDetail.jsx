@@ -146,7 +146,7 @@ const ArtistDetail = () => {
                       "https://horrordelic.com/artists/" + nameNoSpace + ".jpg"
                     }
                   />
-                  <title>{"Horrordelic Member" + name}</title>
+                  <title>{"Horrordelic Member" + " " + name}</title>
                   <div
                     className={styles.imageContainer}
                     style={{
