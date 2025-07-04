@@ -112,7 +112,6 @@ const ReleaseDetail = () => {
       <button
         onClick={() => {
           goBack();
-          setBackState(true);
         }}
       >
         GoBack
