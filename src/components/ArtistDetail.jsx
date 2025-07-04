@@ -2,11 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./ArtistDetail.module.css";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { Helmet } from "react-helmet-async";
 
 // Importing images
 import bandCampLogo from "../images/bc-logotype-color-128.png";
@@ -105,19 +103,17 @@ const ArtistDetail = () => {
   // TEST
   return (
     <main className={styles.container}>
-      <Helmet>
-        <meta property="og:url" content="https://horrordelic.com/artists/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Artist page" />
-        <meta
-          property="og:description"
-          content="Worldwide Psychedelic Movement - Darkpsy"
-        />
-        <meta
-          property="og:image"
-          content="https://horrordelic.com/FBwebmediaFront1080x600.png"
-        />
-      </Helmet>
+      {/* <meta property="og:url" content="https://horrordelic.com/artists/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Artist page" />
+      <meta
+        property="og:description"
+        content="Worldwide Psychedelic Movement - Darkpsy"
+      />
+      <meta
+        property="og:image"
+        content="https://horrordelic.com/FBwebmediaFront1080x600.png"
+      /> */}
       <div className={styles.cssFix}>
         {list
           .filter((e) => e.nameNoSpace === params.id)
@@ -203,15 +199,6 @@ const ArtistDetail = () => {
                   </div>
                   <div className={styles.artistText}>
                     <p>{artists_text}</p>
-                    {/* {console.log(album.tracklist)} */}
-                    {/* {tracklist.map((e, i) => (
-                    <p key={`${album_name}${i}`} style={e.length > 40 ? { lineHeight: "1em" } : { lineHeight: "0.5em" }}>
-                      {e.length > 100 ? e.substring(0, 100) + "..." : e}
-                    </p> */}
-                    {/* ))} */}
-                    {/* {console.log(album.filter((e) => e.release_text.includes(name.split(" ")[0]) || e.credits.includes(name.split(" ")[0])))}
-              {console.log(album.filter((e) => e.tracklist.includes(name.split(" ")[0])))} */}
-                    {/* {console.log(album.filter((e) => e.tracklist.includes(name.split(" "))))} */}
                   </div>
                   <div className={styles.appearsOnSectionHeader}>
                     <h1>Appears on:</h1>
@@ -262,10 +249,6 @@ const ArtistDetail = () => {
                                 }
                                 key={album_name}
                               >
-                                {/* {console.log(name.replace(/\s/g, ""))} */}
-                                {/* Check if artists or dj, change text accordingly */}
-                                {/* {album.release_text.includes(name.split(" ")[0]) + album.credits.includes(name.split(" ")[0]) ? <h1>Albums:</h1> : ""} */}
-
                                 <a
                                   href={
                                     "https://horrordelic.com/release/" + path
@@ -361,18 +344,6 @@ const ArtistDetail = () => {
                       <div className={styles.appearsOnSectionHeader}>
                         {category.toLowerCase() === "dj" ? <h1>Mixes:</h1> : ""}
                       </div>
-
-                      {/* {mix
-.filter((e) => e.name.toLowerCase() === name.toLowerCase())
-// .sort((a, b) => b.year - a.year)
-.map(({ name, mix, id, type, year }) => {
-  return (
-    <div key={id} className={styles.djMixElements}>
-     <p>Hallo</p>
-  </div>
-    
-  );
-})} */}
 
                       {mix
 

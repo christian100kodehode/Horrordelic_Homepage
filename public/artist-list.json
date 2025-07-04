@@ -286,6 +286,7 @@
   {
     "id": "22",
     "name": "Gurgamesh",
+    "active": "yes",
     "nameNoSpace": "Gurgamesh",
     "category": "Artist",
     "headerInfo": "",

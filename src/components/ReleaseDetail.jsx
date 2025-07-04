@@ -2,19 +2,15 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./ReleaseDetail.module.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import YoutubePlayer from "./YoutubePlayer";
-import { useNavigate } from "react-router-dom";
 
 // Importing images
 import bandCampLogo from "../images/bc-logotype-color-128.png";
 import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
-import { BsFillFileMusicFill } from "react-icons/bs";
-import { BsFillChatDotsFill } from "react-icons/bs";
 
 const ReleaseDetail = () => {
   const { path } = useParams();
@@ -254,14 +250,17 @@ const ReleaseDetail = () => {
                           className={styles.artistAppearing}
                           key={album_name}
                         >
-                          <Link to={`/Artist/${nameNoSpace}`}>
+                          <Link to={`../Artists/${nameNoSpace}`}>
                             {artist === "VA" ? "Compiled by: " : "Made by: "}
                             {name}
                           </Link>
 
                           {firstWordCap.includes("&") ? (
                             <Link
-                              to={`/Artist/${firstWordCap.replace(/ .*/, "")}`}
+                              to={`../Artists/${firstWordCap.replace(
+                                / .*/,
+                                ""
+                              )}`}
                             >
                               {artist === "VA" ? " & " : " & "}
                               {firstWordCap.replace(/ .*/, "")}
@@ -272,28 +271,6 @@ const ReleaseDetail = () => {
                         </div>
                       );
                     })}
-
-                  {/* {list
-                    .filter((e) =>
-                      e.name
-                        .toString()
-                        .replace(/\s/g, "")
-                        .toLowerCase()
-                        .includes(firstWordCap.toLowerCase())
-                    )
-                    .map(({ nameNoSpace, name }) => {
-                      return (
-                        <div
-                          className={styles.artistAppearing}
-                          key={album_name}
-                        >
-                          <Link to={`/Artist/${nameNoSpace}`}>
-                            {artist === "VA" ? "Compiled by: " : "Made by: "}
-                            {name}
-                          </Link>
-                        </div>
-                      );
-                    })} */}
                 </div>
                 <div className={styles.tracksContainer}>
                   <div className={styles.musicPlayer}>
@@ -343,21 +320,6 @@ const ReleaseDetail = () => {
                         )}
                       </div>
                     </div>
-                    {/* TESTING */}
-
-                    {/* Youtube Playlist */}
-
-                    {/* <div className={styles.youtubePlayer}>
-                    {youtube_playlist_embed ? (
-                      <iframe loading="lazy" src={youtube_playlist_embed} title="Horrordelic music player" allowFullScreen></iframe>
-                    ) : (
-                      <span className={styles.youtubeEmbedBlocked}>
-                        <a href={youtube_full_album} target="_blank" rel="noreferrer">
-                          <img src={youtubeLogo}></img>
-                        </a>
-                      </span>
-                    )}
-                  </div> */}
 
                     {/* Download Links - Stream Links */}
 
@@ -485,7 +447,9 @@ const ReleaseDetail = () => {
                       <p key={`${album_name}${i}`} style={lineHeightStyle}>
                         {matchedArtist ? (
                           <span className={styles.streamLinks}>
-                            <Link to={`/Artist/${matchedArtist.nameNoSpace}`}>
+                            <Link
+                              to={`../Artists/${matchedArtist.nameNoSpace}`}
+                            >
                               {track}
                             </Link>
                           </span>

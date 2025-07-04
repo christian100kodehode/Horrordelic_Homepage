@@ -6,7 +6,7 @@ import HorrordelicLogo from "../images/horrordelic.jpg";
 // import HorrordelicSantaLogo from "../images/HorrordelicSantaLogo.png";
 // Import Components/Hooks
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import {
@@ -16,7 +16,6 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai";
 import { FaBandcamp } from "react-icons/fa";
-import { Helmet } from "react-helmet-async";
 
 const Main = () => {
   // State for loading
@@ -56,7 +55,7 @@ const Main = () => {
     return (
       <>
         <span className={styles.latestAlbumDetails}>
-          <Link to={"/Release/" + latestAlbum.path}>
+          <Link to={"../Release/" + latestAlbum.path}>
             <span className={styles.marqueeText}>
               Latest&nbsp;Release:&nbsp;&nbsp;
             </span>
@@ -64,7 +63,7 @@ const Main = () => {
         </span>
         &nbsp;&nbsp;
         <span className={styles.marqueeText}>
-          <Link to={"/Release/" + latestAlbum.path}>
+          <Link to={"../Release/" + latestAlbum.path}>
             <LazyLoadImage
               className={styles.thumbNailImage}
               src={
@@ -81,7 +80,7 @@ const Main = () => {
         </a>
         &nbsp;&nbsp;
         <span className={styles.latestAlbumDetails}>
-          <Link to={"/Release/" + latestAlbum.path}>
+          <Link to={"../Release/" + latestAlbum.path}>
             <span className={styles.marqueeTextDate}>
               {latestAlbum.release_date}
             </span>
@@ -93,25 +92,7 @@ const Main = () => {
 
   return (
     <main className={styles.Main}>
-      {/* <Helmet>
-        <meta property="og:url" content="https://horrordelic.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Horrordelic - Darkpsy Life." />
-        <meta property="og:description" content="Worldwide Psychedelic Movement - Darkpsy Life." />
-        <meta property="og:image" content="https://horrordelic.com/FBwebmediaFront1080x600.png" />
-      </Helmet> */}
-      {/* {lastReleasedAlbum.map(({ artist, id }) => {
-        <p>{artist}</p>;
-      })} */}
-
-      <div
-        className={styles.marquee}
-        // style={{
-        //   backgroundImage: "url(" + "https://img.youtube.com/vi/" + youTubeImage + "/1.jpg" + ")",
-        //   backgroundRepeat: "round",
-        //   backdropFilter: "sepia(90%)",
-        // }}
-      >
+      <div className={styles.marquee}>
         <div className={styles.marqueeone}>
           <LatestAlbumScrollText />
         </div>
@@ -140,14 +121,6 @@ const Main = () => {
                 Releases.
               </a>
             </span>
-            {/* <div className={styles.calenderContainer}>
-              <div className={styles.calenderMobileLink}>
-                Get up to date here:&nbsp;
-                <a href="/ReleaseAndEvents" title="Check our scheduele..">
-                  Calender.
-                </a>
-              </div>
-            </div> */}
             <div>
               Horrordelic:{" "}
               <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>
@@ -160,20 +133,7 @@ const Main = () => {
           className={styles.Logo}
           effect="blur"
         />
-        {/* <div className={styles.iframeContainer}>
-          <span className={styles.mainLinksText2}>
-            <p>This is what we are about:</p>
-          </span>
-          <iframe
-            width="360"
-            height="215"
-            src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div> */}
+
         <div className={styles.mainLinks}>
           <span className={styles.mainLinksText}>
             <p>Visit our sites below:</p>

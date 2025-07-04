@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Artists.module.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { Link as ScrollLink } from "react-scroll";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { HashLink } from "react-router-hash-link";
@@ -48,7 +48,7 @@ const Artists = () => {
 
   // Sort the list alphabetically
   let sortedList = artist.sort((a, b) => a.name.localeCompare(b.name));
-  console.log(sortedList);
+  // console.log(sortedList);
   return (
     <main className={styles.container}>
       <div className={styles.artistList}>
@@ -134,7 +134,7 @@ const Artists = () => {
                   <div key={id} className={styles.navItem}>
                     <Link
                       title={"Artist page for " + name + "!"}
-                      to={`/Artist/${nameNoSpace}`}
+                      to={`/Artists/${nameNoSpace}`}
                     >
                       <h2
                         className={styles.artistlistMenu}
@@ -186,7 +186,7 @@ const Artists = () => {
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
-                <Link to={`/Artist/${nameNoSpace}`}>
+                <Link to={`/Artists/${nameNoSpace}`}>
                   <LazyLoadImage
                     className={styles.thumbNailImage}
                     src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
@@ -238,7 +238,7 @@ const Artists = () => {
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
-                <Link to={`/Artist/${nameNoSpace}`}>
+                <Link to={`/Artists/${nameNoSpace}`}>
                   <LazyLoadImage
                     className={styles.thumbNailImage}
                     // Remove space in name, picture have to have to have no spaces
@@ -248,7 +248,7 @@ const Artists = () => {
                     alt={name}
                     title={name}
                     effect="blur"
-                    placeholderSrc={"/artists/ArtistPlaceholder.jpg"}
+                    placeholderSrc={"/Artists/ArtistPlaceholder.jpg"}
                   />
 
                   <h2

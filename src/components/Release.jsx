@@ -2,7 +2,6 @@
 import bandCampLogo from "../images/bc-logotype-color-128.png";
 import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
-import { RiSoundcloudFill } from "react-icons/ri";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 // Importing CSS
@@ -15,7 +14,6 @@ import {
   useEffect,
   useRef,
   useTransition,
-  lazy,
   startTransition,
 } from "react";
 import { HashLink } from "react-router-hash-link";
@@ -24,8 +22,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import YoutubePlayer from "./YoutubePlayer";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 // const YoutubePlayer = lazy(() => import("./YoutubePlayer"));
 
@@ -76,13 +73,6 @@ const Release = () => {
       };
     });
   };
-
-  // TESTING
-  //   const style1 = {
-  //     album_name.length >= 20
-  //     ? { fontSize: "1.2em" }
-  //     : { fontSize: "1.7em" }
-  // }
 
   const style2 = {
     Color: "black",
@@ -182,35 +172,6 @@ const Release = () => {
   const [showVideo, setShowVideo] = useState({ id: false });
   const [hasLoaded, setHasLoaded] = useState({ id: false });
 
-  // function navigateManagamentBack() {
-  //   const navigate = useNavigate();
-
-  //   const goBack = () => {
-  //     navigate(-1); // Navigates back one step in history
-  //   };
-
-  //   return (
-  //     <button
-  //       onClick={() => {
-  //         goBack();
-  //         setBackState(true);
-  //       }}
-  //     >
-  //       GoBack
-  //     </button>
-  //   );
-  // }
-
-  // function navigateManagamentForward() {
-  //   const navigate = useNavigate();
-
-  //   const goForward = () => {
-  //     navigate(1); // Navigates forward one step in history
-  //   };
-
-  //   return <button onClick={goForward}>GoForward</button>;
-  // }
-
   const handleVideos = (id) => {
     setShowVideo((previousVideo) => {
       return {
@@ -237,17 +198,7 @@ const Release = () => {
         {isLoading ? "Loading Releases" : null}
       </span> */}
       {/* Menues Desktop + Nobile */}
-      <Helmet>
-        <meta property="og:title" content="Horrordelic - Releases" />
-        <meta
-          property="og:description"
-          content="Get some killer Darkpsy/Psycore here.."
-        />
-        <meta
-          property="og:image"
-          content="https://horrordelic.com/FBwebmediaReleases1080x600.png"
-        />
-      </Helmet>
+
       <div
         onClick={toggleMenu}
         className={styles.yearSelector}
@@ -298,10 +249,6 @@ const Release = () => {
               }
               className={styles.inProgress}
             >
-              {/* {console.log(release_date.length)} */}
-              {/* {console.log(i)} */}
-              {/* {console.log(album_name)} */}
-              {/* {console.log(release_date)} */}
               {!release_date.length <= 4 ? (
                 <a
                   href="https://horrordelic.bandcamp.com"
@@ -353,10 +300,10 @@ const Release = () => {
                 }) => {
                   return (
                     <Link
+                      to={`../Release/${path}`}
                       title={
                         "Release page for " + artist + ": " + album_name + "!"
                       }
-                      to={`/Release/${path}`}
                     >
                       <span className={styles.land}>
                         <article>{land}</article>
@@ -376,15 +323,7 @@ const Release = () => {
                         {" "}
                         <div className={styles.leftReleaseMenuBox}>
                           <p>{release_date}</p>{" "}
-                          <p
-                            className={styles.headerMenuText}
-
-                            // style={
-                            //   album_name.length >= 20
-                            //     ? { fontSize: "1.2em" }
-                            //     : { fontSize: "1.7em" }
-                            // }
-                          >
+                          <p className={styles.headerMenuText}>
                             {
                               artist + ": " + album_name
                               // .replace(/_+/g, " ") + " "
@@ -469,7 +408,7 @@ const Release = () => {
               {/* {console.log(filteredAlbum)} */}
 
               {/* <HashLink smooth to={"/release#" + path}> */}
-              <Link to={`/Release/${path}`}>
+              <Link to={`../Release/${path}`}>
                 <p className={styles.heading}>
                   🔗 &nbsp;{artist}:&nbsp;{album_name}
                   <span className={styles.headingLand}>{land}</span>
@@ -530,18 +469,6 @@ const Release = () => {
                   {/* TESTING */}
 
                   {/* Youtube Playlist */}
-
-                  {/* <div className={styles.youtubePlayer}>
-                    {youtube_playlist_embed ? (
-                      <iframe loading="lazy" src={youtube_playlist_embed} title="Horrordelic music player" allowFullScreen></iframe>
-                    ) : (
-                      <span className={styles.youtubeEmbedBlocked}>
-                        <a href={youtube_full_album} target="_blank" rel="noreferrer">
-                          <img src={youtubeLogo}></img>
-                        </a>
-                      </span>
-                    )}
-                  </div> */}
 
                   {/* Download Links - Stream Links */}
 
@@ -666,40 +593,6 @@ const Release = () => {
             </article>
           )
         )}
-
-      {/* {album.map(({ release_date, artist }) =>
-        release_date.slice(-4) === value ? (
-          <span>
-            <p>{artist}</p>
-          </span>
-        ) : null
-      )} */}
-      {/* TESTING */}
-
-      {/* OLD ---- 
-      
-      Map through releases array and destructure the array items wanted */}
-      {/* {album.map(
-        ({
-          artist,
-          album_name,
-          youtube_playlist_embed,
-          land,
-          id,
-          tracklist,
-          release_text,
-          bandcamp,
-          spotify,
-          mp3,
-          wav,
-          path,
-          credits,
-          release_date,
-        }) => (
-          <></>
-        )
-        
-      )}  OLD END*/}
 
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
         <HashLink smooth to={"#"}>

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link } from "react-router";
 import styles from "./Navbar.module.css";
 import { debounce } from "../utilities/helpers.js";
 import { HashLink } from "react-router-hash-link";
@@ -38,12 +38,7 @@ const Navbar = () => {
       className={styles.navbarlinks}
       style={{ top: visible ? "0" : "-65px" }}
     >
-      {/* <span className={styles.homeButton}>
-      <Link to="/" title="Go back to main page">
-        Main
-      </Link>
-      </span> */}
-      <Link to="/" title="Horrordelic Records">
+      <Link to="../" title="Horrordelic Records">
         <LazyLoadImage
           className={styles.Logo}
           src={Logo}
@@ -56,7 +51,7 @@ const Navbar = () => {
           Artists
         </HashLink>
       ) : (
-        <Link to="/Artists" title="All our Artists and Dj`s">
+        <Link to="../Artists" title="All our Artists and Dj`s">
           Artists
         </Link>
       )}
@@ -66,7 +61,7 @@ const Navbar = () => {
           Releases
         </HashLink>
       ) : (
-        <Link to="/Release" title="All our Releases">
+        <Link to="../Release" title="All our Releases">
           Releases
         </Link>
       )}
