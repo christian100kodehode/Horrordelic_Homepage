@@ -132,6 +132,21 @@ const ArtistDetail = () => {
             }) => {
               return (
                 <div key={id + name} className={styles.artistsContainer}>
+                  <meta
+                    property="og:title"
+                    content={"Horrordelic Member" + name}
+                  />
+                  <meta
+                    property="og:description"
+                    content="Worldwide Psychedelic Movement - Darkpsy Life."
+                  />
+                  <meta
+                    property="og:image"
+                    content={
+                      "https://horrordelic.com/artists/" + nameNoSpace + ".jpg"
+                    }
+                  />
+                  <title>{"Horrordelic Member" + name}</title>
                   <div
                     className={styles.imageContainer}
                     style={{
