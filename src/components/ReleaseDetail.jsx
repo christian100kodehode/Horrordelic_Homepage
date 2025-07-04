@@ -244,7 +244,7 @@ const ReleaseDetail = () => {
                     "/maxresdefault.jpg"
                   }
                 />
-                <title>{artist + album_name}</title>
+                <title>{artist + " " + album_name}</title>
 
                 <div className={styles.releaseName}>
                   {/* <HashLink smooth to={"/release#" + path}> */}
