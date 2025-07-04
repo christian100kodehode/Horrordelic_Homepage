@@ -12,7 +12,7 @@ import ReleaseDetail from "./components/ReleaseDetail";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 // Importing hooks/packages
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 // import { useLocalStorage } from "use-Local-Storage";
 
 import UseLocalStorage from "use-local-storage";
