@@ -230,7 +230,9 @@ const ReleaseDetail = () => {
                 {/* {console.log(filteredAlbum)} */}
                 <meta
                   property="og:title"
-                  content={artist + album_name + " " + "Download and Stream"}
+                  content={
+                    artist + " " + album_name + " " + "Download and Stream"
+                  }
                 />
                 <meta
                   property="og:description"
