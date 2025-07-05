@@ -132,6 +132,15 @@ const ArtistDetail = () => {
             }) => {
               return (
                 <div key={id + name} className={styles.artistsContainer}>
+                  <meta charSet="UTF-8" />
+                  <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                  />
+                  <meta
+                    name="description"
+                    content={"The page for" + " " + name}
+                  />
                   <meta
                     property="og:title"
                     content={"Horrordelic Member" + "" + name}
@@ -146,7 +155,7 @@ const ArtistDetail = () => {
                       "https://horrordelic.com/artists/" + nameNoSpace + ".jpg"
                     }
                   />
-                  <title>{"Horrordelic Member" + " " + name}</title>
+                  <title>{name}</title>
                   <div
                     className={styles.imageContainer}
                     style={{
