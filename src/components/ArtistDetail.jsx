@@ -149,10 +149,7 @@ const ArtistDetail = () => {
                     name="description"
                     content={"The page for" + " " + name}
                   />
-                  <meta
-                    property="og:title"
-                    content={"Horrordelic Member" + "" + name}
-                  />
+                  <meta property="og:title" content={name} />
                   <meta
                     property="og:description"
                     content="Worldwide Psychedelic Movement - Darkpsy Life."
