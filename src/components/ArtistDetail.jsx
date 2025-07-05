@@ -132,6 +132,14 @@ const ArtistDetail = () => {
             }) => {
               return (
                 <div key={id + name} className={styles.artistsContainer}>
+                  <meta
+                    property="og:url"
+                    content={
+                      "https://horrordelic.com/artists/" +
+                      "/Artists/" +
+                      { nameNoSpace }
+                    }
+                  />
                   <meta charSet="UTF-8" />
                   <meta
                     name="viewport"
