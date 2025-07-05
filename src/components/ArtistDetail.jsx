@@ -137,7 +137,7 @@ const ArtistDetail = () => {
                     content={
                       "https://horrordelic.com/artists/" +
                       "/Artists/" +
-                      { nameNoSpace }
+                      nameNoSpace
                     }
                   />
                   <meta charSet="UTF-8" />
