@@ -59,10 +59,11 @@
   /* max-height: 50vh;   */
   /* max-width: 55vh; */
   max-height: 20rem;
-  object-fit: contain;
+  /* height: 25em; */
+  /* object-fit: contain; */
   border-radius: 20px;
-  margin: calc(20% - 20px);
-  filter: var(--logoFilter);
+  /* margin: calc(20% - 20px);
+  filter: var(--logoFilter); */
 }
 
 .marquee {
@@ -417,14 +418,14 @@
     padding: 0.2em 0;
   }
 
-  /* .Logo {
+  .Logo {
     max-height: 50vh;
     max-width: 50vw;
     object-fit: contain;
     margin: 1em;
-    padding: 1em 1.5em; 
+    padding: 1em 1.5em;
     border-radius: 20px;
-  }  */
+  }
 
   @keyframes marquee {
     0% {

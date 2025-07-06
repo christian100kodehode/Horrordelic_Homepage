@@ -85,6 +85,7 @@ const Artists = () => {
                 .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
                   return (
                     <div key={id} className={styles.navItem}>
+                      <title>Artist/Dj list</title>
                       <Link
                         title={"Artist page for " + name + "!"}
                         to={`/Artist/${nameNoSpace}`}

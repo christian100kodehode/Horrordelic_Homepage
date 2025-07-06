@@ -134,7 +134,11 @@ const Main = () => {
           className={styles.Logo}
           effect="blur"
         />
-
+        {/* <VFXImg
+          src={HorrordelicLogo}
+          className={styles.Logo}
+          shader="glitch"    
+        /> */}
         <div className={styles.mainLinks}>
           <span className={styles.mainLinksText}>
             <p>Visit our sites below:</p>

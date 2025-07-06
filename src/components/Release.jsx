@@ -204,6 +204,7 @@ const Release = () => {
         className={styles.yearSelector}
         style={isLoading ? { display: "none" } : { display: "" }}
       >
+        <title>Release List</title>
         <p>{!openMenu ? "Select Year of Release" : ""}</p>
 
         {openMenu &&
