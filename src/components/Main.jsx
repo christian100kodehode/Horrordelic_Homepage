@@ -76,7 +76,7 @@ const Main = () => {
           </Link>
         </span>
         &nbsp;
-        <a href={"/Release/" + latestAlbum.path}>
+        <a href={"../Release/" + latestAlbum.path}>
           &nbsp;{latestAlbum.artist}:&nbsp;{latestAlbum.album_name}&nbsp;&nbsp;
         </a>
         &nbsp;&nbsp;
