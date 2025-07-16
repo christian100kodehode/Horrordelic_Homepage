@@ -1,10 +1,10 @@
-.Logo {
-  max-height: 20rem;
-  /* height: 25em; */
-  /* object-fit: contain; */
-  border-radius: 20px;
-  /* margin: calc(20% - 20px);
-  filter: var(--logoFilter); */
+.backButton button {
+  margin: 3em 2em;
+  width: 5em 1.8em;
+  font-family: "01digitall";
+  /* padding: 0.5em 3em; */
+  border-radius: 10px;
+  letter-spacing: 2px;
 }
 
 .goToTopButton {
@@ -20,7 +20,7 @@
   background-attachment: fixed; */
   color: var(--text-primary);
   text-shadow: 0 1px 1px black;
-    background-image: var(--backgroundImage);
+  background-image: var(--backgroundImage);
 }
 
 .resultsList {

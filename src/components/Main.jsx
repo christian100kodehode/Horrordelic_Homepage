@@ -110,19 +110,18 @@ const Main = () => {
           <h1>Welcome! </h1>
           <h1>
             Site up and running -{" "}
-            <span style={{ color: "var(--accent)" }}>Search just added!</span>
+            <span style={{ color: "black" }}>Search just added!</span>
           </h1>
           <h1>
             Stay tuned and get all the{" "}
-            <span style={{ color: "var(--accent)" }} href="/release">
+            <span style={{ color: "black" }} href="/release">
               <a href="/release" title="Go to our releases..">
                 Releases!
               </a>
             </span>
             <div>
               <SearchBar />
-              Horrordelic:{" "}
-              <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>
+              Horrordelic: <span style={{ color: "black" }}> Darkpsy Life</span>
             </div>
           </h1>
         </div>
