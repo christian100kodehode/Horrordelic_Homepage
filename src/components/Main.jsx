@@ -16,6 +16,7 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai";
 import { FaBandcamp } from "react-icons/fa";
+import SearchBar from "./SearchBar";
 
 const Main = () => {
   // State for loading
@@ -56,6 +57,7 @@ const Main = () => {
       <>
         <span className={styles.latestAlbumDetails}>
           <title>Welcome to Horrordelic HQ</title>
+
           <Link to={"../Release/" + latestAlbum.path}>
             <span className={styles.marqueeText}>
               Latest&nbsp;Release:&nbsp;&nbsp;
@@ -112,17 +114,18 @@ const Main = () => {
         <div>
           <h1>Welcome! </h1>
           <h2>
-            Site up and{" "}
-            <span style={{ color: "var(--accent)" }}>running...</span>
+            Site up and running -
+            <span style={{ color: "var(--accent)" }}>Search just added!</span>
           </h2>
           <h2>
             Stay tuned and get all the{" "}
             <span style={{ color: "var(--accent)" }} href="/release">
               <a href="/release" title="Go to our releases..">
-                Releases.
+                Releases!
               </a>
             </span>
             <div>
+              <SearchBar />
               Horrordelic:{" "}
               <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>
             </div>
@@ -139,6 +142,7 @@ const Main = () => {
           className={styles.Logo}
           shader="glitch"    
         /> */}
+
         <div className={styles.mainLinks}>
           <span className={styles.mainLinksText}>
             <p>Visit our sites below:</p>

@@ -1,3 +1,49 @@
+.Logo {
+  max-height: 20rem;
+  /* height: 25em; */
+  /* object-fit: contain; */
+  border-radius: 20px;
+  /* margin: calc(20% - 20px);
+  filter: var(--logoFilter); */
+}
+
+.goToTopButton {
+  display: none;
+}
+
+.resultsContainer {
+  padding-top: 5em;
+  /* height: 100; */
+  background: var(--backgroundImage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  text-shadow: 0 1px 1px black;
+}
+
+.resultsList {
+  list-style: none;
+  padding: 0;
+}
+
+.resultItem {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.resultItem h3 {
+  margin: 0 0 10px;
+  color: --;
+}
+
+.resultItem ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
 .container {
   padding-top: 5em;
   /* height: 100; */
@@ -30,9 +76,9 @@
   width: 100%;
 }
 
-.appearsOnSection:hover {
+/* .appearsOnSection:hover {
   transform: scale(1.05);
-}
+} */
 
 .appearsOnSectionLong:hover {
   transform: scale(1.05);
@@ -121,11 +167,23 @@
   padding: 0;
 }
 
+.locationContainer li:first-child {
+  list-style: none;
+  padding: 0;
+  font-size: 2em;
+  font-family: "01digitall";
+}
+
 .thumbNailImage {
   border-radius: 20px;
   box-shadow: 4px 2px 2px var(--accentTransp);
   width: 100%;
   transform: scale(1.18) translate(0, 0%);
+}
+
+.imageContainerYoutubeImage:hover {
+  transform: scale(1.2) translate(0, 0%);
+  transition: all 0.7s ease-in-out;
 }
 
 .djMixes {
@@ -212,6 +270,12 @@
   text-shadow: 0 0 10px black;
 }
 
+.appearsOnSectionHeader p {
+  font-size: 3em;
+  max-width: 30ch;
+  word-wrap: break-word;
+}
+
 .streamLinks p {
   font-size: 16px;
 }
@@ -237,10 +301,6 @@
   max-width: 420px;
 }
 
-.goToTopButton {
-  display: none;
-}
-
 .appearsOnSectionLong :nth-child(2) p {
   padding: 0 0.1em;
   font-size: 1.5em;
@@ -263,7 +323,7 @@
 
 .streamLinks {
   position: absolute;
-  top: 85%;
+  top: 91%;
   width: 20em;
   display: flex;
   justify-content: space-evenly;
@@ -349,14 +409,6 @@
   border: black 1px solid;
   border-radius: 10px;
   color: white;
-}
-
-.djMixes {
-  transition: transform 0.2s;
-}
-
-.djMixElements:hover {
-  transform: scale(1.2);
 }
 
 @media (max-width: 785px) {
@@ -503,7 +555,7 @@
     width: 16.5em;
     height: 2.5em;
     padding: 0 1em;
-    top: 80%;
+    top: 96%;
   }
 
   /* .streamLinks p {

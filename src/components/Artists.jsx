@@ -9,6 +9,7 @@ import { HashLink } from "react-router-hash-link";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiSoundcloudFill } from "react-icons/ri";
+import { useFormState } from "react";
 
 const Artists = () => {
   // State for loading
@@ -54,6 +55,7 @@ const Artists = () => {
       <div className={styles.artistList}>
         <div className={styles.categoryHeader}>
           {/* Hamburger Menu icon changing on click */}
+
           <div
             className={styles.hamburgerMenu}
             onClick={handleClick}

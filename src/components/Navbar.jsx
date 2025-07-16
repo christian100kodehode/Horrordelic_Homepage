@@ -13,6 +13,10 @@ const Navbar = () => {
   // make visiblie or !visible
   const [visible, setVisible] = useState(true);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const handleScroll = debounce(() => {
     // see current position (y)
     const currentScrollPos = window.pageYOffset;
@@ -55,6 +59,7 @@ const Navbar = () => {
           Artists
         </Link>
       )}
+
       {/* Scroll to top when release page is not at top, else go to release page */}
       {prevScrollPos > 100 && window.location.href.slice(-1) === "e" ? (
         <HashLink smooth to={"#"}>
@@ -65,6 +70,9 @@ const Navbar = () => {
           Releases
         </Link>
       )}
+      <div
+      // style={{ margin: "2em 0em" }}
+      ></div>
       {/* <Link
         to="/ReleaseAndEvents"
         title="Upcoming releases and Events"
@@ -74,11 +82,14 @@ const Navbar = () => {
       </Link> */}
 
       <div>
-        <HashLink smooth to={"#"}>
-          <button className={styles.goToTopButton} title="Go to top of page..">
-            <AiOutlineArrowUp />
-          </button>
-        </HashLink>
+        <button
+          title="Go to top of the page"
+          onClick={scrollToTop}
+          className={styles.goToTopButton}
+          style={{ display: window.scrollY > 0 ? "block" : "none" }}
+        >
+          <AiOutlineArrowUp />
+        </button>
       </div>
     </nav>
   );

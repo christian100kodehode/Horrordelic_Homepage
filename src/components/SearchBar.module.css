@@ -1,0 +1,29 @@
+.searchContainer {
+  position: absolute;
+  top: calc(52vw);
+  left: calc(40vw - 20%);
+  /* background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%); */
+  background: var(--releaseContainerBg);
+  color: white;
+}
+
+.searchInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 170px;
+}
+
+.searchButton {
+  padding: 8px 17x;
+  background: var(--releaseContainerBg);
+  color: white;
+  font-size: 1rem;
+}
+
+.searchButton:hover {
+  background: var(--releaseContainerStreamLinksBg);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}

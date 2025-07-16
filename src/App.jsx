@@ -10,6 +10,8 @@ import ReleaseAndEvents from "./components/ReleaseAndEvents";
 import ArtistDetail from "./components/ArtistDetail";
 import ReleaseDetail from "./components/ReleaseDetail";
 import { FaMoon, FaSun } from "react-icons/fa";
+import SearchBar from "./components/SearchBar";
+import SearchResults from "./components/SearchResults";
 
 // Importing hooks/packages
 import { Routes, Route } from "react-router";
@@ -49,6 +51,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="*" element={<Main />} />
+
+        <Route path="/" element={<SearchBar />} />
+        <Route path="/search-results" element={<SearchResults />} />
 
         <Route path="/Release" element={<Release />} />
         <Route path="/Releases" element={<Release />} />
