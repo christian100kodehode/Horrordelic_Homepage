@@ -2,7 +2,7 @@
 import styles from "./Main.module.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 // Import images
-import HorrordelicLogo from "../images/horrordelic.jpg";
+// import HorrordelicLogo from "../images/horrordelic.jpg";
 // import HorrordelicSantaLogo from "../images/HorrordelicSantaLogo.png";
 // Import Components/Hooks
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -111,13 +111,13 @@ const Main = () => {
         </div> */}
       </div>
       <div className={styles.Container}>
-        <div>
+        <div className={styles.centerText}>
           <h1>Welcome! </h1>
-          <h2>
-            Site up and running -
+          <h1>
+            Site up and running -{" "}
             <span style={{ color: "var(--accent)" }}>Search just added!</span>
-          </h2>
-          <h2>
+          </h1>
+          <h1>
             Stay tuned and get all the{" "}
             <span style={{ color: "var(--accent)" }} href="/release">
               <a href="/release" title="Go to our releases..">
@@ -129,14 +129,9 @@ const Main = () => {
               Horrordelic:{" "}
               <span style={{ color: "var(--accent)" }}> Darkpsy Life</span>
             </div>
-          </h2>
+          </h1>
         </div>
-        <LazyLoadImage
-          src={HorrordelicLogo}
-          alt="Horrordelic Logo"
-          className={styles.Logo}
-          effect="blur"
-        />
+        {/*  */}
         {/* <VFXImg
           src={HorrordelicLogo}
           className={styles.Logo}

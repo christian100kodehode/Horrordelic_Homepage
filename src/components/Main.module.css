@@ -3,15 +3,40 @@
   overflow: hidden;
   /* background-image: url("../images/triangles1.svg"); */
   background-image: var(--backgroundImage);
-  transition: all 0.8s;
-  text-shadow: 0 1px 5px black;
+  /* transition: all 0.8s; */
+
+  /* background-image: -o-linear-gradient(
+    179.4deg,
+    rgba(6, 7, 9, 0.443) -16.9%,
+    rgba(117, 77, 130, 0.42) 119.9%
+  ); */
+  text-shadow: 1px 1px 10px red, 0em 0em 20px white, 0 0 0.1em black;
+  font-family: "megalomaniac";
+  letter-spacing: 1px;
+  color: whitesmoke;
 }
+
+.CenterText {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* font-size: 2em; */
+  flex-direction: column;
+  align-items: center;
+}
+/* .lazyLoadImage {
+  width: 2%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 22%;
+} */
 
 .calenderMobileLink {
   display: none;
 }
 
-.Container h1 {
+/* .Container {
   font-family: "megalomaniac";
   font-size: 3.5rem;
   color: white;
@@ -19,51 +44,39 @@
   margin: 0 0 0 0;
   text-decoration: underline var(--accent);
   letter-spacing: 0.15rem;
-  /* text-shadow: 0 0 10px #50505085; */
+
   text-shadow: 5px 5px 10px black;
-}
+} */
 
 .Container a {
   font-family: "helveticaNeue";
-  font-size: 1.5em;
-  text-shadow: none;
+  /* font-size: 1.5em;
+  text-shadow: none; */
 }
 
-.Container h2 {
+/* .Container h2 {
   font-size: 2em;
   margin: 0 0.2em;
   padding: 0 1em 0.5em 1em;
   font-family: "helveticaNeue";
   max-width: 15em;
   text-shadow: var(--text-shadowBg);
-}
-
+} */
+/* 
 .Container {
-  padding: 0.5em 0;
-  /* display: grid;
+  padding: 0.5em 0; */
+/* display: grid;
   grid-template-columns: 40% 50% 10%;
   grid-template-rows: 1fr;
   gap: 0px 0px; */
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin: 0 0.5em;
-}
+/* display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+} */
 
 .iframeContainer {
   padding-top: 2em;
-}
-
-.Logo {
-  /* max-height: 50vh;   */
-  /* max-width: 55vh; */
-  max-height: 20rem;
-  /* height: 25em; */
-  /* object-fit: contain; */
-  border-radius: 20px;
-  /* margin: calc(20% - 20px);
-  filter: var(--logoFilter); */
 }
 
 .marquee {
@@ -238,12 +251,6 @@
   }
 }
 
-@media (max-width: 72em) {
-  .Logo {
-    max-width: 55vh;
-  }
-}
-
 /* @media screen and (max-width: 700px) {
   .mainLinks {
     background-color: blue;
@@ -252,16 +259,8 @@
 } */
 
 @media screen and (max-width: 960px) {
-  .Container h1 {
-    font-size: 1.6em;
-  }
-
-  .Container h2 {
-    font-size: 1em;
-  }
-
   .Logo {
-    height: 38vh;
+    display: none;
   }
 }
 
@@ -315,10 +314,7 @@
   }
 
   .Logo {
-    padding-top: 1.5em;
-    height: 15vh;
-    overflow: hidden;
-    box-shadow: 2px 3px rgba(78, 78, 78, 0.624);
+    display: none;
   }
 
   .Container {
@@ -341,21 +337,22 @@
   }
 }
 
-@media (max-height: 400px) {
+@media (max-width: 400px) {
   .mainLinksText {
     display: none;
+  }
+
+  .Container h1,
+  .Container h2 {
+    font-size: 1em;
   }
 
   .Logo {
     display: none;
   }
-  .Container h1,
-  .Container h2 {
-    font-size: 1em;
-  }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 450px) {
   .mainLinksText2 p {
     display: none;
   }
@@ -408,7 +405,12 @@
   animation: marquee 30s linear 15s infinite;
 }
 
-@media (max-width: 382px) {
+@media (max-width: 260px) {
+  .centerText {
+    font-size: 1em;
+  }
+}
+@media (max-width: 420px) {
   .calenderMobileLink {
     display: contents;
     padding: 1em 0;
@@ -416,15 +418,6 @@
 
   .calenderContainer {
     padding: 0.2em 0;
-  }
-
-  .Logo {
-    max-height: 50vh;
-    max-width: 50vw;
-    object-fit: contain;
-    margin: 1em;
-    padding: 1em 1.5em;
-    border-radius: 20px;
   }
 
   @keyframes marquee {
@@ -458,9 +451,35 @@
   }
 }
 
-@media (max-width: 332px) {
+@media (max-width: 300px) {
   .Logo {
     display: none;
+  }
+
+  .CenterText h1 {
+    font-size: 1.2em;
+    margin-top: 3.5em;
+    text-shadow: white 34px 44px 44px;
+  }
+
+  .Container h2 {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+  }
+
+  .marqueeText {
+    font-size: 1.2rem;
+  }
+
+  .marqueeTextDate {
+    font-size: 0.8rem;
+  }
+
+  .mainLinks {
+    width: 100%;
+    padding: 0.5em;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
