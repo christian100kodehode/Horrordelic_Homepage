@@ -236,14 +236,14 @@
   padding: 0.2em 2em;
 }
 
-.mainLinksChild:nth-child(2):hover {
+.mainLinksChild:nth-child(4):hover {
   color: rgb(74, 251, 233);
   box-shadow: 3px 3px rgb(74, 251, 233);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
 }
 
-.mainLinksChild:nth-child(3):hover {
+.mainLinksChild:nth-child(2):hover {
   color: rgb(248, 37, 37);
   box-shadow: 3px 3px rgb(248, 37, 37);
   border-radius: 10px;
