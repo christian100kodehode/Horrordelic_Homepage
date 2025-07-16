@@ -102,7 +102,7 @@
   /* background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%);
    */
   background: var(--accentTransp);
-    max-width: 1280px;
+  max-width: 1280px;
   text-align: center;
 }
 
@@ -237,8 +237,8 @@
   padding: 0.2em 2em;
 }
 
-.mainLinksChild:nth-child(4):hover {
-  color: rgb(74, 251, 233);
+.mainLinksChild:nth-child(1):hover {
+  color: rgba(1, 182, 164, 0.826);
   box-shadow: 3px 3px rgb(74, 251, 233);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
@@ -252,8 +252,8 @@
 }
 
 .mainLinksChild:nth-child(4):hover {
-  box-shadow: 3px 3px rgb(226, 143, 0);
-  color: rgb(226, 143, 0);
+  box-shadow: 3px 3px rgb(255, 255, 255);
+  color: rgb(6, 107, 215);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
 }
@@ -263,18 +263,12 @@
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
 }
-.mainLinksChild:nth-child(6):hover {
+.mainLinksChild:nth-child(3):hover {
+  color: rgba(244, 0, 179, 0.914);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.462);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
-  color: rgb(83, 83, 250);
-  box-shadow: 3px 3px rgb(83, 83, 250);
 }
-/* .mainLinksChild:nth-child(6):hover {
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.227);
-  color: rgb(29, 29, 240);
-  box-shadow: 3px 3px rgb(83, 83, 250);
-} */
 
 /* add delay at the end of animation so you dont start while another div is going */
 @keyframes marquee {

@@ -9,14 +9,15 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
+// import { FaX } from "react-icons/fa6";
 import {
-  AiOutlineTwitter,
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineYoutube,
 } from "react-icons/ai";
-import { FaBandcamp } from "react-icons/fa";
+import { FaBandcamp, FaFacebook, FaSun } from "react-icons/fa";
 import SearchBar from "./SearchBar";
+import { FaMoon } from "react-icons/fa";
 
 const Main = () => {
   // State for loading
@@ -135,7 +136,6 @@ const Main = () => {
           <p>Visit our sites below:</p>
         </span>
         <div className={styles.mainLinks}>
-         
           <a
             href="https://horrordelic.bandcamp.com"
             target="_blank"
@@ -168,14 +168,14 @@ const Main = () => {
             <AiOutlineInstagram size={40} />
           </a>
           <a
-            href="https://twitter.com/horrordelic"
-            title="Twitter"
+            href="https://x.com/horrordelic"
+            title="X"
             target="_blank"
             rel="noreferrer"
-            alt="Twitter"
+            alt="X"
             className={styles.mainLinksChild}
           >
-            <AiOutlineTwitter size={40} />
+            <FaMoon size={30} />
           </a>
           <a
             href="https://facebook.com/horrordelic"
@@ -185,7 +185,7 @@ const Main = () => {
             alt="Facebook"
             className={styles.mainLinksChild}
           >
-            <AiOutlineFacebook size={40} />
+            <FaFacebook size={40} />
           </a>
         </div>
       </div>
