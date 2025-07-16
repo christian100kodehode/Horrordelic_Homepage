@@ -135,9 +135,7 @@ const Main = () => {
           <p>Visit our sites below:</p>
         </span>
         <div className={styles.mainLinks}>
-          <span className={styles.mainLinksText}>
-            <p>Visit our sites below:</p>
-          </span>
+         
           <a
             href="https://horrordelic.bandcamp.com"
             target="_blank"

@@ -28,7 +28,7 @@ const SearchBar = () => {
         type="text"
         value={inputValue}
         className={styles.searchInput}
-        placeholder="Search tracks or artists..."
+        placeholder="Search tracks, BPM or artists..."
         onChange={handleChange}
       />
       <button type="submit" className={styles.searchButton}>
