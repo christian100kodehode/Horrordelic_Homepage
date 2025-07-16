@@ -1,10 +1,11 @@
 .searchContainer {
-  position: absolute;
+  /* position: absolute;
   top: calc(52vw);
-  left: calc(40vw - 20%);
+  left: calc(40vw - 20%); */
   /* background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%); */
   background: var(--releaseContainerBg);
   color: white;
+  margin: 1em;
 }
 
 .searchInput {
