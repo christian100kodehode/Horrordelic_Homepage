@@ -57,14 +57,10 @@ const Main = () => {
       <>
         <span className={styles.latestAlbumDetails}>
           <title>Welcome to Horrordelic HQ</title>
-
-          <Link to={"../Release/" + latestAlbum.path}>
-            <span className={styles.marqueeText}>
-              Latest&nbsp;Release:&nbsp;&nbsp;
-            </span>
-          </Link>
-        </span>
-        &nbsp;&nbsp;
+        </span>{" "}
+        <Link to={"../Release/" + latestAlbum.path}>
+          <span className={styles.marqueeTextDate}>OUT NOW </span>
+        </Link>
         <span className={styles.marqueeText}>
           <Link to={"../Release/" + latestAlbum.path}>
             <LazyLoadImage
@@ -79,16 +75,14 @@ const Main = () => {
         </span>
         &nbsp;
         <a href={"../Release/" + latestAlbum.path}>
-          &nbsp;{latestAlbum.artist}:&nbsp;{latestAlbum.album_name}&nbsp;&nbsp;
+          &nbsp;{latestAlbum.artist}:&nbsp;{latestAlbum.album_name}
         </a>
-        &nbsp;&nbsp;
-        <span className={styles.latestAlbumDetails}>
-          <Link to={"../Release/" + latestAlbum.path}>
-            <span className={styles.marqueeTextDate}>
-              {latestAlbum.release_date}
-            </span>
-          </Link>
-        </span>
+        &nbsp;
+        <Link to={"../Release/" + latestAlbum.path}>
+          <span className={styles.marqueeTextDate}>
+            {latestAlbum.release_date}
+          </span>
+        </Link>
       </>
     );
   };
@@ -137,7 +131,9 @@ const Main = () => {
           className={styles.Logo}
           shader="glitch"    
         /> */}
-
+        <span className={styles.mainLinksText}>
+          <p>Visit our sites below:</p>
+        </span>
         <div className={styles.mainLinks}>
           <span className={styles.mainLinksText}>
             <p>Visit our sites below:</p>
