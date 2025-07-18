@@ -539,6 +539,7 @@ padding: 0.2em;
   .thumbNailImage {
     width: 32em;
     border: solid 2px var(--accentTransp);
+    align-items: center;
   }
   .thumbNailImageMix {
     width: 9em;
