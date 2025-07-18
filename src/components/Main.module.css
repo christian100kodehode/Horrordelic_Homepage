@@ -265,9 +265,9 @@ font-size: clamp(10px, 5vw, 30px);
   }
 }
 
-.centerText {
+/* .centerText {
   flex-direction: row;
-}
+} */
 
 .centerText h1 {
   font-size: 4vh;
