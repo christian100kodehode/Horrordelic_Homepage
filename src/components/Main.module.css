@@ -3,7 +3,7 @@
   height: 89vh;
   
      /* flex-shrink: 0;  */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-image: url("../images/triangles1.svg"); */
 
   overflow: auto; /* Enable scrolling */
@@ -23,12 +23,15 @@ font-size: clamp(10px, 3vw, 30px);
 
 }
 
-.mainAndFooterBox {display: flex;
+.mainAndFooterBox {
+  height: 100vh;
+  display: flex;
  flex-direction: column;
-  align-items:safe;
-  /* justify-content: center;
-  align-items: center; */
+  /* align-items:center; */
+  justify-content: center;
+  /* align-items: center; */
     background-image: var(--backgroundImage);
+    overflow: hidden;
 }
 
 .centerText {
