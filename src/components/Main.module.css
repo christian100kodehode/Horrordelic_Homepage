@@ -327,6 +327,10 @@ align-self: center;
 } */
 
 @media screen and (max-width: 960px) {
+
+  .marquee .marqueeone {
+  animation: marquee 17s linear infinite;
+}
   /* .Logo {
     display: none;
   } */
@@ -446,8 +450,8 @@ flex: 0;
 
 @media (max-width: 470px) {
 
-  .centerText h1 {
-    font-size: 3vh;
+.centerText:nth-child(1) h1 {
+    font-size: 4vh;
   }
 
   .Main {
@@ -513,6 +517,13 @@ flex: 0;
 .marquee .marqueethree {
   animation: marquee 30s linear 15s infinite;
 } */
+
+@media (max-width: 360px) {
+
+.centerText:nth-child(1) h1 {
+    font-size: 4vh;
+  }
+}
 
 @media (max-width: 260px) {
   .centerText {
