@@ -444,7 +444,24 @@ flex: 0;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
+
+  .centerText h1 {
+    font-size: 3vh;
+  }
+
+  .Main {
+    height: 75vh;
+  }
+
+  .centerText {
+   padding-top: 8vh;
+  }
+
+  .footerLinks {
+    height: 21vh;
+  }
+}
   /* .mainLinksText2 p {
     display: none;
   }
@@ -470,7 +487,7 @@ flex: 0;
     font-family: "helveticaNeue";
   } */
 
-  .Container h1 {
+  /* .Container h1 {
     font-size: 1em;
     margin: 0 0.2em;
     padding-bottom: 1em;
@@ -495,7 +512,7 @@ flex: 0;
 
 .marquee .marqueethree {
   animation: marquee 30s linear 15s infinite;
-}
+} */
 
 @media (max-width: 260px) {
   .centerText {
