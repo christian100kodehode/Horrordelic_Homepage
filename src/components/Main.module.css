@@ -717,3 +717,14 @@ flex: 0;
     max-width: 3 0vw;
   }
 }
+
+@media (min-width: 1900px) {
+  .centerText h1 {
+    font-size: 6vh;
+    letter-spacing: -3px;
+  }
+
+    .centerText span {
+    font-size: 3vh;
+  }
+}
