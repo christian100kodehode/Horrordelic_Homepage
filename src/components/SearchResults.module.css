@@ -486,7 +486,7 @@ transform: scale(1) translateY(11%) translateX(-25%);
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 410px) {
  .resultsContainer h1,p,a,li{
 font-size: 1em;
 padding: 0.2em;
