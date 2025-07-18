@@ -269,7 +269,7 @@ justify-content: center;
   box-shadow: 3px 3px rgb(27, 198, 255);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
-}
+}nks
 .mainLinksChild:nth-child(3):hover {
   color: rgba(244, 0, 179, 0.914);
   box-shadow: 3px 3px rgba(0, 0, 0, 0.462);
@@ -304,6 +304,32 @@ margin-bottom: 10vh;
     left: -400%;
   }
 }
+
+
+/* zoon leve query start*/
+
+
+/* low zoon */
+        @media (resolution: 96dpi) {
+             {
+            
+              
+            }
+        }
+
+        /* Media query for higher zoom level */
+        @media (resolution: 120dpi) {
+            #sampleDiv {
+                width: 120px;
+            }
+        }
+
+
+
+
+
+/* zoom level end */
+
 
 @media (min-width: 1110px) {
 .footerLinks {
@@ -470,6 +496,15 @@ flex: 0;
 
 @media (max-width: 470px) {
 
+  .mainLinks {
+    justify-content: center;
+  }
+
+  .mainLinks a {
+  padding: 0.2em 0.2em;
+
+}
+
 .centerText:nth-child(1) h1 {
     font-size: 4vh;
   }
@@ -551,6 +586,9 @@ flex: 0;
   }
 }
 @media (max-width: 420px) {
+
+
+
   .calenderMobileLink {
     display: contents;
     padding: 1em 0;
@@ -586,12 +624,36 @@ flex: 0;
 }
 
 @media (max-width: 330px) {
-  .mainLinks a {
-    padding: 0;
-  }
+
 }
 
 @media (max-width: 300px) {
+.centerText :nth-child(2) {
+  font-size: 2vh;
+}
+
+.centerText :nth-child(1) {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 2vh;
+
+  .centerText :nth-child(3) {
+   
+  font-size: 1vh;
+}
+.centerText :nth-child(4) {
+ margin-bottom: 5vh;
+  font-size: 1vh;
+}
+}
+  .mainLinks {
+    display: none;
+  }
+
+  .mainLinksText {
+    display: none;
+  }
+  
   .Logo {
     display: none;
   }

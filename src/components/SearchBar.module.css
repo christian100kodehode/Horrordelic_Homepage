@@ -37,3 +37,13 @@ input {
     letter-spacing: 1px;
     font-family: '01digitall';
 }
+
+@media (max-width: 300px) { 
+.searchInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20vh;
+}
+
+}
