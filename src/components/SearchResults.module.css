@@ -87,7 +87,7 @@
 
 .appearsOnSectionHeader {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   width: 100%;
   height: 5em;
@@ -487,6 +487,24 @@
 }
 
 @media (max-width: 380px) {
+ .resultsContainer h1,p,a,li{
+font-size: 1em;
+  }
+
+  .appearsOnSection p,a {
+    font-size: 1em;
+  }
+
+.resultsContainer {
+  /* width: 300px; */
+}
+
+.streamLinks a,img, p {
+  padding:0;
+  margin: 0;
+  font-size: 0.8em;
+}
+
   .locationContainer h2,
   .locationContainer h3 {
     font-size: 1em;
@@ -545,7 +563,7 @@
   }
 
   .appearsOnSection h1 {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 
   .albumReleaseNameStream {
@@ -554,10 +572,11 @@
   }
 
   .streamLinks {
-    width: 100vw;
-    height: 2.5em;
-    padding: 0;
+        width: 240px;
+   
+        padding: 0;
     top: 96%;
+    justify-content: center;
   }
 
   /* .streamLinks p {

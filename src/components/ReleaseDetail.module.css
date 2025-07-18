@@ -430,6 +430,8 @@ li {
 }
 
 @media (max-width: 468px) {
+
+
   .videoRatio {
     height: auto;
   }
@@ -452,8 +454,8 @@ li {
   }
 
   .trackList p {
-    font-size: 1rem;
-  }
+    font-size: 1.5rem;
+    text-decoration: underline;  }
 
   .releaseContainer {
     padding: 2.5rem 0;

@@ -480,6 +480,11 @@ flex: 0;
 }
 
 @media (max-width: 400px) {
+
+.mainAndFooterBox {
+  /* max-width: 360px; */
+}
+
   .mainLinksText  {
    padding-right: 2vh;
   }

@@ -33,8 +33,8 @@
 }
 .goToTopButton {
   position: absolute;
-  top: 95vh;
-    left: 85vw;
+  top: calc(100vh);
+  left: calc(100vw - 10%);
   /* background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%); */
   background: var(--releaseContainerBg);
   color: white;
@@ -65,8 +65,8 @@
 @media (max-width: 900px) {
   .goToTopButton {
     position: absolute;
-    top: 95vh;
-    left: 85vw;
+    top: calc(100vh);
+    left: calc(85vw);
   }
 }
 
