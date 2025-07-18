@@ -480,9 +480,9 @@ flex: 0;
 }
 
 @media (max-width: 400px) {
-  /* .mainLinksText {
-    display: none;
-  } */
+  .mainLinksText  {
+   padding-right: 2vh;
+  }
 
   .Container h1,
   .Container h2 {
