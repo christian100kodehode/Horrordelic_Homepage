@@ -370,6 +370,10 @@ margin-bottom: 10vh;
 
 @media (max-width: 713px) {
 
+  .centerText:nth-child(1) h1 {
+    font-size: 4vh;
+  }
+
 .footerLinks {
   align-items: end;
   display: flex;
@@ -405,8 +409,12 @@ flex: 0;
     background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
   } */
 
-  .mainLinks a {
-    padding: 0.2em 1em;
+  .mainLinksText {
+    justify-content: center;
+  }
+
+  .mainLinks {
+    width: 100vw;
   }
   .Container h1 {
     padding-bottom: 0.6em;
@@ -438,6 +446,11 @@ flex: 0;
       left: -330%;
     }
   } */
+}
+
+@media (max-width: 680px) { 
+
+
 }
 
 @media (max-width: 400px) {
