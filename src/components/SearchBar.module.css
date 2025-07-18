@@ -16,10 +16,12 @@
 }
 
 .searchButton {
-  padding: 1vh;
+
   background: var(--releaseContainerBg);
   color: white;
-  font-size: 5vh;
+  letter-spacing: 2px;
+  font-size: 3vh;
+  padding-block: 0.5vh;
 }
 
 .searchButton:hover {
@@ -31,6 +33,7 @@
 
 input {
  font-weight: bold;
-    font-size: 4vh;
+    font-size: 2.4vh;
+    letter-spacing: 1px;
     font-family: '01digitall';
 }

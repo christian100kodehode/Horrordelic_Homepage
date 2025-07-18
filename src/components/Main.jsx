@@ -88,8 +88,9 @@ const Main = () => {
     );
   };
 
-  return (
+  return ( <div className={styles.mainAndFooterBox}>
     <main className={styles.Main}>
+     
       <div className={styles.marquee}>
         <div className={styles.marqueeone}>
           <LatestAlbumScrollText />
@@ -124,14 +125,20 @@ const Main = () => {
               Horrordelic: <span style={{ color: "black" }}> Darkpsy Life</span>
             </div>
           </h1>
-        </div>
-        {/*  */}
-        {/* <VFXImg
-          src={HorrordelicLogo}
-          className={styles.Logo}
-          shader="glitch"    
-        /> */}
-        <div className={styles.footerLinks}>        <span className={styles.mainLinksText}>
+         </div>
+             {/*  */}
+                {/* <VFXImg
+                  src={HorrordelicLogo}
+                className={styles.Logo}
+               shader="glitch"    
+                /> */}
+       
+      </div>
+
+
+    </main>
+     <div className={styles.footerLinks}>       
+           <span className={styles.mainLinksText}>
           <p>Visit our sites below:</p>
           </span>
           <div className={styles.mainLinks}>
@@ -188,9 +195,7 @@ const Main = () => {
           </a>
           </div>
         </div>
-      </div>
-
-    </main>
+    </div>
   );
 };
 
