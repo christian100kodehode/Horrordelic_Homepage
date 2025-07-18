@@ -12,14 +12,14 @@
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 170px;
+  width: 40vh;
 }
 
 .searchButton {
-  padding: 8px 17x;
+  padding: 1vh;
   background: var(--releaseContainerBg);
   color: white;
-  font-size: 1rem;
+  font-size: 5vh;
 }
 
 .searchButton:hover {
@@ -27,4 +27,10 @@
   color: white;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+
+input {
+ font-weight: bold;
+    font-size: 4vh;
+    font-family: '01digitall';
 }

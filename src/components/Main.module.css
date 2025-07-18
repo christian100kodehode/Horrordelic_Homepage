@@ -1,5 +1,5 @@
 .Main {
-  margin-top: 8em;
+  margin-top: 1em;
   height: 100dvh;
   overflow: hidden;
   /* background-image: url("../images/triangles1.svg"); */
@@ -17,22 +17,23 @@
   font-family: "megalomaniac";
   letter-spacing: 1px;
   color: whitesmoke;
-  font-size: clamp(1rem, 1vw, 1rem);
+font-size: clamp(10px, 3vw, 30px);
 }
 
-.CenterText {
-  flex: 1;
+.centerText {
+  /* flex: 1; */
+  line-height: 1px;
   text-align: center;
   display: flex;
   justify-content: center;
-  /* font-size: 2em; */
+font-size: clamp(10px, 5vw, 30px);
   flex-direction: column;
   align-items: center;
 }
 
 .h1 {
   font-family: "megalomaniac";
-  font-size: 2.5rem;
+ font-size: clamp(10px, 4vw, 30px);
   margin: 0;
   padding: 0;
 }
@@ -47,17 +48,7 @@
   display: none;
 }
 
-/* .Container {
-  font-family: "megalomaniac";
-  font-size: 3.5rem;
-  color: white;
-  padding: 0;
-  margin: 0 0 0 0;
-  text-decoration: underline var(--accent);
-  letter-spacing: 0.15rem;
 
-  text-shadow: 5px 5px 10px black;
-} */
 
 .Container a {
   font-family: "helveticaNeue";
@@ -65,43 +56,20 @@
   text-shadow: none; */
 }
 
-/* .Container h2 {
-  font-size: 2em;
-  margin: 0 0.2em;
-  padding: 0 1em 0.5em 1em;
-  font-family: "helveticaNeue";
-  max-width: 15em;
-  text-shadow: var(--text-shadowBg);
-} */
-/* 
-.Container {
-  padding: 0.5em 0; */
-/* display: grid;
-  grid-template-columns: 40% 50% 10%;
-  grid-template-rows: 1fr;
-  gap: 0px 0px; */
-/* display: flex;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-} */
 
 .iframeContainer {
   padding-top: 2em;
 }
 
 .marquee {
-  height: 5em;
+  height: 4em;
   width: 100%;
   overflow: hidden;
   position: absolute;
   margin: 1em 0 0 0;
   border: solid black 2px;
   border-radius: 10px;
-  top: 3.5em;
-  /* background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%);
-   */
-  background: var(--accentTransp);
+ background: var(--accentTransp);
   max-width: 1280px;
   text-align: center;
 }
@@ -109,13 +77,13 @@
 .latestAlbumDetails p {
   font-size: 1.25em;
   color: white;
-  font-family: fantasy, serif;
+  font-family: "megalomaniac";
   letter-spacing: 0.2em;
 }
 
 .thumbNailImage {
   object-fit: contain;
-  width: 5em;
+  width: 5.2em;
 }
 
 .marquee img {
@@ -125,26 +93,31 @@
 .marqueeText {
   color: white;
   font-family: "megalomaniac";
-  letter-spacing: 0.15em;
-  font-size: 1.2em;
-  /* padding-bottom: 10px; */
+  letter-spacing: 0.1;
+  font-size: 1.3em;
+  padding-bottom: 5px;
+    min-width: 17em;
+  max-width: 20em;
 }
 
 .marqueeTextDate {
   color: white;
   font-family: "megalomaniac";
-  letter-spacing: 0.15em;
-  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-size: 0.5em;
   padding-top: 100px;
+    min-width: 7em;
+  max-width: 8em;
 }
 
 .marquee a {
   color: white;
   font-family: "megalomaniac";
-  font-size: 1.7rem;
+  padding-top: 15px;
+  font-size: 2.7em;
   letter-spacing: 0.15em;
-  min-width: 20em;
-  max-width: 22em;
+  min-width: 12em;
+  max-width: 16em;
 }
 
 .marqueeTextFirst {
@@ -159,15 +132,15 @@
 
 /* Time to run over screen and delay */
 .marquee .marqueeone {
-  animation: marquee 40s linear infinite;
+  animation: marquee 1s linear infinite;
 }
 
 .marquee .marqueetwo {
-  animation: marquee 40s linear 20s infinite;
+  animation: marquee 20s linear 10s infinite;
 }
 
 .marquee .marqueethree {
-  animation: marquee 40s linear 40s infinite;
+  animation: marquee 30s linear 30s infinite;
 }
 
 /* .marquee .marqueefour {
@@ -176,7 +149,7 @@
 
 /* even out the elements */
 .marquee div {
-  padding-top: 0.6em;
+  padding-top: 0.8em;
   position: absolute;
   width: 100%;
   left: 100%;
@@ -191,12 +164,13 @@
 }
 
 .Container {
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  /* background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%); */
-  background: var(--releaseContainerBg);
+  background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%);
+  /* background: var(--releaseContainerBg); */
 }
 
 .mainLinks {
@@ -276,12 +250,24 @@
     left: 100%;
   }
   50% {
-    left: -140%;
+    left: -200%;
   }
   100% {
-    left: -160%;
+    left: -400%;
   }
 }
+
+.footerLinks {
+
+}
+
+
+@media (min-width: 950px) {
+  .centerText h1 {
+    font-size: 6vh;
+  }
+}
+
 
 /* @media screen and (max-width: 700px) {
   .mainLinks {
@@ -291,13 +277,13 @@
 } */
 
 @media screen and (max-width: 960px) {
-  .Logo {
+  /* .Logo {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 950px) {
-  .marqueeTextDate {
+  /* .marqueeTextDate {
     font-size: 0.8em;
   }
   .marquee p,
@@ -313,22 +299,47 @@
       left: 100%;
     }
     50% {
-      left: -170%;
+      left: -200%;
     }
     100% {
-      left: -190%;
+      left: -260%;
     }
-  }
+  } */
 }
 
-@media (max-width: 736px) {
+@media (max-width: 713px) {
+
+.footerLinks {
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+  justify-content: center;
+}
+
+  .marquee {
+   display: none;
+  }
+
+  .marqueeText {
+    font-size: 2vh;
+  }
+
+  .centerText a {
+  font-size: 2vh;
+  }
+
+    .centerText h1 {
+    font-size: 3vh;
+  }
+  
   .marqueeTextDate {
     display: none;
   }
 
-  .mainLinksText2 p {
-    top: 14em;
-  }
+  /* .mainLinks{
+flex: 0;
+  } */
   /* .mainLinks {
     background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
   } */
@@ -355,7 +366,7 @@
     padding: 1em 1em 0 1em;
   }
 
-  @keyframes marquee {
+  /* @keyframes marquee {
     0% {
       left: 100%;
     }
@@ -365,13 +376,13 @@
     100% {
       left: -330%;
     }
-  }
+  } */
 }
 
 @media (max-width: 400px) {
-  .mainLinksText {
+  /* .mainLinksText {
     display: none;
-  }
+  } */
 
   .Container h1,
   .Container h2 {
@@ -384,20 +395,20 @@
 }
 
 @media (max-width: 450px) {
-  .mainLinksText2 p {
+  /* .mainLinksText2 p {
     display: none;
   }
 
   .mainLinks a {
     padding: 0.2em 0.3em;
-  }
+  } */
 
-  .marquee a {
+  /* .marquee a {
     min-width: 20em;
     max-width: 22em;
-  }
+  } */
 
-  .marquee p,
+  /* .marquee p,
   .marquee a {
     font-family: "megalomaniac";
     font-size: 1.5rem;
@@ -407,10 +418,10 @@
   .latestAlbumDetails {
     font-size: 1rem;
     font-family: "helveticaNeue";
-  }
+  } */
 
   .Container h1 {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0 0.2em;
     padding-bottom: 1em;
     font-family: "helveticaNeue";

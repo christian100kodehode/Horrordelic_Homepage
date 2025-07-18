@@ -60,7 +60,7 @@ const Main = () => {
           <title>Welcome to Horrordelic HQ</title>
         </span>{" "}
         <Link to={"../Release/" + latestAlbum.path}>
-          <span className={styles.marqueeTextDate}>OUT NOW </span>
+          <span className={styles.marqueeText}>OUT NOW </span>
         </Link>
         <span className={styles.marqueeText}>
           <Link to={"../Release/" + latestAlbum.path}>
@@ -94,12 +94,12 @@ const Main = () => {
         <div className={styles.marqueeone}>
           <LatestAlbumScrollText />
         </div>
-        <div className={styles.marqueetwo}>
+        {/* <div className={styles.marqueetwo}>
           <LatestAlbumScrollText />
         </div>
         <div className={styles.marqueethree}>
           <LatestAlbumScrollText />
-        </div>
+        </div> */}
         {/* If more is needed */}
         {/* <div className={styles.marqueefour}>
         <LatestAlbumScrollText />
@@ -131,10 +131,10 @@ const Main = () => {
           className={styles.Logo}
           shader="glitch"    
         /> */}
-        <span className={styles.mainLinksText}>
+        <div className={styles.footerLinks}>        <span className={styles.mainLinksText}>
           <p>Visit our sites below:</p>
-        </span>
-        <div className={styles.mainLinks}>
+          </span>
+          <div className={styles.mainLinks}>
           <a
             href="https://horrordelic.bandcamp.com"
             target="_blank"
@@ -186,8 +186,10 @@ const Main = () => {
           >
             <FaFacebook size={40} />
           </a>
+          </div>
         </div>
       </div>
+
     </main>
   );
 };
