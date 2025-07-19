@@ -454,8 +454,11 @@ li {
   }
 
   .trackList p {
-    font-size: 1.5rem;
-    text-decoration: underline;  }
+    padding-bottom: 20px;
+    /* letter-spacing: 1px; */
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+  }
 
   .releaseContainer {
     padding: 2.5rem 0;

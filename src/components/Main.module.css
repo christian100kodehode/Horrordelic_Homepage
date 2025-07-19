@@ -1,11 +1,9 @@
-.Main {
-
-  height: 89vh;
-  
+.main {
+  height: calc(100vh - 80px);
+    background-image: var(--backgroundImage);
      /* flex-shrink: 0;  */
   /* overflow: hidden; */
   /* background-image: url("../images/triangles1.svg"); */
-
   overflow: auto; /* Enable scrolling */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -22,37 +20,35 @@
 font-size: clamp(10px, 3vw, 30px);
 
 }
-
+/* 
 .mainAndFooterBox {
   height: 100vh;
   display: flex;
  flex-direction: column;
-  /* align-items:center; */
+  align-items:center;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
     background-image: var(--backgroundImage);
     overflow: hidden;
-}
+} */
 
 .centerText {
-  /* flex: 1; */
-  /* height: 40vh; */
-   /* background: linear-gradient(179.4deg, rgba(6, 7, 9, 0.443) -16.9%, rgba(117, 77, 130, 0.42) 119.9%); */
-  padding-top:  4vh;
+/* float:center; */
+/* margin: 10em; */
   line-height: 1px;
   text-align: center;
   display: flex;
   justify-content: center;
-font-size: clamp(10px, 5vw, 30px);
+/* font-size: clamp(10px, 5vw, 30px); */
   flex-direction: column;
   align-items: center;
+  padding-top: 4vh;
 }
 
-.h1 {
+.centerText h1 {
   font-family: "megalomaniac";
  font-size: clamp(10px, 4vw, 30px);
-  margin: 0;
-  padding: 0;
+
 }
 .centerText:nth-child(1) h1 {
   font-size: 6vh;
@@ -87,12 +83,11 @@ font-size: clamp(10px, 5vw, 30px);
 }
 
 .marquee {
-
+  padding-top: 2.4em;
   height: 4em;
   width: 100%;
   overflow: hidden;
-  position: absolute;
-  margin: 2em 0 0 0;
+  position: relative;
   border: solid black 2px;
   border-radius: 10px;
  background: var(--accentTransp);
@@ -153,6 +148,7 @@ font-size: clamp(10px, 5vw, 30px);
   letter-spacing: 0.15em;
   /* min-width: 30em;
   max-width: 33em; */
+  height: 100%;
   color: red;
 }
 
@@ -189,19 +185,11 @@ font-size: clamp(10px, 5vw, 30px);
   animation-play-state: paused;
 }
 
-.Container {
-  margin-top: 5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
- 
-  /* background: var(--releaseContainerBg); */
-}
 
 .mainLinks {
-  width: 50vw;
-  border-radius: 10px;
+    height: 50px;
+  width: vw;
+  /* border-radius: 10px; */
   background: var(--accentTransp);
   /* position: absolute; */
   display: flex;
@@ -233,6 +221,7 @@ font-size: clamp(10px, 5vw, 30px);
 
 
 .mainLinksText {
+    height: 26px;
   display: flex;
 justify-content: center;
 
@@ -278,13 +267,14 @@ justify-content: center;
 }
 
 .footerLinks {
+/* height: 10vh; */
   /* flex-shrink: 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* position:absolute; */
 align-self: center;
-margin-bottom: 10vh;
+/* margin-bottom: 10vh; */
 /* margin-left: 45vh; */
 
   /* height: 20vh;  */
@@ -310,19 +300,20 @@ margin-bottom: 10vh;
 
 
 /* low zoon */
-        @media (resolution: 96dpi) {
+        /* @media (resolution: 96dpi) {
              {
             
               
             }
-        }
+        } */
 
         /* Media query for higher zoom level */
-        @media (resolution: 120dpi) {
-            #sampleDiv {
-                width: 120px;
-            }
+        /* @media (resolution: 120dpi) {
+        .centerText:nth-child(2) h1   {
+          color: red;
         }
+          
+        } */
 
 
 
@@ -401,10 +392,10 @@ margin-bottom: 10vh;
   }
 
 .footerLinks {
-  align-items: end;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  height: 50vh;
+  /* flex-wrap: wrap; */
+  height: 55px;
   justify-content: center;
 }
 
@@ -439,27 +430,7 @@ flex: 0;
     justify-content: center;
   }
 
-  .mainLinks {
-    width: 100vw;
-  }
-  .Container h1 {
-    padding-bottom: 0.6em;
-  }
 
-  .Container h2 {
-    font-size: 1.35rem;
-  }
-
-  .Logo {
-    display: none;
-  }
-
-  .Container {
-    display: flex;
-    padding: 0 1em;
-    flex-direction: column;
-    padding: 1em 1em 0 1em;
-  }
 
   /* @keyframes marquee {
     0% {
@@ -510,8 +481,8 @@ flex: 0;
 
 }
 
-.centerText:nth-child(1) h1 {
-    font-size: 4vh;
+.centerText h1 {
+    font-size: 2vh;
   }
 
   .Main {
@@ -519,12 +490,16 @@ flex: 0;
   }
 
   .centerText {
-   padding-top: 8vh;
+   padding-top: 15vh;
   }
 
   .footerLinks {
     height: 21vh;
   }
+.mainLinksText p {
+  align-content: center;
+}
+
 }
   /* .mainLinksText2 p {
     display: none;
@@ -720,11 +695,11 @@ flex: 0;
 
 @media (min-width: 1900px) {
   .centerText h1 {
-    font-size: 6vh;
-    letter-spacing: -3px;
+    font-size: 2.5vh;
+    
   }
 
     .centerText span {
-    font-size: 3vh;
+    font-size: 2vh;
   }
 }

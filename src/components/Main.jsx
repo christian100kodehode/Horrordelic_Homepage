@@ -89,7 +89,7 @@ const Main = () => {
   };
 
   return ( <div className={styles.mainAndFooterBox}>
-    <main className={styles.Main}>
+    <main className={styles.main}>
      
       <div className={styles.marquee}>
         <div className={styles.marqueeone}>
@@ -106,7 +106,7 @@ const Main = () => {
         <LatestAlbumScrollText />
         </div> */}
       </div>
-      <div className={styles.Container}>
+    
         <div className={styles.centerText}>
           <h1>Welcome! </h1>
           <h1>
@@ -133,11 +133,13 @@ const Main = () => {
                shader="glitch"    
                 /> */}
        
-      </div>
+    
 
 
-    </main>
-     <div className={styles.footerLinks}>       
+         </main>
+   
+     
+          <div className={styles.footerLinks}>       
            <span className={styles.mainLinksText}>
           <p>Visit our sites below:</p>
           </span>
@@ -194,8 +196,9 @@ const Main = () => {
             <FaFacebook size={40} />
           </a>
           </div>
-        </div>
-    </div>
+          </div>
+ </div>
+     
   );
 };
 
