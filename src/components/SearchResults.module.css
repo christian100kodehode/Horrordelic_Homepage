@@ -65,7 +65,8 @@
 }
 
 .imageContainerYoutubeImage {
-  width: 420px;
+  /* width: 420px; */
+  padding: 2em;
   overflow: hidden;
   /* border: solid 4px var(--releaseContainerReadMoreBg); */
   border-radius: 10px;

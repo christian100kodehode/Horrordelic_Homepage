@@ -174,7 +174,7 @@ const SearchResults = () => {
                       .map((track, index) => (
                         <li key={index} className={styles.appearsOnSection}>
                           <p>{track}</p>
-                          <div className={styles.appearsOnSection}>
+                        
                             <a
                               href={`https://horrordelic.com/release/${item.path}`}
                               target="_self"
@@ -243,7 +243,7 @@ const SearchResults = () => {
                                 </a>
                               )}
                             </div>
-                          </div>
+                        
                         </li>
                       ))}
                   </ul>
