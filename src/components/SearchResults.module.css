@@ -430,7 +430,7 @@
 @media (max-width: 570px) {
 
   .appearsOnSection p {
-  font-size: 4.8vh;
+  font-size: 1em;
 }
   .imageContainerYoutubeImage {
     /* width: 280px; */
