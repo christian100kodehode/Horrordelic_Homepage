@@ -1,45 +1,21 @@
 .main {
   height: calc(100vh - 80px);
-    background-image: var(--backgroundImage);
-     /* flex-shrink: 0;  */
-  /* overflow: hidden; */
-  /* background-image: url("../images/triangles1.svg"); */
-  overflow: auto; /* Enable scrolling */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-  /* transition: all 0.8s; */
-  /* background-image: -o-linear-gradient(
-    179.4deg,
-    rgba(6, 7, 9, 0.443) -16.9%,
-    rgba(117, 77, 130, 0.42) 119.9%
-  ); */
+  background-image: var(--backgroundImage);
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   text-shadow: 1px 1px 10px red, 0em 0em 20px white, 0 0 0.1em black;
   font-family: "megalomaniac";
   letter-spacing: 1px;
   color: whitesmoke;
-font-size: clamp(10px, 3vw, 30px);
-
+  font-size: clamp(10px, 3vw, 30px);
 }
-/* 
-.mainAndFooterBox {
-  height: 100vh;
-  display: flex;
- flex-direction: column;
-  align-items:center;
-  justify-content: center;
-  align-items: center;
-    background-image: var(--backgroundImage);
-    overflow: hidden;
-} */
 
 .centerText {
-/* float:center; */
-/* margin: 10em; */
   line-height: 1px;
   text-align: center;
   display: flex;
   justify-content: center;
-/* font-size: clamp(10px, 5vw, 30px); */
   flex-direction: column;
   align-items: center;
   padding-top: 4vh;
@@ -47,50 +23,33 @@ font-size: clamp(10px, 3vw, 30px);
 
 .centerText h1 {
   font-family: "megalomaniac";
- font-size: clamp(10px, 4vw, 30px);
-
+  font-size: clamp(10px, 4vw, 30px);
 }
 .centerText:nth-child(1) h1 {
   font-size: 6vh;
-  /* padding-bottom: 1vh; */
 }
 
 .centerText:nth-child(2) h1 {
-   font-size: 4vh;
+  font-size: 4vh;
 }
-/* .lazyLoadImage {
-  width: 2%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 22%;
-} */
-
-.calenderMobileLink {
-  display: none;
-}
-
-
 
 .Container a {
   font-family: "helveticaNeue";
-  /* font-size: 1.5em;
-  text-shadow: none; */
 }
-
 
 .iframeContainer {
   padding-top: 2em;
 }
 
 .marquee {
-  padding-top: 2.4em;
+  padding-top: 2rem;
   height: 4em;
   width: 100%;
   overflow: hidden;
   position: relative;
   border: solid black 2px;
   border-radius: 10px;
- background: var(--accentTransp);
+  background: var(--accentTransp);
   max-width: 1280px;
   text-align: center;
 }
@@ -117,7 +76,7 @@ font-size: clamp(10px, 3vw, 30px);
   letter-spacing: 0.1;
   font-size: 1.3em;
   padding-bottom: 5px;
-    min-width: 17em;
+  min-width: 17em;
   max-width: 20em;
 }
 
@@ -127,7 +86,7 @@ font-size: clamp(10px, 3vw, 30px);
   letter-spacing: 0.1em;
   font-size: 0.5em;
   padding-top: 100px;
-    min-width: 7em;
+  min-width: 7em;
   max-width: 8em;
 }
 
@@ -146,8 +105,6 @@ font-size: clamp(10px, 3vw, 30px);
   font-family: "megalomaniac";
   font-size: 1.7rem;
   letter-spacing: 0.15em;
-  /* min-width: 30em;
-  max-width: 33em; */
   height: 100%;
   color: red;
 }
@@ -165,10 +122,6 @@ font-size: clamp(10px, 3vw, 30px);
   animation: marquee 30s linear 30s infinite;
 }
 
-/* .marquee .marqueefour {
-  animation: marquee 15s linear 12s infinite;
-} */
-
 /* even out the elements */
 .marquee div {
   padding-top: 0.8em;
@@ -185,48 +138,31 @@ font-size: clamp(10px, 3vw, 30px);
   animation-play-state: paused;
 }
 
-
 .mainLinks {
-    height: 50px;
-  width: vw;
-  /* border-radius: 10px; */
+  height: 50px;
   background: var(--accentTransp);
-  /* position: absolute; */
   display: flex;
   flex-direction: row;
-  /* bottom: 0; */
-  /* margin-bottom: 1em; */
   display: flex;
-  /* align-self: flex-end; */
   justify-content: space-between;
   border: black 1px solid;
-
-  /* margin-bottom: 6vh; */
 }
-
-
 
 .mainLinksText p {
   display: flex;
-  /* flex-direction: row; */
-  /* position: absolute; */
-  /* bottom: 1em; */
   color: white;
   font-size: 1.5rem;
   font-family: "01digitall";
   margin: 0;
 
-    align-self: flex-end;
+  align-self: flex-end;
 }
-
 
 .mainLinksText {
-    height: 26px;
+  height: 26px;
   display: flex;
-justify-content: center;
-
+  justify-content: center;
 }
-
 
 .mainLinks a {
   color: rgba(255, 255, 255, 0.689);
@@ -248,39 +184,35 @@ justify-content: center;
 }
 
 .mainLinksChild:nth-child(4):hover {
-  box-shadow: 3px 3px rgb(255, 255, 255);
+  box-shadow: 3px 3px rgb(6, 107, 215);
   color: rgb(6, 107, 215);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
+}
+
+.mainLinksChild:nth-child(4) {
+  padding-top: 0.5em;
 }
 .mainLinksChild:nth-child(5):hover {
   color: rgb(27, 198, 255);
   box-shadow: 3px 3px rgb(27, 198, 255);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
-}nks
+}
+
 .mainLinksChild:nth-child(3):hover {
   color: rgba(244, 0, 179, 0.914);
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.462);
+  box-shadow: 3px 3px rgba(244, 0, 179, 0.914);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.227);
 }
 
 .footerLinks {
-/* height: 10vh; */
-  /* flex-shrink: 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* position:absolute; */
-align-self: center;
-/* margin-bottom: 10vh; */
-/* margin-left: 45vh; */
-
-  /* height: 20vh;  */
-
+  align-self: center;
 }
-
 
 /* add delay at the end of animation so you dont start while another div is going */
 @keyframes marquee {
@@ -295,193 +227,68 @@ align-self: center;
   }
 }
 
-
-/* zoon leve query start*/
-
-
-/* low zoon */
-        /* @media (resolution: 96dpi) {
-             {
-            
-              
-            }
-        } */
-
-        /* Media query for higher zoom level */
-        /* @media (resolution: 120dpi) {
-        .centerText:nth-child(2) h1   {
-          color: red;
-        }
-          
-        } */
-
-
-
-
-
-/* zoom level end */
-
-
-@media (min-width: 1110px) {
-.footerLinks {
-/* padding-left: 20vh; */
-}
-}
-
-
-@media (min-width: 950px) {
-  .centerText h1 {
-    font-size: 6vh;
-  }
-}
-
-/* .centerText {
-  flex-direction: row;
-} */
-
 .centerText h1 {
   font-size: 4vh;
 }
 
-/* @media screen and (max-width: 700px) {
-  .mainLinks {
-    background-color: blue;
-  }
-  
-} */
-
 @media screen and (max-width: 960px) {
-
   .marquee .marqueeone {
-  animation: marquee 21s linear infinite;
-}
-  /* .Logo {
-    display: none;
-  } */
-}
-
-@media (max-width: 950px) {
-  /* .marqueeTextDate {
-    font-size: 0.8em;
+    animation: marquee 21s linear infinite;
   }
-  .marquee p,
-  .marquee a {
-    font-family: "megalomaniac";
-    font-size: 1.5rem;
-    letter-spacing: 0.2em;
-    padding-bottom: 20px;
-  }
-
-  @keyframes marquee {
-    0% {
-      left: 100%;
-    }
-    50% {
-      left: -200%;
-    }
-    100% {
-      left: -260%;
-    }
-  } */
 }
 
 @media (max-width: 713px) {
-
   .centerText:nth-child(1) h1 {
     font-size: 4vh;
   }
 
-.footerLinks {
-  align-items: center;
-  display: flex;
-  /* flex-wrap: wrap; */
-  height: 55px;
-  justify-content: center;
-}
+  .footerLinks {
+    align-items: center;
+    display: flex;
+    height: 55px;
+    justify-content: center;
+  }
 
   .marquee {
-   display: none;
-  }
-
-  .marqueeText {
-    font-size: 2vh;
-  }
-
-  .centerText a {
-  font-size: 2vh;
-  }
-
-    .centerText h1 {
-    font-size: 3vh;
-  }
-  
-  .marqueeTextDate {
     display: none;
   }
 
-  /* .mainLinks{
-flex: 0;
-  } */
-  /* .mainLinks {
-    background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%);
-  } */
+  .centerText {
+    padding-top: 10vh;
+  }
+
+  .centerText a {
+    font-size: 2vh;
+  }
+
+  .centerText h1 {
+    font-size: 3vh;
+  }
 
   .mainLinksText {
     justify-content: center;
   }
-
-
-
-  /* @keyframes marquee {
-    0% {
-      left: 100%;
-    }
-    50% {
-      left: -220%;
-    }
-    100% {
-      left: -330%;
-    }
-  } */
 }
 
-@media (max-width: 680px) { 
-
-
+@media (max-width: 680px) {
 }
 
 @media (max-width: 400px) {
-
-.mainAndFooterBox {
-  /* max-width: 360px; */
-}
-
-  .mainLinksText  {
-   padding-right: 2vh;
-  }
-
-  .Container h1,
-  .Container h2 {
-    font-size: 1em;
-  }
-
-  .Logo {
-    display: none;
+  .mainLinksText {
+    padding-right: 2vh;
   }
 }
 
 @media (max-width: 470px) {
-
   .mainLinks {
     justify-content: center;
   }
 
   .mainLinks a {
-  padding: 0.2em 0.2em;
+    padding: 0.2em 0.2em;
+  }
 
-}
-
-.centerText h1 {
+  .centerText h1 {
     font-size: 2vh;
   }
 
@@ -490,94 +297,22 @@ flex: 0;
   }
 
   .centerText {
-   padding-top: 15vh;
+    padding-top: 15vh;
   }
 
-  /* .footerLinks {
-    height: 21vh;
-  } */
-.mainLinksText p {
-  align-content: center;
-}
-
-}
-  /* .mainLinksText2 p {
-    display: none;
+  .mainLinksText p {
+    align-content: center;
   }
+}
 
-  .mainLinks a {
-    padding: 0.2em 0.3em;
-  } */
-
-  /* .marquee a {
-    min-width: 20em;
-    max-width: 22em;
-  } */
-
-  /* .marquee p,
-  .marquee a {
-    font-family: "megalomaniac";
+@media (max-width: 390px) {
+  .centerText:nth-child(2) h1 {
     font-size: 1.5rem;
-    letter-spacing: 0.15em;
-  }
-
-  .latestAlbumDetails {
-    font-size: 1rem;
-    font-family: "helveticaNeue";
-  } */
-
-  /* .Container h1 {
-    font-size: 1em;
-    margin: 0 0.2em;
-    padding-bottom: 1em;
-    font-family: "helveticaNeue";
-  }
-
-  .Container h2 {
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-    font-family: "helveticaNeue";
+    margin-bottom: 3vh;
   }
 }
 
-.marquee .marqueeone {
-  animation: marquee 30s linear infinite;
-}
-
-.marquee .marqueetwo {
-  animation: marquee 30s linear 15s infinite;
-}
-
-.marquee .marqueethree {
-  animation: marquee 30s linear 15s infinite;
-} */
-
-@media (max-width: 360px) {
-
-.centerText:nth-child(1) h1 {
-    font-size: 4vh;
-  }
-}
-
-@media (max-width: 260px) {
-  .centerText {
-    font-size: 1em;
-  }
-}
 @media (max-width: 420px) {
-
-
-
-  .calenderMobileLink {
-    display: contents;
-    padding: 1em 0;
-  }
-
-  .calenderContainer {
-    padding: 0.2em 0;
-  }
-
   @keyframes marquee {
     0% {
       left: 100%;
@@ -603,85 +338,30 @@ flex: 0;
   }
 }
 
-@media (max-width: 330px) {
-
-}
-
 @media (max-width: 300px) {
-.centerText :nth-child(2) {
-  font-size: 2vh;
-}
-
-.centerText :nth-child(1) {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  font-size: 2vh;
-
-  .centerText :nth-child(3) {
-   
-  font-size: 1vh;
-}
-.centerText :nth-child(4) {
- margin-bottom: 5vh;
-  font-size: 1vh;
-}
-}
-  .mainLinks {
-    display: none;
-  }
-
-  .mainLinksText {
-    display: none;
-  }
-  
-  .Logo {
-    display: none;
-  }
-
-  .CenterText h1 {
-    font-size: 1.2em;
-    margin-top: 3.5em;
-    text-shadow: white 34px 44px 44px;
-  }
-
-  .Container h2 {
-    font-size: 0.9em;
-    margin-top: 0.5em;
-  }
-
-  .marqueeText {
+  .centerText:nth-child(2) h1 {
     font-size: 1.2rem;
-  }
-
-  .marqueeTextDate {
-    font-size: 0.8rem;
-  }
-
-  .mainLinks {
-    width: 100%;
-    padding: 0.5em;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 2vh;
   }
 }
 
-@media (max-width: 220px) {
-  .Container h1,
-  .Container h2 {
-    margin-top: 3.5em;
-    font-size: 1rem;
-  }
-
-  .marquee {
-    display: none;
+@media (max-width: 240px) {
+  .centerText:nth-child(2) h1 {
+    font-size: 0.8rem;
+    margin-bottom: 2vh;
+    line-break: auto;
   }
 
   .mainLinks {
-    width: 80%;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
   }
-  .mainLinks a {
-    padding: 0;
+  .mainLinksText {
+    padding-bottom: 12vh;
+  }
+
+  .mainLinksText p {
+    font-size: 1rem;
   }
 }
 
@@ -696,10 +376,9 @@ flex: 0;
 @media (min-width: 1900px) {
   .centerText h1 {
     font-size: 2.5vh;
-    
   }
 
-    .centerText span {
+  .centerText span {
     font-size: 2vh;
   }
 }

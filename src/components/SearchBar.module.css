@@ -16,7 +16,6 @@
 }
 
 .searchButton {
-
   background: var(--releaseContainerBg);
   color: white;
   letter-spacing: 2px;
@@ -32,18 +31,58 @@
 }
 
 input {
- font-weight: bold;
-    font-size: 2.4vh;
+  font-weight: bold;
+  font-size: 2.4vh;
+  letter-spacing: 1px;
+  font-family: "01digitall";
+}
+
+@media (max-width: 767px) and (min-height: 600px) {
+  .searchInput {
+    width: 80vw;
+    margin: 16vh 0 0 0;
+  }
+
+  .searchButton {
+    font-size: 5vh;
+    padding-block: 0.5vh;
+    margin: 0 0 16vh 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 30vh;
+    margin: 16vh 0 0 0;
+  }
+
+  .searchButton {
+    background: var(--releaseContainerBg);
+    color: white;
     letter-spacing: 1px;
-    font-family: '01digitall';
+    font-size: 4vh;
+    padding-block: 0.2vh;
+    margin: 0 0 16vh 0;
+  }
 }
+@media (max-width: 240px) {
+  .searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 20vh;
+    margin: 16vh 0 0 0;
+  }
 
-@media (max-width: 300px) { 
-.searchInput {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 20vh;
-}
-
+  .searchButton {
+    background: var(--releaseContainerBg);
+    color: white;
+    letter-spacing: 1px;
+    font-size: 3vh;
+    padding-block: 0.2vh;
+    margin: 0 0 16vh 0;
+  }
 }

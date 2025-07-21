@@ -9,7 +9,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
-// import { FaX } from "react-icons/fa6";
+import { FaX } from "react-icons/fa6";
 import {
   AiOutlineFacebook,
   AiOutlineInstagram,
@@ -88,25 +88,25 @@ const Main = () => {
     );
   };
 
-  return ( <div className={styles.mainAndFooterBox}>
-    <main className={styles.main}>
-     
-      <div className={styles.marquee}>
-        <div className={styles.marqueeone}>
-          <LatestAlbumScrollText />
-        </div>
-        {/* <div className={styles.marqueetwo}>
+  return (
+    <div className={styles.mainAndFooterBox}>
+      <main className={styles.main}>
+        <div className={styles.marquee}>
+          <div className={styles.marqueeone}>
+            <LatestAlbumScrollText />
+          </div>
+          {/* <div className={styles.marqueetwo}>
           <LatestAlbumScrollText />
         </div>
         <div className={styles.marqueethree}>
           <LatestAlbumScrollText />
         </div> */}
-        {/* If more is needed */}
-        {/* <div className={styles.marqueefour}>
+          {/* If more is needed */}
+          {/* <div className={styles.marqueefour}>
         <LatestAlbumScrollText />
         </div> */}
-      </div>
-    
+        </div>
+
         <div className={styles.centerText}>
           <h1>Welcome! </h1>
           <h1>
@@ -125,25 +125,20 @@ const Main = () => {
               Horrordelic: <span style={{ color: "black" }}> Darkpsy Life</span>
             </div>
           </h1>
-         </div>
-             {/*  */}
-                {/* <VFXImg
+        </div>
+        {/*  */}
+        {/* <VFXImg
                   src={HorrordelicLogo}
                 className={styles.Logo}
                shader="glitch"    
                 /> */}
-       
-    
+      </main>
 
-
-         </main>
-   
-     
-          <div className={styles.footerLinks}>       
-           <span className={styles.mainLinksText}>
+      <div className={styles.footerLinks}>
+        <span className={styles.mainLinksText}>
           <p>Visit our sites below:</p>
-          </span>
-          <div className={styles.mainLinks}>
+        </span>
+        <div className={styles.mainLinks}>
           <a
             href="https://horrordelic.bandcamp.com"
             target="_blank"
@@ -183,7 +178,7 @@ const Main = () => {
             alt="X"
             className={styles.mainLinksChild}
           >
-            <FaMoon size={30} />
+            <FaX size={30} />
           </a>
           <a
             href="https://facebook.com/horrordelic"
@@ -195,10 +190,9 @@ const Main = () => {
           >
             <FaFacebook size={40} />
           </a>
-          </div>
-          </div>
- </div>
-     
+        </div>
+      </div>
+    </div>
   );
 };
 
