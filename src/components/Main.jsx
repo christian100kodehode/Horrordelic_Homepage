@@ -115,16 +115,16 @@ const Main = () => {
           </h1>
           <h1>
             Stay tuned and get all the{" "}
-            <span style={{ color: "black" }} href="/release">
-              <a href="/release" title="Go to our releases..">
+            
+              <Link to="/release" title="Go to our releases.." style={{ color: "black" }}>
                 Releases!
-              </a>
-            </span>
-            <div>
-              <SearchBar />
-              Horrordelic: <span style={{ color: "black" }}> Darkpsy Life</span>
-            </div>
-          </h1>
+              </Link>
+            </h1>
+            <h1>
+              <SearchBar id="searchQuery"/>
+              Horrordelic:</h1> <h1 style={{ color: "black" }}> Darkpsy Life</h1>
+            
+          
         </div>
         {/*  */}
         {/* <VFXImg

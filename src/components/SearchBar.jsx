@@ -26,6 +26,7 @@ const SearchBar = () => {
     <form onSubmit={handleSearch} className={styles.searchContainer}>
       <input
         type="text"
+        id="searchQueryTracks"
         value={inputValue}
         className={styles.searchInput}
         placeholder="Search tracks, BPM or artists..."

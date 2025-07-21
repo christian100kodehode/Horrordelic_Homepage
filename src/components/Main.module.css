@@ -23,14 +23,21 @@
 
 .centerText h1 {
   font-family: "megalomaniac";
-  font-size: clamp(10px, 4vw, 30px);
+  /* font-size: clamp(10px, 4vw, 30px); */
 }
-.centerText:nth-child(1) h1 {
+.centerText h1:nth-child(1) {
+  padding-top: 0.5rem;
   font-size: 6vh;
 }
 
-.centerText:nth-child(2) h1 {
-  font-size: 4vh;
+.centerText h1:nth-child(2) {
+  font-size: 5vh;
+  padding-bottom: 0.28rem;
+}
+
+.centerText h1:nth-child(4) {
+  font-size: 6vh;
+ margin: 0;
 }
 
 .Container a {
