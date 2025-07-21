@@ -280,6 +280,10 @@
 }
 
 @media (max-width: 470px) {
+.main {
+  height: calc(100dvh - 78px);
+}
+
   .mainLinks {
     justify-content: center;
   }
