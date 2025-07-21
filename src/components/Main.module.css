@@ -1,5 +1,5 @@
 .main {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 78px);
   background-image: var(--backgroundImage);
   overflow: auto;
   scrollbar-width: none;
@@ -42,7 +42,7 @@
 }
 
 .marquee {
-  padding-top: 2rem;
+  padding-top: 3rem;
   height: 4em;
   width: 100%;
   overflow: hidden;
@@ -254,7 +254,7 @@
   }
 
   .centerText {
-    padding-top: 10vh;
+    padding-top: 20vh;
   }
 
   .centerText a {
