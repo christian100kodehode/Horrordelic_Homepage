@@ -382,3 +382,22 @@
     font-size: 2vh;
   }
 }
+
+@media (max-width: 640px) and (max-height: 300px) {
+  .centerText {
+    padding-top: 25vh;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 320px) and (max-height: 142px) {
+  .centerText {
+    display: none;
+  }
+}
+
+@media (max-width: 257px) and (max-height: 115px) {
+  .mainLinksText {
+    display: none;
+  }
+}
