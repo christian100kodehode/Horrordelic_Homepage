@@ -58,12 +58,6 @@
   text-shadow: 0 1px 1px black;
 }
 
-.djMixContainerThumbnail {
-  width: 240px;
-  overflow: hidden;
-  border: solid 4px var(--releaseContainerReadMoreBg);
-}
-
 .imageContainerYoutubeImage {
   /* width: 420px; */
   padding: 2em;
@@ -84,7 +78,7 @@
   transform: scale(1.05);
 } */
 .appearsOnSection p {
-  font-size: 4.8vh;
+  font-size: 3vh;
 }
 
 /* .appearsOnSectionText {
@@ -188,12 +182,12 @@
 .thumbNailImage {
   border-radius: 20px;
   box-shadow: 4px 2px 2px var(--accentTransp);
-  width: 100%;
+  width: 88%;
 /* transform: scale(1) translateY(11%) translateX(-25%); */
 }
 
 .imageContainerYoutubeImage:hover {
-  transform: scale(1.2) translate(0, 0%);
+  transform: scale(1.1) translate(0, 0%);
   transition: all 0.7s ease-in-out;
 }
 
@@ -213,7 +207,7 @@
   box-shadow: 4px 2px 2px var(--accentTransp);
   width: 15em;
   margin: 1em;
-  width: 100%;
+  width: 88%;
   transform: scale(1.66) translate(-4.4%, 0%);
 }
 
@@ -264,7 +258,7 @@
 
 .artistText {
   background-color: var(--releaseContainerReadMoreBg);
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: auto;
   padding: 2em;
   border-radius: 20%;
@@ -305,7 +299,7 @@
   font-size: 1.2em;
   /* max-width: 30ch; */
   word-wrap: break-word;
-  max-width: 420px;
+  /* max-width: 420px */
 }
 
 .appearsOnSectionLong :nth-child(2) p {
@@ -436,8 +430,8 @@
   .imageContainerYoutubeImage {
     /* width: 280px; */
     overflow: hidden;
-    border: solid 4px var(--releaseContainerReadMoreBg);
-    border-radius: 30px;
+    /* border: solid 4px var(--releaseContainerReadMoreBg); */
+    /* border-radius: 30px; */
    
   }
 
@@ -452,21 +446,9 @@
     font-size: 1em;
 
     word-wrap: break-word;
-    max-width: 320px;
+    /* max-width: 320px; */
   }
 
-  .appearsOnSectionLong :nth-child(2) p {
-    font-size: 1em;
-    word-wrap: break-word;
-    max-width: 320px;
-  }
-
-  .appearsOnSectionLong :nth-child(1) p {
-    font-size: 1em;
-    /* max-width: 30ch; */
-    word-wrap: break-word;
-    max-width: 320px;
-  }
 
   .appearsOnSectionLong {
     padding: 1em;
@@ -522,23 +504,6 @@ padding: 0.2em;
     /* border-radius: 10px; */
   }
 
-  .appearsOnSection :nth-child(2) p {
-    font-size: 1em;
-    /* max-width: 30ch; */
-    word-wrap: break-word;
-    max-width: 320px;
-  }
-
-  .appearsOnSectionLong :nth-child(2) p {
-    font-size: 1em;
-  }
-
-  .appearsOnSectionLong :nth-child(1) p {
-    font-size: 1.2em;
-    /* max-width: 30ch; */
-    word-wrap: break-word;
-    max-width: 320px;
-  }
 
   .appearsOnSection {
     padding-bottom: 0;

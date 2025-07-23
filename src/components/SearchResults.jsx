@@ -75,6 +75,18 @@ const SearchResults = () => {
 
   return (
     <div className={styles.resultsContainer}>
+     
+         <meta
+                  property="og:title"
+                  content={
+                   {query} + "Search results.."
+                  }
+                />
+                <meta
+                  property="og:description"
+                  content="Worldwide Psychedelic Movement - Darkpsy Life."
+                />
+                 <title>Search results..</title>
       {/* Inline CSS for the progress bar */}
       <style jsx>{`
         .progress-container {
@@ -164,7 +176,8 @@ const SearchResults = () => {
             </a>
           ) : (
             <ul className={styles.resultsList}>
-              {results.map((item) => (
+            
+                    {results.map((item) => (
                 <li key={item.id} className={styles.artistContainer}>
                   <ul className={styles.appearsOnSection}>
                     {item.tracklist
