@@ -1,5 +1,36 @@
 [
   {
+    "id": "HORD131",
+    "path": "VA_-_Parallel_Obscurity_-_Volume_1",
+    "artist": "VA",
+    "album_name": "Parallel Obscurity: Volume 1",
+    "land": "\uD83C\uDF10",
+    "release_text": "Since 2011, Horrordelic Records has been the pulse of darkpsychedelic music. The first in a thrilling series, Parallel Obscurity delivers 12 tracks compiled by Kris.Ma (Greece), Cosmic Bluemoon (India), Morchant (Norway), and Antikriz (Norway). Immerse yourself in haunting rhythms and mind-bending soundscapes of darkpsy.\n\nEach volumes 12 tracks offer a raw, psychedelic journey for psychonauts and newcomers alike. Volumes 2 and 3 are coming soon, diving deeper into the abyss. Join Horrordelics cult and embrace the shadows!",
+    "release_date": "26/Jul/2025",
+    "credits": "\n\nCompiled by Cosmic Bluemoon & Antikriz & Morchant & Kris.Ma\n\nMastering by Krono Audio\n\nRelease by Horrordelic 2025",
+    "tracklist": [
+      "1. Maleficaros - Fallen Angel 150",
+      "2. Multypolar - Cyverticulo M37 173",
+      "3. Maleficarvm - Regresando De La Muerte 150",
+      "4. Yetzirah - Cerrado Magnético 220",
+      "5. Dark Simha - Dragon 180",
+      "6. Necromorph Project - Haunted Village 208,8",
+      "7. Cygnus - Berserker 175",
+      "8. Elephant - Pararomanta 154",
+      "9. Rasibu - Realidad Obscura 200",
+      "10. Odoxis - Spirit Summon 203",
+      "11. Oddfog - Delicious Rage 210",
+      "12. Echino - Scrolture 154"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299lEdntEQy3NNyDWPtmaq-r",
+    "youtube_full_album": "https://www.youtube.com/watch?v=8Cpl9NIlkvQ",
+    "spotify": "",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/parallel-obscurity-volume-1",
+    "mp3": "https://drive.google.com/file/d/1yXpls180hilZpiyoB3ug-7Qcc4UXb7uk/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1VgKKVuYRVlsAhTmB4pK8OxFu85ynRAVe/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD130",
     "path": "VA_-_World_of_Horror_Volume_2",
     "artist": "VA",
