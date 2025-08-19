@@ -246,6 +246,10 @@ const ReleaseDetail = () => {
                     "/maxresdefault.jpg"
                   }
                 />
+                <meta
+                  property="og:url"
+                  content={"https://horrordelic.com/Release/" + { releaseName }}
+                />
                 <title>{artist + " " + album_name}</title>
 
                 <div className={styles.releaseName}>
