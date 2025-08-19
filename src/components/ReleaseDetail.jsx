@@ -248,7 +248,7 @@ const ReleaseDetail = () => {
                 />
                 <meta
                   property="og:url"
-                  content={"https://horrordelic.com/Release/" + { releaseName }}
+                  content={"https://horrordelic.com/Release/" + path}
                 />
                 <title>{artist + " " + album_name}</title>
 
