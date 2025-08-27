@@ -193,11 +193,11 @@
 }
 
 .artistText {
-  background-color: var(--releaseContainerReadMoreBg);
-  max-width: 800px;
+  background-color: rgba(54, 35, 35, 0.63);
+  max-width: 80%;
   margin: auto;
   padding: 2em;
-  border-radius: 20%;
+  /* border-radius: 20%; */
 }
 
 .appearsOnSection {
