@@ -628,18 +628,18 @@
     "facebook": "https://facebook.com/horrordelic"
   },
   {
-    "id": "",
-    "active": "",
-    "name": "",
-    "nameNoSpace": "",
-    "category": "",
-    "headerInfo": "",
-    "location": "",
-    "land": "",
-    "flag": "",
-    "artists_text": "",
-    "soundcloud": "",
-    "facebook": ""
+    "id": "46",
+    "active": "yes",
+    "name": "Obluda",
+    "nameNoSpace": "Obluda",
+    "category": "Artist",
+    "headerInfo": "Sorocaba",
+    "location": "São Paulo",
+    "land": "Brazil",
+    "flag": "\ud83c\udde7\ud83c\uddf7",
+    "artists_text": "Obluda is the artistic manifestation of producer Gustavo Miranda, from Sorocaba, in the state of São Paulo, Brazil. Through experimental music, he found a way to express his deepest and most unnamable feelings.\n\nInspired by the idea of internal monsters that inhabit the human psyche, the project is based on strands of Darkpsy and Psycore, creating soundscapes that defy logic and evoke complex emotions.\n\nWith intricate textures and pulsating rhythms, it takes the listener on an introspective journey, where each track is a unique narrative that reveals the unknown within ourselves. This project invites reflection and liberation, celebrating the beauty of that which cannot be named.",
+    "soundcloud": "https://soundcloud.com/obludacore/",
+    "facebook": "https://www.instagram.com/obludacore/"
   },
   {
     "id": "",
