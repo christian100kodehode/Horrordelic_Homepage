@@ -190,11 +190,12 @@ const Artists = () => {
             return (
               <div key={id} className={styles.artistsContainer}>
                 <Link to={`/Artists/${nameNoSpace}`}>
+               
+                
                   <LazyLoadImage
-                    className={styles.thumbNailImage}
-                    src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
-                    // height={"20vh"}
-                    // width={"20vh"}
+                  src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
+                    // object-fit="contain"
+                    // width="80%"
                     // alt={name}
                     title={name}
                     effect="blur"
