@@ -642,18 +642,17 @@
     "facebook": "https://www.instagram.com/obludacore/"
   },
   {
-    "id": "",
-    "active": "",
-    "name": "",
-    "nameNoSpace": "",
-    "category": "",
-    "headerInfo": "",
-    "location": "",
-    "land": "",
-    "flag": "",
-    "artists_text": "",
-    "soundcloud": "",
-    "facebook": ""
+    "id": "47",
+    "active": "yes",
+    "name": "Obsorbo",
+    "nameNoSpace": "Obsorbo",
+    "category": "Artist",
+    "headerInfo": " Queretaro",
+    "land": "Mexico",
+    "flag": "\uD83C\uDDF2\uD83C\uDDFD",
+    "artists_text": "The obsorbo project begins around the year 2023, being influenced by various genres and subgenres such as rockprog, acidRock and krautrock.\n\nIt all begins in the study of music, taking the guitar as a direction from an early age in Mexico, Veracruz, the state where I was born.\n\nIn 2013 I entered with my first experience with psytrance, later in Mexico Querétaro I discovered subgenres of psytrance such as darkpsy, psycore and slambient, something that would change the direction of my life and the tone of music!\n\n I would seek to create between 180 bpm and 300 bpm, initially influenced by luili, orcoro, ankoudead, phyllorum, dazkull eghryth, kromacore and more.\n\nBelonging to horrordelic Records since 2025.",
+    "soundcloud": "https://on.soundcloud.com/TakoC0NJx4eedcMOZT",
+    "facebook": "https://www.facebook.com/ThEndingIsTheBeginning"
   },
   {
     "id": "",
