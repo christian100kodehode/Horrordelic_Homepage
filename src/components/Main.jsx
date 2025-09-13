@@ -14,6 +14,7 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineYoutube,
+  AiOutlineX
 } from "react-icons/ai";
 import { FaBandcamp, FaFacebook, FaSun } from "react-icons/fa";
 import SearchBar from "./SearchBar";
@@ -177,7 +178,7 @@ const Main = () => {
             alt="X"
             className={styles.mainLinksChild}
           >
-            <FaX size={30} />
+            <AiOutlineX size={30} />
           </a>
           <a
             href="https://facebook.com/horrordelic"
