@@ -402,7 +402,7 @@ const ReleaseDetail = () => {
                             }
                             className={styles.releaseTextShort}
                           >
-                            {release_text.substring(0, 550) + "...."}
+                            {release_text.length > 500 ? release_text.substring(0, 700) + "...." : release_text}
                           </p>
                           <div
                             style={
@@ -417,7 +417,7 @@ const ReleaseDetail = () => {
                               onClick={() => toggleText(id)}
                               title="Read more about this release.."
                             >
-                              Read More
+                              Get more info + tracklist and artist links!
                             </button>
                             {/* </HashLink> */}
                           </div>
@@ -449,40 +449,35 @@ const ReleaseDetail = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.trackList}>
-                  <p>Track list:</p>
-                  {tracklist.map((track, i) => {
+               <div className={styles.trackList}>
+                 <p>Track list:</p>
+                 {tracklist.map((track, i) => {
                     // Extract artist names from track
                     const trackArtists = extractArtists(track);
 
-                    // Find the first artist in the list that matches
-                    const matchedArtist = list.find((a) =>
+                    // Find all artists in the list that match
+                    const matchedArtists = list.filter((a) =>
                       trackArtists.includes(a.name)
                     );
 
-                    // Set line height based on track name length
-                    const lineHeightStyle =
-                      track.length > 40
-                        ? { lineHeight: "0.2em" }
-                        : { lineHeight: "0.2em" };
+                    // Create a display string with artist links embedded
+                    let displayTrack = track;
+                    matchedArtists.forEach((artist) => {
+                      const artistRegex = new RegExp(`\\b${artist.name}\\b`, "g");
+                      displayTrack = displayTrack.replace(
+                        artistRegex,
+                        `<a href="/artist/${artist.name}">${artist.name}</a>`
+                      );
+                    });
 
-                    return (
-                      <p key={`${album_name}${i}`} style={lineHeightStyle}>
-                        {matchedArtist ? (
-                          <span className={styles.streamLinks}>
-                            <Link
-                              to={`../Artists/${matchedArtist.nameNoSpace}`}
-                            >
-                              {track}
-                            </Link>
-                          </span>
-                        ) : (
-                          <>{track}</>
-                        )}
-                      </p>
-                    );
-                  })}
-                </div>
+                return (
+                   <p
+        key={i}
+        dangerouslySetInnerHTML={{ __html: displayTrack }}
+      />
+    );
+  })}
+</div>
               </article>
             );
           }

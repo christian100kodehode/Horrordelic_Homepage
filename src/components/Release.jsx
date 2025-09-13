@@ -57,6 +57,28 @@ const Release = () => {
     fetchData();
   }, []);
 
+const [artist, setArtist] = useState({ name: {} });
+
+  // State for loading Artist data
+  const [isLoadingArtist, setIsLoadingArtist] = useState(false);
+  const [list, setList] = useState([]);
+  const fetchDataArtist = () => {
+    setIsLoading(true);
+    setTimeout(
+      async () => {
+        const API_URL = `../artist-list.json`;
+        const response = await axios.get(API_URL);
+        setList(response.data);
+        setIsLoading(false);
+      }
+      // 2000 - if wanting timeout
+    );
+  };
+
+  useEffect(() => {
+    fetchDataArtist();
+  }, []);
+
   // Scroll to element, when enter page from URL and #
   useEffect(() => {
     if (selectedRef.current) selectedRef.current.scrollIntoView();
@@ -188,6 +210,17 @@ const Release = () => {
         [id]: !previousVideo[id],
       };
     });
+  };
+
+   // Function to extract artist names from track string
+  const extractArtists = (track) => {
+    // Split on " - " to separate artist(s) from track title
+    const [artistPart] = track.split(" - ");
+    // Handle collaborations (e.g., "Psykotropic & Obsorbo")
+    return artistPart
+      .replace(/^\d+\.\s*/, "") // Remove track number (e.g., "01. ")
+      .split(" & ")
+      .map((artist) => artist.trim());
   };
 
   return (
@@ -528,7 +561,8 @@ const Release = () => {
                           }
                           className={styles.releaseTextShort}
                         >
-                          {release_text.substring(0, 550) + "...."}
+                         {release_text.length > 500 ? release_text.substring(0, 700) + "...." : release_text}
+                         {credits}
                         </p>
                         <div
                           style={
@@ -543,7 +577,7 @@ const Release = () => {
                               onClick={() => toggleText(id)}
                               title="Read more about this release.."
                             >
-                              Read More
+                              Get more info + tracklist and artist links
                             </button>
                           </HashLink>
                         </div>
@@ -560,6 +594,35 @@ const Release = () => {
                               <p> {credits}</p>
                               <p>Release date:</p>
                               <p>{release_date}</p>
+          <div className={styles.trackList} lassName={styles.trackList} style={{padding: "1em"}}>
+                 <pre style={{"font-size": "1.5rem"}}>Track list:</pre>
+                 {tracklist.map((track, i) => {
+                    // Extract artist names from track
+                    const trackArtists = extractArtists(track);
+
+                    // Find all artists in the list that match
+                    const matchedArtists = list.filter((a) =>
+                      trackArtists.includes(a.name)
+                    );
+
+                    // Create a display string with artist links embedded
+                    let displayTrack = track;
+                    matchedArtists.forEach((artist) => {
+                      const artistRegex = new RegExp(`\\b${artist.name}\\b`, "g");
+                      displayTrack = displayTrack.replace(
+                        artistRegex,
+                       `<a href="/artist/${artist.name}">${artist.name}</a>`
+                      );
+                    });
+
+                return (
+                   <pre
+        key={i}
+        dangerouslySetInnerHTML={{ __html: displayTrack }}
+      />
+    );
+  })}
+</div>
                             </div>
                             <HashLink smooth to={"/Release#" + path}>
                               <button onClick={() => toggleText(id)}>
@@ -575,22 +638,7 @@ const Release = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.trackList}>
-                <p>Track list:</p>
-                {/* Map through the tracklist and show all tracks , also check if names are longer than 50, then set extra line height. if longer line than 100, cut @ 100 else just write it normally. */}
-                {tracklist.map((e, i) => (
-                  <p
-                    key={`${e}${i}`}
-                    style={
-                      e.length > 40
-                        ? { lineHeight: "1em" }
-                        : { lineHeight: "0.5em" }
-                    }
-                  >
-                    {e.length > 100 ? e.substring(0, 100) + "..." : e}
-                  </p>
-                ))}
-              </div>
+            
             </article>
           )
         )}

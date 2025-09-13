@@ -96,18 +96,24 @@ iframe {
 .trackList {
   /* padding: 0; */
   margin-bottom: 2em;
-}
-
-.trackList p {
-  font-family: "helveticaNeue";
-  line-height: 0.5em;
-  font-size: 1rem;
-}
-
-.trackList p:nth-child(1) {
+    font-family: "helveticaNeue";
+  line-height: 0.4em;
   font-size: 1.5rem;
-  text-decoration: underline;
+  text-shadow:
+    1px 1px 2px var(--accent),
+    0 0 1em rgb(0, 0, 0),
+    0 0 0.7em rgb(255, 255, 255);
+  color: white;
 }
+
+.trackList a {
+  color: black;
+}
+
+.trackList a:hover {
+  color:white;
+}
+
 
 .readMoreText p:nth-child(1) {
   font-size: 1.2rem;
@@ -410,7 +416,7 @@ li {
   }
 
   .trackList p {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   .tracksContainer {
@@ -449,11 +455,9 @@ li {
     font-size: 1.5rem;
   }
 
-  .trackList p {
-    padding-bottom: 20px;
+  .trackList {
     /* letter-spacing: 1px; */
-    font-size: 1.2rem;
-    overflow-wrap: anywhere;
+    font-size: 1em;
   }
 
   .releaseContainer {
@@ -488,6 +492,14 @@ li {
   }
 }
 
+@media (max-width: 410px) {
+  .trackList p {
+    font-size: 1,2rem;
+    line-height: 1rem;
+
+  }
+}
+
 @media (max-width: 350px) {
   .inProgress h3 {
     font-size: 2rem;
@@ -503,9 +515,11 @@ li {
     padding-top: 10em;
   }
 
-  .trackList p {
-    font-size: 12px;
-    line-height: 50%;
+  .trackList p{
+    font-size: 0.8rem;
+    line-height: 1em;
+    text-align: center;
+    font-family: "helveticaNeue";
   }
 
   .readMoreText {
@@ -525,7 +539,7 @@ li {
   }
 
   .youtubeContainer {
-    padding: 0;
+    padding: 10%;
     width: 200px;
   }
 
@@ -539,6 +553,7 @@ li {
     font-size: 1rem;
     /* max-height: 1.2rem; */
   }
+
 
   .streamLinks p:active {
     transition: none;
@@ -566,3 +581,11 @@ li {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 266px) {
+  .trackList p{
+font-size: 1em;
+line-height: 1.2em;
+  }
+  }
+

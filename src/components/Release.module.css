@@ -96,22 +96,31 @@ iframe {
   display: flex;
 }
 
-.tracklist {
-  padding: 0;
+
+
+.trackList pre{
+
+    font-family: "helveticaNeue";
+  line-height: 0.4em;
+  font-size: 1.2rem;
+  text-shadow:
+    1px 1px 2px var(--accent),
+    0 0 1em rgb(0, 0, 0),
+    0 0 0.7em rgb(255, 255, 255);
+  color: white;
 }
 
-.trackList p {
-  font-family: "helveticaNeue";
-  line-height: 0.5em;
-  font-size: 1rem;
-  color: var(--text-primary);
-  text-shadow: 0 0 10px black;
+.trackList a {
+  color: black;
 }
 
-.trackList p:nth-child(1) {
+.trackList a:hover {
+  color:white;
+}
+/* .trackList p:nth-child(1) {
   font-size: 1.5rem;
   text-decoration: underline;
-}
+} */
 
 .readMoreText p:nth-child(1) {
   font-size: 1.2rem;
@@ -754,6 +763,21 @@ li {
     font-size: 1.7rem;
   }
 }
+@media (max-width: 410px) { 
+
+.readMoreText {
+  font-size: 1em;
+
+}
+
+.trackList {
+  font-size: 1,2rem;
+  line-height: 1rem;
+
+  }
+
+}
+
 
 @media (max-width: 350px) {
   .inProgress h3 {
@@ -761,7 +785,11 @@ li {
   }
 }
 
-@media (max-width: 323px) {
+@media (max-width: 380px) {
+
+.readMoreText {
+  width: 50vw;
+}
   /* .thumbNailImage {
     width: 100%;
     transform: scale(1.9) translate(0, 12%);
@@ -790,12 +818,14 @@ li {
     padding-top: 10em;
   }
 
-  .trackList p {
-    font-size: 12px;
+
+  .trackList pre {
+    font-size: 0.6rem;
   }
 
-  .readMoreText {
+  .readMoreText p{
     padding: 0.1rem;
+    font-size: 0.8rem;
   }
 
   iframe {
