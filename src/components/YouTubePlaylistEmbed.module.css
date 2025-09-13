@@ -16,6 +16,18 @@
 
 @media screen and (max-width: 960px) {
     .youtubeContainer {
-        padding-top: 15%;  
+        padding-top: 5%;  
+    }
+}
+
+@media screen and (max-width: 714px)  {
+      .youtubeContainer {
+        padding-top: 12%;  
+    }
+}
+
+@media screen and (max-width: 580px)  {
+      .youtubeContainer {
+        padding-top: 25%;  
     }
 }
