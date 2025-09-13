@@ -561,8 +561,12 @@ const [artist, setArtist] = useState({ name: {} });
                           }
                           className={styles.releaseTextShort}
                         >
-                         {release_text.length > 500 ? release_text.substring(0, 700) + "...." : release_text}
-                         {credits}
+                         
+                        {release_text.length > 500 ? release_text.substring(0, 700) + "...." : release_text}
+                    
+                      
+                    
+                         <p> Credits:{credits}</p>
                         </p>
                         <div
                           style={
@@ -577,7 +581,7 @@ const [artist, setArtist] = useState({ name: {} });
                               onClick={() => toggleText(id)}
                               title="Read more about this release.."
                             >
-                              Get more info + tracklist and artist links
+                              Get more info + tracklist and artist links!
                             </button>
                           </HashLink>
                         </div>
@@ -611,7 +615,7 @@ const [artist, setArtist] = useState({ name: {} });
                       const artistRegex = new RegExp(`\\b${artist.name}\\b`, "g");
                       displayTrack = displayTrack.replace(
                         artistRegex,
-                       `<a href="/artist/${artist.name}">${artist.name}</a>`
+                       `<a href="/artist/${artist.nameNoSpace}">${artist.name}</a>`
                       );
                     });
 

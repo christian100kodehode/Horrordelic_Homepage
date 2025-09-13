@@ -417,7 +417,7 @@ const ReleaseDetail = () => {
                               onClick={() => toggleText(id)}
                               title="Read more about this release.."
                             >
-                              Get more info + tracklist and artist links!
+                              Read more!
                             </button>
                             {/* </HashLink> */}
                           </div>
@@ -428,7 +428,7 @@ const ReleaseDetail = () => {
                               id={album_name}
                               className={styles.readMoreContainer}
                             >
-                              <div className={styles.readMoreText}>
+                              <div style={{padding: "1em"}} className={styles.readMoreText}>
                                 <p>{release_text}</p>
                                 <p>Credits:</p>
                                 <p> {credits}</p>
@@ -466,7 +466,7 @@ const ReleaseDetail = () => {
                       const artistRegex = new RegExp(`\\b${artist.name}\\b`, "g");
                       displayTrack = displayTrack.replace(
                         artistRegex,
-                        `<a href="/artist/${artist.name}">${artist.name}</a>`
+                        `<a href="/artist/${artist.nameNoSpace}">${artist.name}</a>`
                       );
                     });
 
