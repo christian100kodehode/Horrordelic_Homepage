@@ -20,12 +20,11 @@
   margin: 0;
 }
 
- /* .leftvideoBox {
+/* .leftvideoBox {
   display: flex;
   flex-direction: column;
   justify-content: left;
 } */
-
 
 .centerText {
   line-height: 1px;
@@ -265,9 +264,9 @@
     gap: 0;
   }
 
-   .centerTextBox p {
+  .centerTextBox p {
     display: none;
-   }
+  }
 }
 
 @media (max-width: 850px) and (max-height: 400px) {
@@ -287,7 +286,7 @@
   }
 }
 
-@media (max-width: 713px) {
+@media (max-width: 713px), (-webkit-device-pixel-ratio: 2) {
   .centerText:nth-child(1) h1 {
     font-size: 4vh;
   }
