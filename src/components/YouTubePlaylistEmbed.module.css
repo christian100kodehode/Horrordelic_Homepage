@@ -17,17 +17,26 @@
 @media screen and (max-width: 960px) {
   .youtubeContainer {
     padding-top: 5%;
+    padding-left: 0;
   }
 }
 
-@media screen and (max-width: 714px), (-webkit-device-pixel-ratio: 2) {
+/* @media screen and (max-width: 714px), (-webkit-device-pixel-ratio: 2) {
   .youtubeContainer {
     padding-top: 12%;
   }
+} */
+
+@media screen and (max-width: 334px) {
+  .youtubeContainer {
+    width: 224px; /* Match iframe width */
+    height: 126px; /* Match iframe height */
+  }
 }
 
-@media screen and (max-width: 580px) {
+@media (max-width: 230px) {
   .youtubeContainer {
-    padding-top: 25%;
+    width: 144px; /* Match iframe width */
+    height: 81px; /* Match iframe height */
   }
 }

@@ -18,7 +18,7 @@ import {
 import { FaBandcamp, FaFacebook, FaSun } from "react-icons/fa";
 import SearchBar from "./SearchBar";
 import { FaMoon } from "react-icons/fa";
-import YoutubePlaylistEmbed from "./YoutubePlaylistEmbed"
+import YoutubePlaylistEmbed from "./YoutubePlaylistEmbed";
 
 const Main = () => {
   // State for loading
@@ -92,12 +92,11 @@ const Main = () => {
   return (
     <div className={styles.mainAndFooterBox}>
       <main className={styles.main}>
-           
         <div className={styles.marquee}>
           <div className={styles.marqueeone}>
             <LatestAlbumScrollText />
           </div>
-            
+
           {/* <div className={styles.marqueetwo}>
           <LatestAlbumScrollText />
         </div>
@@ -108,38 +107,30 @@ const Main = () => {
           {/* <div className={styles.marqueefour}>
         <LatestAlbumScrollText />
         </div> */}
-   
         </div>
 
-           
-   
         <div className={styles.centerTextBox}>
-          <div className={styles.leftvideoBox}><p>Latest videos:</p>
-              <YoutubePlaylistEmbed playlistId="PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d" />
-              </div>
-          
-              <div className={styles.centerText}>
-          <h1>Welcome! </h1>
-          <h1>
-       
-           
-            Site up and running -{" "}
-            <span style={{ color: "black" }}>Search just added!</span>
-          </h1>
-          <h1>
-            Stay tuned and get all the{" "}
-            
-              <Link to="/release" title="Go to our releases.." style={{ color: "black" }}>
-                Releases!
+          <div className={styles.leftvideoBox}>
+            <p style={{ "font-size": "2rem" }}>Latest videos:</p>
+            <YoutubePlaylistEmbed playlistId="PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d" />
+          </div>
+
+          <div className={styles.centerText}>
+            <h1>Darkpsy Life - Since 2011</h1>
+            <h1>
+              <Link
+                to="/release"
+                title="Go to our releases.."
+                style={{ color: "black" }}
+              >
+                Click for latest Releases!
               </Link>
             </h1>
             <h1>
-              <SearchBar id="searchQuery"/>
-              Horrordelic:</h1> <h1 style={{ color: "black" }}> Darkpsy Life</h1>
-            
+              <SearchBar id="searchQuery" />
+            </h1>
           </div>
         </div>
-
       </main>
 
       <div className={styles.footerLinks}>
