@@ -96,16 +96,11 @@ iframe {
   display: flex;
 }
 
-
-
-.trackList pre{
-
-    font-family: "helveticaNeue";
+.trackList pre {
+  font-family: "helveticaNeue";
   line-height: 0.4em;
   font-size: 1.2rem;
-  text-shadow:
-    1px 1px 2px var(--accent),
-    0 0 1em rgb(0, 0, 0),
+  text-shadow: 1px 1px 2px var(--accent), 0 0 1em rgb(0, 0, 0),
     0 0 0.7em rgb(255, 255, 255);
   color: white;
 }
@@ -115,7 +110,7 @@ iframe {
 }
 
 .trackList a:hover {
-  color:white;
+  color: white;
 }
 /* .trackList p:nth-child(1) {
   font-size: 1.5rem;
@@ -763,21 +758,16 @@ li {
     font-size: 1.7rem;
   }
 }
-@media (max-width: 410px) { 
-
-.readMoreText {
-  font-size: 1em;
-
-}
-
-.trackList {
-  font-size: 1,2rem;
-  line-height: 1rem;
-
+@media (max-width: 410px) {
+  .readMoreText {
+    font-size: 1em;
   }
 
+  .trackList {
+    font-size: 1, 2rem;
+    line-height: 1rem;
+  }
 }
-
 
 @media (max-width: 350px) {
   .inProgress h3 {
@@ -786,10 +776,17 @@ li {
 }
 
 @media (max-width: 380px) {
+  .readMoreText {
+    font-size: 1rem;
+  }
 
-.readMoreText {
-  width: 50vw;
-}
+  .readMoreContainer {
+    margin: 0;
+  }
+
+  .trackList pre {
+    font-size: 1.1rem;
+  }
   /* .thumbNailImage {
     width: 100%;
     transform: scale(1.9) translate(0, 12%);
@@ -800,10 +797,10 @@ li {
     /* color: red; */
   }
 
-  .navItem p:nth-child(1) {
+  /* .navItem p:nth-child(1) {
     font-size: 0.25em;
     padding-left: 45px;
-  }
+  } */
 
   .navMenuActive {
     position: sticky;
@@ -818,25 +815,20 @@ li {
     padding-top: 10em;
   }
 
-
-  .trackList pre {
-    font-size: 0.6rem;
+  .readMoreText p {
+    /* padding: 0.1rem; */
+    font-size: 1rem;
   }
 
-  .readMoreText p{
-    padding: 0.1rem;
-    font-size: 0.8rem;
-  }
-
-  iframe {
+  /* iframe {
     width: 150px;
     height: 180px;
-  }
+  } */
 
-  .youtubeContainer {
+  /* .youtubeContainer {
     padding: 0;
     width: 200px;
-  }
+  } */
 
   /* .youtubeEmbedBlocked {
     width: 150px;
@@ -858,12 +850,12 @@ li {
   }
 
   .header p {
-    font-size: 0.7em;
+    font-size: 1rem;
   }
 
   .header {
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -874,5 +866,24 @@ li {
 
   .loadingScreen {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .streamLinks {
+    justify-content: left;
+    padding: 0;
+  }
+  .header {
+  }
+  .header pre {
+    font-size: 0.8rem;
+  }
+  .trackList pre {
+    font-size: 0.8rem;
   }
 }
