@@ -10,6 +10,22 @@
   color: whitesmoke;
   font-size: clamp(10px, 3vw, 30px);
 }
+.centerTextBox {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.centerTextBox p {
+  margin: 0;
+}
+
+ /* .leftvideoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+} */
+
 
 .centerText {
   line-height: 1px;
@@ -242,6 +258,16 @@
   .marquee .marqueeone {
     animation: marquee 21s linear infinite;
   }
+
+  .centerTextBox {
+    flex-direction: column;
+    justify-content: left;
+    gap: 0;
+  }
+
+   .centerTextBox p {
+    display: none;
+   }
 }
 
 @media (max-width: 850px) and (max-height: 400px) {

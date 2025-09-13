@@ -1,0 +1,21 @@
+.youtubeContainer {
+  position: sticky;
+  /* padding-top: 20px; */
+  padding-left: 20px;
+  top: 2%; /* Adjust distance from top */
+  right: 0; /* Align to the right with some margin */
+  z-index: 1000; /* Ensure it appears above other elements */
+  width: 320px; /* Match iframe width */
+  height: 180px; /* Match iframe height */
+}
+
+.youtubeContainer iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .youtubeContainer {
+        padding-top: 15%;  
+    }
+}

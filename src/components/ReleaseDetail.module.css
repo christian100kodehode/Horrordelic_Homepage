@@ -93,12 +93,10 @@ iframe {
   display: flex;
 }
 
-.trackList {
-  /* padding: 0; */
-  margin-bottom: 2em;
-    font-family: "helveticaNeue";
+.trackList pre{
+  font-family: "helveticaNeue";
   line-height: 0.4em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-shadow:
     1px 1px 2px var(--accent),
     0 0 1em rgb(0, 0, 0),
@@ -111,8 +109,7 @@ iframe {
 }
 
 .trackList a:hover {
-  color:white;
-}
+  color:white;}
 
 
 .readMoreText p:nth-child(1) {

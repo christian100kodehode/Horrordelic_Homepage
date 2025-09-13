@@ -403,7 +403,9 @@ const ReleaseDetail = () => {
                             className={styles.releaseTextShort}
                           >
                             {release_text.length > 500 ? release_text.substring(0, 700) + "...." : release_text}
+                              <p> Credits:{credits}</p>
                           </p>
+                       
                           <div
                             style={
                               !showText[id]
@@ -417,7 +419,7 @@ const ReleaseDetail = () => {
                               onClick={() => toggleText(id)}
                               title="Read more about this release.."
                             >
-                              Read more!
+                              Get more info + tracklist and artist links!
                             </button>
                             {/* </HashLink> */}
                           </div>
@@ -434,23 +436,8 @@ const ReleaseDetail = () => {
                                 <p> {credits}</p>
                                 <p>Release date:</p>
                                 <p>{release_date}</p>
-                              </div>
-                              <HashLink smooth to={"#top"}>
-                                <button onClick={() => toggleText(id)}>
-                                  Read less
-                                </button>
-                              </HashLink>
-                            </div>,
-                          ]}
-                        </div>
-                      ) : (
-                        release_text
-                      )}
-                    </div>
-                  </div>
-                </div>
-               <div className={styles.trackList}>
-                 <p>Track list:</p>
+                                     <div className={styles.trackList}>
+                 <pre>Track list:</pre>
                  {tracklist.map((track, i) => {
                     // Extract artist names from track
                     const trackArtists = extractArtists(track);
@@ -471,13 +458,30 @@ const ReleaseDetail = () => {
                     });
 
                 return (
-                   <p
+                   <pre
         key={i}
         dangerouslySetInnerHTML={{ __html: displayTrack }}
       />
     );
   })}
 </div>
+                              </div>
+                              
+                              <HashLink smooth to={"#top"}>
+                                <button onClick={() => toggleText(id)}>
+                                  Read less
+                                </button>
+                              </HashLink>
+                            </div>,
+                          ]}
+                        </div>
+                      ) : (
+                        release_text
+                      )}
+                    </div>
+                  </div>
+                </div>
+          
               </article>
             );
           }
