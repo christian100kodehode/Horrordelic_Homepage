@@ -2490,6 +2490,37 @@
     "flac": ""
   },
   {
+    "id": "HORD041",
+    "path": "VA_-_Evil_Ohmen",
+    "artist": "VA",
+    "album_name": "Evil Ohmen",
+    "land": "\uD83C\uDF10",
+    "release_text": "Morchant compiles her second VA: Evil Ohmen.\n\nOmens of ill have been spoken of since the ancient days. In the form of a black cat crossing your road, eclipses and comets or maybe a child born downside up, it foretells that something evil is approaching.\n\nIts an evil which cant be seen, it possesses through sound....",
+    "release_date": "May/16/2017",
+    "credits": "\n\nCompiled by Morchant\nArtwork Morchant\nMastering SooSpicey\n\nHorrordelic 2017",
+    "tracklist": [
+"1.Nyctophobia - Malevolent 154",
+"2.Amnesia - Sinister 155",
+"3.Psytuga - Alien Planet 155",
+"4.He-Len - Wreck in the Wild Wind of the Cosmos 15",
+"5.Astralophitecus - Philosophy of Evil (Grrrrroua rmx) 160 ",
+"6.FluroNeuro - Ancient Melancholy 160",
+"7.Miquiztli - Cage Of Blood 165",
+"8.Leonofobia - Searching 162",
+"9.Synthetic Forest - Leprechauns Gold 165",
+"10.Yata Garasu & Sound Curious - The Other Plane 172",
+"11.Sinister Day - Party in the Cemetery 175",
+"12.Sick Lion - The Devil of the Hills 190"
+],
+    "youtube_playlist_embed": "https://youtube.com/playlist?list=PLNlcSeDBp299EVySV2qtFe7FFarC_u9tb",
+    "youtube_full_album": "https://www.youtube.com/watch?v=R-axSQhnGs8",
+    "spotify": "",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/evil-ohmen",
+    "mp3": "https://drive.google.com/file/d/1wu55d6ROfCFJ-bLGDqC6rnJ_HfrEq-Kl/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/1OYdv8GWiPYd81GKCnyyW2THVZAQX2gOS/view?usp=drive_link",
+    "flac": ""
+  },
+  {
     "id": "HORD040",
     "path": "VA_-_Spice_Melange",
     "artist": "VA",
