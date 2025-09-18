@@ -196,10 +196,6 @@ iframe {
   color: white;
 }
 
-.hamburgerMenu svg {
-  /* padding-left: 2vw; */
-}
-
 .hamburgerMenu:hover {
   /* background-color: var(--accent); */
   text-shadow: 0 1px 10px black;
@@ -676,10 +672,6 @@ li {
 }
 
 @media (max-width: 468px) {
-  .headingLand {
-    /* padding-left: 0.1em; */
-  }
-
   .thumbNailImage {
     width: 100%;
     transform: scale(1.5) translate(0, 10%);
@@ -878,8 +870,7 @@ li {
     justify-content: left;
     padding: 0;
   }
-  .header {
-  }
+
   .header pre {
     font-size: 0.8rem;
   }
