@@ -755,10 +755,18 @@ li {
     font-size: 1em;
   }
 
+  button {
+    margin-top: 10px;
+  }
   .trackList {
     font-size: 1, 2rem;
     line-height: 1rem;
   }
+}
+
+.tracksContainer p {
+  font-size: 1.2rem;
+  padding-top: 0.5em;
 }
 
 @media (max-width: 350px) {

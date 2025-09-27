@@ -57,7 +57,7 @@ const Release = () => {
     fetchData();
   }, []);
 
-const [artist, setArtist] = useState({ name: {} });
+  const [artist, setArtist] = useState({ name: {} });
 
   // State for loading Artist data
   const [isLoadingArtist, setIsLoadingArtist] = useState(false);
@@ -212,7 +212,7 @@ const [artist, setArtist] = useState({ name: {} });
     });
   };
 
-   // Function to extract artist names from track string
+  // Function to extract artist names from track string
   const extractArtists = (track) => {
     // Split on " - " to separate artist(s) from track title
     const [artistPart] = track.split(" - ");
@@ -561,12 +561,11 @@ const [artist, setArtist] = useState({ name: {} });
                           }
                           className={styles.releaseTextShort}
                         >
-                         
-                        {release_text.length > 500 ? release_text.substring(0, 700) + "...." : release_text}
-                    
-                      
-                    
-                         <p> Credits:{credits}</p>
+                          {release_text.length > 500
+                            ? release_text.substring(0, 700) + "...."
+                            : release_text}
+
+                          <p> Credits:{credits}</p>
                         </p>
                         <div
                           style={
@@ -594,39 +593,51 @@ const [artist, setArtist] = useState({ name: {} });
                           >
                             <div className={styles.readMoreText}>
                               <p>{release_text}</p>
+
                               <p>Credits:</p>
                               <p> {credits}</p>
                               <p>Release date:</p>
                               <p>{release_date}</p>
-          <div className={styles.trackList} lassName={styles.trackList} style={{padding: "1em"}}>
-                 <pre style={{"font-size": "1.5rem"}}>Track list:</pre>
-                 {tracklist.map((track, i) => {
-                    // Extract artist names from track
-                    const trackArtists = extractArtists(track);
+                              <div
+                                className={styles.trackList}
+                                ClassName={styles.trackList}
+                                style={{ padding: "1em" }}
+                              >
+                                <pre style={{ "font-size": "1.5rem" }}>
+                                  Track list:
+                                </pre>
+                                {tracklist.map((track, i) => {
+                                  // Extract artist names from track
+                                  const trackArtists = extractArtists(track);
 
-                    // Find all artists in the list that match
-                    const matchedArtists = list.filter((a) =>
-                      trackArtists.includes(a.name)
-                    );
+                                  // Find all artists in the list that match
+                                  const matchedArtists = list.filter((a) =>
+                                    trackArtists.includes(a.name)
+                                  );
 
-                    // Create a display string with artist links embedded
-                    let displayTrack = track;
-                    matchedArtists.forEach((artist) => {
-                      const artistRegex = new RegExp(`\\b${artist.name}\\b`, "g");
-                      displayTrack = displayTrack.replace(
-                        artistRegex,
-                       `<a href="/artist/${artist.nameNoSpace}">${artist.name}</a>`
-                      );
-                    });
+                                  // Create a display string with artist links embedded
+                                  let displayTrack = track;
+                                  matchedArtists.forEach((artist) => {
+                                    const artistRegex = new RegExp(
+                                      `\\b${artist.name}\\b`,
+                                      "g"
+                                    );
+                                    displayTrack = displayTrack.replace(
+                                      artistRegex,
+                                      `<a href="/artist/${artist.nameNoSpace}">${artist.name}</a>`
+                                    );
+                                  });
 
-                return (
-                   <pre
-        key={i}
-        dangerouslySetInnerHTML={{ __html: displayTrack }}
-      />
-    );
-  })}
-</div>
+                                  return (
+                                    <pre
+                                      key={i}
+                                      dangerouslySetInnerHTML={{
+                                        __html: displayTrack,
+                                      }}
+                                    />
+                                  );
+                                })}
+                              </div>
                             </div>
                             <HashLink smooth to={"/Release#" + path}>
                               <button onClick={() => toggleText(id)}>
@@ -642,7 +653,6 @@ const [artist, setArtist] = useState({ name: {} });
                   </div>
                 </div>
               </div>
-            
             </article>
           )
         )}
