@@ -197,7 +197,7 @@ const ArtistDetail = () => {
                           ) : (
                             ""
                           )}
-                           {facebook ? (
+                           {instagram ? (
                             <a
                               href={instagram}
                               target="_blank"
