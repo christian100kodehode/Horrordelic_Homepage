@@ -359,6 +359,21 @@
   transform: scale(1.2);
 }
 
+@media (max-height: 400px) {
+.artistLinkContainer {
+  align-items: normal;
+  display: flex;
+  flex-direction: row;
+}
+
+.artistLinks {
+
+  bottom: 0.5em;
+  left: 0.2em;
+  position:relative;
+}
+}
+
 @media (max-width: 785px) {
   .thumbNailImageMix {
     width: 15em;
@@ -434,6 +449,19 @@
 }
 
 @media (max-width: 380px) {
+.artistLinkContainer {
+  position: relative;
+  width: 120px;
+}
+
+
+  .artistLinks
+   {
+   bottom: 6.2em;
+  left: 0.2em;
+  position: absolute;}
+
+
   .locationContainer h2,
   .locationContainer h3 {
     font-size: 1em;

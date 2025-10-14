@@ -12,6 +12,7 @@ import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
 import { RiSoundcloudFill } from "react-icons/ri";
 import { RiFacebookCircleFill } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
 
 const ArtistDetail = () => {
   const { id } = useParams();
@@ -126,6 +127,7 @@ const ArtistDetail = () => {
               artists_text,
               soundcloud,
               facebook,
+              instagram,
               nameNoSpace,
               location,
               land,
@@ -190,6 +192,20 @@ const ArtistDetail = () => {
                             >
                               <button>
                                 <RiFacebookCircleFill />
+                              </button>
+                            </a>
+                          ) : (
+                            ""
+                          )}
+                           {facebook ? (
+                            <a
+                              href={instagram}
+                              target="_blank"
+                              rel="noreferrer"
+                              title={"Contact " + name + " " + "at Instagram"}
+                            >
+                              <button>
+                                <RiInstagramFill />
                               </button>
                             </a>
                           ) : (
