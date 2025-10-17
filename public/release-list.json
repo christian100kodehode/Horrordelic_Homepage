@@ -1,5 +1,29 @@
 [
   {
+    "id": "HORD135",
+    "path": " Portal_Distortion_-_Scattered_Void",
+    "artist": "Portal Distortion",
+    "album_name": "Scattered Void",
+    "land": "\uD83C\uDDE9\uD83C\uDDEA",
+    "release_text": "Horrordelic presents the first EP from Portal Distortion (Germany). Five different tracks that combine different scapes of Darkpsychedelic and experimental sounds.\n\nDive into this Tracks and get a ride threw many experiences and inspirations I got over the last year and get a taste for where Portal Distortion stands.",
+    "release_date": "17/Oct/2025",
+    "credits": "\n\nMusic by Portal Distortion\nArtwork by Antikriz\nMastering Krono Audio\n\nRelease by Horrordelic",
+    "tracklist": [
+      "1. Portal Distortion - Initiation 160",
+      "2. Portal Distortion - Dreams Come True 160",
+      "3. Portal Distortion - Infected Bug 165",
+      "4. Yagevum - Tribal Encode 180 ft. Portal Distortion",
+      "5. Portal Distortion - Assembled Void 185"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-SY37b9Y21YjnlxfN-WQ9n",
+    "youtube_full_album": "https://youtu.be/HQEySCW-9VQ",
+    "spotify": "https://open.spotify.com/album/4h7CpU9brW0DP4tvouldq5",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/scattered-void",
+    "mp3": "https://drive.google.com/file/d/166SF-KPSRZhz9FuICfu7ujiUxPwFqQUB/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1HxzAoGx1-F5p9UnuSOcIvv3r3LW4D2me/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD134",
     "path": "Obluda_-_Melon_Monster_and_the_Infinite_Madness",
     "artist": "Obluda",
