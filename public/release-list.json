@@ -1,5 +1,27 @@
 [
   {
+    "id": "HORD138",
+    "path": "Psykotropic_-_Dead_or_Alive",
+    "artist": "Psykotropic",
+    "album_name": "Dead or Alive",
+    "land": "\uD83C\uDDF2\uD83C\uDDFD",
+    "release_text": "Horrordelic proudly presents the debut EP from Mexican artists Psykotropic titled Dead or Alive.\n\nThis EP delves into the haunting paradox of feeling lifeless while alive, only to crave existence when buried three meters underground.\n\nPsykotropic’s soundscapes put you into the depths of Darkpsy, where mind and body surrender to the rhythm and vibe. The opening track includes the intro track, to properly tune your mind for what comes next, guiding you into a trance as natural as life—or death.\n\nDive in and experience Psykotropic’s magical tunes.",
+    "release_date": "08/Nov/2025",
+    "credits": "\n\n Music by Psykotropic\nMastering by Krono Audio\nArtwork by VisualCore Detza\n\nReleased by Horrordelic 2025",
+    "tracklist": [
+      "1. Psykotropic - Intro + Dead 155",
+      "2. Psykotropic - Alive 158",
+      "3. Psykotropic - Dead or Alive 158"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298LxWdHkvZ66DemRjbTDd7K",
+    "youtube_full_album": "https://youtu.be/uaM25qjD28c",
+    "spotify": "https://open.spotify.com/album/6CQuKPT99JU7iCG5V4ITm2",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/dead-or-alive",
+    "mp3": "https://drive.google.com/file/d/1zbhFjxQCDcVdNMClhnBLN6P9_bNjHuHP/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1xlnPvR_72gWY_tyaWEXsscCKF4WQiVie/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD137",
     "path": "VA_-_Parallel_Obscurity_-_Volume_2",
     "artist": "VA",
