@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": "HORD39",
     "path": "Dark_Wish_-_Lost_Files",
     "artist": "Dark Wish",
@@ -23,13 +24,14 @@
       "13. Dark Wish - Vikings Force 185",
       "14. Dark Wish vs Takay - Wonderland 177",
       "15. Dark Wish vs Hylian Toddy - Yuppi 200",
-      "16. Dark Wish - Meaning of pain 186"],
+      "16. Dark Wish - Meaning of pain 186"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298aG43_8XQ2q8_9duyqWAmm",
-    "youtube_full_album": "https://youtu.be/lCPOdTQc7Ho",
+    "youtube_full_album": "https://youtu.be/AB0pxtsa_TI",
     "spotify": "https://open.spotify.com/album/6TcWL8JfnCNr7InSTEHhDO",
     "bandcamp": "https://open.spotify.com/album/6TcWL8JfnCNr7InSTEHhDO",
     "mp3": "https://drive.google.com/file/d/1Ut9QcKsVSwx_UcY3rnKeNEFIMdydTNxo/view?usp=sharing",
-    "wav": "",
+    "wav": "https://drive.google.com/file/d/1PRPvYkFKUKHOhQ4rFNAonbZVPdyP2AXe/view?usp=drive_link",
     "flac": ""
   },
   {
