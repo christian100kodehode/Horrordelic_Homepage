@@ -600,10 +600,9 @@ const Release = () => {
                               <p>{release_date}</p>
                               <div
                                 className={styles.trackList}
-                                ClassName={styles.trackList}
                                 style={{ padding: "1em" }}
                               >
-                                <pre style={{ "font-size": "1.5rem" }}>
+                                <pre style={{ fontSize: "1.5rem" }}>
                                   Track list:
                                 </pre>
                                 {tracklist.map((track, i) => {
