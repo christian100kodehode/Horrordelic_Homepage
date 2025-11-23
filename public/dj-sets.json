@@ -824,5 +824,96 @@
     "type": "Track",
     "mix": "https://www.youtube.com/watch?v=L8NE55c3yRA",
     "year": "2025"
+  },
+  {
+    "id": "111",
+    "name": "Obluda",
+    "type": "Live Set",
+    "mix": "https://youtu.be/q3Ah-_s2ti8",
+    "year": "2025"
+  },
+  {
+    "id": "112",
+    "name": "Kris.Ma",
+    "type": "Mix",
+    "mix": "https://youtu.be/Y5wO5zRT6aQ",
+    "year": "2025"
+  },
+  {
+    "id": "113",
+    "name": "Agnus Horrore",
+    "type": "Track",
+    "mix": "https://www.youtube.com/watch?v=6uO10rfiSf4",
+    "year": "2019"
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },
+  {
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
   }
 ]
