@@ -1,5 +1,27 @@
 [
   {
+    "id": "HORD140",
+    "path": "Koothan_-_Dance_Portals",
+    "artist": "Koothan",
+    "album_name": "Dance Portals",
+    "land": "\uD83C\uDDE7\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly presents the debut EP from Koothan, titled Dance Portals. A true forest release by the talented Julio César Mayr Gobatto from Brazil.\n\nEnter the dance portals, where Koothan leads the passenger through three tracks, exploring new possibilities of moving to the rhythm of creatures and beings within these portals.\n\nKoothan means 'dancer' or 'the one who dances' and is one of Shiva’s sacred names. It represents the cosmic energy of movement and creative destruction: the dance that creates and dissolves the universe.",
+    "release_date": "28/Nov/2025",
+    "credits": "Music and mastering by Koothan\n\nArtwork by Godinez EV & Layout by Antikriz\n\nReleased by Horrordelic 2025",
+    "tracklist": [
+      "1. Koothan - Bounce Walking 150",
+      "2. Koothan - Dance Portals 152",
+      "3. Koothan - Why Havent I done This Before 154"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-MpqFgIazFmGXfaONwGMGj",
+    "youtube_full_album": "https://youtu.be/5MnofQtZxTY",
+    "spotify": "https://open.spotify.com/album/5ulFW1bwhyxaNCxK2HudhZ",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/dance-portals",
+    "mp3": "https://drive.google.com/file/d/1vGFVnJP4o_L5Oo3sQH4wkAGA0v5oz8VR/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1zQYBjASz8vqbC04pYrmWkyOJBrv0c3bC/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD39",
     "path": "Dark_Wish_-_Lost_Files",
     "artist": "Dark Wish",
