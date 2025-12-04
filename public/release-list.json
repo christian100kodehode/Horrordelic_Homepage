@@ -1,5 +1,35 @@
 [
   {
+    "id": "HORD141",
+    "path": "VA_-_City_of_Sorcery",
+    "artist": "VA",
+    "album_name": "City of Sorcery",
+    "land": "\uD83C\uDF10",
+    "release_text": "Horrordelic proudly presents the new VA: City of Sorcery - A Tolkienish journey into the heart of dark psychedelic trance!\n\nCompiled by Morhant, featuring 12 killer tracks from the labels usual suspects and friends in the deepest underground of the Darkpsy/Psycore scene. All tracks forged in the fiery flames of Mount Doom!",
+    "release_date": "04/Dec/2025",
+    "credits": "\n\nCompiled and Artwork by Morchant\n\nMastering by Krono Audio\n\nLayout by Antikriz\n\nRelease by Horrordelic 2025",
+    "tracklist": [
+      "01. Necromorph - Will to Breathe again 122",
+      "02. Koothan - Fire n Death 154",
+      "03. Obsorbo - Nazgul Frequencies 200",
+      "04. Hermesz - Goblin Madness 157",
+      "05. Nawala - In Nihil Reptans Sanguis Clamat 250",
+      "06. Fractal Shock - Isengard 160",
+      "07. Hypnokrono - Flummox 185",
+      "08. Catronomix - Ochsammeketoch 183",
+      "09. Thoth - The Last Dragon 157",
+      "10. Multypolar - La Fosa de los Orcos 175",
+      "11. Celestial Pendulum - Busakia Escura 197.2"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2992zXidSiIBShcP0kJq2Tmi",
+    "youtube_full_album": "https://youtu.be/_MWQ9syuteo",
+    "spotify": "https://open.spotify.com/album/5BMXCnQFu5KG3X7zjrR55J",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/city-of-sorcery",
+    "mp3": "https://drive.google.com/file/d/111Y2Dfa1lV1cLcWvqk-GpKtuSDNqZ8DU/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1KxP7XKTCqXrUhNWra_f70T2dq9ZoNdgL/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD140",
     "path": "Koothan_-_Dance_Portals",
     "artist": "Koothan",
