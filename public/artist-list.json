@@ -795,6 +795,21 @@
     "instagram": "https://www.instagram.com/horrordelic/"
   },
   {
+    "id": "54",
+    "active": "yes",
+    "name": "Codex Gigas",
+    "nameNoSpace": "CodexGigas",
+    "category": "Artist",
+    "headerInfo": "",
+    "location": "Mexico City",
+    "land": "Mexico",
+    "flag": "🇲🇽",
+    "artists_text": "Codex Gigas\nIs the name Jesus gave to his Darkpsy and Hi-Tech project. In 2021, he decided to explore the world of production, starting by creating his own music. Delving deeper into the scene, he achieved a profound sound with experimental elements.\n\nHis sinister atmospheres and twisted melodies, with their unique and lysergic style, will take you into the shadows.\n\nLabels: DarkSociety, Mad Melancia, Psychotic Minds and Horrordelic Records.\n\nManager: Schizophrhenia Records",
+    "soundcloud": "https://soundcloud.com/codex_gigas",
+    "facebook": "https://www.facebook.com/CodexGiagas/",
+    "instagram": "https://www.instagram.com/codexgigas0/"
+  },
+  {
     "id": "",
     "active": "",
     "name": "",
@@ -806,6 +821,37 @@
     "flag": "",
     "artists_text": "",
     "soundcloud": "",
-    "facebook": ""
+    "facebook": "",
+    "instagram": ""
+  },
+  {
+    "id": "",
+    "active": "",
+    "name": "",
+    "nameNoSpace": "",
+    "category": "",
+    "headerInfo": "",
+    "location": "",
+    "land": "",
+    "flag": "",
+    "artists_text": "",
+    "soundcloud": "",
+    "facebook": "",
+    "instagram": ""
+  },
+  {
+    "id": "",
+    "active": "",
+    "name": "",
+    "nameNoSpace": "",
+    "category": "",
+    "headerInfo": "",
+    "location": "",
+    "land": "",
+    "flag": "",
+    "artists_text": "",
+    "soundcloud": "",
+    "facebook": "",
+    "instagram": ""
   }
 ]
