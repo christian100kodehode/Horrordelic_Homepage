@@ -1,5 +1,49 @@
 [
   {
+    "id": "HORD144",
+    "path": "Panteleimon_-_Plane_of_Oblivion",
+    "artist": "Panteleimon",
+    "album_name": "Plane of Oblivion",
+    "land": "\uD83C\uDDEC\uD83C\uDDF7",
+    "release_text": "Horrordelic Proudly presents the debut EP from Panteleimon (Greece) named Plane of Oblivion.\n\nFrom the Elder Scrolls lore, Daedric Princes are the most powerful immortal entities, each one with his own sphere of influence in mortal affairs, and with his own Plane of Oblivion. In this illustrative album we explore 3 different Planes from 3 different Princes.\n\n1. Evergloam is ruled over by Nocturnal, whose sphere is the night, darkness and mystery.\n2. Coloured Rooms are ruled over by Meridia, lady of Life and Infinite Energies.\n3. Hunting Grounds are ruled over by Hircine, the lord whose spirit is the Hunt, protector of predatory animals.",
+    "release_date": "31/DEC/2025",
+    "credits": "\n\nMusic by Panteleimon\n\nMastering by Odoxis\nArtwork by Odoxis + Layout by Antikrtiz\n\n\nReleased by Horrordelic 2025",
+    "tracklist": [
+      "01. Panteleimon - Evergloam 148",
+      "02. Panteleimon - Coloured Rooms 152",
+      "03. Panteleimon - Hunting Grounds 155"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298GS-xgaG8fph-Nx1O5TkqQ",
+    "youtube_full_album": "https://youtu.be/00UZfAR9oms",
+    "spotify": "",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/plane-of-oblivion",
+    "mp3": "https://drive.google.com/file/d/1EzMsE2C2fVydBCK_ksPNL89-pKpg0VUB/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1aREBKVLCtsYBpAPDbYaEgQNTbn_8Uv28/view?usp=sharing",
+    "flac": ""
+  },
+  {
+    "id": "HORD143",
+    "path": "ChronoChangers_-_The_ChronoBreakers",
+    "artist": "ChronoChangers",
+    "album_name": "The ChronoBreakers",
+    "land": "\uD83C\uDDE7\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly announces the release of the highly anticipated EP THE CHRONOBREAKERS, an explosive collaboration between Brazilian producers Obluda and Aion Kytek, together they form the ChronoChangers!\n\nFeaturing 3 tracks, THE CHRONOBREAKERS is a sonic journey that defies the constraints of time. Obluda and Aion Kytek were not satisfied with their pre-selected destiny; they dove into the chronology to forge new futures, rewriting the immutable through the power of music. Prepare for an experience that proves time is, indeed, an illusion.\n\nSurrender to the chronobreak and discover the new realities created by Obluda and Aion Kytek. The future is now, and it was broken just for you.",
+    "release_date": "31/DEC/2025",
+    "credits": "\n\nMusic by Obluda and Aion Kytek\n\nArtwork by Obluda\n\nMastering by 1 + 2 by Ikenaga and 3 by Ere\n\n\nReleased By Horrordelic",
+    "tracklist": [
+      "1. ChronoChangers - The Last Frontier 176",
+      "2. ChronoChangers - These Incredible Changes 178",
+      "3. ChronoChangers - Chronological Synthesis 180"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29-4QR2PBlBUOd_6e8Nj81w4",
+    "youtube_full_album": "https://youtu.be/W-E1VbXNrmY",
+    "spotify": "",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/the-chronobreakers",
+    "mp3": "https://drive.google.com/file/d/1a_wdNfL38cy-k_uV7mQABRbiE1F4ryGp/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1POiBl8iyTVXSq36VBr5rnPNyRbKegDQE/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD142",
     "path": "VA_-_Festive_Obscurity",
     "artist": "VA",
