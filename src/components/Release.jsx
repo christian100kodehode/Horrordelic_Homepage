@@ -127,6 +127,7 @@ const Release = () => {
   // Drop down menu - All years
 
   const mobileOptions = [
+    "2026",
     "2025",
     "2024",
     "2023",
