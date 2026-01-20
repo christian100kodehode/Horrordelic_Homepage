@@ -1,5 +1,28 @@
 [
   {
+    "id": "HORD145",
+    "path": "Codex_Gigas_-_Liquid_Strange",
+    "artist": "Codex Gigas",
+    "album_name": "Liquid Strange",
+    "land": "\uD83C\uDDF2\uD83C\uDDFD",
+    "release_text": "Horrordelic Records proudly presents the new EP from Codex Gigas (Mexico): Liquid Strange.\n\nIgniting the new year of 2026 with four new darkpsy rootkits for the mind! Slicing through necrotic atmospheres, driving basslines, and hypnotic spirals dragging you into the void between outer and inner states of mind.\n\nOuter space might as well be your inner space. Turn on, tune in, and drop out!",
+    "release_date": "20/Jan/2026",
+    "credits": "\n\nMusic; Codex Gigas\nMastering: KronoAudio\nLayout: Antikriz\n\nRelease: Horrordelic 2026",
+    "tracklist": [
+      "1. Tili Tili Boom 160",
+      "2. The Silent Night 160",
+      "3. Teaser 185 Feat. Ololiuhqui",
+      "4. Kataclysmic 220"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298CIcjqPsTsNdK5E1rTQiW2",
+    "youtube_full_album": "https://youtu.be/-W-C9R-WklI",
+    "spotify": "https://open.spotify.com/album/6PAfPtgU2lIiafewuddveK",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/liquid-strange",
+    "mp3": "https://drive.google.com/file/d/1eU0x__rSvrHnxbSwSmxhRtOTlT2OE6KX/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1yv2_qPlgCN5DcLtORlbenUrhxdaB49q1/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD144",
     "path": "Panteleimon_-_Plane_of_Oblivion",
     "artist": "Panteleimon",
