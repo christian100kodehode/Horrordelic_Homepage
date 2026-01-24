@@ -14,7 +14,7 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineYoutube,
-  AiOutlineX
+  AiOutlineX,
 } from "react-icons/ai";
 import { FaBandcamp, FaFacebook, FaSun } from "react-icons/fa";
 import SearchBar from "./SearchBar";
@@ -44,7 +44,7 @@ const Main = () => {
         // Get the URL and add the hash then scrollintoView on load
         // let a = new URL(window.location.href);
         // document.querySelector(a.hash).scrollIntoView();
-      }
+      },
       // 2000 - if wanting timeout
     );
   };
@@ -112,7 +112,7 @@ const Main = () => {
 
         <div className={styles.centerTextBox}>
           <div className={styles.leftvideoBox}>
-            <p style={{ "font-size": "2rem" }}>Latest videos:</p>
+            <p style={{ fontSize: "2rem" }}>Latest videos:</p>
             <YoutubePlaylistEmbed playlistId="PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d" />
           </div>
 

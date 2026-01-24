@@ -35,6 +35,20 @@ h2 a {
   text-decoration: underline solid var(--accent);
 }
 
+.artistLink {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.18s ease;
+  font-family: "helveticaNeue";
+  font-size: 1.2rem;
+}
+
+.artistLink:hover {
+  color: var(--text-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px; /* looks nicer in modern browsers */
+}
+
 .tracksContainer {
   display: flex;
   font-family: "helveticaNeue";
@@ -93,7 +107,7 @@ iframe {
   display: flex;
 }
 
-.trackList pre{
+.trackList pre {
   font-family: "helveticaNeue";
   line-height: 0.4em;
   font-size: 1.2rem;
@@ -109,8 +123,8 @@ iframe {
 }
 
 .trackList a:hover {
-  color:white;}
-
+  color: white;
+}
 
 .readMoreText p:nth-child(1) {
   font-size: 1.2rem;
@@ -164,6 +178,7 @@ iframe {
 .cssFix {
   white-space: pre-wrap;
   padding: 0 0.5em;
+  margin-top: 2em;
 }
 
 .readMoreContainer {
@@ -327,6 +342,7 @@ li {
 .cssFix button {
   background-color: var(--releaseContainerStreamLinksBg);
   transition: all 0.3s ease-in-out;
+  margin-top: 2em;
 }
 .cssFix button:hover {
   background-color: var(--accent);
@@ -491,9 +507,8 @@ li {
 
 @media (max-width: 410px) {
   .trackList p {
-    font-size: 1,2rem;
+    font-size: 1, 2rem;
     line-height: 1rem;
-
   }
 }
 
@@ -512,7 +527,7 @@ li {
     padding-top: 10em;
   }
 
-  .trackList p{
+  .trackList p {
     font-size: 0.8rem;
     line-height: 1em;
     text-align: center;
@@ -551,7 +566,6 @@ li {
     /* max-height: 1.2rem; */
   }
 
-
   .streamLinks p:active {
     transition: none;
   }
@@ -580,9 +594,8 @@ li {
 }
 
 @media (max-width: 266px) {
-  .trackList p{
-font-size: 1em;
-line-height: 1.2em;
+  .trackList p {
+    font-size: 1em;
+    line-height: 1.2em;
   }
-  }
-
+}

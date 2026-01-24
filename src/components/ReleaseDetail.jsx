@@ -62,7 +62,7 @@ const ReleaseDetail = () => {
         const response = await axios.get(API_URL);
         setList(response.data);
         setIsLoading(false);
-      }
+      },
       // 2000 - if wanting timeout
     );
   };
@@ -88,7 +88,7 @@ const ReleaseDetail = () => {
         // let a = new URL(window.location.href);
         // document.querySelector(a.hash).scrollIntoView();
         // console.log(a.hash);
-      }
+      },
       // 2000 - if wanting timeout
     );
   };
@@ -165,7 +165,7 @@ const ReleaseDetail = () => {
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
 
     const firstWord = firstNonEmptyLine.trim().replace(regex, "");
-    // console.log(firstWord);
+    console.log(firstWord);
     //
     return firstWord;
     // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
@@ -175,7 +175,7 @@ const ReleaseDetail = () => {
     list.map(({ nameNoSpace, name }) => [
       nameNoSpace.toLowerCase(),
       { nameNoSpace, name },
-    ])
+    ]),
   );
 
   const params = useParams();
@@ -259,41 +259,69 @@ const ReleaseDetail = () => {
                     &nbsp;{artist}:&nbsp;{album_name}
                     <span className={styles.headingLand}>{land}</span>
                   </p>
-                  {list
-                    .filter((e) =>
-                      e.name
-                        .toString()
-                        .replace(/\s/g, "")
-                        .toLowerCase()
-                        .includes(lastWordCap.toLowerCase())
-                    )
-                    .map(({ nameNoSpace, name }) => {
-                      return (
-                        <div
-                          className={styles.artistAppearing}
-                          key={album_name}
-                        >
-                          <Link to={`../Artists/${nameNoSpace}`}>
-                            {artist === "VA" ? "Compiled by: " : "Made by: "}
-                            {name}
-                          </Link>
+                  {(() => {
+                    const names = firstWordCap
+                      .split("&")
+                      .map((s) => s.trim())
+                      .filter(Boolean);
 
-                          {firstWordCap.includes("&") ? (
+                    const matchedParts = [];
+
+                    names.forEach((displayName, idx) => {
+                      const match = list.find((entry) => {
+                        const a = entry.name
+                          .replace(/\s+/g, "")
+                          .toLowerCase()
+                          .replace(/\./g, "");
+                        const b = displayName
+                          .replace(/\s+/g, "")
+                          .toLowerCase()
+                          .replace(/\./g, "");
+                        return a === b || a.includes(b) || b.includes(a);
+                      });
+
+                      if (match && match.nameNoSpace?.trim()) {
+                        const sep = matchedParts.length > 0 ? " & " : "";
+                        matchedParts.push(
+                          <React.Fragment key={idx}>
+                            {sep}
                             <Link
-                              to={`../Artists/${firstWordCap.replace(
-                                / .*/,
-                                ""
-                              )}`}
+                              className={styles.artistLink}
+                              to={`../Artists/${match.nameNoSpace.trim()}`}
                             >
-                              {artist === "VA" ? " & " : " & "}
-                              {firstWordCap.replace(/ .*/, "")}
+                              {displayName}
                             </Link>
-                          ) : (
-                            ""
-                          )}
+                          </React.Fragment>,
+                        );
+                      }
+                    });
+
+                    // ── Only show prefix + content if we have at least one valid match ──
+                    if (matchedParts.length === 0) {
+                      return null; // ← hides "Made by:" completely
+                    }
+
+                    const prefix =
+                      artist === "VA" ? "Compiled by: " : "Made by: ";
+
+                    if (matchedParts.length >= 4) {
+                      const mid = Math.ceil(matchedParts.length / 2);
+                      return (
+                        <div>
+                          {prefix}
+                          <div>{matchedParts.slice(0, mid)}</div>
+                          <div>{matchedParts.slice(mid)}</div>
                         </div>
                       );
-                    })}
+                    }
+
+                    return (
+                      <div>
+                        {prefix}
+                        {matchedParts}
+                      </div>
+                    );
+                  })()}
                 </div>
                 <div className={styles.tracksContainer}>
                   <div className={styles.musicPlayer}>
@@ -394,7 +422,7 @@ const ReleaseDetail = () => {
                         <div>
                           {/* Show and hide the text if more text is selected, also show and hide the
                           show more button to make it appear under the showing text */}
-                          <p
+                          <span
                             style={
                               !showText[id]
                                 ? { display: "" }
@@ -405,8 +433,8 @@ const ReleaseDetail = () => {
                             {release_text.length > 500
                               ? release_text.substring(0, 700) + "...."
                               : release_text}
-                            <p> Credits:{credits}</p>
-                          </p>
+                            <span> Credits:{credits}</span>
+                          </span>
 
                           <div
                             style={
@@ -449,7 +477,7 @@ const ReleaseDetail = () => {
 
                                     // Find all artists in the list that match
                                     const matchedArtists = list.filter((a) =>
-                                      trackArtists.includes(a.name)
+                                      trackArtists.includes(a.name),
                                     );
 
                                     // Create a display string with artist links embedded
@@ -457,11 +485,11 @@ const ReleaseDetail = () => {
                                     matchedArtists.forEach((artist) => {
                                       const artistRegex = new RegExp(
                                         `\\b${artist.name}\\b`,
-                                        "g"
+                                        "g",
                                       );
                                       displayTrack = displayTrack.replace(
                                         artistRegex,
-                                        `<a href="/artist/${artist.nameNoSpace}">${artist.name}</a>`
+                                        `<a href="/artist/${artist.nameNoSpace}">${artist.name}</a>`,
                                       );
                                     });
 
@@ -493,7 +521,7 @@ const ReleaseDetail = () => {
                 </div>
               </article>
             );
-          }
+          },
         )}
 
       {/* {(const artistName = JSON.stringify(list, ["nameNoSpace"]))}
