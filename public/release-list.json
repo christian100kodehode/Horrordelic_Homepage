@@ -1,5 +1,30 @@
 [
   {
+    "id": "HORD148",
+    "path": "Koobluda_-_Not_Your_Kind!",
+    "artist": "Koobluda",
+    "album_name": "Not Your Kind!",
+    "land": "\uD83C\uDDE7\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly presents `Not Your Kind` the explosive debut EP from Koobluda, the alliance between the visionary psychedelic creators Koothan and Obluda.\n\nPacked with 6 tracks that honor the legendary artists and bands that were the unbreakable pillars of their artistic journey.",
+    "release_date": "05/Feb/2026",
+    "credits": "\n\nProduced by Obluda and Koothan\n\nMastered by Koothan\nArtwork by Necromonn + Layout by Antikriz\n\nReleased by Horrordelic 2026",
+    "tracklist": [
+      "1. All from Ashes 160",
+      "2. Apocalypse Orchestra 161",
+      "3. Bister Mungle 164",
+      "4. Not Your Kind! 165",
+      "5. Kill if Not Different 168",
+      "6. Another Brick 180"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_MPUeIkuPKjH3eEMoJ9J6F",
+    "youtube_full_album": "https://youtu.be/XmqFBnt0Frk",
+    "spotify": "https://open.spotify.com/album/3TUMliG6EZzaNClPIlbNyo",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/not-your-kind",
+    "mp3": "https://drive.google.com/file/d/1AwCRxMNIgPADv83A66_U_10K2QyNK0JD/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1GndPzP9rmFTfjiCeG_KtgY1WiZ0y3sKu/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD147",
     "path": "Celestial_Pendulum_-_Once_upon_A_time",
     "artist": "Celestial Pendulum",
