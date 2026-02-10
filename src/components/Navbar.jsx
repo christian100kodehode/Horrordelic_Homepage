@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav
       className={styles.navbarlinks}
-      style={{ top: visible ? "0" : "-65px" }}
+      style={{ display: !visible ? "none" : "" }}
     >
       <Link to="../" title="Horrordelic Records">
         <LazyLoadImage
@@ -86,8 +86,9 @@ const Navbar = () => {
           title="Go to top of the page"
           onClick={scrollToTop}
           className={styles.goToTopButton}
-          style={{ display: window.scrollY > 0 ? "block" : "none" }}
+          style={{ display: window.scrollY  === 0 ? "none" : "" }}
         >
+          {console.log(scrollY)}
           <AiOutlineArrowUp />
         </button>
       </div>

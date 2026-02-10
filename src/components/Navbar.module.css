@@ -14,6 +14,7 @@
   z-index: 100;
 }
 
+
 .navbarlinks img {
   position: absolute;
   top: 0em;
@@ -31,13 +32,21 @@
 .homeButton {
   display: none;
 }
+
+
+
 .goToTopButton {
-  position: absolute;
-  top: calc(100vh);
-  left: calc(100vw - 10%);
+/*   position: absolute; */
+  position: fixed;
+    bottom: 20px;
+    right: calc((100% - 1280px) / 2 + 8px);
+/*    top: calc(100vh - 40%);
+  left: calc(80vw); */
   /* background: linear-gradient(179.4deg, rgb(6, 7, 9) -16.9%, rgb(117, 77, 130) 119.9%); */
   background: var(--releaseContainerBg);
   color: white;
+  height: 3em;
+
 }
 
 .goToTopButton:hover {
