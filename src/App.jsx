@@ -12,6 +12,7 @@ import ReleaseDetail from "./components/ReleaseDetail";
 import { FaMoon, FaSun } from "react-icons/fa";
 import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
+import { Analytics } from "@vercel/analytics/react";
 
 // Importing hooks/packages
 import { Routes, Route } from "react-router";
@@ -64,6 +65,7 @@ function App() {
         <Route path="/Artists/:id" element={<ArtistDetail />} />
         <Route path="/Artist/:id" element={<ArtistDetail />} />
       </Routes>
+      <Analytics />
     </div>
   );
 }
