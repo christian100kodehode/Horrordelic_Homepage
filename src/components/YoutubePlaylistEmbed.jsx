@@ -7,7 +7,7 @@ const YouTubePlaylistEmbed = ({ playlistId, width = '320', height = '180' }) => 
       <iframe
         width={width}
         height={height}
-        src={`https://www.youtube.com/embed/videoseries?list=${playlistId}`}
+        src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlistId}`}
         title="YouTube Playlist"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
