@@ -227,13 +227,14 @@ const Release = () => {
 
   return (
     <main className={styles.container}>
-      {/* {console.log("Release page")} */}
+      {/* {console.log("Release page")}
       {/* Optional Loading message */}
       {/* <span className={styles.loadingScreen} id="Loading">
         {isLoading ? "Loading Releases" : null}
       </span> */}
       {/* Menues Desktop + Nobile */}
 
+      
       <div
         onClick={toggleMenu}
         className={styles.yearSelector}
@@ -336,16 +337,15 @@ const Release = () => {
                 }) => {
                   return (
                     <Link
+                    key={id}
                       to={`../Release/${path}`}
                       title={
-                        "Release page for " + artist + ": " + album_name + "!"
-                      }
+                        "Release page for " + artist + ": " + album_name + "!"}
                     >
                       <span className={styles.land}>
                         <article>{land}</article>
                       </span>
                       <div
-                        key={id}
                         className={styles.navItem}
                         style={{
                           backgroundImage: `url(${
@@ -436,7 +436,7 @@ const Release = () => {
             filteredAlbum
           ) => (
             <article
-              key={path + id}
+              key={`${id}-${album_name}`}
               className={styles.releaseContainer}
               id={path}
               ref={path === window.location.hash.slice(1) ? selectedRef : null}
@@ -555,7 +555,7 @@ const Release = () => {
                       <div>
                         {/* Show and hide the text if more text is selected, also show and hide the
                           show more button to make it appear under the showing text */}
-                        <p
+                        <div
                           style={
                             !showText[id]
                               ? { display: "" }
@@ -568,7 +568,7 @@ const Release = () => {
                             : release_text}
 
                           <p> Credits:{credits}</p>
-                        </p>
+                        </div>
                         <div
                           style={
                             !showText[id]
@@ -587,9 +587,9 @@ const Release = () => {
                           </HashLink>
                         </div>
                         {/* Show the readmore contents */}
-                        {showText[id] && [
+                        {showText[id] && (
                           <div
-                            key={{ id } + { album_name }}
+                            key={`${id}-readmore`}
                             id={album_name}
                             className={styles.readMoreContainer}
                           >
@@ -631,7 +631,7 @@ const Release = () => {
 
                                   return (
                                     <pre
-                                      key={i}
+                                      key={`track-${i}-${track}`}
                                       dangerouslySetInnerHTML={{
                                         __html: displayTrack,
                                       }}
@@ -645,8 +645,8 @@ const Release = () => {
                                 Read less
                               </button>
                             </HashLink>
-                          </div>,
-                        ]}
+                          </div>
+                        )}
                       </div>
                     ) : (
                       release_text

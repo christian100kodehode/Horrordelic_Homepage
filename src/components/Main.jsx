@@ -9,16 +9,13 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { FaX } from "react-icons/fa6";
 import {
-  AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineYoutube,
   AiOutlineX,
 } from "react-icons/ai";
 import { FaBandcamp, FaFacebook, FaSun } from "react-icons/fa";
 import SearchBar from "./SearchBar";
-import { FaMoon } from "react-icons/fa";
 import YoutubePlaylistEmbed from "./YoutubePlaylistEmbed";
 
 const Main = () => {
@@ -32,21 +29,12 @@ const Main = () => {
   // Get Data and set latest album as the first (in position 0).
   const fetchData = () => {
     setIsLoading(true);
-    setTimeout(
-      async () => {
-        const API_URL = `./release-list.json`;
-        const response = await axios.get(API_URL);
-        // setAlbum(response.data);
-        setLatestAlbum(response.data[0]);
-        setIsLoading(false);
-        setYouTubeImage(response.data[0].youtube_full_album.slice(-11));
-        // Old version:
-        // Get the URL and add the hash then scrollintoView on load
-        // let a = new URL(window.location.href);
-        // document.querySelector(a.hash).scrollIntoView();
-      },
-      // 2000 - if wanting timeout
-    );
+    const API_URL = `./release-list.json`;
+    axios.get(API_URL).then((response) => {
+      setLatestAlbum(response.data[0]);
+      setIsLoading(false);
+      setYouTubeImage(response.data[0].youtube_full_album.slice(-11));
+    });
   };
 
   useEffect(() => {

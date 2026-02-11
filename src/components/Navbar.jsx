@@ -88,7 +88,6 @@ const Navbar = () => {
           className={styles.goToTopButton}
           style={{ display: window.scrollY  === 0 ? "none" : "" }}
         >
-          {console.log(scrollY)}
           <AiOutlineArrowUp />
         </button>
       </div>

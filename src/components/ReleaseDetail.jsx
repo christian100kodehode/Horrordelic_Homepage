@@ -11,6 +11,7 @@ import YoutubePlayer from "./YoutubePlayer";
 import bandCampLogo from "../images/bc-logotype-color-128.png";
 import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
+import youtubeLogoSvg from "../images/youtubePlayButton.svg";
 
 const ReleaseDetail = () => {
   const { path } = useParams();
@@ -307,7 +308,7 @@ const ReleaseDetail = () => {
                     if (matchedParts.length >= 4) {
                       const mid = Math.ceil(matchedParts.length / 2);
                       return (
-                        <div>
+                        <div >
                           {prefix}
                           <div>{matchedParts.slice(0, mid)}</div>
                           <div>{matchedParts.slice(mid)}</div>
@@ -316,7 +317,9 @@ const ReleaseDetail = () => {
                     }
 
                     return (
-                      <div>
+                      <div style={{ fontFamily: "helveticaNeue",
+                        fontSize: "1rem"
+                       }}>
                         {prefix}
                         {matchedParts}
                       </div>
@@ -335,10 +338,7 @@ const ReleaseDetail = () => {
                               className={styles.thumbNailButton}
                               onClick={() => {
                                 handleVideos(id);
-                                handleHasLoaded(id);
-                                startTransition(() => {
-                                  setShowVideo[id];
-                                });
+                                handleHasLoaded(id);                            
                               }}
                             >
                               <div className={styles.videoInner}>
@@ -354,7 +354,7 @@ const ReleaseDetail = () => {
                                 />
                                 <LazyLoadImage
                                   alt="Play Video"
-                                  src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
+                                  src={youtubeLogoSvg}
                                   loading="lazy"
                                   className={styles.playIcon}
                                   effect="blur"
