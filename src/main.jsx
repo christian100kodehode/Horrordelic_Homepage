@@ -15,8 +15,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         buttonText: "Accept All",
         declineButtonText: "Decline All",
       }}
-     showManageButton={false}>
-    <BrowserRouter>
+     showManageButton={false}
+     enableFloatingButton={true}>
+          <BrowserRouter>
       <App />
     </BrowserRouter>
      </CookieManager>
