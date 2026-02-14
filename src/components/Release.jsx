@@ -3,6 +3,7 @@ import bandCampLogo from "../images/bc-logotype-color-128.png";
 import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import youtubePlayButton from "../images/youtubePlayButton.svg";
 
 // Importing CSS
 import styles from "./Release.module.css";
@@ -485,7 +486,7 @@ const Release = () => {
                               />
                               <LazyLoadImage
                                 alt="Play Video"
-                                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
+                                src={youtubePlayButton}
                                 loading="lazy"
                                 className={styles.playIcon}
                                 effect="blur"

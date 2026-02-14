@@ -16,7 +16,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         declineButtonText: "Decline All",
       }}
      showManageButton={false}
-     enableFloatingButton={true}>
+     enableFloatingButton={true}
+         onAccept={() => {
+        console.log("User accepted all cookies");
+        // Analytics tracking can be initialized here
+      }}>
           <BrowserRouter>
       <App />
     </BrowserRouter>

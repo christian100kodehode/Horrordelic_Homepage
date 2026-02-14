@@ -14,6 +14,7 @@ import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
 import { Analytics } from "@vercel/analytics/react";
 
+
 // Importing hooks/packages
 import { Routes, Route } from "react-router";
 // import { useLocalStorage } from "use-Local-Storage";
