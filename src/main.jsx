@@ -34,13 +34,12 @@ onManage={(preferences) => {
       }}
       onAccept={() => {
         console.log("User accepted all cookies");
-        // Analytics tracking can be initialized here
+
       }}
       onDecline={() => {
         console.log("User declined all cookies");
-        // Handle declined state if needed
-      }}
-
+     
+      }}      
       >
           <BrowserRouter>
       <App />
