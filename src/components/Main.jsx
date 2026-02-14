@@ -100,10 +100,10 @@ const Main = () => {
 
         <div className={styles.centerTextBox}>
           <div className={styles.leftvideoBox}>
-            <p style={{ fontSize: "2rem" }}>Latest videos:</p>
-            <YoutubePlaylistEmbed playlistId="PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d" />
-          </div>
+            <p style={{ fontSize: "2rem" }}></p>
 
+          </div>
+<YoutubePlaylistEmbed playlistId="PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d" />
           <div className={styles.centerText}>
             <h1>Darkpsy Life - Since 2011</h1>
             <h1>

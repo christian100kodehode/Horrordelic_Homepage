@@ -86,8 +86,7 @@ const Navbar = () => {
           title="Go to top of the page"
           onClick={scrollToTop}
           className={styles.goToTopButton}
-          style={{ display: window.scrollY  === 0 ? "none" : "" }}
-        >
+          style={{ display: window.scrollY  === 0 ? "none" : "" }}>
           <AiOutlineArrowUp />
         </button>
       </div>
