@@ -31,7 +31,7 @@ const YouTubePlaylistEmbed = ({ playlistId, width = '320', height = '180' }) => 
 
   return (
     <div className={styles.youtubeContainer}>
-      <CookieManager>
+
       <div className={styles.leftvideoBox}>
                   <p style={{ fontSize: "2rem" }}>Latest videos:</p>
                 </div>
@@ -43,7 +43,7 @@ const YouTubePlaylistEmbed = ({ playlistId, width = '320', height = '180' }) => 
       /*   "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" */
         /* allow-FullScreen */
       />
-      </CookieManager>
+
     </div>
   );
 };
