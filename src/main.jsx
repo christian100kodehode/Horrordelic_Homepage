@@ -8,9 +8,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 /* ReactDOM.createRoot(document.getElementById("root")).render( */
   <React.StrictMode>
      <CookieManager  
-/*      initialPreferences=  {{Analytics: false,
+     initialPreferences={{Analytics: false,
   Social: false,
-  Advertising:true,}} */
+  Advertising:false}}
            translations={{
           title: "Youtube and Google Cookies 🍪",
           message:
@@ -20,14 +20,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       }} 
   showManageButton={false}
   enableFloatingButton={true}  
-/*   cookieCategories={{
+  cookieCategories={{
     Analytics: true, // Show Analytics category
     Social: true, // Hide Social category
     Advertising: true, // Show Advertising category  
-  }} */
+  }}
 
 
-onManage={(preferences) => {
+/* onManage={(preferences) => {
         if (preferences) {
           console.log("Cookie preferences updated:", preferences);
         }
@@ -39,7 +39,7 @@ onManage={(preferences) => {
       onDecline={() => {
         console.log("User declined all cookies");
      
-      }}      
+      }}     */  
       >
           <BrowserRouter>
       <App />
