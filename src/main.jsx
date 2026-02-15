@@ -18,29 +18,29 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       }} 
   showManageButton={false}
   enableFloatingButton={false}  
-  cookieCategories={{
-    Analytics: true, // Show Analytics category
-    Social: false, // Hide Social category
-    Advertising: true, // Show Advertising category  
-  }}
-     initialPreferences={{Analytics: true,
-  Social: false,
-  Advertising:true}}
+  // cookieCategories={{
+  //   Analytics: true, // Show Analytics category
+  //   Social: false, // Hide Social category
+  //   Advertising: true, // Show Advertising category  
+  // }}
+//      initialPreferences={{Analytics: true,
+//   Social: false,
+//   Advertising:true}}
 
-onManage={(preferences) => {
-        if (preferences) {
-          console.log("Cookie preferences updated:", preferences);
-        }
-      }}
-      onAccept={() => {
-        console.log("User accepted all cookies");
+// onManage={(preferences) => {
+//         if (preferences) {
+//           console.log("Cookie preferences updated:", preferences);
+//         }
+//       }}
+//       onAccept={() => {
+//         console.log("User accepted all cookies");
 
-      }}
-      onDecline={() => {
-        console.log("User declined all cookies");
-         window.gtag?.("consent", "update", { analytics_storage: "denied" });
+//       }}
+//       onDecline={() => {
+//         console.log("User declined all cookies");
+//          window.gtag?.("consent", "update", { analytics_storage: "denied" });
      
-      }}     
+//       }}     
       >
           <BrowserRouter>
       <App />
