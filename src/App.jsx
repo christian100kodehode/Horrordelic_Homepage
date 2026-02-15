@@ -13,7 +13,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
 import { Analytics } from "@vercel/analytics/react";
-
+import { CookieManager } from "react-cookie-manager";
 
 // Importing hooks/packages
 import { Routes, Route } from "react-router";
@@ -38,6 +38,7 @@ function App() {
 
   return (
     <div className="App" data-theme={theme}>
+      {/* <CookieManager> */}
       <Navbar />
       <div className="themeButtonContainer">
         <button
@@ -67,6 +68,7 @@ function App() {
         <Route path="/Artist/:id" element={<ArtistDetail />} />
       </Routes>
       <Analytics />
+      {/* </CookieManager> */}
     </div>
   );
 }

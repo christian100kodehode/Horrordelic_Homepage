@@ -1,20 +1,20 @@
-// import { useCookieConsent } from "react-cookie-manager";
+import { useCookieConsent } from "react-cookie-manager";
 import styles from './YouTubePlaylistEmbed.module.css';
 
 const YouTubePlaylistEmbed = ({ playlistId, width = '320', height = '180' }) => {
-  // const { showConsentBanner,  detailedConsent } = useCookieConsent();
+  const { showConsentBanner,  detailedConsent } = useCookieConsent();
 
   
   // Check consent — adjust category name if you customized it (e.g., Social, Advertising, or a custom "Embeds")
   // YouTube embeds typically fall under Social or Advertising
-  // const hasConsent = detailedConsent?.Analytics?.consented || detailedConsent?.Advertising?.consented || false;
+  const hasConsent = detailedConsent?.Analytics?.consented && detailedConsent?.Advertising?.consented && detailedConsent?.Social?.consented || false;
 
-  // if (!hasConsent) {
-    // return (
-    //   <div className={styles.placeholder}>
+if (!hasConsent) {
+return (
+ <div className={styles.placeholder}>
         
-  {/*       <p>To view this YouTube playlist, please accept Social or Advertising cookies.</p> */}
-{/*   <CookieManager
+        <p>To view the playlist, accept cookies.</p>
+  {/* <CookieManager
   translations={{
           title: "Youtube and Google Cookies 🍪",
           message:
@@ -27,10 +27,10 @@ const YouTubePlaylistEmbed = ({ playlistId, width = '320', height = '180' }) => 
         {/* Optional: button to reopen banner/preferences if you enable manage button */}
 
 
-  {/* <button onClick={showConsentBanner}>Manage Cookie Settings</button> */}
-      {/* </div>
+  <button onClick={showConsentBanner}>Manage Cookie Settings</button>
+      </div>
     );
-  } */}
+  }
 
   return (
     <div className={styles.youtubeContainer}>
@@ -41,7 +41,7 @@ const YouTubePlaylistEmbed = ({ playlistId, width = '320', height = '180' }) => 
       <iframe
         width={width}
         height={height}
-        src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlistId}`}
+        src={`https://www.youtube.com/embed/videoseries?list=${playlistId}`}
         title="YouTube Playlist"
       /*   "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" */
         /* allow-FullScreen */
