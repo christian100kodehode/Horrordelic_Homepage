@@ -5,6 +5,7 @@ import youtubeLogo from "../images/youtubeLogo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import youtubePlayButton from "../images/youtubePlayButton.svg";
 
+
 // Importing CSS
 import styles from "./Release.module.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -277,7 +278,7 @@ const Release = () => {
       </div>
       <div>
         {/* <p>{styles.releaseContainer ? "Text": "No"}</p> */}
-        {album
+        {/* {album
           .filter((e) => e.release_date.slice(-4) === isSelected)
           .map(({ release_date, album_name }, i) => (
             <h1
@@ -299,7 +300,7 @@ const Release = () => {
                 ""
               )}
             </h1>
-          ))}
+          ))} */}
       </div>
       <div>
         {/* Hamburger Menu icon changing on click */}

@@ -8,26 +8,26 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 /* ReactDOM.createRoot(document.getElementById("root")).render( */
   <React.StrictMode>
      <CookieManager  
-     initialPreferences={{Analytics: false,
-  Social: false,
-  Advertising:false}}
+
            translations={{
           title: "Youtube and Google Cookies 🍪",
           message:
           "We value your privacy, but Youtube/Google will go ahead with their cookies. Accept to save and play as normal.",
-          buttonText: "Accept All",
-          declineButtonText: "Decline All",
+          buttonText: "Accept Needed for video",
+        
       }} 
   showManageButton={false}
-  enableFloatingButton={true}  
+  enableFloatingButton={false}  
   cookieCategories={{
     Analytics: true, // Show Analytics category
-    Social: true, // Hide Social category
+    Social: false, // Hide Social category
     Advertising: true, // Show Advertising category  
   }}
+     initialPreferences={{Analytics: true,
+  Social: false,
+  Advertising:true}}
 
-
-/* onManage={(preferences) => {
+onManage={(preferences) => {
         if (preferences) {
           console.log("Cookie preferences updated:", preferences);
         }
@@ -38,8 +38,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       }}
       onDecline={() => {
         console.log("User declined all cookies");
+         window.gtag?.("consent", "update", { analytics_storage: "denied" });
      
-      }}     */  
+      }}     
       >
           <BrowserRouter>
       <App />
