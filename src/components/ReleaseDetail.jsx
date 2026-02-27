@@ -166,7 +166,7 @@ const ReleaseDetail = () => {
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
 
     const firstWord = firstNonEmptyLine.trim().replace(regex, "");
-    console.log(firstWord);
+    // console.log(firstWord);
     //
     return firstWord;
     // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
@@ -290,7 +290,7 @@ const ReleaseDetail = () => {
                               className={styles.artistLink}
                               to={`../Artists/${match.nameNoSpace.trim()}`}
                             >
-                              {displayName}
+                              {match.name}
                             </Link>
                           </React.Fragment>,
                         );
@@ -308,7 +308,7 @@ const ReleaseDetail = () => {
                     if (matchedParts.length >= 4) {
                       const mid = Math.ceil(matchedParts.length / 2);
                       return (
-                        <div >
+                        <div>
                           {prefix}
                           <div>{matchedParts.slice(0, mid)}</div>
                           <div>{matchedParts.slice(mid)}</div>
@@ -317,9 +317,12 @@ const ReleaseDetail = () => {
                     }
 
                     return (
-                      <div style={{ fontFamily: "helveticaNeue",
-                        fontSize: "1rem"
-                       }}>
+                      <div
+                        style={{
+                          fontFamily: "helveticaNeue",
+                          fontSize: "1rem",
+                        }}
+                      >
                         {prefix}
                         {matchedParts}
                       </div>
@@ -338,7 +341,7 @@ const ReleaseDetail = () => {
                               className={styles.thumbNailButton}
                               onClick={() => {
                                 handleVideos(id);
-                                handleHasLoaded(id);                            
+                                handleHasLoaded(id);
                               }}
                             >
                               <div className={styles.videoInner}>
