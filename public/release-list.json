@@ -1,5 +1,30 @@
 [
   {
+    "id": "HORD151",
+    "path": "Gurgamesh_-_Haunted_House",
+    "artist": "Gurgamesh",
+    "album_name": "Haunted House",
+    "land": "\uD83C\uDDF8\uD83C\uDDEA",
+    "release_text": "Horrordelic Records proudly presents a brand-new EP from our long-time partner Gurgamesh (Sweden)!\n\nSharing his roots of the deep Nordic woods, Gurgamesh delivers a high-powered masterclass in atmospheric Darkpsy and Psycore.\n\nExpect surgically precise rhythms, haunting forest vibes and the signature organic textures that have made him a teacher for the psychonauts out there.\n\nPrepare for a  ritual that blurs the line between realities.",
+    "release_date": "13th/March/2026",
+    "credits": "\n\nMusic + Art by Gurgamesh\nMastering by Murukhan\nLayout by Antikriz",
+    "tracklist": [
+      "1. Spider Silk Fractal 173",
+      "2. Enter the Collector 175",
+      "3. 112 Ocean Avenue (Skit)",
+      "4. Backwoods Creep 180",
+      "5. Dont Go Here At Night (Skit)",
+      "6. Curse Of the Ghost 190"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp298jDC5B18P-4stY2CIUewZe",
+    "youtube_full_album": "https://youtu.be/LcKy_qq1ENE",
+    "spotify": "https://open.spotify.com/album/6OQ2k7JP8aEwX1pAW17tzk",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/haunted-house",
+    "mp3": "https://drive.google.com/file/d/1disYIyddXzGjCJ421Lx0_JHKY4qAIvT4/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/1HJ5RT24CYfomSDGy9FBURscv57II8iK4/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD150",
     "path": "Efect_Mushroom_-_Liminal_Entre_la_Luz_y_el_Terror",
     "artist": "Efect Mushroom",
