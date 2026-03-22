@@ -7,7 +7,7 @@
 
     {
       "source": "/:path*",
-      "destination": "/api/simple-og.ts"
+      "destination": "/api/simple-og"
     }
   ]
 }

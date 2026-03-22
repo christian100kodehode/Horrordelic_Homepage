@@ -10,7 +10,7 @@ export default async function handler(req: Request): Promise<Response> {
   const path = url.pathname;
 
   // Very simple bot detection (expand later if needed)
-  //   const ua = req.headers.get("user-agent") || "";
+  const ua = req.headers.get("user-agent") || "";
   //   const isBot =
   //     /bot|facebookexternalhit|Twitterbot|WhatsApp|Telegram|Discord|LinkedInBot/i.test(
   //       ua,
@@ -18,7 +18,7 @@ export default async function handler(req: Request): Promise<Response> {
 
   //   if (!isBot) {
 
-  //     return fetch(new URL("/index.html", url.origin));
+  return fetch(new URL("/index.html", url.origin));
   //   }
 
   // ── Bot only: modify HTML ───────────────────────────────────────
