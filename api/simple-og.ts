@@ -1,5 +1,5 @@
 // api/simple-og.ts
-import type { VercelRequest, VercelResponse } from "@vercel/node";
+// import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 export const config = {
   runtime: "edge", // fastest, lowest latency
