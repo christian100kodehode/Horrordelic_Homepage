@@ -1,13 +1,13 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/((?!api).+\\.(js|css|png|jpg|jpeg|gif|svg|webp|ico|json|webmanifest))$",
-      "destination": "/$1"
+      "source": "/.+\\.(js|css|png|jpg|jpeg|gif|svg|ico|webp|avif|json|webmanifest|txt|xml)$",
+      "destination": "/$0"
     },
 
-    {
-      "source": "/:path*",
-      "destination": "/api/simple-og"
-    }
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+
+    { "source": "/:path*", "destination": "/api/simple-og" }
   ]
 }
