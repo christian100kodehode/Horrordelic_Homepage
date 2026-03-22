@@ -1,8 +1,14 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/((?!api/.*).*)",
-      "destination": "/index.html"
+      "source": "/((?!api).+\\.(js|css|png|jpg|jpeg|gif|svg|webp|ico|json|webmanifest))$",
+      "destination": "/$1"
+    },
+
+    {
+      "source": "/:path*",
+      "destination": "/api/simple-og"
     }
   ]
 }
