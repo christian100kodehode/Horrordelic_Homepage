@@ -1,12 +1,17 @@
 {
   "rewrites": [
     {
-      "source": "/.+\\.(js|css|png|jpg|jpeg|gif|svg|ico|webp|avif|json|webmanifest|txt|xml)$",
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/.+\\.(js|css|png|jpg|jpeg|gif|svg|webp|ico|json|webmanifest|txt|xml)$",
       "destination": "/$0"
     },
 
-    { "source": "/api/:path*", "destination": "/api/:path*" },
-
-    { "source": "/:path*", "destination": "/api/simple-og" }
+    {
+      "source": "/:path*",
+      "destination": "/api/simple-og"
+    }
   ]
 }

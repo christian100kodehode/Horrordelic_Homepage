@@ -3,16 +3,16 @@ import fs from "fs/promises";
 import path from "path";
 
 export const config = {
-  runtime: "nodejs", // ← Use nodejs so we can read files reliably (Edge often fails on internal fetch)
+  runtime: "nodejs", // Required for fs access
 };
 
 export default async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
   const pathname = url.pathname;
 
-  // Debug log – check Vercel > Functions > Logs after hitting the URL
+  // Debug: This MUST appear in Vercel logs when you hit any route
   console.log(
-    `Function invoked | Path: ${pathname} | UA: ${req.headers.get("user-agent") || "unknown"}`,
+    `[OG] Invoked | Path: ${pathname} | UA: ${req.headers.get("user-agent") || "unknown"}`,
   );
 
   const ua = req.headers.get("user-agent") || "";
@@ -21,47 +21,51 @@ export default async function handler(req: Request): Promise<Response> {
       ua,
     );
 
-  if (!isBot) {
-    // Real users → redirect internally to static index.html (Vercel serves it from filesystem)
-    return new Response(null, {
-      status: 307, // Temporary redirect (internal, no browser change)
-      headers: { Location: "/index.html" },
-    });
-  }
-
-  // ── Bot/crawler only: generate dynamic meta ────────────────────────
-
-  let title = "Default Title - My SPA";
-  let description = "Default description for sharing";
-  let image = "https://via.placeholder.com/1200x630?text=Default+OG+Image";
-
-  if (pathname === "/Release" || pathname.startsWith("/releas/")) {
-    title = "About Page";
-    description = "Learn more about us on the about page";
-    image =
-      "https://via.placeholder.com/1200x630/00aaff/ffffff?text=About+Page";
-  } else if (pathname.startsWith("/product/")) {
-    const id = pathname.split("/product/")[1]?.split("/")[0] || "unknown";
-    title = `Product ${id}`;
-    description = `Details and info for product ${id}`;
-    image = `https://via.placeholder.com/1200x630/ff6600/ffffff?text=Product+${id}`;
-  }
-
-  // Read the built index.html file (Vite outputs to dist/ by default)
-  const filePath = path.join(process.cwd(), "dist", "index.html"); // Change 'dist' → 'build' if using CRA
+  // Read original index.html once (Vite build → dist/index.html)
+  const filePath = path.join(process.cwd(), "dist", "index.html");
 
   let html: string;
   try {
     html = await fs.readFile(filePath, "utf-8");
   } catch (err) {
-    console.error("Error reading index.html:", err);
-    return new Response("Error: Could not load template", {
-      status: 500,
-      headers: { "Content-Type": "text/plain" },
+    console.error("[OG] Failed to read dist/index.html:", err);
+    return new Response("Error loading page template", { status: 500 });
+  }
+
+  if (!isBot) {
+    // Real users → return original HTML directly (fast, no modification)
+    return new Response(html, {
+      status: 200,
+      headers: {
+        "Content-Type": "text/html;charset=UTF-8",
+        "Cache-Control": "public, max-age=3600", // ← cache for users (optional, tune later)
+      },
     });
   }
 
-  // Replace placeholders (must exist in your index.html)
+  // ── Bot only: dynamic replacement ─────────────────────────────────
+
+  let title = "Horrordelic - Darkpsy Life";
+  let description = "Dark psychedelic trance music & events";
+  let image =
+    "https://your-domain.com/assets/HorrordelicHQ_Nov_2025-B2UGlF8o.png"; // Use your real default OG image
+
+  // Simple route-based logic (expand as needed)
+  if (pathname === "/about" || pathname.startsWith("/about/")) {
+    title = "About Horrordelic";
+    description = "Information about the Horrordelic project and darkpsy scene";
+    image = "https://your-domain.com/assets/about-og.jpg";
+  } else if (
+    pathname.startsWith("/product/") ||
+    pathname.startsWith("/event/")
+  ) {
+    const slug = pathname.split("/")[2] || "unknown";
+    title = `Event / Product: ${slug}`;
+    description = `Details for ${slug} in the darkpsy world`;
+    image = `https://your-domain.com/assets/${slug}-og.jpg`;
+  }
+
+  // Replace all placeholders
   html = html
     .replace(/__TITLE__/g, title)
     .replace(/__DESCRIPTION__/g, description)
@@ -74,7 +78,7 @@ export default async function handler(req: Request): Promise<Response> {
     status: 200,
     headers: {
       "Content-Type": "text/html;charset=UTF-8",
-      "Cache-Control": "no-store, no-cache, must-revalidate", // ← Helps during testing (remove later)
+      "Cache-Control": "no-store, no-cache", // No cache during tests
     },
   });
 }
