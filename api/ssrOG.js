@@ -1,9 +1,12 @@
 // api/ssrOG.js
 import { readFile } from "fs/promises";
 import path from "path";
+import { useParams, Link, useNavigate } from "react-router";
 
 // Optional: cache the built index.html in memory (very fast on Vercel)
 let cachedHtml = null;
+
+const { path } = useParams();
 
 async function getBaseHtml() {
   if (cachedHtml) return cachedHtml;
@@ -43,7 +46,7 @@ const metadata = {
   },
   // Example: dynamic blog post style route
   // In real apps → match with regex or use a router library like 'path-to-regexp'
-  "/blog/my-first-post": {
+  first: {
     title: "My First Post | Blog",
     description: "This is the story of my first blog post...",
     ogTitle: "My First Post – Read Now!",
@@ -63,16 +66,13 @@ const metadata = {
 };
 
 export default async function handler(req, res) {
-  const url = req.url || "/";
-  const pathname = new URL(url, `http://${req.headers.host}`).pathname;
+  const url = path;
+  const pathname = url.pathname;
 
-  // Find matching metadata
-  let ogData = metadata[pathname];
-
-  if (!ogData) {
+  if (!path === "Release") {
     // Simple exact match failed → you can add regex/pattern matching here
     // For now: fallback
-    ogData = metadata.default;
+    ogData = metadata.first;
   }
 
   // Get the base (built) index.html
