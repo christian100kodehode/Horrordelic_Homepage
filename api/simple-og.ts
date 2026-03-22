@@ -21,7 +21,7 @@ export default async function handler(req: Request): Promise<Response> {
   return fetch(new URL("/index.html", url.origin));
   //   }
 
-  // ── Bot only: modify HTML ───────────────────────────────────────
+  // ── Bot only: modify HTML ─────────────
 
   // Fetch original index.html
   const originalRes = await fetch(new URL("/index.html", url.origin));
