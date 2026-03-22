@@ -17,7 +17,7 @@ export default async function handler(req: Request): Promise<Response> {
   //     );
 
   //   if (!isBot) {
-
+  console.log("Function invoked for path:", url.pathname, "UA:", ua);
   return fetch(new URL("/index.html", url.origin));
   //   }
 
