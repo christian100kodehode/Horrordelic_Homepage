@@ -38,7 +38,7 @@ const Artists = () => {
         const response = await axios.get(API_URL);
         setArtist(response.data);
         setIsLoading(false);
-      }
+      },
       // 2000 - if wanting timeout
     );
   };
@@ -52,6 +52,16 @@ const Artists = () => {
   // console.log(sortedList);
   return (
     <main className={styles.container}>
+      <head>
+        <meta name="og:title" content="Horrordelic Artists + Djs" />
+        <meta
+          name="og:description"
+          content="Psychedelic artists who all have specialized and developed deep Psychedelic states, deep into the twisted world of Darkpsy and all its paths into our minds."
+        />
+        <meta name="og:image" content="/assets/sawlogoWebpage.png" />
+        <meta name="og:url" content="https://horrordelic.com/Artists" />
+        <meta name="og:type" content="website" />
+      </head>
       <div className={styles.artistList}>
         <div className={styles.categoryHeader}>
           {/* Hamburger Menu icon changing on click */}
@@ -81,7 +91,7 @@ const Artists = () => {
                   (e) =>
                     e.category.toLowerCase() === "artist" &&
                     e.active === "yes" &&
-                    e.active != undefined
+                    e.active != undefined,
                 )
 
                 .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
@@ -130,7 +140,7 @@ const Artists = () => {
                 (e) =>
                   e.category.toLowerCase() === "dj" &&
                   e.active === "yes" &&
-                  e.active != undefined
+                  e.active != undefined,
               )
               .map(({ name, id, flag, nameNoSpace, soundcloud }) => {
                 return (
@@ -184,16 +194,14 @@ const Artists = () => {
             (e) =>
               e.category.toLowerCase() === "artist" &&
               e.active === "yes" &&
-              e.active != undefined
+              e.active != undefined,
           )
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
               <div key={id} className={styles.artistsContainer}>
                 <Link to={`/Artists/${nameNoSpace}`}>
-               
-                
                   <LazyLoadImage
-                  src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
+                    src={"/artists/" + name.replace(/ /g, "") + ".jpg"}
                     // object-fit="contain"
                     // width="80%"
                     // alt={name}
@@ -237,7 +245,7 @@ const Artists = () => {
             (e) =>
               e.category.toLowerCase() === "dj" &&
               e.active === "yes" &&
-              e.active != undefined
+              e.active != undefined,
           )
           .map(({ name, id, flag, nameNoSpace }) => {
             return (
@@ -288,7 +296,7 @@ const Artists = () => {
             (e) =>
               e.category.toLowerCase() === "special" &&
               e.active === "yes" &&
-              e.active != undefined
+              e.active != undefined,
           )
           .map(({ name, id, nameNoSpace }) => {
             return (
