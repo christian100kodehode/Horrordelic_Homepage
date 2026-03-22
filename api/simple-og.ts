@@ -56,7 +56,9 @@ export default async function handler(req: Request): Promise<Response> {
     "https://horrordelic.com/assets/HorrordelicHQ_Nov_2025-B2UGlF8o.png";
 
   const pathLower = pathname.toLowerCase();
-
+  {
+    console.log(pathLower);
+  }
   if (pathLower === "/" || pathLower === "") {
     title = "Horrordelic – Darkpsy & Psycore";
   } else if (pathLower.startsWith("/release")) {
