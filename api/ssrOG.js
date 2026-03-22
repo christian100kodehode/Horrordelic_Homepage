@@ -69,7 +69,7 @@ export default async function handler(req, res) {
   const url = path;
   const pathname = url.pathname;
 
-  if (!path === "Release") {
+  if (path === "Release") {
     // Simple exact match failed → you can add regex/pattern matching here
     // For now: fallback
     ogData = metadata.first;
