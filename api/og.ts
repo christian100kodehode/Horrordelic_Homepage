@@ -3,69 +3,66 @@ import fs from "fs/promises";
 import path from "path";
 
 export const config = {
-  runtime: "nodejs", // Required for fs access
+  runtime: "nodejs", // Required for process.cwd() + fs
 };
 
 export default async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
   const pathname = url.pathname;
 
-  // Debug: This MUST appear in Vercel logs when you hit any route
   console.log(
     `[OG] Invoked | Path: ${pathname} | UA: ${req.headers.get("user-agent") || "unknown"}`,
   );
 
   const ua = req.headers.get("user-agent") || "";
   const isBot =
-    /bot|facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|Telegram|Discord|embedly/i.test(
+    /bot|facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|Telegram|Discord|embedly|google|bing|slurp|yandex/i.test(
       ua,
     );
 
-  // Read original index.html once (Vite build → dist/index.html)
+  // This now works because runtime = 'nodejs'
   const filePath = path.join(process.cwd(), "dist", "index.html");
 
   let html: string;
   try {
     html = await fs.readFile(filePath, "utf-8");
+    console.log("[OG] Successfully read index.html from:", filePath);
   } catch (err) {
-    console.error("[OG] Failed to read dist/index.html:", err);
-    return new Response("Error loading page template", { status: 500 });
+    console.error("[OG] Failed to read file:", err);
+    return new Response("Server error loading template", { status: 500 });
   }
 
   if (!isBot) {
-    // Real users → return original HTML directly (fast, no modification)
     return new Response(html, {
       status: 200,
-      headers: {
-        "Content-Type": "text/html;charset=UTF-8",
-        "Cache-Control": "public, max-age=3600", // ← cache for users (optional, tune later)
-      },
+      headers: { "Content-Type": "text/html;charset=UTF-8" },
     });
   }
 
-  // ── Bot only: dynamic replacement ─────────────────────────────────
-
+  // Bot dynamic logic (your routes)
   let title = "Horrordelic - Darkpsy Life";
-  let description = "Dark psychedelic trance music & events";
+  let description = "Dark psychedelic trance music, events & releases";
   let image =
-    "https://your-domain.com/assets/HorrordelicHQ_Nov_2025-B2UGlF8o.png"; // Use your real default OG image
+    "https://horrordelic.com/assets/HorrordelicHQ_Nov_2025-B2UGlF8o.png";
 
-  // Simple route-based logic (expand as needed)
-  if (pathname === "/about" || pathname.startsWith("/about/")) {
-    title = "About Horrordelic";
-    description = "Information about the Horrordelic project and darkpsy scene";
-    image = "https://your-domain.com/assets/about-og.jpg";
+  const pathLower = pathname.toLowerCase();
+
+  if (pathLower.startsWith("/release/")) {
+    const slug = pathLower.split("/release/")[1] || "unknown";
+    title = `Release: ${slug.replace(/-/g, " ")} | Horrordelic`;
+    description = `Darkpsy / full-on release: ${slug}`;
+    // image = `.../${slug}.jpg` if you have dynamic images
   } else if (
-    pathname.startsWith("/product/") ||
-    pathname.startsWith("/event/")
+    pathLower.startsWith("/artists/") ||
+    pathLower.startsWith("/artist/")
   ) {
-    const slug = pathname.split("/")[2] || "unknown";
-    title = `Event / Product: ${slug}`;
-    description = `Details for ${slug} in the darkpsy world`;
-    image = `https://your-domain.com/assets/${slug}-og.jpg`;
+    const id = pathLower.split(/\/artists?\/([a-z0-9-]+)/i)[1] || "unknown";
+    title = `Artist: ${id.replace(/-/g, " ")} | Horrordelic`;
+    description = `Profile & releases by ${id}`;
+  } else if (pathLower === "/search-results") {
+    title = "Search Results | Horrordelic";
   }
 
-  // Replace all placeholders
   html = html
     .replace(/__TITLE__/g, title)
     .replace(/__DESCRIPTION__/g, description)
@@ -78,7 +75,7 @@ export default async function handler(req: Request): Promise<Response> {
     status: 200,
     headers: {
       "Content-Type": "text/html;charset=UTF-8",
-      "Cache-Control": "no-store, no-cache", // No cache during tests
+      "Cache-Control": "no-store", // remove for production if you want caching
     },
   });
 }
