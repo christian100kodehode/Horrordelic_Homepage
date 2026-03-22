@@ -1,53 +1,80 @@
 // api/simple-og.ts
+import fs from "fs/promises";
+import path from "path";
+
 export const config = {
-  runtime: 'edge',
+  runtime: "nodejs", // ← Use nodejs so we can read files reliably (Edge often fails on internal fetch)
 };
 
 export default async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
-  const path = url.pathname;
+  const pathname = url.pathname;
 
-  // Log for debugging (check Vercel logs)
-  console.log("Function invoked for path:", path, "UA:", req.headers.get('user-agent') || 'unknown');
+  // Debug log – check Vercel > Functions > Logs after hitting the URL
+  console.log(
+    `Function invoked | Path: ${pathname} | UA: ${req.headers.get("user-agent") || "unknown"}`,
+  );
 
-  const ua = req.headers.get('user-agent') || '';
-  const isBot = /bot|facebookexternalhit|Twitterbot|WhatsApp|Telegram|Discord|LinkedInBot/i.test(ua);
+  const ua = req.headers.get("user-agent") || "";
+  const isBot =
+    /bot|facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|Telegram|Discord|embedly/i.test(
+      ua,
+    );
 
   if (!isBot) {
-    // Real users: internally rewrite to static index.html (no network fetch!)
+    // Real users → redirect internally to static index.html (Vercel serves it from filesystem)
     return new Response(null, {
-      status: 200,
-      headers: {
-        'x-vercel-fallback': '/index.html',  // hint (optional)
-        // Let Vercel serve the static file
-      },
-      // The key: use 307 redirect internally or just let rewrite handle
-      // But simplest: return fetch with modified request (see below)
+      status: 307, // Temporary redirect (internal, no browser change)
+      headers: { Location: "/index.html" },
     });
-
-    // Better: rewrite-style by fetching with new path (still internal)
-    // But to avoid issues, use this pattern:
-    const internalReq = new Request(new URL('/index.html', url.origin), {
-      method: 'GET',
-      headers: req.headers,  // forward important headers
-    });
-
-    // This often still fails in edge → so fallback option below
   }
 
-  // ── For bots (or force for testing): serve modified version ──
+  // ── Bot/crawler only: generate dynamic meta ────────────────────────
 
-  // Option 1: If fetch works in your case (test it), keep:
-  // const originalRes = await fetch(new URL('/index.html', url.origin));
-  // But since it probably doesn't → use Option 2 or 3
+  let title = "Default Title - My SPA";
+  let description = "Default description for sharing";
+  let image = "https://via.placeholder.com/1200x630?text=Default+OG+Image";
 
-  // Option 2 (recommended): Hardcode fallback to serve static via internal rewrite simulation
-  // But since we can't reliably fetch, let's read it differently or force-test
+  if (pathname === "/Release" || pathname.startsWith("/releas/")) {
+    title = "About Page";
+    description = "Learn more about us on the about page";
+    image =
+      "https://via.placeholder.com/1200x630/00aaff/ffffff?text=About+Page";
+  } else if (pathname.startsWith("/product/")) {
+    const id = pathname.split("/product/")[1]?.split("/")[0] || "unknown";
+    title = `Product ${id}`;
+    description = `Details and info for product ${id}`;
+    image = `https://via.placeholder.com/1200x630/ff6600/ffffff?text=Product+${id}`;
+  }
 
-  // TEMP TEST: Force always modify (remove isBot check temporarily)
-  // Fetch original via a different method or assume failure → but wait
+  // Read the built index.html file (Vite outputs to dist/ by default)
+  const filePath = path.join(process.cwd(), "dist", "index.html"); // Change 'dist' → 'build' if using CRA
 
-  // Real reliable fix in Edge: Don't fetch — use Node.js runtime instead for fs access (if you can)
-  // But for Edge: the community pattern is often to duplicate a template HTML string or use placeholders
+  let html: string;
+  try {
+    html = await fs.readFile(filePath, "utf-8");
+  } catch (err) {
+    console.error("Error reading index.html:", err);
+    return new Response("Error: Could not load template", {
+      status: 500,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
 
-  // Best quick fix for now: Switch to runtime 'nodejs' + use process.cwd() + fs
+  // Replace placeholders (must exist in your index.html)
+  html = html
+    .replace(/__TITLE__/g, title)
+    .replace(/__DESCRIPTION__/g, description)
+    .replace(/__OG_TITLE__/g, title)
+    .replace(/__OG_DESCRIPTION__/g, description)
+    .replace(/__OG_IMAGE__/g, image)
+    .replace(/__OG_URL__/g, url.href);
+
+  return new Response(html, {
+    status: 200,
+    headers: {
+      "Content-Type": "text/html;charset=UTF-8",
+      "Cache-Control": "no-store, no-cache, must-revalidate", // ← Helps during testing (remove later)
+    },
+  });
+}
