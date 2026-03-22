@@ -55,6 +55,11 @@ export default async function handler(req: Request): Promise<Response> {
 
   return new Response(html, {
     status: 200,
-    headers: { "Content-Type": "text/html;charset=UTF-8" },
+    headers: {
+      "Content-Type": "text/html;charset=UTF-8",
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+      Pragma: "no-cache",
+      Expires: "0",
+    },
   });
 }
