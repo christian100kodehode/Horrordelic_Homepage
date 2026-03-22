@@ -1,5 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/((?!api).+\\.(js|css|png|jpg|jpeg|gif|svg|webp|ico|json|webmanifest))$",
@@ -8,7 +7,7 @@
 
     {
       "source": "/:path*",
-      "destination": "/api/simple-og"
+      "destination": "/api/simple-og.ts"
     }
   ]
 }
