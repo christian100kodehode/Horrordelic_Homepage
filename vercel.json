@@ -11,7 +11,7 @@
     },
 
     {
-      "source": "/Artist/:path*",
+      "source": "/Artists/:path*",
       "destination": "/api/simple-og"
     }
   ]
