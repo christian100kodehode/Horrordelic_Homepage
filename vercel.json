@@ -11,7 +11,7 @@
 
     {
       "source": "/:path*",
-      "destination": "/api/simple-og"
+      "destination": "/api/og"
     }
   ]
 }
