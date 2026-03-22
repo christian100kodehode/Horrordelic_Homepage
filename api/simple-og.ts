@@ -1,5 +1,5 @@
 // api/simple-og.ts
-// import type { VercelRequest, VercelResponse } from "@vercel/node";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 export const config = {
   runtime: "edge", // fastest, lowest latency
@@ -11,10 +11,10 @@ export default async function handler(req: Request): Promise<Response> {
 
   // Very simple bot detection (expand later if needed)
   const ua = req.headers.get("user-agent") || "";
-  //   const isBot =
-  //     /bot|facebookexternalhit|Twitterbot|WhatsApp|Telegram|Discord|LinkedInBot/i.test(
-  //       ua,
-  //     );
+  const isBot =
+    /bot|facebookexternalhit|Twitterbot|WhatsApp|Telegram|Discord|LinkedInBot/i.test(
+      ua,
+    );
 
   //   if (!isBot) {
   console.log("Function invoked for path:", url.pathname, "UA:", ua);
