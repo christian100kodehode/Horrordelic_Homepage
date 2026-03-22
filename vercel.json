@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/assets/:path*",
-      "destination": "/assets/:path*"
+      "source": "/((?!api/.*).*)",
+      "destination": "/index.html"
     },
     {
       "source": "/.+\\.(js|css|png|jpg|jpeg|gif|svg|webp|ico|json|webmanifest|txt|xml)$",
@@ -11,7 +11,7 @@
 
     {
       "source": "/:path*",
-      "destination": "/api/og"
+      "destination": "/api/simple-og"
     }
   ]
 }
