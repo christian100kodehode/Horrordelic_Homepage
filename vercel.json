@@ -1,18 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/Release/:path*",
-      "destination": "/Releases/:path*"
-    },
-
-    {
-      "source": "/.+\\.(js|css|png|jpg|jpeg|gif|svg|webp|ico|json|webmanifest|txt|xml|woff2?|eot|ttf|otf)$",
-      "destination": "/$0"
-    },
-
-    {
-      "source": "/Artists/:path*",
-      "destination": "/api/simple-og"
-    }
-  ]
+  "source": "/((?!api/.*).*)",
+  "destination": "/index.html"
 }
