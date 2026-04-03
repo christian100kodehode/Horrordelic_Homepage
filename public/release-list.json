@@ -1,5 +1,27 @@
 [
   {
+    "id": "HORD153",
+    "path": "Psynyde_-_Demon_Funk",
+    "artist": "Psynyde",
+    "album_name": "Demon Funk",
+    "land": "\uD83C\uDDEE\uD83C\uDDF3",
+    "release_text": "Introducing “Demon Funk”, the latest EP from Indian psytrance project Psynyde, released on the darkpsy powerhouse Horrordelic Records.\n\nThis EP unfolds like a nocturnal expedition into shadowy forests and murky swamps, where twisted grooves and haunting atmospheres guide the listener through layers of sonic wilderness. Blending deep, hypnotic rhythms with eerie textures and powerful dynamic shifts, Demon Funk explores the feeling of worlds hidden within worlds—where every turn reveals another dimension of sound.\n\nWith its raw energy and immersive storytelling, Demon Funk invites listeners to wander deeper into the unknown, where funk-infused darkness and psychedelic intensity collide.",
+    "release_date": "03/April/2026",
+    "credits": "\n\nMusic + Art by Psynyde\n\nMastering by Krono Audio\nLayout by Antikriz\n\nHorrordelic 2026",
+    "tracklist": [
+      "01. Child`s Play 160",
+      "02. Demon Funk 158",
+      "03. Mazerunner 160"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp2995aUaood9BO2rBsSAwMVfh",
+    "youtube_full_album": "https://youtu.be/TqObwCOX7GY",
+    "spotify": "https://open.spotify.com/album/4CK68vF1MP6si2bwueqxnq",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/demon-funk",
+    "mp3": "https://drive.google.com/file/d/1vsh_HFiVal75QcBB0T9eOCB7ZuWMB4lD/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1Xf16vVju7mNw3oO2ehRol4cAg9l7Duyf/view?usp=sharing",
+    "flac": ""
+  },
+  {
     "id": "HORD152",
     "path": "Thoth_-_Edges_of_Awareness",
     "artist": "Thoth",
