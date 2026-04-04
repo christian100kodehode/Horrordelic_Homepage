@@ -12,6 +12,7 @@ import spotifyLogo from "../images/spotifyLogo.png";
 import youtubeLogo from "../images/youtubeLogo.png";
 import { RiSoundcloudFill } from "react-icons/ri";
 import { RiFacebookCircleFill } from "react-icons/ri";
+import { RiContactsLine } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 
 const ArtistDetail = () => {
@@ -191,7 +192,7 @@ const ArtistDetail = () => {
                               title={"Contact " + name + " " + "at Facebook"}
                             >
                               <button>
-                                <RiFacebookCircleFill />
+                                <RiContactsLine />
                               </button>
                             </a>
                           ) : (
