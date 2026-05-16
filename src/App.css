@@ -168,10 +168,11 @@ a {
   color: #888;
 } */
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   .themeChangerButton {
     margin-top: 0.5em;
     padding: 0;
+    margin-right: 3em;
   }
 }
 

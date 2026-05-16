@@ -1,5 +1,5 @@
 .main {
-  height: calc(100vh - 78px);
+  height: calc(100vh - 20%);
   background-image: var(--backgroundImage);
   overflow: auto;
   scrollbar-width: none;
@@ -12,7 +12,7 @@
 }
 
 .centerTextBox {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   gap: 100px;
 }
@@ -302,7 +302,7 @@
     padding-right: 2vh;
   } */
   .centerTextBox p {
-    padding-top: 2.5em;
+    /* padding-top: 2.5em; */
     font-size: 1.3em;
   }
 
@@ -343,7 +343,7 @@
 
 @media (max-width: 390px) {
   .centerText h1 {
-    font-size: 4vh;
+    font-size: 3vh;
   }
 }
 
@@ -449,5 +449,11 @@
 
   .mainLinks svg {
     height: 20px;
+  } 
+  @media (max-width: 180px){
+  
+    
   }
+
 }
+ 

@@ -458,6 +458,7 @@
   .thumbNailImageMix {
     width: 12em;
     margin: 0.5em;
+    --releaseContainerReadMoreBg: none;
   }
   .yearInfo p:nth-child(1) {
     margin-bottom: 3em;
@@ -465,6 +466,11 @@
 }
 
 @media (max-width: 380px) {
+.headerTopContainer {
+  justify-content: end;
+}
+
+
   .artistLinkContainer {
     position: relative;
     width: 120px;
@@ -473,8 +479,8 @@
   .artistLinks {
     bottom: 6.2em;
     left: 0.2em;
-    flex-direction: row;
-    font-size: 0.7em;
+    flex-direction: column;
+    /* font-size: 0.7em; */
   }
 
   .locationContainer h2,
@@ -483,10 +489,11 @@
   }
 
   .imageContainerYoutubeImage {
-    width: 280px;
+    /* width: 130px; */
+    border: none;
     overflow: hidden;
-    border: solid 4px var(--releaseContainerReadMoreBg);
-    border-radius: 10px;
+    /* border: solid 4px var(--releaseContainerReadMoreBg); */
+    border-radius: 3px;
   }
 
   .appearsOnSection :nth-child(2) p {
@@ -543,18 +550,24 @@
   }
 
   .streamLinks {
-    width: 16.5em;
+    width: 80%;
     height: 2.5em;
     padding: 0 1em;
     top: 80%;
+    justify-content: center;
   }
 
-  /* .streamLinks p {
+  .streamLinks p {
     font-size: 1em;
-    padding: 0.4em;
-  } */
+    /* padding: 0.4em; */
+  }
 
   .yearInfo p {
     font-size: 1em;
   }
+  .djMixContainerThumbnail {
+  /* width: 240px; */
+  overflow: hidden;
+  border: none;
+}
 }
