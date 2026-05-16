@@ -1,4 +1,23 @@
-[
+[  {
+    "id": "HORD156",
+    "path": "Panteleimon_-_Plane_of_Oblivion_2",
+    "artist": "Panteleimon",
+    "album_name": "Path of Oblivion 2",
+    "land": "\uD83C\uDDEC\uD83C\uDDF7",
+    "release_text": "Horrordelic Proudly presents the second EP from Panteleimon set in the `Plane of Oblivion` series! Deep psychedelic transformations ahead.\n\nIn this second illustrative album, we explore the realms ruled by Hermaeus Mora, the Daedric Prince of fate and knowledge, known as Apocrypha.\n\nWe also venture into the ever-shifting reality of a dark nightmare ruled by Vaermina, the Lady of Nightmares, and the Shivering Isles, ruled by Sheogorath, the Daedric Prince of Madness.",
+    "release_date": "16/May/2026",
+    "credits": "\n\nMusic and Artwork by Panteleimon\nMastering by Odoxis\nLayout by Antikriz\n\nRelease by Horrordelic 2026",
+    "tracklist": ["01. Apocrypha 160",
+  "02. Quagmire 173",
+"03. Shivering Isles 184"],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp29_70q2b_9MrZrxdCmJGMo2_",
+    "youtube_full_album": "https://youtu.be/q1ECjezNqZ8",
+    "spotify": "https://open.spotify.com/album/4tf2r0Su5W9NVcgq83AT2O",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/planes-of-oblivion-2",
+    "mp3": "https://drive.google.com/file/d/1chPnJQrPHVQWx4_4TJCUyeuNiJ-OhYd_/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/17m-PSa1697lfUI6Beztk0wfPoWen2ke1/view?usp=drive_link",
+    "flac": ""
+  },
   {
     "id": "HORD155",
     "path": "VA_-_Parallel_Obscurity_-_Volume_4",
@@ -9,11 +28,11 @@
     "release_date": "11/May/2026",
     "credits": "\n\nCompiled by Antikriz & Morchant\n\nMastered by Krono Audio\n\nReleased by Horrordelic 2026",
     "tracklist": [
-      "01. Nervous System - Light After Darkness 138",
+      "01. Nervous.System - Light After Darkness 138",
       "02. AntiMateria - Alienair 156",
       "03. Psykotropic - Madness Motivation 158",
       "04. Portal Distortion - Paralleled Forest 158",
-      "05. Manoob - Noctiferox 160",
+      "05. MaNooB - Noctiferox 160",
       "06. Psy4tecks - Architect 155",
       "07. Psynyde - Deeper`s Valley 165",
       "08. Psy Nature & Marafo - Karmic Dissolution 168",
