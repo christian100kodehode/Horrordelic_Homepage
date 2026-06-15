@@ -103,7 +103,7 @@ const Main = () => {
             <p style={{ fontSize: "2rem" }}></p>
 
           </div>
-<YoutubePlaylistEmbed playlistId="PLNlcSeDBp29-_PCRyKMcQA1mcFzrZhv0d" />
+<YoutubePlaylistEmbed playlistId="PLNlcSeDBp299EQwVYmoWz7Rui36GNQJZQ" />
           <div className={styles.centerText}>
             <h1>Darkpsy Life - Since 2011</h1>
             <h1>
