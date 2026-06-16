@@ -41,10 +41,10 @@ return (
       <iframe
         width={width}
         height={height}
-        src={`https://www.youtube.com/embed/videoseries?list=${playlistId}`}
+        src={`https://www.youtube.com/embed/videoseries?si=KLf8z6zDDUgKRD1o&amp;controls=0&amp;list=${playlistId}`}
         title="YouTube Playlist"
       /*   "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" */
-        /* allow-FullScreen */
+        allow-FullScreen
       />
 
     </div>
