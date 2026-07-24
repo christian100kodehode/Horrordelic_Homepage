@@ -1,4 +1,24 @@
-[ {
+[  {
+    "id": "HORD159",
+    "path": "Koobluda_-_Horror_Food",
+    "artist": "Koobluda",
+    "album_name": "Horror Food",
+    "land": "\uD83C\uDDE7\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly presents the second EP from KOOBLUDA, the project from Obluda and Koothan.\n\nA darkpsy snack for the famished. KOOBLUDA serves you `HORROR FOOD` -  A cold dish of sonic pathogens and fractured frequencies.\n\nNo appetizers, just the raw weight of the void. Dig in, if you dare.",
+    "release_date": "24/July/2026",
+    "credits": "\n\nProduced by Obluda and Koothan\n\nMastered by Koothan\n\nArtwork by Godinez EV\n\n\nHorrordelic 2026",
+    "tracklist": ["01. Koobluda - Br. Mungle 2 164",
+"02. Koobluda - Shift Huit Doom 188",
+"03. Koobluda - Allcordion 180"],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLIWtS-NGWAoo",
+    "youtube_full_album": "https://youtu.be/Tu7kWUwn3aA",
+    "spotify": "https://open.spotify.com/album/4mF0YSs7GjK2D72BaM5ngF",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/horror-food",
+    "mp3": "https://drive.google.com/file/d/14OYY1wlLid-f6DMxr7rGBio6MGKl50R2/view?usp=sharing",
+    "wav": "https://drive.google.com/file/d/1r8cu2XUiNNoBbo4LIEiqIUnA6Udpus7_/view?usp=sharing",
+    "flac": ""
+  },  
+  {
     "id": "HORD158",
     "path": "VA_-_Rituals_of_the_Void_-_Episode_1",
     "artist": "VA",
