@@ -10,7 +10,10 @@ const YoutubePlayer = ({ setHasLoaded, videoId, id }) => {
   const opts = {
     host: 'https://www.youtube-nocookie.com',
     playerVars: {
-      autoplay: 0, // Autopplay off
+      autoplay: 0,
+      rel: 0,           // Ikke vis anbefalte videoer fra andre kanaler
+      showinfo: 0,      // Skjul videotittel før avspilling
+      ecver: 2          // Tvinger nyere, mer personvernvennlig håndtering i eldre nettlesere
     },
   };
 
