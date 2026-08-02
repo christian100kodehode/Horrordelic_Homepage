@@ -4,6 +4,11 @@ import App from "./App";
 import { BrowserRouter } from "react-router";
 import { CookieManager } from "react-cookie-manager";
 
+// Force it to use nocookie
+if (typeof window !== "undefined") {
+  window.YTConfig = { host: "https://www.youtube-nocookie.com" };
+}
+
 //  <CookieManager  
 
 //            translations={{

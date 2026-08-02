@@ -1,11 +1,6 @@
 import YouTube from "react-youtube";
 import styles from "./Release.module.css";
 
-// Force it to use nocookie
-if (typeof window !== "undefined") {
-  window.YTConfig = { host: "https://www.youtube-nocookie.com" };
-}
-
 const YoutubePlayer = ({ setHasLoaded, videoId, id }) => {
   const _onReady = (event) => {
     event.target.playVideo();
