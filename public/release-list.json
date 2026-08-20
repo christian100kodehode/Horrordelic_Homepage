@@ -1,4 +1,27 @@
-[  {
+[
+  {
+    "id": "HORD160",
+    "path": "Ixtab_-_Tales_of_the_Void",
+    "artist": "Ixtab",
+    "album_name": "Tales of the Void",
+    "land": "\uD83C\uDDF2\uD83C\uDDFD",
+    "release_text": "Horrordelic presents the strong debut EP from Ixtab titled: `Tales of the Void`.\n\nEntering the void is part of embracing the weight of the ordeal and part of healing process. There, we can find the mysteries of the self while we are still learning to understand it, and go beyond them to find our own light through the darkness.",
+    "release_date": "20/AUG/2026",
+    "credits": "\n\nMusic by Ixtab (Mexico)\nArt by Wizzard Detza\n\nMastering:\nTrack 1 by Necronomus, Track 2+3 by Abstract Metatron Mastering\n\nHorrordelic 2026",
+    "tracklist": [
+      "01. Ixtab & Necronomus - Overwhelming Experience 176",
+      "02. Ixtab - Kyrie 175",
+      "03. Ixtab - Hidden Language 200"
+    ],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLLRZGOKbo-38",
+    "youtube_full_album": "https://youtu.be/lhVRzD_igp0",
+    "spotify": "https://open.spotify.com/album/653cHxyajlUsejTLBeahLc",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/tales-of-the-void",
+    "mp3": "https://drive.google.com/file/d/19cSmxQuZeUsizGdsQjlppqUhWzbkjdLk/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/1SFD4sHq4kAu-ttvfQwiNqcD8LL8wkXqw/view?usp=drive_link",
+    "flac": ""
+  },
+  {
     "id": "HORD159",
     "path": "Koobluda_-_Horror_Food",
     "artist": "Koobluda",
@@ -7,9 +30,11 @@
     "release_text": "Horrordelic proudly presents the second EP from KOOBLUDA, the project from Obluda and Koothan.\n\nA darkpsy snack for the famished. KOOBLUDA serves you `HORROR FOOD` -  A cold dish of sonic pathogens and fractured frequencies.\n\nNo appetizers, just the raw weight of the void. Dig in, if you dare.",
     "release_date": "24/July/2026",
     "credits": "\n\nProduced by Obluda and Koothan\n\nMastered by Koothan\n\nArtwork by Godinez EV\n\n\nHorrordelic 2026",
-    "tracklist": ["01. Koobluda - Br. Mungle 2 164",
-"02. Koobluda - Shift Huit Doom 188",
-"03. Koobluda - Allcordion 180"],
+    "tracklist": [
+      "01. Koobluda - Br. Mungle 2 164",
+      "02. Koobluda - Shift Huit Doom 188",
+      "03. Koobluda - Allcordion 180"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLIWtS-NGWAoo",
     "youtube_full_album": "https://youtu.be/Tu7kWUwn3aA",
     "spotify": "https://open.spotify.com/album/4mF0YSs7GjK2D72BaM5ngF",
@@ -17,7 +42,7 @@
     "mp3": "https://drive.google.com/file/d/14OYY1wlLid-f6DMxr7rGBio6MGKl50R2/view?usp=sharing",
     "wav": "https://drive.google.com/file/d/1r8cu2XUiNNoBbo4LIEiqIUnA6Udpus7_/view?usp=sharing",
     "flac": ""
-  },  
+  },
   {
     "id": "HORD158",
     "path": "VA_-_Rituals_of_the_Void_-_Episode_1",
@@ -27,16 +52,18 @@
     "release_text": "Horrordelic proudly presents the new series compiled by Cosmic BlueMoon (India), titled Rituals of the Void, now ready with Episode 1.\n\nCosmic BlueMoon known from the legendary Tandav Nritya series alongside many other releases, a true force in the global psy-scene is back with a brand-new compilation series.This dark psychedelic series delivers a driving, hypnotic, and powerful journey from the very first track.\n\nAlways representing a deep-rooted underground sound that continues to explore, with projects heavily supported across the world.",
     "release_date": "12/June/2026",
     "credits": "\n\nCompiled by Cosmic BlueMoon\nMastering by Krono Audio\nLayout by Antikriz\n\nHorrordelic 2026",
-    "tracklist": ["01. Pnakotic Phantasm - Dante's Cucumber 154",
-"02. Hermesz - Astral Spores 152",
-"03. Echino - Sluck 150",
-"04. Dr Tryptamine - Waiting for you 150",
-"05. Psy4tecks - Elbaf 156",
-"06. Oknytt - Wirmwood 148",
-"07. Portal Distortion - Forest Rituals 154",
-"08. Xenroot - Cortex Overload 152",
-"09. Nuoirom - The Sanatorium 153",
-"10. Obluda - Sea Of Karma 156"],
+    "tracklist": [
+      "01. Pnakotic Phantasm - Dante's Cucumber 154",
+      "02. Hermesz - Astral Spores 152",
+      "03. Echino - Sluck 150",
+      "04. Dr Tryptamine - Waiting for you 150",
+      "05. Psy4tecks - Elbaf 156",
+      "06. Oknytt - Wirmwood 148",
+      "07. Portal Distortion - Forest Rituals 154",
+      "08. Xenroot - Cortex Overload 152",
+      "09. Nuoirom - The Sanatorium 153",
+      "10. Obluda - Sea Of Karma 156"
+    ],
     "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLNlcSeDBp299EQwVYmoWz7Rui36GNQJZQ",
     "youtube_full_album": "https://youtu.be/kDFj3fxP7tM",
     "spotify": "https://open.spotify.com/album/0M8saNAeu09Gci39Gx59xK",
