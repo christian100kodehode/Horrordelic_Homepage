@@ -924,13 +924,37 @@
     "year": "2026"
   },
   {
+    "id": "125",
+    "name": "Yetzirah",
+    "type": "EP: 1. Cyber Word",
+    "mix": "https://youtu.be/FdhR5UrC6Ds",
+    "year": "2026"
+  },
+  {
+    "id": "126",
+    "name": "Yetzirah",
+    "type": "EP: 2. Cyber Word",
+    "mix": "https://youtu.be/HaooEo5fEy0",
+    "year": "2026"
+  },{
+    "id": "127",
+    "name": "Yetzirah",
+    "type": "EP: 3. Cyber Word",
+    "mix": "https://youtu.be/ZZUs5LXZOcE",
+    "year": "2026"
+  },{
     "id": "",
     "name": "",
     "type": "",
     "mix": "",
     "year": ""
-  },
-  {
+  },{
+    "id": "",
+    "name": "",
+    "type": "",
+    "mix": "",
+    "year": ""
+  },{
     "id": "",
     "name": "",
     "type": "",
