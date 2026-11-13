@@ -1,4 +1,25 @@
-[
+[ {
+    "id": "HORD165",
+    "path": "Thoth_&_Aleriztec_-_Sahara",
+    "artist": "Thoth & Aleriztec",
+    "album_name": "Sahara",
+    "land": "\uD83C\uDDEC\uD83C\uDDF7",
+    "release_text": "Horrordelic proudly presents a new release from Thoth and Aleriztech named: `Sahara`!\n\nEP represents the expression of two minds from a single perspective, weaving sound and light into a unified narrative.\n\nEvery soundscape and sequence, every pattern and algorithm, has been crafted by hand using modular synthesizers. Meticulously designed to convey a specific meaning, allowing you to experience it through a variety of ideas and stories. We invite you to join us on this beautiful journey.",
+    "release_date": "13/NOV/2026",
+    "credits": "\n\nMusic by Thoth & Aleriztech\nMastering by Thoth\nArtwork by Antikriz\n\nHorrordelic 2026",
+    "tracklist": [
+      "01. Thoth Ft. Aleriztec - The Factory Of Andishe 158",
+      "02. Aleriztech Ft. Thoth - Hyperborea 164",
+      "03. Thoth Ft. Aleriztec - Dune 166",
+      "04. Aleriztech Ft. Thoth - Unity 166"],
+    "youtube_playlist_embed": "https://www.youtube.com/playlist?list=PLeK0wShPdUCE",
+    "youtube_full_album": "https://youtu.be/GV4C7Q1UsVE",
+    "spotify": "",
+    "bandcamp": "https://horrordelic.bandcamp.com/album/sahara",
+    "mp3": "https://drive.google.com/file/d/1x68alb3OSRzDle4-v5xp2on0_R-Al404/view?usp=drive_link",
+    "wav": "https://drive.google.com/file/d/1LTnjJqMJnab_KpLPE6nLz1BMc0sQobtz/view?usp=sharing",
+    "flac": ""
+  },
   {
     "id": "HORD164",
     "path": "Psykotropic_-_Psychoactive_Shapes",
