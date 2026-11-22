@@ -153,7 +153,7 @@ const ReleaseDetail = () => {
     const hiddenMatch = track.match(/\(artist:\s*([^)]+)\)/i);
     const hiddenArtists = hiddenMatch
       ? hiddenMatch[1]
-          .split(/\s*(?:,|&|vs|.|\band\b)\s*/i)
+          .split(/\s*(?:,|&|vs|\band\b)\s*/i)
           .map((a) => a.trim())
           .filter(Boolean)
       : [];
@@ -422,15 +422,10 @@ const ReleaseDetail = () => {
                                 )
                                 .trim();
 
-                              // Separate leading track number (e.g., "01. ") so it stays unlinked
-                              const trackNumMatch =
-                                displayTrack.match(/^(\d+\.\s*)/);
-                              const trackNum = trackNumMatch
-                                ? trackNumMatch[1]
-                                : "";
-                              const trackWithoutNum = trackNum
-                                ? displayTrack.slice(trackNum.length)
-                                : displayTrack;
+                              // Separate leading track number (e.g. "01. ") so it is never linked
+                              const numMatch = displayTrack.match(/^(\d+\.\s*)(.*)$/);
+                              const trackNum = numMatch ? numMatch[1] : "";
+                              const trackBody = numMatch ? numMatch[2] : displayTrack;
 
                               // CASE A: Track has hidden (artist: ...) tags
                               if (hiddenArtists.length > 0) {
@@ -444,13 +439,13 @@ const ReleaseDetail = () => {
                                   )
                                   .filter(Boolean);
 
-                                if (trackWithoutNum.includes(" - ")) {
+                                if (trackBody.includes(" - ")) {
                                   const [artistSide, ...titleParts] =
-                                    trackWithoutNum.split(" - ");
+                                    trackBody.split(" - ");
                                   const titleSide =
                                     " - " + titleParts.join(" - ");
 
-                                  // 2+ hidden artists -> trackNum stays plain text, artistSide & titleSide get linked
+                                  // 2+ hidden artists -> split link across artist side & title side
                                   if (
                                     matchedHidden.length >= 2 &&
                                     matchedHidden[0]?.nameNoSpace &&
@@ -475,7 +470,7 @@ const ReleaseDetail = () => {
                                     );
                                   }
 
-                                  // 1 hidden artist -> trackNum stays plain text, ONLY artistSide is linked
+                                  // 1 hidden artist -> link ONLY the first side before " - "
                                   if (matchedHidden[0]?.nameNoSpace) {
                                     return (
                                       <pre key={i}>
@@ -490,6 +485,19 @@ const ReleaseDetail = () => {
                                       </pre>
                                     );
                                   }
+                                } else if (matchedHidden[0]?.nameNoSpace) {
+                                  // No " - " in track (e.g. "01. Apocrypha 160 (artist: Psynyde)") -> link entire track body
+                                  return (
+                                    <pre key={i}>
+                                      {trackNum && <span>{trackNum}</span>}
+                                      <Link
+                                        to={`/Artist/${matchedHidden[0].nameNoSpace.trim()}`}
+                                        title={`Go to ${matchedHidden[0].name}`}
+                                      >
+                                        {trackBody}
+                                      </Link>
+                                    </pre>
+                                  );
                                 }
                               }
 
@@ -509,6 +517,7 @@ const ReleaseDetail = () => {
                                 );
                               }
 
+                              // Split the track body (without track number) into clickable <Link>s for matched names
                               const escapedNames = matchedMain
                                 .map((a) =>
                                   a.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
@@ -518,7 +527,7 @@ const ReleaseDetail = () => {
                                 `(\\b(?:${escapedNames})\\b)`,
                                 "gi",
                               );
-                              const parts = trackWithoutNum.split(splitRegex);
+                              const parts = trackBody.split(splitRegex);
 
                               return (
                                 <pre key={i}>
