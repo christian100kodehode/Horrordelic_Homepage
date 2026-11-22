@@ -5,7 +5,7 @@
   cursor: pointer;
 } */
 .moreInfoButton {
-  display: inline-block;
+    display: inline-block;
   padding: 0.9em 1em;
   margin-top: 0.8em;
   background-color: var(--accent);
