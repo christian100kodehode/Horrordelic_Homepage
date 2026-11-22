@@ -578,15 +578,15 @@ const Release = () => {
                               : { display: "none" }
                           }
                         >
-                         <button>
-                      <Link
+                        
+<Link
   to={`/Release/${path}`}
   title="Read more about this release.."
-  className={styles.moreInfoButton} // Optional: add your button CSS class here
+  className={styles.moreInfoButton}
 >
   Get more info + tracklist and artist links!
 </Link>
-                          </button>
+                         
                         </div>
                         {/* Show the readmore contents */}
                         {showText[id] && (
