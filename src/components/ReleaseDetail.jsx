@@ -24,16 +24,6 @@ const ReleaseDetail = () => {
   const [isSelected, setIsSelected] = useState(yearNow.toString());
   const [showVideo, setShowVideo] = useState({ id: false });
   const [hasLoaded, setHasLoaded] = useState({ id: false });
-  // Show text only on selected id
-  const [showText, setShowText] = useState({});
-  const toggleText = (id) => {
-    setShowText((previousText) => {
-      return {
-        ...previousText,
-        [id]: !previousText[id],
-      };
-    });
-  };
 
   const handleVideos = (id) => {
     setShowVideo((previousVideo) => {
@@ -57,15 +47,12 @@ const ReleaseDetail = () => {
   const [list, setList] = useState([]);
   const fetchData = () => {
     setIsLoading(true);
-    setTimeout(
-      async () => {
-        const API_URL = `../artist-list.json`;
-        const response = await axios.get(API_URL);
-        setList(response.data);
-        setIsLoading(false);
-      },
-      // 2000 - if wanting timeout
-    );
+    setTimeout(async () => {
+      const API_URL = `/artist-list.json`;
+      const response = await axios.get(API_URL);
+      setList(response.data);
+      setIsLoading(false);
+    });
   };
 
   useEffect(() => {
@@ -78,20 +65,12 @@ const ReleaseDetail = () => {
 
   const fetchDataRelease = () => {
     setIsLoadingRelease(true);
-    setTimeout(
-      async () => {
-        const API_URL = `/release-list.json`;
-        const response = await axios.get(API_URL);
-        setAlbum(response.data);
-        setIsLoadingRelease(false);
-        // Old version:
-        // Get the URL and add the hash then scrollintoView on load
-        // let a = new URL(window.location.href);
-        // document.querySelector(a.hash).scrollIntoView();
-        // console.log(a.hash);
-      },
-      // 2000 - if wanting timeout
-    );
+    setTimeout(async () => {
+      const API_URL = `/release-list.json`;
+      const response = await axios.get(API_URL);
+      setAlbum(response.data);
+      setIsLoadingRelease(false);
+    });
   };
 
   useEffect(() => {
@@ -118,24 +97,16 @@ const ReleaseDetail = () => {
 
   // TESTING
   function getLastWordCap({ credits }) {
-    // Ensure credits is a string, fallback to empty string if undefined
     const text = credits || "";
-    // console.log(credits);
     const firstNonEmptyLine =
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
     const lastWord = firstNonEmptyLine.trim().split(" ").pop() || "";
-
-    // const firstWord = firstNonEmptyLine.trim().split(" ")[2] || "";
-    // console.log(firstWord);
-
     const lastWordCap = lastWord.charAt(0).toUpperCase() + lastWord.slice(1);
 
     return lastWordCap;
-    // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
   }
 
   function getFirstWordCap({ credits }) {
-    // Ensure credits is a string, fallback to empty string if undefined
     const text = credits || "";
 
     const wordsToRemove = [
@@ -157,7 +128,6 @@ const ReleaseDetail = () => {
       " ",
       "   ",
       "  ",
-
       "    ",
     ];
     const regex = new RegExp(`\\b(${wordsToRemove.join("|")})\\b`, "gi");
@@ -166,10 +136,7 @@ const ReleaseDetail = () => {
       text.split("\n").find((line) => line.trim() !== "") || "" || "\n\n";
 
     const firstWord = firstNonEmptyLine.trim().replace(regex, "");
-    // console.log(firstWord);
-    //
     return firstWord;
-    // <Link to={`/Artist/${lastWordCap}`}>{lastWordCap}</Link>
   }
 
   const artistMap = Object.fromEntries(
@@ -181,20 +148,30 @@ const ReleaseDetail = () => {
 
   const params = useParams();
 
-  // Function to extract artist names from track string
+  // Function to extract visible artists AND hidden (artist: ...) tag artists
   const extractArtists = (track) => {
-    // Split on " - " to separate artist(s) from track title
-    const [artistPart] = track.split(" - ");
-    // Handle collaborations (e.g., "Psykotropic & Obsorbo")
-    return artistPart
-      .replace(/^\d+\.\s*/, "") // Remove track number (e.g., "01. ")
+    const hiddenMatch = track.match(/\(artist:\s*([^)]+)\)/i);
+    const hiddenArtists = hiddenMatch
+      ? hiddenMatch[1]
+          .split(/\s*(?:,|&|vs|\band\b)\s*/i)
+          .map((a) => a.trim())
+          .filter(Boolean)
+      : [];
+
+    const cleanTrack = track.replace(/\s*\((?:artist|alias|tag):[^)]*\)/gi, "");
+    const [artistPart] = cleanTrack.split(" - ");
+
+    const mainArtists = artistPart
+      .replace(/^\d+\.\s*/, "")
       .split(/\s*(?:&|vs)\s*/i)
-      .map((artist) => artist.trim());
+      .map((artist) => artist.trim())
+      .filter(Boolean);
+
+    return { mainArtists, hiddenArtists };
   };
 
   return (
     <main className={styles.container}>
-      {/* Map release data abd filter each year selected by user */}
       {album
         .filter((e) => e.path === params.path)
         .map(
@@ -228,7 +205,6 @@ const ReleaseDetail = () => {
                   path === window.location.hash.slice(1) ? selectedRef : null
                 }
               >
-                {/* {console.log(filteredAlbum)} */}
                 <meta
                   property="og:title"
                   content={
@@ -254,8 +230,6 @@ const ReleaseDetail = () => {
                 <title>{artist + " " + album_name}</title>
 
                 <div className={styles.releaseName}>
-                  {/* <HashLink smooth to={"/release#" + path}> */}
-                  {/* <Link to={`/Release/${path}`}> */}
                   <p className={styles.heading}>
                     &nbsp;{artist}:&nbsp;{album_name}
                     <span className={styles.headingLand}>{land}</span>
@@ -297,9 +271,8 @@ const ReleaseDetail = () => {
                       }
                     });
 
-                    // ── Only show prefix + content if we have at least one valid match ──
                     if (matchedParts.length === 0) {
-                      return null; // ← hides "Made by:" completely
+                      return null;
                     }
 
                     const prefix =
@@ -329,6 +302,7 @@ const ReleaseDetail = () => {
                     );
                   })()}
                 </div>
+
                 <div className={styles.tracksContainer}>
                   <div className={styles.musicPlayer}>
                     <div className={styles.youtubeContainer}>
@@ -376,7 +350,6 @@ const ReleaseDetail = () => {
                     </div>
 
                     {/* Download Links - Stream Links */}
-
                     <div className={styles.downloadHeader}>
                       <p>Stream / Download</p>
                     </div>
@@ -415,110 +388,166 @@ const ReleaseDetail = () => {
                     </div>
                   </div>
 
-                  {/* Album info */}
+                  {/* Album info - Always visible */}
                   <div className={styles.header}>
                     <div className={styles.break}></div>
 
                     <div className={styles.cssFix}>
-                      {release_text.length ? (
-                        // > 350
-                        <div>
-                          {/* Show and hide the text if more text is selected, also show and hide the
-                          show more button to make it appear under the showing text */}
-                          <span
-                            style={
-                              !showText[id]
-                                ? { display: "" }
-                                : { display: "none" }
-                            }
-                            className={styles.releaseTextShort}
-                          >
-                            {release_text.length > 500
-                              ? release_text.substring(0, 700) + "...."
-                              : release_text}
-                            <span> Credits:{credits}</span>
-                          </span>
+                      <div id={album_name} className={styles.readMoreContainer}>
+                        <div
+                          style={{ padding: "1em" }}
+                          className={styles.readMoreText}
+                        >
+                          {release_text && <p>{release_text}</p>}
+                          <p>Credits:</p>
+                          <p>{credits}</p>
+                          <p>Release date:</p>
+                          <p>{release_date}</p>
 
-                          <div
-                            style={
-                              !showText[id]
-                                ? { display: "" }
-                                : { display: "none" }
-                            }
-                          >
-                            {/* <HashLink smooth to={"/release#" + album_name}> */}
-                            <button
-                              type="button"
-                              onClick={() => toggleText(id)}
-                              title="Read more about this release.."
-                            >
-                              Get more info + tracklist and artist links!
-                            </button>
-                            {/* </HashLink> */}
-                          </div>
-                          {/* Show the readmore contents */}
-                          {showText[id] && [
+                          <div className={styles.trackList}>
                             <div
-                              key={{ id } + { album_name }}
-                              id={album_name}
+                              style={{ padding: "0em", fontSize: "1.7em" }}
                               className={styles.readMoreContainer}
                             >
-                              <div
-                                style={{ padding: "1em" }}
-                                className={styles.readMoreText}
-                              >
-                                <p>{release_text}</p>
-                                <p>Credits:</p>
-                                <p> {credits}</p>
-                                <p>Release date:</p>
-                                <p>{release_date}</p>
-                                <div className={styles.trackList}>
-                                  <pre>Track list:</pre>
-                                  {tracklist.map((track, i) => {
-                                    // Extract artist names from track
-                                    const trackArtists = extractArtists(track);
+                              Track list:
+                            </div>
+                            {tracklist.map((track, i) => {
+                              const { mainArtists, hiddenArtists } =
+                                extractArtists(track);
 
-                                    // Find all artists in the list that match
-                                    const matchedArtists = list.filter((a) =>
-                                      trackArtists.includes(a.name),
-                                    );
+                              const displayTrack = track
+                                .replace(
+                                  /\s*\((?:artist|alias|tag):[^)]*\)/gi,
+                                  "",
+                                )
+                                .trim();
 
-                                    // Create a display string with artist links embedded
-                                    let displayTrack = track;
-                                    matchedArtists.forEach((artist) => {
-                                      const artistRegex = new RegExp(
-                                        `\\b${artist.name}\\b`,
-                                        "g",
-                                      );
-                                      displayTrack = displayTrack.replace(
-                                        artistRegex,
-                                        `<a href="/artist/${artist.nameNoSpace}">${artist.name}</a>`,
-                                      );
-                                    });
+                              // Separate leading track number (e.g., "01. ") so it stays unlinked
+                              const trackNumMatch =
+                                displayTrack.match(/^(\d+\.\s*)/);
+                              const trackNum = trackNumMatch
+                                ? trackNumMatch[1]
+                                : "";
+                              const trackWithoutNum = trackNum
+                                ? displayTrack.slice(trackNum.length)
+                                : displayTrack;
 
+                              // CASE A: Track has hidden (artist: ...) tags
+                              if (hiddenArtists.length > 0) {
+                                const matchedHidden = hiddenArtists
+                                  .map((ta) =>
+                                    list.find(
+                                      (a) =>
+                                        a.name.toLowerCase() ===
+                                        ta.toLowerCase(),
+                                    ),
+                                  )
+                                  .filter(Boolean);
+
+                                if (trackWithoutNum.includes(" - ")) {
+                                  const [artistSide, ...titleParts] =
+                                    trackWithoutNum.split(" - ");
+                                  const titleSide =
+                                    " - " + titleParts.join(" - ");
+
+                                  // 2+ hidden artists -> trackNum stays plain text, artistSide & titleSide get linked
+                                  if (
+                                    matchedHidden.length >= 2 &&
+                                    matchedHidden[0]?.nameNoSpace &&
+                                    matchedHidden[1]?.nameNoSpace
+                                  ) {
                                     return (
-                                      <pre
-                                        key={i}
-                                        dangerouslySetInnerHTML={{
-                                          __html: displayTrack,
-                                        }}
-                                      />
+                                      <pre key={i}>
+                                        {trackNum && <span>{trackNum}</span>}
+                                        <Link
+                                          to={`/Artist/${matchedHidden[0].nameNoSpace.trim()}`}
+                                          title={`Go to ${matchedHidden[0].name}`}
+                                        >
+                                          {artistSide}
+                                        </Link>
+                                        <Link
+                                          to={`/Artist/${matchedHidden[1].nameNoSpace.trim()}`}
+                                          title={`Go to ${matchedHidden[1].name}`}
+                                        >
+                                          {titleSide}
+                                        </Link>
+                                      </pre>
                                     );
-                                  })}
-                                </div>
-                              </div>
+                                  }
 
-                              <HashLink smooth to={"#top"}>
-                                <button onClick={() => toggleText(id)}>
-                                  Read less
-                                </button>
-                              </HashLink>
-                            </div>,
-                          ]}
+                                  // 1 hidden artist -> trackNum stays plain text, ONLY artistSide is linked
+                                  if (matchedHidden[0]?.nameNoSpace) {
+                                    return (
+                                      <pre key={i}>
+                                        {trackNum && <span>{trackNum}</span>}
+                                        <Link
+                                          to={`/Artist/${matchedHidden[0].nameNoSpace.trim()}`}
+                                          title={`Go to ${matchedHidden[0].name}`}
+                                        >
+                                          {artistSide}
+                                        </Link>
+                                        <span>{titleSide}</span>
+                                      </pre>
+                                    );
+                                  }
+                                }
+                              }
+
+                              // CASE B: Normal track without hidden tags -> link each matched name inline
+                              const matchedMain = list.filter((a) =>
+                                mainArtists.some(
+                                  (ma) =>
+                                    ma.toLowerCase() === a.name.toLowerCase(),
+                                ),
+                              );
+
+                              if (matchedMain.length === 0) {
+                                return (
+                                  <pre key={i}>
+                                    <span>{displayTrack}</span>
+                                  </pre>
+                                );
+                              }
+
+                              const escapedNames = matchedMain
+                                .map((a) =>
+                                  a.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+                                )
+                                .join("|");
+                              const splitRegex = new RegExp(
+                                `(\\b(?:${escapedNames})\\b)`,
+                                "gi",
+                              );
+                              const parts = trackWithoutNum.split(splitRegex);
+
+                              return (
+                                <pre key={i}>
+                                  {trackNum && <span>{trackNum}</span>}
+                                  {parts.map((part, idx) => {
+                                    const matchedArtist = matchedMain.find(
+                                      (a) =>
+                                        a.name.toLowerCase() ===
+                                        part.toLowerCase(),
+                                    );
+                                    if (matchedArtist?.nameNoSpace) {
+                                      return (
+                                        <Link
+                                          key={idx}
+                                          to={`/Artist/${matchedArtist.nameNoSpace.trim()}`}
+                                          title={`Go to ${matchedArtist.name}`}
+                                        >
+                                          {part}
+                                        </Link>
+                                      );
+                                    }
+                                    return <span key={idx}>{part}</span>;
+                                  })}
+                                </pre>
+                              );
+                            })}
+                          </div>
                         </div>
-                      ) : (
-                        release_text
-                      )}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -527,11 +556,8 @@ const ReleaseDetail = () => {
           },
         )}
 
-      {/* {(const artistName = JSON.stringify(list, ["nameNoSpace"]))}
-      {console.log(artistName)} */}
       <span className={styles.backButton}>{navigateManagamentBack()}</span>
       <h2 style={isLoading ? { display: "none" } : { display: "" }}>
-        {/* {navigateManagamentBack()} */}
         <HashLink smooth to={"#top"}>
           Go to top of Page
         </HashLink>

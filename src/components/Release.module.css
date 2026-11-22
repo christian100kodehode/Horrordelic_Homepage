@@ -4,6 +4,32 @@
   margin-top: 1.5rem;
   cursor: pointer;
 } */
+.moreInfoButton {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  margin-top: 0.2em;
+  /* background-color: #222; */
+  color: #fff;
+  /* border: 1px solid #555; */
+  /* border-radius: 4px; */
+  font-family: inherit;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.moreInfoButton:hover {
+  /* background-color: #3a3a3a; */
+  border-color: #888;
+  color: #fff;
+  text-decoration: none;
+}
+
+.moreInfoButton:active {
+  transform: scale(0.98);
+}
+
 
 .thumbNailImageMenu {
   transform: scale(1.55) translate(0, 0%);

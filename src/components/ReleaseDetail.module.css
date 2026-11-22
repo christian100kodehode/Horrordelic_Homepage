@@ -1,3 +1,27 @@
+.trackPadding {
+  padding-bottom: 10px;
+}
+
+.trackList a {
+  color: #ff4444; /* Change to your preferred accent color */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.trackList a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Optional: give the second artist link a slightly different shade so the split is obvious */
+.trackList a:nth-of-type(2) {
+  color: rgb(224, 176, 176);
+}
+
+.trackList a:nth-of-type(2):hover {
+  color: black;
+}
+
 .backButton button {
   margin-top: 1em;
   margin-bottom: 2em;
