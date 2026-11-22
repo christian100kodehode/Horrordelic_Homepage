@@ -153,7 +153,7 @@ const ReleaseDetail = () => {
     const hiddenMatch = track.match(/\(artist:\s*([^)]+)\)/i);
     const hiddenArtists = hiddenMatch
       ? hiddenMatch[1]
-          .split(/\s*(?:,|&|vs|\band\b)\s*/i)
+          .split(/\s*(?:,|&|vs|.|\band\b)\s*/i)
           .map((a) => a.trim())
           .filter(Boolean)
       : [];
