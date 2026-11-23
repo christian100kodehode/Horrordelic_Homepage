@@ -15,12 +15,14 @@
 
 /* Optional: give the second artist link a slightly different shade so the split is obvious */
 .trackList a:nth-of-type(2) {
-  color: rgb(224, 176, 176);
+  color: rgb(255, 255, 255);
 }
 
 .trackList a:nth-of-type(2):hover {
   color: black;
 }
+
+
 
 .backButton button {
   margin-top: 1em;
