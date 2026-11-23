@@ -3,7 +3,7 @@
 }
 
 .trackList a {
-  color: #ff4444; /* Change to your preferred accent color */
+  color: var(--text-accent);
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -124,7 +124,7 @@ iframe {
   padding-top: 3em;
   user-select: none;
   color: var(--text-primary);
-  text-shadow: 0 0 10px black;
+  /* text-shadow: var(--text-accent); */
 }
 
 .tracksContainer {
@@ -135,10 +135,10 @@ iframe {
   font-family: "helveticaNeue";
   line-height: 0.4em;
   font-size: 1.2rem;
-  text-shadow:
+  /* text-shadow:
     1px 1px 2px var(--accent),
     0 0 1em rgb(0, 0, 0),
-    0 0 0.7em rgb(255, 255, 255);
+    0 0 0.7em rgb(255, 255, 255); */
   color: white;
 }
 

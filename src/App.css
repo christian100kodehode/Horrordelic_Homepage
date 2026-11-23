@@ -45,12 +45,12 @@
   );
   --releaseContainerReadMoreBg: rgb(92, 6, 6);
   --releaseContainerStreamLinksBg: rgb(161, 52, 52);
-  --text-shadowBg: 0 0 10px #fff;
+  /* --text-shadowBg: 0 0 10px #fff; */
   --text-primary: white;
   --text-primary-transparent: rgba(255, 255, 255, 0.5);
   --text-primary-more-transparent: rgba(0, 0, 0, 0.5);
-  --text-primary-hover: black;
-  --text-secondary: grey;
+  --text-primary-hover: rgba(0, 0, 0, 0.432);
+  --text-secondary: rgb(255, 255, 255);
   --accent: darkred;
   --accentTransp: rgba(139, 0, 0, 0.75);
   --line: red;
